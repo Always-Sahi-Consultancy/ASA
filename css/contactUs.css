@@ -8,13 +8,16 @@
     height: 60vh;
 }
 
+.contact__form, .contact__info{
+    height: inherit;
+    padding: 0 2%;
+}
+
 .contact__form{
     background-color: var(--gray-light);
     margin: 1px;
     border-radius: 12px;    
-    height: fit-content;
     align-self: center;
-    padding: 6% 2%;
 }
 
 .contact__title{
@@ -51,7 +54,6 @@
     align-self: center;
     display: flex;
     flex-direction: column;
-    padding: 38% 0;
     margin: 0 2px;
     border-radius: 6px;
     text-align: center;
@@ -59,6 +61,11 @@
 
 .contact__mail, .contact__phone, .contact__social{
     margin: 6% 0;
+}
+
+.contact__instagram_image{
+    width: 60px;
+    height: auto;
 }
 
 .contact__link{
@@ -75,7 +82,7 @@
 }
 
 .faq__questions{
-    padding:6% 1%;
+    padding:2% 2%;
     display: inline;
 }
 
@@ -83,16 +90,20 @@
     background: var(--peach);
     font-size: 1.4rem;
     padding: 2%;
+    display: grid;
+    grid-template-columns: auto 2%;
 }
 
 .faq__show{
     background: var(--skin);
     border-radius: 50%;
-    height:30px;
-    width: 30px;
+    height:25px;
+    width: 25px;
     justify-items: center;
     align-items: center;
     text-align: center;
+    /* position: relative; */
+    /* left: 94%; */
 }
 
 .faq__answer{

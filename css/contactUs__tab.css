@@ -1,0 +1,6 @@
+@media screen and (max-width:768px){
+    .contact{
+        grid-template-columns: auto;
+        height:fit-content;
+    }
+}

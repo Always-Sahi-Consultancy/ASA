@@ -12,10 +12,10 @@
     <div class="options" id="options">
         <div class="navigate" id="navigation"> 
             <div class="navigation_section">
-                <button class="close" id="close_nav">
+                <!-- <button class="close" id="close_nav">
                     <div class="close__bar" id="item-1"></div>
                     <div class="close__bar" id="item-2"></div>
-                </button>
+                </button> -->
                 <div class="navigate__link"><a href="./">Home</a></div>
                 <div class="navigate__link"><a href="./ourStory.php">ASA Story</a></div>
                 <div class="navigate__link"><a href="./freebies">Freebies</a></div>

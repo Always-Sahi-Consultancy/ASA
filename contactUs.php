@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/root.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <link href="css/contactUs.css" rel="stylesheet">
     <link href="css/contactUs_mobile.css" rel="stylesheet">
     <link href="css/contactUs_tab.css" rel="stylesheet">
+    <script src="javascript/header.js" defer></script>
     <title>Always Sahi Academy | Contact Us</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
         include './public/header.php'
     ?>
     <div class="contact">
-        <form action="post" class="contact__form">
+        <form action="" method="post" class="contact__form">
             <div class="contact__title">Contact Us</div>
             <input type="text" placeholder="Name" class="contact__input" required>
             <input type="email" placeholder="Email" class="contact__input" required>
@@ -30,7 +32,7 @@
             <div class="contact__social">
                 <div class="contact_instagram">
                     <a href="" class="contact__link">
-                        <img src="images/" alt="instagram" class="contact__instagram_image">
+                        <img src="image/instagram.png" alt="instagram" class="contact__instagram_image">
                     </a>
                 </div>
             </div>
@@ -47,5 +49,9 @@
             <div class="faq__answer">aga</div>
         </div>
     </div>
+
+    <?php 
+        include('public/footer.php')
+    ?>
 </body>
 </html>
