@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/ourStory.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/ourStory_mobile.css">
 
     <script src="javascript/header.js" defer></script>
@@ -41,7 +42,9 @@
         </div>
     </div>
 
-    
+    <?php 
+        include('public/footer.php')
+    ?>
     
     
 </body>

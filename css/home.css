@@ -155,7 +155,7 @@
 .join__tagline, .page2__tagline{
     align-items: right;
     align-content: center;
-    margin: 7vw 0vw 5vw 7vw;
+    margin: 7vw 0vw 5vw 0vw;
 }
 .join__bigText, .page2__bigText{
     font-size: 2.4rem;
@@ -221,6 +221,7 @@
     font-size: 1.6rem;
     font-family:CooperHewitt-Book ;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 .Clist{
     padding: 2vh;
@@ -238,12 +239,17 @@
 .features{
     display: grid;
     grid-template-columns: auto auto auto;
-    align-items: center;
-    justify-items: center;
-    margin: 5vh 10vh;
+    margin: 0vh 20vh;   
 }
+
 .feature__content{
         justify-content: center;
         align-content: center;
         height: 50vh;
+}
+.features__text{
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: CooperHewitt-Light;
+    margin: 0vh 5vh;
 }
