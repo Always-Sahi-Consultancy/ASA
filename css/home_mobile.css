@@ -8,7 +8,7 @@
     .intro{
         flex-direction:column-reverse;
         height: auto;
-        margin: 1vw 3vw;
+        margin: 1vh 1vw 2vh;
     }
 
     .intro__paragraphs{
@@ -16,10 +16,7 @@
     }
 
     .intro__image{
-        /* overflow:hidden; */
         align-content: baseline;
-        /* padding-bottom: 2vh; */
-        /* transform: scale(0.7); */
         width: 100%;
         padding: 5vh 0 0;
     }
@@ -31,6 +28,8 @@
     .intro__details{
         text-align:center;
         width: 100%;
+        margin: 0px;
+        height: fit-content;
     }
 
     .intro__company_name{
@@ -107,7 +106,7 @@
     }
     /*note*/
     .note{
-        font-size: 0.8rem;
+        font-size: 1rem;
         background: white;
         padding: 1vh 2vh;
         margin-bottom: 3vh;
@@ -178,6 +177,10 @@
         font-weight: 700;
         font-family: CooperHewitt-Light;
         margin: 0vh 5vh;
+    }
+
+    .middle__Atharv{
+        width: 100vw;
     }
 }
 
