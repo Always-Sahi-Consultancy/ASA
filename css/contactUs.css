@@ -54,18 +54,24 @@
     align-self: center;
     display: flex;
     flex-direction: column;
-    margin: 0 2px;
     border-radius: 6px;
     text-align: center;
+    align-items: center;
 }
 
 .contact__mail, .contact__phone, .contact__social{
     margin: 6% 0;
 }
 
+.contact__social{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
 .contact__instagram_image{
-    width: 60px;
+    width: 4vw;
     height: auto;
+    margin:1vw;
 }
 
 .contact__link{
@@ -73,7 +79,7 @@
 }
 
 .faq{
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
 .faq__title{
@@ -102,12 +108,16 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-    /* position: relative; */
-    /* left: 94%; */
+    border: solid transparent 1px;
+}
+
+.faq__show:hover{
+    border: solid var(--light-blue) 1px;
 }
 
 .faq__answer{
     background: var(--gray-light);
     font-size: 1.4rem;
     padding: 2% 1%;
+    display: none;
 }
