@@ -58,42 +58,42 @@
     <div class="faq">
         <div class="faq__title">FAQ</div>
         <div class="faq__breif">Hey, I dont want you to be confused anywhere, So let’s answer some of the Frequently Asked Questions, by the Students of Always Sahi Academy.</div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_1">
             <div class="faq__question">
                 <span>How do I get Enrolled? </span>
                 <div class="faq__show">+</div>
             </div>
             <div class="faq__answer">We have a Simple Sign up Form, through which you Create an Account, & Explore your Learning. </div>
         </div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_2">
             <div class="faq__question">
                 <span>Are there any Refunds?</span>
                 <div class="faq__show">+</div>
             </div>
             <div class="faq__answer">Transactions & Learning being though digital Mode, there are no Refunds Provided.</div>
         </div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_3">
             <div class="faq__question">
                 <span>I dont have any Startup Planned?</span>
                 <div class="faq__show">+</div>
             </div>
             <div class="faq__answer">There is no need to worry, here at Always Sahi Academy you are handheld by the experts who will be clearing your Niche and Starting from the Basics.</div>
         </div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_4">
             <div class="faq__question">
                 <span>Can I Join if I am a School & College Student?</span>
                 <div class="faq__show">+</div>
             </div>
             <div class="faq__answer">Joining as a Student is a Perfect Decision, here you get complete knowledge to build your Skills & Side Hustle. Which is Beneficial to grow your Full-time Business or Build your Resume if you are looking for a Perfect Job.</div>
         </div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_5">
             <div class="faq__question">
                 <span>Is this an Online Course?</span>
                 <div class="faq__show">+</div>
             </div>
             <div class="faq__answer">Yes this Course is Online. </div>
         </div>
-        <div class="faq__questions">
+        <div class="faq__questions" id="faq_6">
             <div class="faq__question">
                 <span>Are there any Restrictions to joining Always Sahi Academy?</span>
                 <div class="faq__show">+</div>
