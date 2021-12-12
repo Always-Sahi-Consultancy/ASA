@@ -6,6 +6,7 @@
     grid-template-columns: 70% 30%;
     padding: 12vh 12vw;
     height: 60vh;
+    overflow-y: hidden;
 }
 
 .contact__form, .contact__info{
@@ -80,6 +81,7 @@
 
 .faq{
     margin: 2% 20%;
+    font-family: CooperHewitt-Light;
 }
 
 .faq__title{
@@ -94,10 +96,11 @@
 
 .faq__question{
     background: var(--peach);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 2%;
     display: grid;
     grid-template-columns: auto 2%;
+    border-radius: 6px;
 }
 
 .faq__show{
@@ -117,7 +120,12 @@
 
 .faq__answer{
     background: var(--gray-light);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 2% 1%;
     display: none;
+    border-radius: 6px;
+}
+
+.faq__breif, .faq__details{
+    font-size: 1.2rem;
 }

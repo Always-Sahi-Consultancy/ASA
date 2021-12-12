@@ -3,4 +3,10 @@
         grid-template-columns: auto;
         height:fit-content;
     }
+    .faq{
+        margin: 2% 10%;
+    }
+    .faq__question{
+        grid-template-columns: auto 4%;
+    }
 }

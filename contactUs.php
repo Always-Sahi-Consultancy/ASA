@@ -8,8 +8,8 @@
     <link href="css/header.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/contactUs.css" rel="stylesheet">
-    <link href="css/contactUs_mobile.css" rel="stylesheet">
     <link href="css/contactUs_tab.css" rel="stylesheet">
+    <link href="css/contactUs_mobile.css" rel="stylesheet">
     <script src="javascript/header.js" defer></script>
     <script src="javascript/contactUs.js" defer></script>
     <title>Always Sahi Academy | Contact Us</title>
