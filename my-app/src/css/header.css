@@ -1,0 +1,359 @@
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Bebas-Neue;
+}
+
+.brand{
+    /* width:100%; */
+    padding: 2px;
+}
+
+.brand_section{
+    display: inline;
+    /* grid-template-columns: auto; */
+}
+
+.brand__image{
+    width:70%;
+    height: auto;
+}
+
+.hamburger{
+    width: 100%;
+    background: transparent;
+    padding: 1%;
+    display: none;
+}
+
+.hamburger__bar{
+    width: 100%;
+    height: 6px;
+    margin: 2px 0;
+    background: black;
+    transition:ease-in;
+    transition-duration: 0.2s;
+}
+
+.hamburger__1{
+    transform: rotate(45deg);
+    transform-origin: 35%;
+}
+
+.hamburger__2{
+    width: 0%;
+    transform-origin: center;
+}
+
+.hamburger__3{
+    transform: rotate(-45deg);
+    transform-origin: 35%;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navigate{
+    display:flex;
+    justify-content: center;
+}
+
+.navigation_section{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    align-items:center;
+}
+
+.navigate__link{
+    text-align:center;
+    align-content: center;
+    justify-content: center;
+    padding: 0 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: CooperHewitt-Light;
+}
+
+.navigate__link a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigate__link a:hover{
+    color: var(--peach);
+}
+
+.login{
+    justify-content: right;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.login__button{
+    background-color: var(--peach);
+    padding: 6px;
+    font-size: 1.3rem;
+    box-shadow:2px 2px 1px black;
+    border-radius: 12px;
+    height: fit-content;
+    margin: auto 7px;
+    text-align: center;
+    transition:all;
+    transition-duration: 0.5s;
+}
+
+.login__button:hover{
+    box-shadow: 4px 4px 2px black;
+}
+
+.close{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    header{
+        grid-template-columns: auto;
+        background: var(--white);
+        height: 6vh;
+        position: fixed;
+    }
+
+    .brand{
+        width:90%;
+    }
+
+    .brand__section{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .brand__image{
+        width: 30%;
+    }
+
+    .hamburger{
+        display: block;
+        width: 10%;
+        border: 0px;
+    }
+
+    .options{
+        grid-template-columns: auto;
+        position:fixed;
+        right:100%;
+        transition:cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition-duration: 1s;
+        background: var(--white);
+        height: 100vh;
+        top: 6vh;
+    }
+
+    .navigate{
+        padding: 2vh;
+        width: 100vw;
+        height: 70vh;
+        z-index: 1;
+        min-height: 70vh;
+        background: var(--white);
+    }
+
+    .open{
+        right: 0;
+    }
+
+    .navigation_section{
+        flex-direction: column;
+        align-items:left;
+        width: inherit;
+        /* padding: 16px; */
+    }
+
+    .navigate__link{
+        margin: 2vh;
+        text-align:left;
+    }
+
+    .navigate__link a{
+        text-decoration: none;
+        font-size: 2.2rem;
+    }
+
+    .navigate__link a:hover{
+        color:var(--skin);
+    }
+
+    .close{
+        display: block;
+        width: 10%;
+        position: absolute;
+        right: 6%;
+        border: 0px;
+        background-color: transparent;
+        padding: 2px;
+        top: 7%;
+    }
+
+    .close__bar{
+        width: 100%;
+        height: 2px;
+        margin: 1px;
+        background: black;
+
+    }
+    
+    #item-1{
+        transform: rotate(45deg);
+        transform-origin: 45%;
+    }
+
+    #item-2{
+        transform: rotate(-45deg);
+        transform-origin: 45%;
+    }
+
+    .login{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        bottom:0px;
+    }
+
+    .login__button{
+        width: 90vw;
+        align-content: center;
+        margin: 1px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    header{
+        grid-template-columns: auto;
+        background: var(--white);
+        padding: 6px 0;
+        height: 6vh;
+    }
+
+    .brand{
+        width:90%;
+    }
+
+    .brand__section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .brand__image{
+        width: 40%;
+    }
+
+    .hamburger{
+        display: block;
+        width: 10%;
+        border: 0px;
+    }
+
+    .hamburger__1{
+        transform-origin: 20%;
+    }
+
+    .hamburger__3{
+        transform-origin: 20%;
+    }
+
+    .options{
+        grid-template-columns: auto;
+        position:fixed;
+        right:100%;
+        transition:cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition-duration: 1s;
+        background: var(--white);
+        height: 94vh;
+        top: 8vh;
+    }
+
+    .navigate{
+        padding: 2vh;
+        width: 100vw;
+        height: 70vh;
+        z-index: 1;
+        min-height: 70vh;
+        background: var(--white);
+    }
+
+    .open{
+        right: 0;
+    }
+
+    .navigation_section{
+        flex-direction: column;
+        align-items:left;
+        width: inherit;
+        /* padding: 16px; */
+    }
+
+    .navigate__link{
+        margin: 2vh;
+        text-align:left;
+    }
+
+    .navigate__link a{
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .navigate__link a:hover{
+        color:var(--skin);
+    }
+
+    .close{
+        display: block;
+        width: 10%;
+        position: absolute;
+        right: 6%;
+        border: 0px;
+        background-color: transparent;
+        padding: 2px;
+        top: 7%;
+    }
+
+    .close__bar{
+        width: 100%;
+        height: 2px;
+        margin: 1px;
+        background: black;
+
+    }
+    
+    #item-1{
+        transform: rotate(45deg);
+        transform-origin: 45%;
+    }
+
+    #item-2{
+        transform: rotate(-45deg);
+        transform-origin: 45%;
+    }
+
+    .login{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .login__button{
+        width: 90vw;
+        align-content: center;
+        margin: 1px;
+    }
+}

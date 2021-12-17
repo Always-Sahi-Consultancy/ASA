@@ -1,0 +1,13 @@
+.head-div__1 {
+    font-size: 4.5rem;
+    /* font-weight: bolder; */
+    font-family: Bebas-Neue;
+  }
+  
+  .head-div__2 {
+    font-size: 2.5rem;
+    font-family: Nickainley-Normal;
+    font-weight: bold;
+    text-align: right;
+    width: 90%;
+  }

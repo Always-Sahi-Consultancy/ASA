@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/home_mobile.css">
     <link rel="stylesheet" href="css/home_tab.css">
+    <link rel="stylesheet" href="css/home_mobile.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/footer_mobile.css">
     <script src="javascript/header.js" defer></script>

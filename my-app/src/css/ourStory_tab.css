@@ -1,0 +1,14 @@
+.story__image{
+    height: 90vh;
+    padding-top: 5vh;
+    background: var(--peach);
+}
+.story__container{
+    padding:2vh 10vh;
+    font-size: 1.3rem;
+    font-family: CooperHewitt-Book;
+    line-height: 150%;
+}
+p{
+    margin-top: 3vh;
+}

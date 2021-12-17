@@ -1,0 +1,195 @@
+/* Large Screen */
+@media screen and (max-width:426px){
+    .instant_focus{
+        width:100%;
+        padding: 6px;
+    }
+
+    .intro{
+        flex-direction:column-reverse;
+        height: auto;
+        margin: 1vh 1vw 2vh;
+    }
+
+    .intro__paragraphs{
+        width: 100%;
+    }
+
+    .intro__image{
+        align-content: baseline;
+        width: 100%;
+        padding: 5vh 0 0;
+    }
+
+    .intro__Atharv{
+        width: 100%;
+    }
+
+    .intro__details{
+        text-align:center;
+        width: 100%;
+        margin: 0px;
+        height: fit-content;
+    }
+
+    .intro__company_name{
+        width: 100%;
+        font-size:2.5rem;
+    }
+    .intro__show_how{
+        font-size: 1.6rem;
+    }
+    .intro__company_title{
+        margin-bottom:6vh;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .intro__comany_section{
+        width: 100%;
+    }
+
+    .intro__company{
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    .intro__paragraph_1, .intro__paragraph_2{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .intro__button{
+        margin:10%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Guest Section */
+    .guest{
+        grid-template-columns: auto;
+        height: fit-content;
+        margin-top: 1rem;
+    }
+
+    .guest__main{
+        font-size: 2rem;
+        padding: 2vh;
+    }
+
+    .guest__places{
+        grid-template-columns: auto;
+    }
+
+    .guest__place{
+        font-size: 1.2rem;
+        padding: 1vh;
+    }
+
+    /*info section*/
+    .join{
+        grid-template-columns: auto;
+    }
+    .join__images{
+        width: 100%;
+        height: 40vh;
+    }
+    .bigText{
+        font-size: 1.6rem;
+    }
+    .tagline{
+        margin: 0;
+        padding-left: 5vh;
+    }
+    .line{
+        display: block;
+    }
+    /*note*/
+    .note{
+        font-size: 1rem;
+        background: white;
+        padding: 1vh 2vh;
+        margin-bottom: 3vh;
+    }
+    .intro__button2{
+        margin: 0;
+        margin-bottom: 1.3vh;
+    }
+    .page2__main{
+        margin: 1vh 3vh;
+    }
+    .hit{
+        margin-bottom: 5vh;
+    }
+    .headingText2{
+        font-size: 1.5rem;
+        margin: 3vh 2vh;
+    }
+    .hitPoints{
+        margin: 5vh 2vh;
+    }
+    .points{
+        font-size: 1rem;
+        line-height: 170%;
+        font-weight: 600;
+    }
+    .bigTextCol{
+        font-size: 1rem;
+        margin: 3vh 4vh;
+        text-align: justify;
+    }
+    .hit{
+        margin: 2vh 2vh;
+    }
+    .courseList{
+        font-size: 1rem;
+        line-height: 170%;
+    }
+    .Clist{ 
+        margin: 2vh 2vh 2vh 4vh;
+    }
+    .line{
+        display: block;
+    }
+    .join__bigText{
+        font-size:1.5rem;
+    }
+    .page2__bigText{
+        font-size: 2rem;
+        z-index: -1;
+        font-weight: bolder;
+        font-family: CooperHewitt-Bold;
+        color: var(--peach);
+    }
+    .features{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0vh 5vh;   
+    }
+    .feature__content{
+            justify-content: center;
+            align-content: center;
+            height: 45vh;
+            margin:-10px 0px;
+    }
+    .features__text{
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: CooperHewitt-Light;
+        margin: 0vh 5vh;
+    }
+
+    .middle__Atharv{
+        width: 100vw;
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 375px){
+
+}
+
+/* Small Screen */
+@media screen and (min-width: 320px){
+    
+}
