@@ -3,6 +3,8 @@
     .instant_focus{
         width:100%;
         padding: 6px;
+        position: sticky;
+        top: 0;
     }
 
     .intro{
