@@ -1,10 +1,10 @@
 import './VideoTest.css';
+import video1 from './video/vd1.mp4';
 
 function VideoTest(props){
-    console.log(props.item[0].name);
     return(
         <div className="video-test">
-            <div className="video-test__video"></div>
+            <video src={video1}controls="controls" className='video-test__video' />
             <div className="video-test__text"><h3>{props.item[0].name}</h3><br></br> 
                 {props.item[0].text}
                 <br></br>

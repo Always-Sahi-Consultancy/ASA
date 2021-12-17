@@ -4,19 +4,18 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 5vh;
-    margin: 0vh 30vh;
+    padding: 0;
+    margin: 5vh 30vh;
 }
 .video-test__video{
     width:100%;
-    height: 30vh;
-    margin-right: 8vh;
-    background-color: red;
+    height: 45vh;
+    margin:2vh 5vh;
 }
 .video-test__text{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
-    color: brown;
+    margin-right: 5vh;
 }
 .rating{
     margin-top: 1vh;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import HeadingText from "./HeadingText";
 import HearFrom from "./HearFrom";
 import VideoTest from "./VideoTest";
+import PhotoTestContainer from "./PhotoTestContainer";
 
 const Testimonials = () => {
 
@@ -17,9 +18,13 @@ const Testimonials = () => {
     const [item, setItems] = useState(VideoInfo);
     return (
         <div>
-            <HeadingText />
-            <HearFrom />
-            <VideoTest item={item} />
+            <div>
+                <HeadingText />
+                <HearFrom />
+                <VideoTest item={item} />   
+            </div>
+            
+            <PhotoTestContainer/>
         </div>
     );
 }
