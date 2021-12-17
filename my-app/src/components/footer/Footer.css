@@ -1,0 +1,34 @@
+.footer{
+    background:var(--skin);
+    font-family: CooperHewitt-Light;
+}
+
+.disclaimer{
+    padding: 2vh 10vw;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.documentation{
+    display: flex;
+    justify-items:center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    margin: 12px;
+    justify-content: center;
+}
+
+.documentation__option{
+    text-align: center;
+}
+
+.documentation__link{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    text-align:center;
+}
