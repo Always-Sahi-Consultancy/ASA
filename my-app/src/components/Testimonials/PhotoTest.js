@@ -3,7 +3,8 @@ import desktop from '../../image/desktop.png';
 
 function PhotoTest(props) {
   return (
-    <div className="main">
+    <div>
+      <div className="main">
       <div className="photoTest">
         <div className="main-container">
           <div className="container">
@@ -16,6 +17,7 @@ function PhotoTest(props) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
