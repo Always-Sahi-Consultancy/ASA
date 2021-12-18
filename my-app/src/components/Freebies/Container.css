@@ -1,6 +1,7 @@
 .Container {
-  width: 30%;
-  height: 50vh;
+  width: 20%;
+  height: 20%;
+  /* border: 2px solid red; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,9 @@
   margin: 2vh;
 }
 .Container_img {
-  width: 80%;
+  width: 100%;
   height: 80%;
+}
+.Container_name{
+  font-family: CooperHewitt-Light;
 }

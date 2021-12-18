@@ -1,27 +1,31 @@
 import Container from './Container';
 import './Freebies.css';
+import Photo1 from '../../image/1.png'
+import Photo2 from '../../image/2.png'
+import Photo3 from '../../image/3.png'
+import Photo4 from '../../image/4.png'
 const Freebies = () => {
 
     const DummyContainers = [
         {
             id: "1",
-            name: "Akhil",
+            image: Photo1,
+            name: "Navratnas of Time Management",
         },
         {
             id: "2",
-            name: "Sanket",
+            image: Photo2,
+            name: "How to find your passion & Niche",
         },
         {
             id: "3",
-            name: "Anjali",
+            image: Photo3,
+            name: "Creating Professioinal LinkedIn Profile",
         },
         {
             id: "4",
-            name: "Atharv",
-        },
-        {
-            id: "5",
-            name: "Dhanashree",
+            image: Photo4,
+            name: "Compliance Toolkit of 18+",
         },
 
     ];
@@ -35,7 +39,7 @@ const Freebies = () => {
             <div className="containers">
                 <ul className="container-list">
                     {DummyContainers.map((item) => (
-                        <Container name={item.name} />
+                        <Container name={item.name} image={item.image} />
                     ))}
                 </ul>
             </div>

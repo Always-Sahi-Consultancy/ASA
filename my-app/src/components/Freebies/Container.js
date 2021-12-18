@@ -3,8 +3,8 @@ import './Container.css';
 const Container = (props) => {
     return (
         <div class="Container">
-            <img src={Img} className="Container_img"></img>
-            <h2 className="Container_name">{props.name}</h2>
+            <img src={props.image} className="Container_img"></img>
+            <h4 className="Container_name">{props.name}</h4>
         </div>
     )
 };
