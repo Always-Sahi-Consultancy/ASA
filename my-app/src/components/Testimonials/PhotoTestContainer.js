@@ -27,15 +27,20 @@ function PhotoTestContainer(){
     ]
     const [imgs, setImg]=useState(images);
     return(
-        <div className='photo-test'>
+        <div>
+            <div className='photo-test'>
             {images.map((item) => (
                         <PhotoTest name={item.name}
                                    text={item.text}
                                    rating={item.rating}
                         />
-                    ))}
-            
+                    ))} 
         </div>
+        <div className="main-container__button">
+            <button className="main-button">I want results like these too!</button>
+        </div>
+        </div>
+    
     );
 }
 
