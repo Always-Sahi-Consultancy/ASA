@@ -1,12 +1,16 @@
+.main{
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 7vh;
+}
 .photoTest{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 5vh 5vh;
-    padding: 5vh;
+    height: 90%;
+    padding: 0;
+    margin: 2vh 3vh;
 }
 .main-container{
     justify-content: center;
@@ -14,9 +18,8 @@
     height: fit-content;
     align-items: center;
     padding: 2vh;
-    width: 22%;
-    height: 80%;
-    margin: 4vh;
+    width: 40vh;
+    height: 90%;
     border: 5px solid var(--skin);
     border-radius: 10%;
 }

@@ -25,7 +25,12 @@ function PhotoTestContainer(){
     const [imgs, setImg]=useState(images);
     return(
         <div className='photo-test'>
-            <PhotoTest imgs={imgs}/>
+            {images.map((item) => (
+                        <PhotoTest name={item.name}
+                                   text={item.text}
+                        />
+                    ))}
+            
         </div>
     );
 }
