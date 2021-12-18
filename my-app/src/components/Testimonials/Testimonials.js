@@ -3,6 +3,7 @@ import HeadingText from "./HeadingText";
 import HearFrom from "./HearFrom";
 import VideoTest from "./VideoTest";
 import PhotoTestContainer from "./PhotoTestContainer";
+import ScreenShots from "./ScreenShots";
 
 const Testimonials = () => {
 
@@ -25,6 +26,7 @@ const Testimonials = () => {
             </div>
             
             <PhotoTestContainer/>
+            <ScreenShots/>
         </div>
     );
 }

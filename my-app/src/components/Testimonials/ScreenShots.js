@@ -1,14 +1,21 @@
 import './ScreenShots.css';
-import Janhavi from './SS/1. Janhavi Khatwani.png';
-import kajal from './SS/Screenshot_20211113-132225';
+import Janhavi from '../../image/1_Janhavi_Khatwani.jpg';
+import kajal from '../../image/Screenshot_20211113-132225.jpg';
+import Button from './Button';
 
 function ScreenShots(){
     return(
         <div>
+        <Button/>
+            <div className='main'>
             <div className='ScreenShots'>
-                <img src={Janhavi}></img>
-                <img src={kajal}></img>
+                <img src={Janhavi} className='ScreenShots__img'></img>
+                <img src={kajal} className='ScreenShots__img'></img>
             </div>
+        </div>
+        <Button/>
         </div>
     );
 }
+
+export default ScreenShots;

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PhotoTest from './PhotoTest';
 import './PhotoTestContainer.css';
+import button from './Button';
 
 function PhotoTestContainer(){
     const images=[
@@ -36,9 +37,7 @@ function PhotoTestContainer(){
                         />
                     ))} 
         </div>
-        <div className="main-container__button">
-            <button className="main-button">I want results like these too!</button>
-        </div>
+        <button/>
         </div>
     
     );

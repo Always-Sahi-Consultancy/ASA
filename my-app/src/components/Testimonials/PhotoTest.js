@@ -1,5 +1,6 @@
 import "./PhotoTest.css";
 import desktop from '../../image/desktop.png';
+import Button from "./Button";
 
 function PhotoTest(props) {
   return (
@@ -19,6 +20,7 @@ function PhotoTest(props) {
       </div>
     </div>
     </div>
+    
   );
 }
 
