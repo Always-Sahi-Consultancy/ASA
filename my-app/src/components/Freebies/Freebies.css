@@ -21,3 +21,10 @@
   font-weight: 600;
   font-family: CooperHewitt-Light;
 }
+
+@media only screen and (max-width: 769px) {
+  .containers {
+    position: relative;
+    top: 10vh;
+  }
+}

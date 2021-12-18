@@ -83,6 +83,7 @@ header {
 .navigate__link a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .navigate__link a:hover {
@@ -120,7 +121,7 @@ header {
   header {
     grid-template-columns: auto;
     background: var(--white);
-    height: 6vh;
+    height: 10vh;
     position: fixed;
   }
 

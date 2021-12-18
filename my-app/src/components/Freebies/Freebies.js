@@ -33,9 +33,6 @@ const Freebies = () => {
 
     return (
         <div>
-            <ul className="Freebies_head">
-                <li className="heading">Start your learning for Free with ASA</li>
-            </ul>
             <div className="containers">
                 <ul className="container-list">
                     {DummyContainers.map((item) => (
