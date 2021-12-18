@@ -1,0 +1,19 @@
+.containers {
+  width: 100%;
+  height: 100%;
+}
+.container-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5vh 10vw;
+  justify-content: center;
+}
+.Freebies_head {
+  padding: 1vh 5vh;
+  margin-bottom: 2vh;
+}
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
