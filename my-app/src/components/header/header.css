@@ -4,8 +4,18 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   font-family: Bebas-Neue;
+  background: #efefef;
+  transition: all 0.5s ease-in-out;
 }
-
+header:hover {
+  background: white;
+}
+header:hover .navigate__link a {
+  color: black;
+}
+header:hover .navigate__link a:hover {
+  color: var(--peach);
+}
 .brand {
   /* width:100%; */
   padding: 2px;
@@ -82,7 +92,9 @@ header {
 
 .navigate__link a {
   text-decoration: none;
-  color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .navigate__link a:hover {
@@ -120,7 +132,7 @@ header {
   header {
     grid-template-columns: auto;
     background: var(--white);
-    height: 6vh;
+    height: 10vh;
     position: fixed;
   }
 

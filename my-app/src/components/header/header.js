@@ -1,6 +1,6 @@
 import Logo from "../../image/AS_Logo_Transparent.png";
 import './header.css';
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <header>
@@ -19,14 +19,14 @@ const Header = () => {
                         <div className="navigation_section">
                             <div className="navigate__link"><a href="./">Home</a></div>
                             <div className="navigate__link"><a href="./ourStory.php">ASA Story</a></div>
-                            <div className="navigate__link"><a href="./freebies">Freebies</a></div>
-                            <div className="navigate__link"><a href="./testimonials">Testimonials</a></div>
+                            <div className="navigate__link"><a onClick={() => props.onChange("Freebies")}>Freebies</a></div>
+                            <div className="navigate__link"><a onClick={() => props.onChange("Testimonials")}>Testimonials</a></div>
                             <div className="navigate__link"><a href="./contactUs.php">Contact us</a></div>
                         </div>
                     </div>
                     <div className="login">
-                        <div className="login__button">Student&nbsp;Login</div>
-                        <div className="login__button">Enroll&nbsp;Now</div>
+                        {/* <div className="login__button">Student&nbsp;Login</div> */}
+                        <div className="login__button"><a onClick={() => props.onChange("Enrollnow")}>Enroll&nbsp;Now</a></div>
                     </div>
                 </div>
             </header>

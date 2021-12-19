@@ -16,8 +16,12 @@
 .Container_name {
   font-family: CooperHewitt-Light;
   margin-top: 2vh;
+  width: 100%;
 }
 .Container_name:hover {
   color: #eb6a6a;
 }
-
+.price {
+  width: 100%;
+  color: #eb6a6a;
+}
