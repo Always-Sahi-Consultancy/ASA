@@ -24,10 +24,10 @@ const Header = (props) => {
                             <div className="navigate__link"><a href="./contactUs.php">Contact us</a></div>
                         </div>
                     </div>
-                    {/* <div className="login">
-                        <div className="login__button">Student&nbsp;Login</div>
-                        <div className="login__button">Enroll&nbsp;Now</div>
-                    </div> */}
+                    <div className="login">
+                        {/* <div className="login__button">Student&nbsp;Login</div> */}
+                        <div className="login__button"><a onClick={() => props.onChange("Enrollnow")}>Enroll&nbsp;Now</a></div>
+                    </div>
                 </div>
             </header>
         </div>

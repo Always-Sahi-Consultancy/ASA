@@ -1,0 +1,30 @@
+.containers {
+  width: 100%;
+  min-height: 65vh;
+  height: 100%;
+  background: #efefef;
+  /* border: 2px solid red; */
+}
+.container-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 5vh 10vw; */
+  justify-content: center;
+}
+.Freebies_head {
+  padding: 1vh 5vh;
+  margin-bottom: 2vh;
+}
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: CooperHewitt-Light;
+}
+
+@media only screen and (max-width: 769px) {
+  .containers {
+    position: relative;
+    top: 10vh;
+  }
+}
