@@ -1,0 +1,24 @@
+@media screen and (max-width:426px){
+    .contact{
+        grid-template-columns: auto;
+        height:fit-content;
+    }
+
+    .contact__form, .contact__info{
+        margin-bottom: 2vh;
+        padding: 4vh;   
+    }
+
+    .contact__input{
+        width: 100%;
+        margin: 1vh 0;
+    }
+
+    .contact__instagram_image{
+        width: 30px;
+    }
+
+    .faq__question{
+        grid-template-columns: auto 12%;
+    }
+}

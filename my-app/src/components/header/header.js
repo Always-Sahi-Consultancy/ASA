@@ -6,7 +6,7 @@ const Header = () => {
             <header>
                 <div className="brand__section">
                     <div className="brand">
-                        <img src={Logo} className="brand__image" />
+                        <img src={Logo} className="brand__image" alt="Logo" />
                     </div>
                     <button className="hamburger" id="side_bar">
                         <div className="hamburger__bar"></div>

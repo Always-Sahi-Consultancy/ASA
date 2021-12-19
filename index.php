@@ -41,7 +41,7 @@
         </div>
         <div class="intro__image">
             <!-- <video src="image/crimson wave.mp4" id="intro__video" autoplay loop muted poster="image/Landing Page 2.png"></video> -->
-            <img src="image/Atharv_Sawant_Transparent.png" alt="Atharv Sawant" class="intro__Atharv">
+            <img src="image/photo_trial.jpg" alt="Atharv Sawant" class="intro__Atharv">
         </div>
     </div>
     <div class="guest">
