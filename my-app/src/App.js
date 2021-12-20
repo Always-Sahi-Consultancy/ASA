@@ -14,7 +14,7 @@ import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 
 function App() {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("Index");
 
   return (
     <div>
@@ -32,6 +32,9 @@ function App() {
       {active === "OurStory" && <OurStory />}
       {active === "ContactUs" && <ContactUs />}
       {active === "Terms" && <TermsOfUse />}
+      {active === "PrivacyPolicy" && <PrivacyPolicy />}
+      {active === "EarningDiscalimer" && <EarningDiscalimer />}
+      {active === "RefundPolicy" && <RefundPolicy />}
       <Footer onChange={setActive} />
     </div>
   );

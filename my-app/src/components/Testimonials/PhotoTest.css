@@ -1,104 +1,104 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.container{
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 45vh;
-    margin: 15vh 9vh;
+.container {
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+  margin: 15vh 9vh;
 }
-.container .card{
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 2vh 0vh;
-    width: 45vh;
-    height: 35vh;
-    border: 5px solid var(--skin);
-    border-radius: 10%;
-    transition: 0.3s ease-in-out;
+.container .card {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2vh 0vh;
+  width: 45vh;
+  height: 35vh;
+  border: 5px solid var(--skin);
+  border-radius: 10%;
+  transition: 0.3s ease-in-out;
 }
-.container .card:hover{
-    height: 75vh;
-    margin: 8vh 0vh;
-    border: 5px solid var(--skin);
+.container .card:hover {
+  height: 75vh;
+  margin: 8vh 0vh;
+  border: 5px solid var(--skin);
 }
-.container .card .main-container{
-    position: relative;
-    width: 48vh;
-    height: 66vh;
-    padding: 2vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+.container .card .main-container {
+  position: relative;
+  width: 48vh;
+  height: 66vh;
+  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 
 .container .card .content {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    width: auto;
-    padding-bottom: 1vh;
-    text-align: center;
-    margin-bottom: 4vh;
-    transition: 0.3s ease-in-out;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: auto;
+  padding-bottom: 1vh;
+  text-align: center;
+  margin-bottom: 4vh;
+  transition: 0.3s ease-in-out;
 }
-.container .card:hover .content{
-    height: 45vh;
-    margin-top: -2vh;
-    transition-delay: 0.3s;
+.container .card:hover .content {
+  height: 45vh;
+  margin-top: -2vh;
+  transition-delay: 0.3s;
 }
-.container .card:hover .main-container__image{
-    margin-top: 1vh;
-    transition-delay: 0.3s;
+.container .card:hover .main-container__image {
+  margin-top: 1vh;
+  transition-delay: 0.3s;
 }
-.main-container__image{
-    width: auto;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35vh;
+.main-container__image {
+  width: auto;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
 }
-.main-container__name{
-    font-size: 1.8rem;
-    margin-top: 2vh;
-    text-align: center;
-    font-weight: 700;
-    font-family:  CooperHewitt-Book;
+.main-container__name {
+  font-size: 1.8rem;
+  margin-top: 2vh;
+  text-align: center;
+  font-weight: 700;
+  font-family: CooperHewitt-Book;
 }
-.content__text{
-    font-size: 1rem;
-    text-align: justify;
-    font-family:  CooperHewitt-light;
-    font-weight: 500;
-    margin: 1vh;
-    position: relative;
-    width: auto;
-    height: 90%;
-    overflow: hidden;
-    background-color: white;
-    /* top: 50%;
+.content__text {
+  font-size: 1rem;
+  text-align: justify;
+  font-family: CooperHewitt-light;
+  font-weight: 500;
+  margin: 1vh;
+  position: relative;
+  width: auto;
+  height: 90%;
+  overflow: hidden;
+  background-color: white;
+  /* top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); */
 }
-.main-container__rating{
-    font-size: 1.5rem;
-    top: 75%;
-    width: auto;
-    height: 90%;
-    font-family:CooperHewitt-Book;
-    text-align: center;
+.main-container__rating {
+  font-size: 1.5rem;
+  top: 75%;
+  width: auto;
+  height: 90%;
+  font-family: CooperHewitt-Book;
+  text-align: center;
 }

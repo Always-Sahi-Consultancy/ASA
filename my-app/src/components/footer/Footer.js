@@ -18,17 +18,17 @@ function Footer(props) {
             </a>
           </div>
           <div className="documentation__option">
-            <a href="./earningdisclaimer.php" className="documentation__link">
+            <a onClick={() => props.onChange("EarningDiscalimer")} className="documentation__link">
               Earning Disclaimer |&nbsp;
             </a>
           </div>
           <div className="documentation__option">
-            <a href="./privacypolicy.php" className="documentation__link">
+            <a onClick={() => props.onChange("PrivacyPolicy")} className="documentation__link">
               Privacy Policy | &nbsp;
             </a>
           </div>
           <div className="documentation__option">
-            <a href="./refundpolicy.php" className="documentation__link">
+            <a onClick={() => props.onChange("RefundPolicy")} className="documentation__link">
               Refund Policy
             </a>
           </div>
