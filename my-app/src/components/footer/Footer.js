@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-function Footer() {
+function Footer(props) {
   return (
     <div>
       <footer className="footer">
@@ -13,7 +13,7 @@ function Footer() {
         </div>
         <div className="documentation">
           <div className="documentation__option">
-            <a href="./termsofuse.php" className="documentation__link">
+            <a onClick={() => props.onChange("Terms")} className="documentation__link">
               Terms of use |&nbsp;
             </a>
           </div>

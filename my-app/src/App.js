@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './css/root.css'
 import Header from './components/header/header';
 import Index from './components/home/Index';
-import OurStroy from './components/ourStory/OurStory';
+import OurStory from './components/ourStory/OurStory';
 import Freebies from './components/Freebies/Freebies';
 import Testimonials from './components/Testimonials/Testimonials';
 import ContactUs from './components/ContactUs/ContactUs';
@@ -25,7 +25,11 @@ function App() {
       {active === "Testimonials" && <Testimonials />}
       {active === "Freebies" && <Freebies />}
       {active === "Enrollnow" && <Enrollnow />}
-      <Footer />
+      {active === "Index" && <Index />}
+      {active === "OurStory" && <OurStory />}
+      {active === "ContactUs" && <ContactUs />}
+      {active === "Terms" && <TermsOfUse />}
+      <Footer onChange={setActive} />
     </div>
   );
 }

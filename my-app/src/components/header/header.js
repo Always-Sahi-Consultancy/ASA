@@ -17,11 +17,11 @@ const Header = (props) => {
                 <div className="options" id="options">
                     <div className="navigate" id="navigation">
                         <div className="navigation_section">
-                            <div className="navigate__link"><a href="./">Home</a></div>
-                            <div className="navigate__link"><a href="./ourStory.php">ASA Story</a></div>
+                            <div className="navigate__link"><a onClick={() => props.onChange("Index")}>Home</a></div>
+                            <div className="navigate__link"><a onClick={() => props.onChange("OurStory")}>ASA Story</a></div>
                             <div className="navigate__link"><a onClick={() => props.onChange("Freebies")}>Freebies</a></div>
                             <div className="navigate__link"><a onClick={() => props.onChange("Testimonials")}>Testimonials</a></div>
-                            <div className="navigate__link"><a href="./contactUs.php">Contact us</a></div>
+                            <div className="navigate__link"><a onClick={() => props.onChange("ContactUs")}>Contact us</a></div>
                         </div>
                     </div>
                     <div className="login">
