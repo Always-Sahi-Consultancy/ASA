@@ -9,6 +9,9 @@ import ContactUs from './components/ContactUs/ContactUs';
 import Enrollnow from './components/EnrollNow/Enrollnow';
 import Footer from './components/footer/Footer';
 import TermsOfUse from './components/Terms/TermsOfUse';
+import EarningDiscalimer from './components/Terms/EarningDisclaimer';
+import PrivacyPolicy from './components/Terms/PrivacyPolicy';
+import RefundPolicy from './components/Terms/RefundPolicy';
 
 function App() {
   const [active, setActive] = useState("");
