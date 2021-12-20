@@ -20,7 +20,7 @@ function PhotoTestContainer(){
         {
             id:'p3',
             name:'Prashant',
-            text:"The information I got was helpful for me… a way of teaching is good....N ur notes are also goodyour course will help me for getting jobs n internships",
+            text:"The information I got was helpful for me… a way of teaching is good....N ur notes are also goodyour course will help me for getting jobs n internships                         ",
             rating:'4.5/5',
         
         }
