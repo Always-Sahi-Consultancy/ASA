@@ -25,22 +25,23 @@ const Join = () => {
             </div>
 
             <div className="hitPoints">
-            <ul className="points">
-                <li>   You see people making good financial Source of Income. </li>
-                <li>  *You see People having the Freedom to Travel around, manage Finances & Explore their Life</li>
-                <li>  You want to make an effort, with some guidance & Support.</li>
-                <li>  You see people at different stages of life. </li>
-            </ul>
-        </div>
-        <div className="bigTextCol">
-            Then, you are nowhere far from them, you are just one step away from exploring the life of your Freedom. Freedom of Travelling to your Favourite places, freedom to make your own Identity, freedom to build your own empire. 
-        </div>
-        <div className="bigTextCol">
-            We at <b>Always Sahi Academy</b> aim to build a community, with the people like you & help you with proper training & guidance, becoming the pillar to support you with your dream & growing your Side hustle, with Step by Step training modules, handheld by the experts.
+                <ul className="points">
+                    <li>   You see people making good financial Source of Income. </li>
+                    <li>  *You see People having the Freedom to Travel around, manage Finances & Explore their Life</li>
+                    <li>  You want to make an effort, with some guidance & Support.</li>
+                    <li>  You see people at different stages of life. </li>
+                </ul>
+            </div>
+                <div className="bigTextCol">
+                    Then, you are nowhere far from them, you are just one step away from exploring the life of your Freedom. Freedom of Travelling to your Favourite places, freedom to make your own Identity, freedom to build your own empire. 
+                </div>
+                <div className="bigTextCol">
+                    We at <b>Always Sahi Academy</b> aim to build a community, with the people like you & help you with proper training & guidance, becoming the pillar to support you with your dream & growing your Side hustle, with Step by Step training modules, handheld by the experts.
+                </div>
+        
         </div>
         <div className="button2 buttonTrain">
             <button className="intro__show_how">give me a free training ! </button>
-        </div>
         </div>
         </div>
     );
