@@ -142,7 +142,12 @@
   align-content: center;
   height: 20vh;
 }
-
+/* #aissms:hover {
+  background: url();
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+} */
 /* Join us section */
 .join {
   display: grid;
@@ -247,7 +252,7 @@
   justify-content: center;
   align-items: center;
 }
-.features__points{
+.features__points {
   height: 48vh;
   padding: 0;
   justify-content: center;
@@ -268,42 +273,42 @@
   text-align: center;
 }
 
-.meet{
+.meet {
   margin: 8% 10%;
 }
 
-.meet__sections{
+.meet__sections {
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns: auto auto;
 }
 
-.meet__image{
+.meet__image {
   width: 30vw;
   height: auto;
   margin: 8% 0;
 }
 
-.meet__details{
+.meet__details {
   padding: 0 10%;
 }
 
-.meet__title{
+.meet__title {
   font-size: 2.5rem;
   font-family: Bebas-Neue;
-  text-align:left;
+  text-align: left;
 }
 
-.meet__name{
-  font-family: CooperHewitt-Book ;
-  font-size: 1.6rem;
-}
-
-.meet__intro{
+.meet__name {
   font-family: CooperHewitt-Book;
   font-size: 1.6rem;
 }
 
-.meet_des{
+.meet__intro {
+  font-family: CooperHewitt-Book;
+  font-size: 1.6rem;
+}
+
+.meet_des {
   font-family: CooperHewitt-Light;
   font-size: 1.2rem;
   width: 90%;
