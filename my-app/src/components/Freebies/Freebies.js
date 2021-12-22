@@ -4,7 +4,12 @@ import Photo1 from '../../image/1.png'
 import Photo2 from '../../image/2.png'
 import Photo3 from '../../image/3.png'
 import Photo4 from '../../image/4.png'
+import { useEffect } from 'react';
 const Freebies = () => {
+
+    useEffect(() => {
+        document.title ="Always Sahi Academy | Freebies";
+    })
 
     const DummyContainers = [
         {

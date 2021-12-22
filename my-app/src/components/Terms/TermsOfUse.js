@@ -1,6 +1,12 @@
 import './website_policies.css';
+import { useEffect } from 'react';
 
 const TermsOfUse = () => {
+    
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Terms of Use";
+    })
+
     return (
         <div className="details">
             <div className="details__title">TERMS OF USE</div>

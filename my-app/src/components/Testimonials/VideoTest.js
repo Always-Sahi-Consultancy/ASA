@@ -1,5 +1,5 @@
 import './VideoTest.css';
-import video1 from './video/vd1.mp4';
+import video1 from './video';
 import Button from './Button';
 
 function VideoTest(props){

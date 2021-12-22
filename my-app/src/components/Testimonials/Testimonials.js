@@ -4,8 +4,13 @@ import HearFrom from "./HearFrom";
 import VideoTest from "./VideoTest";
 import PhotoTestContainer from "./PhotoTestContainer";
 import ScreenShots from "./ScreenShots";
+import { useEffect } from "react";
 
 const Testimonials = () => {
+
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Testimonials";
+    })
 
     const VideoInfo = [
         {

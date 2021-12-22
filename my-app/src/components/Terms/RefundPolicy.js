@@ -1,6 +1,12 @@
 import './website_policies.css';
+import { useEffect } from 'react';
 
 const RefundPolicy = () => {
+
+    useEffect(() => {
+        document.title ="Always Sahi Academy | Refund Policy";
+    })
+
     return (
         <div class="details">
             <div class="details__title">REFUND POLICY</div>

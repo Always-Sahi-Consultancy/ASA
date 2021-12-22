@@ -1,6 +1,10 @@
 import './website_policies.css';
+import { useEffect } from 'react';
 
 const PrivacyPolicy = () => {
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Pricacy Policy";
+    })
     return (
         <div class="details">
             <div class="details__title">Privacy Policy</div>

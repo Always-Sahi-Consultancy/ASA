@@ -3,8 +3,14 @@ import './ourStory_tab.css';
 import './ourStory_mobile.css';
 import our_story from "../../image/OurStroy.jpg";
 import OurStoryContent from './OurStoryContent';
+import { useEffect } from 'react';
 
 const OurStroy = () => {
+
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Our Story";
+    })
+
     const data = [
         "In the Middle of this Pandemic, when everything had shut down, Atharv was struck by the idea of building something online.",
         "He Started doing a Survey with the Corporates, House Makers & Students, to understand Who was affected the most due to this Pandemic?",

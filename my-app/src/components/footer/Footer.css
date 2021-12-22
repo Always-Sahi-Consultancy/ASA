@@ -1,8 +1,6 @@
 .footer {
   background: var(--skin);
   font-family: CooperHewitt-Light;
-  /* border: 2px solid red; */
-  height: 20vh;
 }
 
 .disclaimer {

@@ -1,6 +1,10 @@
 import './website_policies.css';
+import { useEffect } from 'react';
 
 const EarningDiscalimer = () => {
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Earning Disclaimer";
+    })
     return (
         <div class="details">
             <div class="details__title">Earning Disclaimer</div>
