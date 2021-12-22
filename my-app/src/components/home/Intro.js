@@ -17,7 +17,7 @@ const Intro = () => {
             </div>
         </div>
         <div className="intro__image">
-            <img src={Atharv_Sawant} alt="Atharv Sawant" class="intro__Atharv"></img>
+            <img src={Atharv_Sawant} alt="Atharv Sawant" className="intro__Atharv"></img>
         </div>
     </div>);
 };

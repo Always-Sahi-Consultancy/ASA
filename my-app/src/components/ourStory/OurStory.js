@@ -1,6 +1,7 @@
 import './ourStory.css';
 import './ourStory_tab.css';
 import './ourStory_mobile.css';
+import our_story from "../../image/OurStroy.jpg";
 import OurStoryContent from './OurStoryContent';
 
 const OurStroy = () => {
@@ -15,7 +16,7 @@ const OurStroy = () => {
     ];
     return (
         <div className="story">
-            <div className="story__image"></div>
+            <img src={our_story} className="story__image" alt="Our Story Cover"></img>
 
             <div className="story__container">
                 {data.map((detail) =>
