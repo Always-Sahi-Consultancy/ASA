@@ -1,12 +1,12 @@
 import './VideoTest.css';
-import video1 from './video';
 import Button from './Button';
+import ReactPlayer from 'react-player';
 
 function VideoTest(props){
     return(
         <div>
             <div className="video-test">
-            <video src={video1}controls="controls" className='video-test__video' />
+            <ReactPlayer url="https://youtu.be/dmTAFHi06-8" className='video-test__video' />
             <div className="video-test__text"><h3>{props.item[0].name}</h3><br></br> 
                 {props.item[0].text}
                 <br></br>

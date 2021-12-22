@@ -8,9 +8,9 @@
     margin: 5vh 30vh;
 }
 .video-test__video{
-    width:100%;
-    height: 45vh;
-    margin:2vh 5vh;
+    width: 100%;
+    height: 40vh;
+    margin:2vh 5vh; 
 }
 .video-test__text{
     font-size: 1.2rem;
