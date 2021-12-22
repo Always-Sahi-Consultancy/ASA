@@ -4,7 +4,6 @@ function FaqQuestion(props) {
 
     const [active, setActive] = useState(false);
 
-
     return (
         <div class="faq__questions" id={props.id}>
             <div class="faq__question">
