@@ -6,7 +6,7 @@ header {
   font-family: Bebas-Neue;
   /* background: #efefef; */
   transition: all 0.5s ease-in-out;
-  height: 10vh;
+  height: 12vh;
 }
 
 header:hover .navigate__link a:hover {
@@ -25,6 +25,7 @@ header:hover .navigate__link a:hover {
 .brand__image {
   width: 70%;
   height: auto;
+  overflow: hidden;
 }
 
 .hamburger {
@@ -128,18 +129,21 @@ header:hover .navigate__link a:hover {
   header {
     grid-template-columns: auto;
     background: var(--white);
-    height: 10vh;
+    /* height: 10vh; */
     position: fixed;
+    height: fit-content;
   }
 
   .brand {
     width: 90%;
+    height: fit-content;
   }
 
   .brand__section {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: fit-content;
   }
 
   .brand__image {
@@ -246,16 +250,19 @@ header:hover .navigate__link a:hover {
     grid-template-columns: auto;
     background: var(--white);
     padding: 6px 0;
-    height: 6vh;
+    /* height: 6vh; */
+    height: fit-content;
   }
 
   .brand {
     width: 90%;
+    height: fit-content;
   }
 
   .brand__section {
     display: flex;
     flex-direction: row;
+    height: fit-content;
   }
 
   .brand__image {

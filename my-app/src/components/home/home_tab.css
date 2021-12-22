@@ -17,283 +17,238 @@
     position: sticky;
     top: 0;
   }
-  
-  .intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 6vw; */
-    /* margin-right: 6vw; */
-    overflow: hidden;
+  .instant_focus{
+      width:100%;
+      padding: 6px;
+      position: sticky;
+      top: 0;
   }
-  
-  .intro__details {
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    width: 50%;
-    font-family: CooperHewitt-Book;
-    margin: 0vw 2vw;
+
+  .intro{
+      flex-direction:column-reverse;
+      height: auto;
+      margin: 1vh;
+      padding: 0;
   }
-  
-  .intro__company_title {
-    text-align: center;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5vh;
+
+  .intro__paragraphs{
+      width: auto;
+      z-index: 1;
   }
-  
-  .intro__company_name {
-    font-size: 4rem;
-    /* font-weight: bolder; */
-    font-family: Bebas-Neue;
+
+  .intro__image{
+      align-content: baseline;
+      width: 60%;
+      height: 100%;
+      padding-top: 10vh;
   }
-  
-  .intro__company_section {
-    font-size: 2rem;
-    font-family: Nickainley-Normal;
-    font-weight: bold;
-    text-align: right;
-    width: 90%;
+
+  .intro__Atharv{
+      width: 100%;
   }
-  
-  .intro__paragraphs {
-    width: 90%;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    margin-left: auto;
-    margin-right: auto;
+
+  .intro__details{
+      text-align:center;
+      width: 100%;
+      margin: 0px;
+      height: fit-content;
   }
-  
-  .intro__paragraph_1,
-  .intro__paragraph_2 {
-    justify-content: center;
-    line-height: 1.2rem;
-    font-size: 1.1rem;
-    font-family: CooperHewitt-Light;
-    margin: 1vh 0;
+
+  .intro__company_name{
+      width: 100%;
+      font-size:3.5rem;
   }
-  
-  .intro__button {
-    margin-left: 26%;
-    margin-right: auto;
-    margin-top: 10%;
-    padding: 0vh;
+  .intro__show_how{
+      font-size: 2.5rem;
   }
-  
-  .intro__show_how {
-    background-color: var(--light-blue);
-    border-radius: 50vh;
-    height: 7vh;
-    padding: 0vh 2vw;
-    font-weight: 200;
-    font-family: Bebas-Neue;
-    font-size: 2rem;
-    box-shadow: 2px 2px 1px black;
-    justify-self: center;
-    width: fit-content;
-    align-content: center;
-    transition: all;
-    transition-duration: 0.5s;
+  .intro__company_title{
+      margin-bottom:6vh;
+      width: 100%;
+      padding-top: 0;
   }
-  
-  .intro__show_how:hover {
-    box-shadow: 4px 4px 2px black;
+
+  .intro__comany_section{
+      width: 100%;
   }
-  
-  #intro__video {
-    height: 80vh;
-    scale: 0.2;
+
+  .intro__company{
+      font-size: 2rem;
+      font-weight: bolder;
   }
-  
-  .intro__image {
-    width: 60%;
-    margin: 0vh;
-    overflow: hidden;
-    height: fit-content;
+
+  .intro__paragraph_1, .intro__paragraph_2{
+      font-size: 1.3rem;
+      line-height: 2rem;
+      width: auto;
   }
-  .middle__image {
-    width: inherit;
-    /* overflow: hidden; */
+
+  .intro__button{
+      margin:10%;
+      align-items: center;
+      justify-content: center;
   }
-  
-  .intro__Atharv {
-    width: 100%;
-    height: 50%;
-    margin-top: 5vh;
-    justify-content: end;
+
+  /* Guest Section */
+  .guest{
+      grid-template-columns: auto;
+      height: fit-content;
+      margin-top: 1rem;
   }
-  
-  .guest {
-    background: var(--gray-light);
-    text-align: center;
+
+  .guest__main{
+      font-size: 1.7rem;
+      padding: 1vh;
   }
-  
-  .guest__main {
-    font-size: 2rem;
-    font-weight: bolder;
-    font-family: CooperHewitt-Book;
-    justify-items: center;
+
+  .guest__places{
+      grid-template-columns: auto;
   }
-  
-  .guest__places {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
-    width: auto;
-    margin: 0;
+
+  .guest__place{
+      font-size: 1.2rem;
+      height: 13vh;
+      width: auto;
+      margin: 0;
   }
-  
-  .guest__place {
-    justify-content: center;
-    align-content: center;
-    height: 10vh;
+
+  /*info section*/
+  .join{
+      grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
-  
-  /* Join us section */
-  .join {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1vw 5vw;
-    grid-template-columns: auto;
-    justify-content: center;
+  .join__images{
+      width: auto;
+      height: 45vh;
   }
-  .join__images {
-    width: auto;
-    height: 69vh;
-    overflow-y: hidden;
+  .join__bigText{
+      font-size: 1.4rem;
+      margin: 0;
   }
-  .join__tagline,
-  .page2__tagline {
-    align-content: center;
-    margin: 3vw;
-    padding: 0vw 2vw;
+  .join__tagline{
+      margin: 0;
+      padding-left: 5vh;
   }
-  .join__bigText,
-  .page2__bigText {
-    font-size: 2rem;
-    z-index: -1;
-    font-weight: bolder;
-    font-family: CooperHewitt-Bold;
-    color: var(--peach);
+  .line{
+      display: block;
   }
-  .align__center {
-    text-align: center;
+  /*note*/
+  .note{
+      font-size: 1rem;
+      background: white;
+      padding: 1vh 2vh;
+      margin-bottom: 3vh;
   }
-  .note {
-    background: var(--peach);
-    padding: 2vh 5vh;
-    font-size: 1rem;
-    font-family: CooperHewitt-Book;
-    margin-bottom: 10vh;
-    text-align: justify;
+  .intro__button2{
+      margin: 0;
+      margin-bottom: 1.3vh;
   }
-  .line {
-    height: 2px;
-    background: black;
-    border-radius: 20%;
-    margin: 5px 20px 5px 40px;
+  .page2__main{
+      margin: 1vh 3vh;
   }
-  .button2 {
-    text-align: center;
-    padding: 1vh;
-    font-family: Bebas-Neue;
+  .hit{
+      margin-bottom: 0vh;
   }
-  .headingText2 {
-    font-size: 2.3rem;
-    font-family: CooperHewitt-Book;
+  .headingText2{
+      font-size: 1.5rem;
+      margin: 0vh 5vh;
   }
-  .page2__main {
-    margin: 2vh 10vh;
+  .hitPoints{
+      margin: 5vh 10vh;
+      list-style: circle;
   }
-  .hit {
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    text-align: center;
+  .points li{
+      list-style-type: disc;
   }
-  .points {
-    font-size: 1.3rem;
-    line-height: 200%;
-    font-family: CooperHewitt-light;
+  .points{
+      font-size: 1.2rem;
+      line-height: 190%;
   }
-  .bigTextCol {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-top: 8vh;
-    font-family: CooperHewitt-Book;
+  .bigTextCol{
+      font-size: 1.2rem;
+      margin: 3vh 8vh;
+      font-family: CooperHewitt-Light;
+      text-align: center;
   }
-  .buttonTrain {
-    font-size: 2rem;
-    margin: 5vh 0vh;
-    font-family: Bebas-Neue;
+  .courseList{
+      font-size: 1rem;
+      line-height: 170%;
   }
-  .note2 {
-    height: 6vh;
-    background: var(--peach);
-    padding: 2vh 4vh;
-    font-size: 1.6rem;
-    font-family: CooperHewitt-Book;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+  .Clist{ 
+      margin: 2vh 2vh 2vh 4vh;
   }
-  .Clist {
-    padding: 2vh;
-    margin: 3vh 3vh 4vh 3vh;
+  .line{
+      display: block;
   }
-  .line {
-    display: none;
+  .join__bigText{
+      font-size:1.5rem;
   }
-  .courseList {
-    font-size: 2rem;
-    line-height: 170%;
-    font-family: CooperHewitt-Light;
-    list-style: none;
+  .page2__bigText{
+      font-size: 2rem;
+      z-index: -1;
+      font-weight: bolder;
+      font-family: CooperHewitt-Bold;
+      color: var(--peach);
   }
   .features {
     display: grid;
-    grid-template-columns: auto auto ;
-    margin: 0;
-  }
-  .img_fit {
-    height: 30vh;
-    width: auto;
-    object-fit: cover;
-    padding: 0vh;
+    grid-template-columns: auto auto auto;
+    margin: 0vh 2vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
   }
   .features__points{
-    display: flex;
-    flex-direction: column;
+    height: 21vh;
+    padding: 0;
     justify-content: center;
     align-items: center;
+    margin: 1vh;
   }
-  .feature__content {
-    justify-content: center;
-    align-content: center;
-    height: 35vh;
-    margin: 0vw 2vw;
+  .img_fit {
+    height: 8vh;
+    object-fit: cover;
+    width: auto;
   }
   .features__text {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 700;
-    text-align: center;
     font-family: CooperHewitt-Light;
+    margin: 0vh;
+    text-align: center;
   }
-  .last__point{
-    display: grid;
-    grid-template-rows: auto;
+
+  .meet{
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .meet__sections{
+      grid-template-columns: auto;
+  }
+  .meet__section{
     justify-content: center;
     align-items: center;
-    margin-left: 100%;
+  }
+  .meet__title{
+      text-align: center;
+  }
+
+  .meet__image{
+      width: 60vw;
+      margin-left: 20%;
+  }
+
+  .meet__des{
+      width: auto;
   }
 }
+
+
 @media only screen and (max-width: 1024px) {
   .intro__details {
     margin: 0px 0vw;

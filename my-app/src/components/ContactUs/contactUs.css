@@ -32,15 +32,17 @@
   width: 40%;
   border-radius: 2px;
   margin: 2% 1%;
-  height: 20px;
+  height: 40px;
+  padding: 2px 5px;
   box-shadow: 1px 1px 2px var(--gray);
   border: 0px;
 }
 
 .contact__message {
   width: 90%;
-  margin: 2% 2%;
+  margin: 1% 1%;
   height: 45px;
+  padding: 2px 5px;
 }
 
 .contact__submit {
@@ -59,6 +61,7 @@
   border-radius: 6px;
   text-align: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .contact__mail,
@@ -73,11 +76,13 @@
 }
 
 .contact__instagram_image {
-  width: 4vw;
-  height: auto;
-  margin: 1vw;
+  width: 2vw;
+  /* height: auto; */
+  margin: 0.5vw;
 }
-
+.contact__media {
+  /* border: 2px solid red; */
+}
 .contact__link {
   text-decoration: none;
 }
@@ -119,17 +124,20 @@
 
 .faq__show:hover {
   border: solid var(--light-blue) 1px;
+  cursor: pointer;
 }
 
 .faq__answer {
   background: var(--gray-light);
-  font-size: 1.2rem;
-  padding: 2% 1%;
-  display: none;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  overflow: hidden;
   border-radius: 6px;
-}
-.faq_answer {
-  display: block;
 }
 .faq__breif,
 .faq__details {
