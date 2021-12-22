@@ -1,18 +1,38 @@
 /* Large Screen */
 @media screen and (max-width:426px){
     .story__image{
-        height: 50vh;
+        position: relative;
+        height: 35%;
         background: var(--peach);
         margin-bottom: 1vh;
+        margin-top: 5vh;
+        top: 5vh;
     }
     .story__container{
-        padding:2vh 7vh;
-        font-size: 1.3rem;
+        padding:5vh 5vh;
+        font-size: 1rem;
         font-family: CooperHewitt-Book;
         line-height: 130%;
         text-align: justify;
+        z-index: -1;
     }
     p{
         margin-top: 3vh;
+    }
+}
+@media screen and (max-height:360px) {
+    .story__image{
+        position: relative;
+        height: 35%;
+        margin-bottom: 1vh;
+        margin-top: 5vh;
+        top: 8vh;
+    }
+    .story__container{
+        padding:13vh 15vh;
+        font-size: 1rem;
+        font-family: CooperHewitt-Book;
+        line-height: 130%;
+        text-align: justify;
     }
 }
