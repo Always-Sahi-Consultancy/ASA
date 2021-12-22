@@ -251,26 +251,30 @@
   height: 55vh;
   width: auto;
   padding: 0;
+  justify-content: center;
+  align-content: center;
 }
 .img_fit {
   height: 38vh;
   width: auto;
-  padding: 2vh;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid green;
 }
 .feature__content {
   justify-content: center;
   align-content: center;
-  height: 48vh;
-  object-fit: scale-down;
-  margin: 2vh;
+  height: 38vh;
+  border: 2px solid red;
 }
 .features__text {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: CooperHewitt-Light;
-  margin: 0vh 5vh;
+  margin: 5vh 0vh;
   text-align: center;
+  border: 2px solid black;
 }
 
 .meet{
