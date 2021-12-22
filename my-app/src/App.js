@@ -18,12 +18,6 @@ function App() {
 
   return (
     <div>
-      {/* { <Testimonials />} */}
-      {/* <Freebies /> */}
-      {/* <Index /> */}
-      {/* <OurStroy /> */}
-      {/* <ContactUs /> */}
-      {/* <TermsOfUse />   */}
       <Header onChange={setActive} />
       {active === "Testimonials" && <Testimonials />}
       {active === "Freebies" && <Freebies />}

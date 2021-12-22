@@ -4,16 +4,11 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   font-family: Bebas-Neue;
-  background: #efefef;
+  /* background: #efefef; */
   transition: all 0.5s ease-in-out;
   height: 10vh;
 }
-header:hover {
-  background: white;
-}
-header:hover .navigate__link a {
-  color: black;
-}
+
 header:hover .navigate__link a:hover {
   color: var(--peach);
 }
@@ -93,7 +88,7 @@ header:hover .navigate__link a:hover {
 
 .navigate__link a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
