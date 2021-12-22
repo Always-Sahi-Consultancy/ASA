@@ -1,6 +1,15 @@
 import Logo from "../../image/AS_Logo_Transparent.png";
 import './header.css';
 const Header = (props) => {
+    const navigator = function() {
+        const nav_bar = document.getElementById("options");
+        const hamburger = document.getElementsByClassName('hamburger__bar');
+        nav_bar.classList.toggle('open');
+        for(var i=0;i<3;i++){
+            hamburger[i].classList.toggle(`hamburger__${i+1}`);
+        }
+    };
+
     return (
         <div>
             <header>
@@ -8,7 +17,7 @@ const Header = (props) => {
                     <div className="brand">
                         <img src={Logo} className="brand__image" alt="Logo" />
                     </div>
-                    <button className="hamburger" id="side_bar">
+                    <button className="hamburger" id="side_bar" onClick={navigator}>
                         <div className="hamburger__bar"></div>
                         <div className="hamburger__bar"></div>
                         <div className="hamburger__bar"></div>
