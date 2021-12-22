@@ -199,7 +199,7 @@
 }
 .hit {
   margin-top: 7vh;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
   text-align: center;
 }
 .points {
@@ -243,42 +243,33 @@
 .features {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin: 0vh 20vh;
+  margin: 0vh 25vh;
   justify-content: center;
   align-items: center;
 }
 .features__points{
-  height: 55vh;
-  width: auto;
+  height: 48vh;
   padding: 0;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  margin: 5vh 5vh;
 }
 .img_fit {
-  height: 38vh;
+  height: 25vh;
+  object-fit: cover;
   width: auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  border: 2px solid green;
-}
-.feature__content {
-  justify-content: center;
-  align-content: center;
-  height: 38vh;
-  border: 2px solid red;
+  margin: 3vh;
 }
 .features__text {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: CooperHewitt-Light;
-  margin: 5vh 0vh;
+  margin: 0vh;
   text-align: center;
-  border: 2px solid black;
 }
 
 .meet{
-  margin: 12% 10%;
+  margin: 8% 10%;
 }
 
 .meet__sections{

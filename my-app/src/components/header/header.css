@@ -6,7 +6,7 @@ header {
   font-family: Bebas-Neue;
   /* background: #efefef; */
   transition: all 0.5s ease-in-out;
-  height: 10vh;
+  height: 12vh;
 }
 
 header:hover .navigate__link a:hover {
@@ -25,6 +25,7 @@ header:hover .navigate__link a:hover {
 .brand__image {
   width: 70%;
   height: auto;
+  overflow: hidden;
 }
 
 .hamburger {

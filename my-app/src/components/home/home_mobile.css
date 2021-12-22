@@ -121,27 +121,28 @@
         margin: 1vh 3vh;
     }
     .hit{
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
     }
     .headingText2{
         font-size: 1.5rem;
         margin: 3vh 2vh;
     }
     .hitPoints{
-        margin: 5vh 2vh;
+        margin: 5vh 3vh;
+        list-style: circle;
+    }
+    .points li{
+        list-style-type: disc;
     }
     .points{
         font-size: 1rem;
-        line-height: 170%;
-        font-weight: 600;
+        line-height: 190%;
     }
     .bigTextCol{
         font-size: 1rem;
         margin: 3vh 4vh;
+        font-family: CooperHewitt-Light;
         text-align: justify;
-    }
-    .hit{
-        margin: 2vh 2vh;
     }
     .courseList{
         font-size: 1rem;
@@ -163,19 +164,24 @@
         font-family: CooperHewitt-Bold;
         color: var(--peach);
     }
+    .features__points{
+      height: 48vh;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      margin: 2vh;
+    }
+    .img_fit {
+      height: 28vh;
+      width: auto;
+      margin: 3vh;
+    }
     .features{
         display: grid;
-        grid-template-columns: auto;
-        margin: 0vh 5vh;   
-    }
-    .feature__content{
-            justify-content: center;
-            align-content: center;
-            height: 45vh;
-            margin:-10px 0px;
+        grid-template-columns: auto; 
     }
     .features__text{
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: 700;
         font-family: CooperHewitt-Light;
         margin: 0vh 5vh;
