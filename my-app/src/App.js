@@ -13,7 +13,10 @@ import EarningDiscalimer from './components/Terms/EarningDisclaimer';
 import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 
+<link rel="shortcut icon" href="../image"></>
+
 function App() {
+
   const [active, setActive] = useState("Index");
 
   return (
