@@ -119,17 +119,20 @@
 
 .faq__show:hover {
   border: solid var(--light-blue) 1px;
+  cursor: pointer;
 }
 
 .faq__answer {
   background: var(--gray-light);
-  font-size: 1.2rem;
-  padding: 2% 1%;
-  display: none;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  overflow: hidden;
   border-radius: 6px;
-}
-.faq_answer {
-  display: block;
 }
 .faq__breif,
 .faq__details {
