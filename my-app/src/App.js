@@ -14,6 +14,7 @@ import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 
 function App() {
+
   const [active, setActive] = useState("Index");
 
   return (
