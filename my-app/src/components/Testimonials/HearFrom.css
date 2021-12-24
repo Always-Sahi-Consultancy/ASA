@@ -5,3 +5,13 @@
   font-weight: 500;
   margin-top: 4vh;
 }
+@media screen and (max-width:468px) {
+  .HearFrom {
+    font-family: CooperHewitt-Light;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 4vh;
+  }
+  
+}
