@@ -1,5 +1,5 @@
 import "./Footer.css";
-import "./FooterPosition.css";
+// import "./FooterPosition.css";
 
 function Footer(props) {
   return (
