@@ -7,6 +7,7 @@ header {
   /* background: #efefef; */
   transition: all 0.5s ease-in-out;
   height: 12vh;
+  z-index: 10;
 }
 
 header:hover .navigate__link a:hover {
@@ -55,7 +56,7 @@ header:hover .navigate__link a:hover {
 }
 
 .hamburger__3 {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(2px, -2px);
   transform-origin: 35%;
 }
 

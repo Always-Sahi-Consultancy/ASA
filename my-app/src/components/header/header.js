@@ -1,14 +1,24 @@
 import Logo from "../../image/AS_Logo_Transparent.png";
 import './header.css';
 const Header = (props) => {
-    const navigator = function() {
-        const nav_bar = document.getElementById("options");
+
+    const navigator = function () {
+        let nav_bar = document.getElementById("options");
         const hamburger = document.getElementsByClassName('hamburger__bar');
         nav_bar.classList.toggle('open');
-        for(var i=0;i<3;i++){
-            hamburger[i].classList.toggle(`hamburger__${i+1}`);
+        for (var i = 0; i < 3; i++) {
+            hamburger[i].classList.toggle(`hamburger__${i + 1}`);
         }
     };
+
+    const closeHeader = () => {
+        let nav_bar = document.getElementById("options");
+        const hamburger = document.getElementsByClassName('hamburger__bar');
+        nav_bar.classList.remove("open");
+        for (var i = 0; i < 3; i++) {
+            hamburger[i].classList.remove(`hamburger__${i + 1}`);
+        }
+    }
 
     return (
         <div>
@@ -26,11 +36,11 @@ const Header = (props) => {
                 <div className="options" id="options">
                     <div className="navigate" id="navigation">
                         <div className="navigation_section">
-                            <div className="navigate__link"><a onClick={() => props.onChange("Index")}>Home</a></div>
-                            <div className="navigate__link"><a onClick={() => props.onChange("OurStory")}>ASA Story</a></div>
-                            <div className="navigate__link"><a onClick={() => props.onChange("Freebies")}>Freebies</a></div>
-                            <div className="navigate__link"><a onClick={() => props.onChange("Testimonials")}>Testimonials</a></div>
-                            <div className="navigate__link"><a onClick={() => props.onChange("ContactUs")}>Contact us</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Index")}>Home</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("OurStory")}>ASA Story</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Freebies")}>Freebies</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Testimonials")}>Testimonials</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("ContactUs")}>Contact us</a></div>
                         </div>
                     </div>
                     <div className="login">
