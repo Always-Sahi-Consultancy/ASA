@@ -18,3 +18,22 @@
   height: 60vh;
   margin: 3vh;
 }
+@media screen and (max-width:468px){
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ScreenShots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--skin);
+  }
+  .ScreenShots__img {
+    width: auto;
+    height: 60vh;
+  } 
+}

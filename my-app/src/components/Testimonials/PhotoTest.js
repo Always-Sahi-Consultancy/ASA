@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function PhotoTest(props) {
   return (
-    <div>
+    <div className="upper-container">
       <div className="container">
         <div className="card">
           <div className="main-container">
