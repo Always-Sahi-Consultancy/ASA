@@ -45,7 +45,7 @@ const Header = (props) => {
                     </div>
                     <div className="login">
                         <div className="login__button">Student&nbsp;Login</div>
-                        <div className="login__button"><a onClick={() => props.onChange("Enrollnow")}>Enroll&nbsp;Now</a></div>
+                        <div onClick={closeHeader} className="login__button"><a onClick={() => props.onChange("Enrollnow")}>Enroll&nbsp;Now</a></div>
                     </div>
                 </div>
             </header>
