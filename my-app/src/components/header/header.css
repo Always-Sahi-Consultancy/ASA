@@ -7,6 +7,7 @@ header {
   /* background: #efefef; */
   transition: all 0.5s ease-in-out;
   height: 12vh;
+  z-index: 10;
 }
 
 header:hover .navigate__link a:hover {
@@ -55,7 +56,7 @@ header:hover .navigate__link a:hover {
 }
 
 .hamburger__3 {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(2px, -2px);
   transform-origin: 35%;
 }
 
@@ -155,6 +156,14 @@ header:hover .navigate__link a:hover {
     width: 10%;
     border: 0px;
   }
+  .hamburger__bar {
+    height: 8px;
+    margin: 4px 0;
+  }
+  .hamburger__3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+    transform-origin: 35%;
+  }
 
   .options {
     grid-template-columns: auto;
@@ -164,14 +173,15 @@ header:hover .navigate__link a:hover {
     transition-duration: 1s;
     background: var(--white);
     height: 100vh;
-    top: 6vh;
+    top: 7vh;
   }
 
   .navigate {
     padding: 2vh;
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
     z-index: 1;
+    /* border: 2px solid red; */
     min-height: 70vh;
     background: var(--white);
   }
@@ -233,9 +243,12 @@ header:hover .navigate__link a:hover {
     position: relative;
     width: 100%;
     display: grid;
+    /* border: 2px solid red; */
     grid-template-columns: auto;
+    align-items: center;
     justify-content: center;
-    bottom: 0px;
+    bottom: 0vh;
+    height: 10vh;
   }
 
   .login__button {
@@ -271,8 +284,9 @@ header:hover .navigate__link a:hover {
 
   .hamburger {
     display: block;
-    width: 10%;
+    width: 12%;
     border: 0px;
+    /* height: 6px; */
   }
 
   .hamburger__1 {
@@ -362,6 +376,8 @@ header:hover .navigate__link a:hover {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    align-items: center;
+    height: 15vh;
   }
 
   .login__button {
