@@ -39,3 +39,25 @@
   }
   
 }
+@media screen and (max-width:768px) {
+  .head-div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+  }
+  .head-div__1 {
+    font-size: 4.5rem;
+    /* font-weight: bolder; */
+    font-family: Bebas-Neue;
+    color: var(--peach);
+  }
+  
+  .head-div__2 {
+    font-size: 2.5rem;
+    font-family: Nickainley-Normal;
+    font-weight: bold;
+    margin-left: 25vh;
+  }
+  
+}

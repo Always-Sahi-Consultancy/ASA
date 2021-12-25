@@ -37,3 +37,26 @@
     height: 60vh;
   } 
 }
+@media screen and (max-width:768px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ScreenShots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+    padding: 1vh;
+    border: 10px solid var(--skin);
+  }
+  .ScreenShots__img {
+    width: auto;
+    height: 40vh;
+    margin: 1vh;
+  }
+  
+}
