@@ -172,17 +172,16 @@ header:hover .navigate__link a:hover {
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-duration: 1s;
     background: var(--white);
-    height: 100vh;
+    height: 130vw;
     top: 7vh;
   }
 
   .navigate {
     padding: 2vh;
     width: 100vw;
-    height: 50vh;
-    z-index: 1;
+    height: 100%;
+    z-index: -1;
     /* border: 2px solid red; */
-    min-height: 70vh;
     background: var(--white);
   }
 
@@ -195,6 +194,7 @@ header:hover .navigate__link a:hover {
     align-items: left;
     width: inherit;
     /* padding: 16px; */
+    height: 90%;
   }
 
   .navigate__link {
@@ -204,7 +204,7 @@ header:hover .navigate__link a:hover {
 
   .navigate__link a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 
   .navigate__link a:hover {
@@ -248,13 +248,14 @@ header:hover .navigate__link a:hover {
     align-items: center;
     justify-content: center;
     bottom: 0vh;
-    height: 10vh;
+    height: 15vh;
   }
 
   .login__button {
     width: 90vw;
     align-content: center;
-    margin: 1px;
+    margin-top: 23px;
+    font-size: 1.6rem;
   }
 }
 
@@ -290,11 +291,14 @@ header:hover .navigate__link a:hover {
   }
 
   .hamburger__1 {
-    transform-origin: 20%;
+    transform-origin: 25%;
   }
 
   .hamburger__3 {
-    transform-origin: 20%;
+    transform-origin: 25%;
+  }
+  .hamburger__bar{
+    height: 6px;
   }
 
   .options {
