@@ -31,4 +31,13 @@
   .faq__question {
     grid-template-columns: auto 12%;
   }
+  .faq__question span{
+    font-size: 1rem;
+  }
+  .faq__brief{
+    font-size: 1rem;
+  }
+  .faq__answer{
+    font-size: 1rem;
+  }
 }

@@ -205,3 +205,108 @@
   }
   
 }
+@media screen and (max-width:768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .upper-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+  }
+  .container {
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 32vh;
+    width:25vh;
+    margin: 1vh 2vh;
+  }
+  .container .card {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 95%;
+    height:90%;
+    border: 5px solid var(--skin);
+    border-radius: 10%;
+  }
+  .container:hover {
+    height: 62vh;
+  }
+  .container .card .main-container {
+    position: relative;
+    width: 48vh;
+    height: 36vh;
+    padding: 2vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container .card .content {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: auto;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  .container .card:hover .content {
+    height: 44vh;
+    /* padding: 2vh; */
+    transition: 1.5s ease;
+  }
+  .container .card:hover .main-container__image {
+    margin-top: -3vh;
+  }
+  .main-container__image {
+    width: auto;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .main-container__name {
+    font-size: 1.4rem;
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 700;
+    height: 24%;
+    font-family: CooperHewitt-Book;
+  }
+  .content__text {
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: CooperHewitt-light;
+    font-weight: 500;
+    position: relative;
+    width: auto;
+    height: 90%;
+    background-color: white;
+    /* top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
+  }
+  .main-container__rating {
+    font-size: 1.3rem;
+    top: 75%;
+    width: auto;
+    height: 23%;
+    font-family: CooperHewitt-Book;
+    text-align: center;
+  }
+  
+}
