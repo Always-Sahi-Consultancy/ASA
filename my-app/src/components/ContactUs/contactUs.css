@@ -56,18 +56,28 @@
 .contact__info {
   background-color: var(--gray-light);
   align-self: center;
+  justify-content:center;
   display: flex;
   flex-direction: column;
-  border-radius: 6px;
-  text-align: center;
-  align-items: center;
-  margin-left: 10px;
+  border-radius: 1vw;
+  text-align: left;
+  justify-items: center;
+  margin-left: 1vw;
+}
+
+.contact__icons{
+  width: 2vw;
+  height: auto;
+  margin: 0 6px;
 }
 
 .contact__mail,
 .contact__phone,
 .contact__social {
   margin: 6% 0;
+  display: flex;
+  flex-direction: row;
+  overflow:visible;
 }
 
 .contact__social {

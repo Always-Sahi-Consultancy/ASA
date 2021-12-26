@@ -27,7 +27,7 @@ const Join = () => {
             <div className="hitPoints">
                 <ul className="points">
                     <li>   You see people making good financial Source of Income. </li>
-                    <li>  *You see People having the Freedom to Travel around, manage Finances & Explore their Life</li>
+                    <li>  You see People having the Freedom to Travel around, manage Finances & Explore their Life</li>
                     <li>  You want to make an effort, with some guidance & Support.</li>
                     <li>  You see people at different stages of life. </li>
                 </ul>

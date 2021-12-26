@@ -15,6 +15,15 @@
     margin: 1vh 0;
   }
 
+  .contact__info{
+    margin: 0px;
+  }
+  .contact__icons{
+    width: 6vw;
+    height: auto;
+    margin: 2px;
+  }
+
   .contact__instagram_image {
     width: 30px;
   }

@@ -35,7 +35,7 @@ function Footer(props) {
           </div>
         </div>
         <div className="copyright">
-          &copy; Always Sahi Solution Pvt. Ltd.{" "}
+          &copy; Always Sahi Solutions Pvt. Ltd.{" "}
           <script>document.write(getFullYear())</script> - All Rights Reserved |
           &copy; ALL RIGHTS RESERVED
         </div>

@@ -3,6 +3,23 @@
         grid-template-columns: auto;
         height:fit-content;
     }
+
+    .contact__info{
+        height:fit-content;
+        text-align: center;
+        margin: 0px;
+        border-radius: 1vw;
+        margin-top: 1vh;
+    }
+    .contact__mail,
+    .contact__phone,
+    .contact__social{
+        height:fit-content;
+        margin: 2%;
+    }
+    .contact__icons{
+        width: 4vw;
+    }
     .faq{
         margin: 2% 10%;
     }
