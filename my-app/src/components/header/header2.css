@@ -1,0 +1,134 @@
+header{
+    display: grid;
+    grid-template-columns: 20% 60% 10%;
+    /* background-color: var(--gray-light); */
+}
+
+.header__hamburger{
+    display: none;
+}
+
+.header__bar{
+    background-color: black;
+}
+
+.header__brand{
+    padding: 2vh;
+}
+
+.header__brandLogo{
+width: 100%; 
+}
+
+.header__navigate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.header__Login{
+    background-color: var(--red);
+    align-self: center;
+    justify-content: space-around;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 20%;
+}
+
+.header__LoginButton{
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+.header__slider{
+    display: none;
+}
+
+@media screen and (max-width: 426px) {
+    header{
+        grid-template-columns: 12% 66% 20%;
+        height: 12vh;
+    }
+    .header__hamburger{
+        display: block;
+        justify-content: space-around;
+        align-self: center;
+        background-color: var(--white);
+        border: 0px;
+    }
+
+    .header__bar{
+        background-color: var(--black);
+        width: 80%;
+        height: 1vh;
+        margin: 1vh;
+        border-radius: 2px;
+    }
+ 
+    .header__brand{
+
+    }
+    
+    .header__brandLogo{
+        width: 56%;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .header__navigate{
+        display: none;
+    }
+
+    .header__Login{
+        margin: 0;
+        background-color: var(--white);
+        border: solid var(--gray) 1px;
+    }
+
+    .header__LoginButton{
+        padding: 0 1vh;
+        color: var(--gray);
+    }
+
+    .header__sliderToggle{
+        left: 0px;
+    }
+
+    .header__slider{
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        background-color: var(--white);
+        text-align: left;
+        height: 100vh;
+        left: -100%;
+        z-index: 1;
+    }
+
+    .header__joinUs{
+        background-color: var(--red);
+        font-family: Roboto;
+        border-radius: 10px;
+        color: var(--white);
+        font-size: 1.2rem;
+        margin: 2vh 1vw 1vh 1vw;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header__sliderOption{
+        
+    }
+
+    .header__option{
+     padding: 1vh 1vw;
+    }
+}

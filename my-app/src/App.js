@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './css/root.css'
+// import './css/root.css'
+import './css/root2.css';
 import Header from './components/header/header';
 import Index from './components/home/Index';
 import OurStory from './components/ourStory/OurStory';
@@ -13,25 +14,30 @@ import EarningDiscalimer from './components/Terms/EarningDisclaimer';
 import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Popular Trainings/Landing';
+import Header2 from './components/header/header2';
 
 function App() {
 
   const [active, setActive] = useState("Landing");
 
   return (
+    // <div>
+    //   <Header onChange={setActive} />
+    //   {active === "Testimonials" && <Testimonials />}
+    //   {active === "Freebies" && <Freebies />}
+    //   {active === "Enrollnow" && <Enrollnow />}
+    //   {active === "Landing" && <Landing />}
+    //   {active === "OurStory" && <OurStory />}
+    //   {active === "ContactUs" && <ContactUs />}
+    //   {active === "Terms" && <TermsOfUse />}
+    //   {active === "PrivacyPolicy" && <PrivacyPolicy />}
+    //   {active === "EarningDiscalimer" && <EarningDiscalimer />}
+    //   {active === "RefundPolicy" && <RefundPolicy />}
+    //   <Footer onChange={setActive} />
+    // </div>
     <div>
-      <Header onChange={setActive} />
-      {active === "Testimonials" && <Testimonials />}
-      {active === "Freebies" && <Freebies />}
-      {active === "Enrollnow" && <Enrollnow />}
-      {active === "Landing" && <Landing />}
-      {active === "OurStory" && <OurStory />}
-      {active === "ContactUs" && <ContactUs />}
-      {active === "Terms" && <TermsOfUse />}
-      {active === "PrivacyPolicy" && <PrivacyPolicy />}
-      {active === "EarningDiscalimer" && <EarningDiscalimer />}
-      {active === "RefundPolicy" && <RefundPolicy />}
-      <Footer onChange={setActive} />
+      <Header2 onChange={setActive} />
+      {active === "Home" && <Landing />}
     </div>
   );
 }
