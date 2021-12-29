@@ -12,10 +12,11 @@ import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
 import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
+import Landing from './components/Landing/Popular Trainings/Landing';
 
 function App() {
 
-  const [active, setActive] = useState("Index");
+  const [active, setActive] = useState("Landing");
 
   return (
     <div>
@@ -23,7 +24,7 @@ function App() {
       {active === "Testimonials" && <Testimonials />}
       {active === "Freebies" && <Freebies />}
       {active === "Enrollnow" && <Enrollnow />}
-      {active === "Index" && <Index />}
+      {active === "Landing" && <Landing />}
       {active === "OurStory" && <OurStory />}
       {active === "ContactUs" && <ContactUs />}
       {active === "Terms" && <TermsOfUse />}

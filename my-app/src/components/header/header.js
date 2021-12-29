@@ -36,7 +36,7 @@ const Header = (props) => {
                 <div className="options" id="options">
                     <div className="navigate" id="navigation">
                         <div className="navigation_section">
-                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Index")}>Home</a></div>
+                            <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Landing")}>Home</a></div>
                             <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("OurStory")}>ASA Story</a></div>
                             <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Freebies")}>Freebies</a></div>
                             <div onClick={closeHeader} className="navigate__link"><a onClick={() => props.onChange("Testimonials")}>Testimonials</a></div>
