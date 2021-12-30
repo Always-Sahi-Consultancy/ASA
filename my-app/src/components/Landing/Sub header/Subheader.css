@@ -1,16 +1,21 @@
 .Poster {
-  height: 50vh;
+  height: 75vh;
+  position: relative;
+}
+.Poster_img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
 }
 .Subheader {
-  height: 60vh;
+  height: 90vh;
   width: 100%;
-  border: 2px solid red;
 }
 .College {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
   background: rgba(229, 229, 229, 0.95);
 }
 .College_Training {
@@ -25,8 +30,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: auto;
+  border-right: 2px solid black;
+  padding-right: 4vw;
 }
+
 .College_heading {
   color: rgba(109, 104, 117, 0.8);
+}
+.subheader_nav {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(109, 104, 117, 0.2);
+}
+.nav_tabs {
+  width: 20%;
+  height: 100%;
+}
+.nav_tabs a {
+  height: 100%;
+  width: 80%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
