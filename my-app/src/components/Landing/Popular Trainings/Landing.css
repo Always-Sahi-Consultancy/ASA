@@ -12,14 +12,14 @@
   border: 2px solid red;
 }
 .Popular_main_box {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   height: 65vh;
   padding: 2vh;
   overflow: hidden;
   /* flex-wrap: wrap; */
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
 }
 .Popular_heading {
   font-size: 2rem;
@@ -27,8 +27,12 @@
 .Popular_Box {
   width: 280px;
   height: 400px;
+  display: none;
   border: 2px solid red;
   margin: 2vh;
+}
+.Popular_Box.active {
+  display: block;
 }
 .Popular_Box img {
   height: 100%;

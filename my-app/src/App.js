@@ -37,7 +37,7 @@ function App() {
     // </div>
     <div>
       <Header2 onChange={setActive} />
-      {active === "Home" && <Landing />}
+      {active === "Landing" && <Landing />}
     </div>
   );
 }
