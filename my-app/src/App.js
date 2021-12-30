@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './css/root.css'
+// import './css/root.css'
 import './css/root2.css';
-import Header from './components/header/header';
+// import Header from './comp1onents/header/header';
 import Index from './components/home/Index';
 import OurStory from './components/ourStory/OurStory';
 import Freebies from './components/Freebies/Freebies';

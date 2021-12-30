@@ -1,0 +1,46 @@
+.founder{
+    margin: 2vh 0;
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+.founder__image{
+    height: auto;
+}
+
+.founder__atharv{
+    width: 25vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 50% 30% ;
+}
+
+.founder__details{
+    height: auto;
+    margin-left: 10vw;
+}
+
+.founder__name{
+    font-size: 2.5rem;
+    font-family: Roboto;
+}
+
+.founder__message{
+    font-size:1.5rem;
+    margin-right: 6vw;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 426px){
+    .founder{
+        grid-template-columns: auto;
+    }
+
+    .founder__atharv{
+        width: 60vw;
+    }
+
+    .founder__details{
+        margin-right: 2vw;
+    }
+}

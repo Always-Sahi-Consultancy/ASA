@@ -1,0 +1,16 @@
+.notice{
+    margin:10vh 0;
+}
+
+.notice__box{
+    margin: 0 10vw;
+    background-color: var(--black);
+    height: 80vh;
+}
+
+.notice__title{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-family: Roboto;
+    text-align: center;
+}
