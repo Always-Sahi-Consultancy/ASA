@@ -10,9 +10,7 @@ const Landing = () => {
             <Subheader />
             <Popular_main />
             <Explore />
-            <Popular_main/>
-            <Explore/>
-            <ExploreNew/>
+            <ExploreNew />
         </div>
     )
 };
