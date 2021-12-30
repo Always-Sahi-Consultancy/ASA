@@ -1,50 +1,49 @@
 .main-container{
     position: relative;
     border: 2px solid red;
-    height: auto;
+    height: 100vh;
 }
 .main-container img{
-    position: absolute;
     width: 100%;
-    height: 70vh;
+    height:100%;
 }
 .explore__text{
-    width: 751px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 4rem;
     color: #6D6875;
     text-align: start; 
     z-index: 1;
 
 }
 .explore__button{
-    width: 240px;
-    height: 69px;
+    width: 30vh;
+    height: 10vh;
     background: #EB6A6A;
     border-radius: 10px;
     z-index: 1;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
+    margin: 8vh;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .main-container__content{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: transparent;
-    width: 70%;
-    padding-top: 20vh;
+    width: 60%;
+    top:20vh;
+    left: 8vh;
     z-index: 10;
 }
