@@ -1,0 +1,9 @@
+.NewContainer{
+    margin: 12vh;
+}
+.NewContainer__head{
+    font-family: Bebas-Neue;
+    font-weight: normal;
+    font-size: 3.5rem;
+    color: #000000;
+}
