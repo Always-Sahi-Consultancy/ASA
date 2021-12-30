@@ -1,4 +1,5 @@
 import './explore.css';
+import './explore_mobile.css';
 import Model from '../../../image/model-g2c5c98e33_19202.jpg';
 
 
