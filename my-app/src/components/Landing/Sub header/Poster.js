@@ -14,11 +14,11 @@ const Poster = () => {
                 <div className="nav_tabs"><a href="#">buisness and Marketing</a></div>
             </div>
             <div className="Poster_Search">
-                <h2 className="Search_heading">Find the perfect course for your resume</h2>
+                <div className="Search_heading">Find the perfect course for your resume</div>
                 <form className="Search_section">
                     <img className="search_symbol" src={Search}></img>
                     <input className="Search_bar" type="text" placeholder='Try "graphic designing"' />
-                    <a className="Search" href="#">Search</a>
+                    <a className="Search" href="#">search</a>
                 </form>
             </div>
         </div>
