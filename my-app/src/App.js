@@ -13,7 +13,7 @@ import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
 import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
-import Landing from './components/Landing/Popular Trainings/Landing';
+import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 
 function App() {
