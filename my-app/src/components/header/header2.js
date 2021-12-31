@@ -8,6 +8,10 @@ const Header2 = () => {
         const hamburger = document.getElementById('header__hamburger');
         slider.classList.toggle('header__sliderToggle');
         hamburger.classList.toggle('header__hamburgerActive');
+        const ham_bar = document.getElementsByClassName('header__bar');
+        ham_bar[0].classList.toggle('header__bar1');
+        ham_bar[1].classList.toggle('header__bar2');
+        ham_bar[2].classList.toggle('header__bar3');
     }
     return (
     <header>
