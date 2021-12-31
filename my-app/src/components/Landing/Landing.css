@@ -63,8 +63,10 @@
 }
 .Popular_course_name {
   color: white;
+  font-family: Bebas-Neue;
 }
 .Popular_course_sub {
   color: white;
+  font-family: Roboto;
 }
 /* Popular Training Ends */
