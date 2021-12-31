@@ -2,6 +2,8 @@
     margin: 2vh 0;
     display: grid;
     grid-template-columns: 25% auto;
+    background-color: rgba(235,106,106,0.05);
+    
 }
 
 .founder__image{

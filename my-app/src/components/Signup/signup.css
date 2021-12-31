@@ -1,0 +1,13 @@
+.signup{
+    height: 60vh;
+    width: 20vw;
+    position: fixed;
+    z-index: 30;
+    background: var(--white);
+}
+
+.signup__title{
+    color: var(--gray);
+    font-family: "Roboto";
+    font-size: 1.5rem;
+}

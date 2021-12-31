@@ -15,6 +15,7 @@ import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
+import Signup from './components/Signup/Signup';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
+      <Signup />
       <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />}
     </div>

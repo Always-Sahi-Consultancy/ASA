@@ -25,10 +25,10 @@ const Header2 = () => {
             <img src={AsLogo} alt="AS LOGO" className="header__brandLogo"></img>
         </div>
         <div className="header__navigate">
-            <div className="header__options">Home</div>
-            <div className="header__options">Freebies</div>
-            <div className="header__options">Testimonials</div>
-            <div className="header__options">About Us</div>
+            <div className="header__options"><a href=""></a>Home</div>
+            <div className="header__options"><a href=""></a>Freebies</div>
+            <div className="header__options"><a href=""></a>Testimonials</div>
+            <div className="header__options"><a href=""></a>About Us</div>
         </div>
         <div className="header__Login">
             <div className="header__LoginButton">
