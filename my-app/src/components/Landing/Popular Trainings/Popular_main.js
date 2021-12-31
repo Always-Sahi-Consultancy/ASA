@@ -51,7 +51,7 @@ const Popular_main = () => {
             SubName: "Prepare for Financial Years"
         }
     ];
-    let setting = {
+    let settings = {
         infinite: true,
         lazyload: true,
         slidesToShow: 4,
@@ -60,12 +60,26 @@ const Popular_main = () => {
         centerMode: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        SlidesToScroll: 1
+        SlidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint:769,
+                settings:{
+                    slidesToShow:2,
+                }
+            },
+            {
+                breakpoint:426,
+                settings:{
+                    slidesToShow:1,
+                }
+            }
+        ]
     };
     return (
         <div className="Popular">
             <h2 className="Popular_heading">POPULAR TRAINING</h2>
-            <Slider {...setting}>
+            <Slider {...settings}>
                 {Popular_Courses.map((course) => {
                     return (
                         <div className="Popular_Box">
