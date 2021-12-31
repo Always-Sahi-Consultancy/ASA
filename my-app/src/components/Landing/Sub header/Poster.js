@@ -11,10 +11,10 @@ const Poster = () => {
                 <div className="nav_tabs"><a href="#">Coding & Web Development</a></div>
                 <div className="nav_tabs"><a href="#">Graphics and Design</a></div>
                 <div className="nav_tabs"><a href="#">Video and Animation</a></div>
-                <div className="nav_tabs"><a href="#">buisness and Marketing</a></div>
+                <div className="nav_tabs"><a href="#">Buisness and Marketing</a></div>
             </div>
             <div className="Poster_Search">
-                <div className="Search_heading">Find the perfect course for your resume</div>
+                <div className="Search_heading">Find the perfect <span>course</span> for your resume</div>
                 <form className="Search_section">
                     <img className="search_symbol" src={Search}></img>
                     <input className="Search_bar" type="text" placeholder='Try "graphic designing"' />
