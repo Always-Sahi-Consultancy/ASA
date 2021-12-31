@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import image1 from '../../../image/1.png';
-import image2 from '../../../image/2.png';
-import image3 from '../../../image/3.png';
-import image4 from '../../../image/4.png';
+import image1 from '../../../image/coding1.jpg';
+import image2 from '../../../image/prehistoric1.png';
+import image3 from '../../../image/account1.png';
+import image4 from '../../../image/taxation2.jpg';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import '../Landing.css';
 
@@ -26,19 +26,29 @@ const Popular_main = () => {
 
     const Popular_Courses = [
         {
-            Image: image1
+            Image: image1,
+            Name: "CODING AND WEB DEVELOPOMENT",
+            SubName: "Gain Problem solving skills"
         },
         {
-            Image: image2
+            Image: image2,
+            Name: "ANIMATION",
+            SubName: "Showcase your Imagination"
         },
         {
-            Image: image3
+            Image: image3,
+            Name: "FINANCIAL ACCOUNTING",
+            SubName: "Manage your Expenses"
         },
         {
-            Image: image2
+            Image: image1,
+            Name: "CODING AND WEB DEVELOPOMENT",
+            SubName: "Gain Problem solving skills"
         },
         {
-            Image: image4
+            Image: image4,
+            Name: "MASTER COURSE IN TAXATION",
+            SubName: "Prepare for Financial Years"
         }
     ];
     let setting = {
@@ -52,16 +62,6 @@ const Popular_main = () => {
         prevArrow: <PrevArrow />,
         SlidesToScroll: 1
     };
-    // const [active, setActive] = useState(0);
-    // const length = Popular_Courses.length;
-    // const prevSlide = () => {
-    //     setActive(active === 0 ? length - 1 : active - 1)
-    // }
-    // const nextSlide = () => {
-    //     setActive(active === length - 1 ? 0 : active + 1)
-    // }
-    // className = "Popular_main_box"
-    // className = "Popular_Box"
     return (
         <div className="Popular">
             <h2 className="Popular_heading">POPULAR TRAINING</h2>
@@ -70,6 +70,10 @@ const Popular_main = () => {
                     return (
                         <div className="Popular_Box">
                             <img src={course.Image} alt="courses" ></img>
+                            <div className="details">
+                                <div className="Popular_course_name">{course.Name}</div>
+                                <div className="Popular_course_sub">{course.SubName}</div>
+                            </div>
                         </div>
                     )
                 })}

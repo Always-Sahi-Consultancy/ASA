@@ -26,8 +26,13 @@
   margin-bottom: 5vh;
 }
 .Popular_Box {
-  width: 270px;
-  height: 400px;
+  width: 293px;
+  position: relative;
+  height: 444px;
+}
+.Popular_Box img {
+  transform: scale(0.8);
+  object-fit: cover;
 }
 .Popular_Box.active {
   display: block;
@@ -48,5 +53,16 @@
 .prev {
   left: -3%;
   top: 50%;
+}
+.details {
+  position: absolute;
+  top: 10vh;
+  left: 6vh;
+}
+.Popular_course_name {
+  color: white;
+}
+.Popular_course_sub {
+  color: white;
 }
 /* Popular Training Ends */
