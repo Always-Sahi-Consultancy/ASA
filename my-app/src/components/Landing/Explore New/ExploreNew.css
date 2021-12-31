@@ -1,13 +1,12 @@
 .NewContainer {
-  margin: 7vh 22vh;
+  margin: 7vh 30vh;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 0;
 }
 .NewContainer__head {   
   font-family: Bebas-Neue;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #000000;
 }
 .new_Container_main {
@@ -47,7 +46,7 @@
     padding: 0;
   }
   .NewContainer__head {   
-    font-family: CooperHewitt-Book;
+    font-family: Bebas-Neue;
     font-size: 1.5rem;
     color: #000000;
   }
