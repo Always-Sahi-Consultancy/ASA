@@ -6,7 +6,7 @@
   padding: 0;
 }
 .NewContainer__head {   
-  font-family: CooperHewitt-Book;
+  font-family: Bebas-Neue;
   font-size: 3rem;
   color: #000000;
 }
@@ -15,6 +15,28 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px) {
+  .NewContainer {
+    margin: 3vh 5vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .NewContainer__head {   
+    font-family: Bebas-Neue;
+    font-size: 2.5rem;
+    color: #000000;
+  }
+  .new_Container_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  } 
+  
 }
 @media screen and (max-width:426px) {
   .NewContainer {
@@ -26,7 +48,7 @@
   }
   .NewContainer__head {   
     font-family: CooperHewitt-Book;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000;
   }
   .new_Container_main {
@@ -35,25 +57,4 @@
     align-items: center;
     flex-wrap: wrap;
   } 
-}
-@media screen and (max-width:768px) {
-  .NewContainer {
-    margin: 3vh 5vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-  }
-  .NewContainer__head {   
-    font-family: CooperHewitt-Book;
-    font-size: 2.5rem;
-    color: #000000;
-  }
-  .new_Container_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  } 
-  
 }
