@@ -1,9 +1,15 @@
-.NewContainer{
-    margin: 12vh;
+/* .NewContainer {
+  border: 2px solid red;
+} */
+.NewContainer__head {   
+  font-family: Bebas-Neue;
+  font-weight: normal;
+  font-size: 3rem;
+  color: #000000;
 }
-.NewContainer__head{
-    font-family: Bebas-Neue;
-    font-weight: normal;
-    font-size: 3rem;
-    color: #000000;
+.new_Container_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
