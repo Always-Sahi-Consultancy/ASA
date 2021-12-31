@@ -16,8 +16,10 @@ const Poster = () => {
             <div className="Poster_Search">
                 <div className="Search_heading">Find the perfect <span>course</span> for your resume</div>
                 <form className="Search_section">
-                    <img className="search_symbol" src={Search}></img>
-                    <input className="Search_bar" type="text" placeholder='Try "graphic designing"' />
+                    <div className="Search_left">
+                        <img className="search_symbol" src={Search}></img>
+                        <input className="Search_bar" type="text" placeholder='Try "graphic designing"' />
+                    </div>
                     <a className="Search" href="#">search</a>
                 </form>
             </div>
