@@ -1,13 +1,121 @@
 .signup{
-    height: 60vh;
-    width: 20vw;
+    height: fit-content;
+    width: 24vw;
     position: fixed;
     z-index: 30;
     background: var(--white);
+    border-radius: 10px;
+    padding: 2vh 0;
+    border: solid var(--gray-light) 2px;
 }
 
 .signup__title{
-    color: var(--gray);
+    color: var(--black);
     font-family: "Roboto";
     font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.signup__component{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 1vw auto;
+    border-radius: solid var(--gray) 2px;
+    border-radius: 6px;
+    font-family: "Roboto";
+    padding: 1vh 0;
+}
+
+.signup__image{
+    width: 2vw;
+}
+
+.signup__logo{
+    width: 100%;
+}
+
+#facebook{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.signup__platform{
+    text-align: left;
+    padding: 1vh 1vw;
+}
+
+.signup__alternative{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.signup__bar{
+    width: 40%;
+    height: 2px;
+    background-color: var(--gray-light);
+    align-self: center;
+}
+
+.singup__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__email{
+    width: 80%;
+    margin: auto 10%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+}
+
+.signup__submit{
+    width: 80%;
+    background-color: var(--red);
+    border: solid var(--red) 2px;
+    border-radius: 6px;
+    padding: 1vh 0;
+    margin: 1vh 10%;
+}
+
+.signup__message{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 2vh 0;
+    padding: 1vh 0;
+}
+
+.signup__option{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 2vh 0;
+}
+
+.signup__span{
+    color:var(--red);
+}
+
+.signup__hr{
+    width: 88%;
+    margin: auto 6%;
+}
+
+.signup__blur{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
