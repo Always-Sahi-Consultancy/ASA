@@ -8,9 +8,34 @@ import Apple from  '../../image/Apple.png';
 const Signup = () => {
     const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},
     {'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "classes" : ""},
-    {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "classes" : ""}]
+    {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "classes" : ""}];
+
+    const esc = (e) => {
+        if(e.target.classList[0]=="signup__blur"){
+            console.log("inside");
+            e.target.classList.add("signup__hide");
+        }
+        console.log(e);
+    }
+
+    let state = 1;
+    window.addEventListener('keydown', (e)=>{
+        const escape = document.getElementsByClassName("signup__blur");
+        if(e.keyCode == '27'){
+            escape[0].classList.forEach(element => {
+                if(element == 'signup__hide'){
+                    state = 0;
+                    return;
+                }     
+            });
+            if(state==1){
+                escape[0].classList.add("signup__hide");
+            };
+        }
+        })
+
     return (
-        <div className='signup__blur'>
+        <div className='signup__blur' onClick={esc} onKeyDown={esc}>
         <div className='signup'>
             <div className='signup__title'>Join Always Sahi</div>
             {data.map((content) => <SignupComponent name={content.name} logo={content.logo} link={content.link} Content={content.Content} ids={content.ids} />)}
