@@ -43,4 +43,12 @@
     .founder__details{
         margin-right: 2vw;
     }
+
+    .founder__name{
+        font-size: 2rem;
+    }
+    
+    .founder__message{
+        font-size: 1.1rem;
+    }
 }
