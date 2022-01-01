@@ -12,7 +12,7 @@
 .signup__title{
     color: var(--black);
     font-family: "Roboto";
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 900;
     text-align: center;
     padding: 2vh 0;
@@ -23,14 +23,17 @@
     display: flex;
     flex-direction: row;
     margin: 1vw auto;
-    border-radius: solid var(--gray) 2px;
+    border: solid var(--gray-600) 1px;
     border-radius: 6px;
     font-family: "Roboto";
     padding: 1vh 0;
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .signup__image{
     width: 2vw;
+    margin-left: 1vw;
 }
 
 .signup__logo{
@@ -42,22 +45,39 @@
     color: var(--white);
 }
 
+#google, #apple{
+    color: var(--gray);
+}
+
 .signup__platform{
-    text-align: left;
-    padding: 1vh 1vw;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .signup__alternative{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 80%;
+    margin: auto;
 }
 
 .signup__bar{
-    width: 40%;
+    width: 42%;
     height: 2px;
     background-color: var(--gray-light);
     align-self: center;
+}
+
+.signup__or{
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gray-600);
 }
 
 .singup__form{
@@ -71,6 +91,7 @@
     border: solid var(--gray-light) 1px;
     border-radius: 2px;
     padding: 1vh 0;
+    font-family: "Roboto";
 }
 
 .signup__submit{
@@ -80,15 +101,20 @@
     border-radius: 6px;
     padding: 1vh 0;
     margin: 1vh 10%;
+    color: var(--white);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .signup__message{
     color: var(--gray);
     text-align: center;
     font-weight: 700;
-    font-size: 0.8rem;
-    margin: 2vh 0;
+    font-size: 0.9rem;
+    margin: 1vh auto;
     padding: 1vh 0;
+    width: 80%;
 }
 
 .signup__option{
@@ -97,10 +123,12 @@
     font-weight: 400;
     font-size: 0.8rem;
     margin: 2vh 0;
+    font-family: "Roboto";
 }
 
 .signup__span{
     color:var(--red);
+    z-index: 1;
 }
 
 .signup__hr{
@@ -121,4 +149,35 @@
 
 .signup__hide{
     display: none;
+}
+
+@media screen and (max-width:426px){
+    .signup{
+        width: 90vw;
+    }
+
+    .signup__component{
+        padding: 0.6vh 1vw;
+        margin: 1vh auto;
+    }
+
+    .signup__image{
+        width: 10vw;
+
+    }
+
+    .signup__logo{
+        /* padding:1vh 0; */
+    }
+
+    .signup__platform{
+        text-align: center;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .signup__message{
+        font-size: 0.8rem;
+    }
+
 }
