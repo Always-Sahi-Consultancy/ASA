@@ -45,7 +45,7 @@
   z-index: 4;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-device-width:768px) {
   .content {
     margin: 1vh;
     padding: 0;
@@ -84,7 +84,7 @@
   
 }
 
-@media (max-width: 426px) {
+@media (max-device-width: 426px) {
   .content {
     padding: 0;
     margin: 0;

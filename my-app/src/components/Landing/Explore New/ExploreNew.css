@@ -16,7 +16,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-device-width:768px) {
   .NewContainer {
     margin: 3vh 5vh;
     justify-content: center;
@@ -37,7 +37,7 @@
   } 
   
 }
-@media screen and (max-width:426px) {
+@media screen and (max-device-width:426px) {
   .NewContainer {
     margin: 3vh 3vh;
     justify-content: center;
