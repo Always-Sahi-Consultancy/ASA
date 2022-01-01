@@ -1,13 +1,184 @@
 .signup{
-    height: 60vh;
-    width: 20vw;
+    height: fit-content;
+    width: 24vw;
     position: fixed;
     z-index: 30;
     background: var(--white);
+    border-radius: 10px;
+    padding: 2vh 0;
+    border: solid var(--gray-light) 2px;
 }
 
 .signup__title{
-    color: var(--gray);
+    color: var(--black);
     font-family: "Roboto";
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.signup__component{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 1vw auto;
+    border: solid var(--gray-600) 1px;
+    border-radius: 6px;
+    font-family: "Roboto";
+    padding: 1vh 0;
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--white);
+    z-index: 21;
+}
+
+.signup__link{
+    text-decoration: none;
+}
+
+.signup__image{
+    width: 2vw;
+    margin-left: 1vw;
+}
+
+.signup__logo{
+    width: 100%;
+}
+
+#facebook{
+    background: var(--blue);
+    color: var(--white);
+}
+
+#google, #apple{
+    color: var(--gray);
+}
+
+.signup__platform{
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.signup__alternative{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.signup__bar{
+    width: 42%;
+    height: 2px;
+    background-color: var(--gray-light);
+    align-self: center;
+}
+
+.signup__or{
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gray-600);
+}
+
+.singup__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__email{
+    width: 80%;
+    margin: auto 10%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+    font-family: "Roboto";
+}
+
+.signup__submit{
+    width: 80%;
+    background-color: var(--red);
+    border: solid var(--red) 2px;
+    border-radius: 6px;
+    padding: 1vh 0;
+    margin: 1vh 10%;
+    color: var(--white);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.signup__message{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 1vh auto;
+    padding: 1vh 0;
+    width: 80%;
+}
+
+.signup__option{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 2vh 0;
+    font-family: "Roboto";
+}
+
+.signup__span{
+    color:var(--red);
+    text-decoration: none;
+}
+
+.signup__blur{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup__hide{
+    display: none;
+}
+
+@media screen and (max-width:426px){
+    .signup{
+        width: 90vw;
+    }
+
+    .signup__component{
+        padding: 0.6vh 1vw;
+        margin: 1vh auto;
+    }
+
+    .signup__image{
+        width: 10vw;
+
+    }
+
+    .signup__logo{
+        /* padding:1vh 0; */
+    }
+
+    .signup__platform{
+        text-align: center;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .signup__message{
+        font-size: 0.8rem;
+    }
+
 }
