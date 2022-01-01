@@ -326,7 +326,7 @@
   .Search_heading {
     font-size: 2.5rem;
     line-height: 50px;
-    height: 15vh;
+    height: auto;
     padding: 0;
     overflow-y: hidden;
     margin-bottom: 10vh;
