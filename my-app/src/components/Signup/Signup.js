@@ -15,7 +15,6 @@ const Signup = () => {
             console.log("inside");
             e.target.classList.add("signup__hide");
         }
-        // e.preventDefault();
     }
 
     let state = 1;
@@ -47,7 +46,7 @@ const Signup = () => {
             <SignUpForm />
             <div className='signup__message'>By Joining I agree to receive emails from Always Sahi .</div>
             <hr className='signup__hr'></hr>
-            <div className='signup__option'>Already a member? <a herf="random.html" className='signup__span'>Sign in</a></div>
+            <div className='signup__option'>Already a member? <a href="#" className='signup__span'>Sign in</a></div>
         </div>
         </div>
         
