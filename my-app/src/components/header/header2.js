@@ -44,7 +44,6 @@ const Header2 = () => {
                 <div className="header__option">Home</div>
                 <div className="header__option">Freebies</div>
                 <div className="header__option">Testimonials</div>
-                <div className="header__option">Gallery</div>
                 <div className="header__option">Contact Us</div>
                 <div className="header__option">About Us</div>
             </div>
