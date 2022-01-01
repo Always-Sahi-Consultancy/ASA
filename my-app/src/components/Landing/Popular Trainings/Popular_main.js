@@ -4,6 +4,8 @@ import image1 from '../../../image/coding1.jpg';
 import image2 from '../../../image/prehistoric1.png';
 import image3 from '../../../image/account1.png';
 import image4 from '../../../image/taxation2.jpg';
+import image5 from '../../../image/video-editing-services.png';
+import image6 from '../../../image/entrepreneur.png';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import '../Landing.css';
 
@@ -41,14 +43,19 @@ const Popular_main = () => {
             SubName: "Manage your Expenses"
         },
         {
-            Image: image1,
-            Name: "CODING AND WEB DEVELOPOMENT",
-            SubName: "Gain Problem solving skills"
-        },
-        {
             Image: image4,
             Name: "MASTER COURSE IN TAXATION",
             SubName: "Prepare for Financial Years"
+        },
+        {
+            Image: image5,
+            Name: "VIDEO EDITING",
+            SubName: "Gain Problem solving skills"
+        },
+        {
+            Image: image6,
+            Name: "BUSINESS AND FREELANCE",
+            SubName: "Gain Problem solving skills"
         }
     ];
     let settings = {
@@ -61,17 +68,17 @@ const Popular_main = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         SlidesToScroll: 1,
-        responsive:[
+        responsive: [
             {
-                breakpoint:769,
-                settings:{
-                    slidesToShow:2,
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
                 }
             },
             {
-                breakpoint:426,
-                settings:{
-                    slidesToShow:1,
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
         ]
