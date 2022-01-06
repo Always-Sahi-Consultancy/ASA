@@ -16,6 +16,7 @@ import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 import Signup from './components/Signup/Signup';
+import Header_Dash from './components/Dashboard/Header/Header_Dash';
 
 function App() {
 
@@ -37,9 +38,10 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
-      <Signup />
+      <Header_Dash />
+      {/* <Signup />
       <Header2 onChange={setActive} />
-      {active === "Landing" && <Landing />}
+      {active === "Landing" && <Landing />} */}
     </div>
   );
 }
