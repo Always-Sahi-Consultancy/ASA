@@ -1,0 +1,234 @@
+.register{
+    width: 22vw;
+    position: absolute;
+    top: 0.1vh;
+    left: 133vh;
+    z-index: 30;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 2vh 0;
+    border: solid var(--gray-light) 2px;
+}
+
+.register__title{
+    color: var(--black);
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.register__component{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 1vw auto;
+    border: solid var(--gray-600) 1px;
+    border-radius: 6px;
+    font-family: "Roboto";
+    padding: 1vh 0;
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--white);
+    z-index: 21;
+}
+
+.register__link{
+    text-decoration: none;
+}
+
+.register__image{
+    width: 1vw;
+    margin-left: 1vw;
+}
+
+.register__logo{
+    width: 100%;
+}
+
+#facebook{
+    background: var(--blue);
+    color: var(--white);
+}
+
+#google, #apple{
+    color: var(--gray);
+}
+
+.register__platform{
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.register__alternative{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.register__bar{
+    width: 42%;
+    height: 2px;
+    background-color: var(--gray-light);
+    align-self: center;
+}
+
+.register__or{
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-600);
+}
+
+.register__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register__email{
+    width: 80%;
+    margin-left: 5%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+    font-family: "Roboto";
+}
+.register__password{
+    width: 80%;
+    margin-left: 5%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+    font-family: "Roboto";
+}
+.register__name{
+    width: 90%;
+    margin: auto 10%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+    font-family: "Roboto";
+}
+.register__nameL{
+    width: 100%;
+    margin: auto 10%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 2px;
+    padding: 1vh 0;
+    font-family: "Roboto";
+}
+.register__flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.register__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.register__label{
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 1vh 2vh;
+}
+.register__submit{
+    width: 80%;
+    background-color: var(--red);
+    border: solid var(--red) 2px;
+    border-radius: 6px;
+    padding: 1vh 0;
+    margin: 1vh 10%;
+    color: var(--white);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.register__message{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 1vh auto;
+    padding: 1vh 0;
+    width: 80%;
+}
+
+.register__option{
+    color: var(--gray);
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin:0;
+    font-family: "Roboto";
+}
+
+.register__span{
+    color:var(--red);
+    text-decoration: none;
+}
+.register__main-image{
+    object-fit: fill;
+}
+.register__main-component{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.register__main-component_heading{
+    width: 68%;
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    font-family: Bebas-Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 115px;
+    align-items: flex-end; 
+    color: white;
+}
+.register__main-component_heading span{
+    color: #eb6a6a;
+}
+
+@media screen and (max-width:426px){
+    .register{
+        width: 90vw;
+    }
+
+    .register__component{
+        padding: 0.6vh 1vw;
+        margin: 1vh auto;
+    }
+
+    .register__image {
+        width: 10vw;
+
+    }
+
+    /* .register__logo{
+        /* padding:1vh 0; 
+    } */
+
+    .register__platform{
+        text-align: center;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .register__message{
+        font-size: 0.8rem;
+    }
+
+}

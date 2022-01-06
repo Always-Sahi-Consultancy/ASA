@@ -17,10 +17,11 @@ import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 import Signup from './components/Signup/Signup';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
+import RegisterMain from './components/Register/RegisterMain';
 
 function App() {
 
-  const [active, setActive] = useState("Landing");
+  // const [active, setActive] = useState("Landing");
 
   return (
     // <div>
@@ -38,9 +39,10 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
-      <Header_Dash />
-      {/* <Signup />
-      <Header2 onChange={setActive} />
+      {/* <Header_Dash /> */}
+      {/* <Signup /> */}
+      <RegisterMain/>
+      {/* <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />} */}
     </div>
   );
