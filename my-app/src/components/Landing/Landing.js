@@ -5,6 +5,7 @@ import Subheader from './Sub header/Subheader';
 import ExploreNew from './Explore New/ExploreNew';
 import Notice from './Notice/Notice';
 import Founder from './Founder/Founder';
+import Freebies from './Freebies/Freebies';
 
 const Landing = () => {
     return (
@@ -13,6 +14,7 @@ const Landing = () => {
             <Popular_main />
             <Explore />
             <ExploreNew />
+            <Freebies />
             <Notice />
             <Founder />
         </div>

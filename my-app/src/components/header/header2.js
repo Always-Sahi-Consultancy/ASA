@@ -2,7 +2,7 @@ import React from "react";
 import AsLogo from '../../image/AS_Logo_Transparent.png';
 import './header2.css';
 
-const Header2 = () => {
+const Header2 = (props) => {
     const displayMenu = () => {
         const slider = document.getElementById('header__slider');
         const hamburger = document.getElementById('header__hamburger');
@@ -26,10 +26,10 @@ const Header2 = () => {
             <img src={AsLogo} alt="AS LOGO" className="header__brandLogo"></img>
         </div>
         <div className="header__navigate">
-            <a href="#" className="header__link"><div className="header__options">Home</div></a>
-            <a href="#" className="header__link"><div className="header__options">Freebies</div></a>
-            <a href="#" className="header__link"><div className="header__options">Testimonials</div></a>
-            <a href="#" className="header__link"><div className="header__options">About Us</div></a>
+            <a onClick={() => props.onChange("Landing")} className="header__link"><div className="header__options">Home</div></a>
+            <a onClick={() => props.onChange("Freebies")} className="header__link"><div className="header__options">Freebies</div></a>
+            <a onClick={() => props.onChange("Testimonials")} className="header__link"><div className="header__options">Testimonials</div></a>
+            <a onClick={() => props.onChange("AboutUs")} className="header__link"><div className="header__options">About Us</div></a>
         </div>
         <div className="header__Login">
             <a href="#" className="signup__link">
