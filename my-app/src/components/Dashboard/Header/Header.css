@@ -100,7 +100,9 @@
   top: 100%;
   display: none;
   width: 15vw;
+  background-color: white;
   border: 2px solid #c4c4c4;
+  z-index: 100;
 }
 .profile_links {
   font-family: Roboto;
@@ -111,6 +113,9 @@
   text-decoration: none;
   color: rgba(109, 104, 117, 1);
   display: block;
+}
+.profile-inner-dropdown {
+  display: none;
 }
 .profile-inner-dropdown li {
   list-style-type: none;
@@ -149,6 +154,42 @@
 #offer_courses {
   display: inline-block;
 }
+.header_main_tabs {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .manage_dropdown {
   font-size: 12px;
+}
+.Cart_box {
+  border: 1px solid #c4c4c4;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  background: white;
+  align-items: center;
+  display: none;
+}
+
+.cart_link {
+  position: relative;
+}
+.cart_msg {
+  margin-bottom: 2vh;
+}
+.cart_button {
+  padding: 5px 10px;
+  background-color: #eb6a6a;
+  border-radius: 10px;
+}
+.cart_link:hover ~ .Cart_box {
+  display: block;
+}
+.Cart_box:hover {
+  display: block;
 }
