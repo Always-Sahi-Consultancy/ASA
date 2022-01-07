@@ -10,16 +10,18 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 .register {
   width: 22vw;
   position: absolute;
   top: 0.1vh;
-  left: 133vh;
+  left: 140vh;
   z-index: 30;
   background: var(--white);
   border-radius: 10px;
-  padding: 2vh 0;
+  margin: 8vh 0;
+  padding: 0;
   border: solid var(--gray-light) 2px;
 }
 
@@ -44,7 +46,7 @@
   font-weight: 700;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--white);
-  z-index: 21;
+  z-index: 1;
 }
 
 .register__link {
@@ -200,8 +202,8 @@
   width: 68%;
   position: absolute;
   z-index: 30;
-  left: 0;
-  top: 0;
+  left: 10vh;
+  top: 3vh;
   font-family: Bebas-Neue;
   font-style: normal;
   font-weight: normal;
@@ -215,17 +217,51 @@
 }
 
 @media screen and (max-width: 426px) {
-  .register {
-    width: 90vw;
-  }
+    .container {
+        height: 100vh;
+        width: auto;
+        margin: 0;
+      }
+      .register__main-component_heading {
+        width: 100%;
+        position: absolute;
+        z-index: 30;
+        left: 3vh;
+        top: 3vh;
+        font-size: 2rem;
+        line-height: 40px;
+      }
+      .register {
+        width: 75vw;
+        position: absolute;
+        top: 0;
+        left:0;
+        margin: 16vh 7vh;
+        z-index: 30;
+        background: var(--white);
+        border-radius: 10px;
+        padding: 0;
+        border: solid var(--gray-light) 2px;
+      }
+      .register__label {
+        font-size: 0.8rem;
+        font-family: Roboto;
+        font-weight: 500;
+        margin: 0.3vh 2vh;
+      }
+      .register__main-component {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
 
   .register__component {
-    padding: 0.6vh 1vw;
-    margin: 1vh auto;
+      font-size: 0.4rem;
+    padding: 0.3vh 1vw;
   }
 
   .register__image {
-    width: 10vw;
+    width: 5vw;
   }
 
   /* .register__logo{
@@ -235,10 +271,11 @@
   .register__platform {
     text-align: center;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   .register__message {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin: 0;
   }
 }
