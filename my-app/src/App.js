@@ -39,9 +39,9 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
-      {/* <Header_Dash /> */}
+      <Header_Dash />
       {/* <Signup /> */}
-      <RegisterMain/>
+      <RegisterMain />
       {/* <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />} */}
     </div>
