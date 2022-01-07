@@ -18,6 +18,7 @@ import Header2 from './components/header/header2';
 import Signup from './components/Signup/Signup';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
+import Footer2 from './components/Footer2/footer2';
 
 function App() {
 
@@ -39,11 +40,12 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
-      <Header_Dash />
+      {/* <Header_Dash /> */}
       {/* <Signup /> */}
-      <RegisterMain />
+      {/* <RegisterMain /> */}
       {/* <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />} */}
+      <Footer2/>
     </div>
   );
 }
