@@ -1,9 +1,10 @@
 .Header {
-  height: 10vh;
+  height: 11vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  /* padding: 10px 0px; */
 }
 .header_hamburger {
   height: 8vh;
@@ -41,7 +42,7 @@
   padding: 0.5rem;
 }
 .header-right {
-  width: 35%;
+  width: 23%;
   height: 100%;
   display: flex;
 }
@@ -53,24 +54,24 @@
   position: relative;
 }
 .offer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -2vw;
 }
 .offer label {
   color: white;
   background: orange;
   padding: 2px 5px;
   border-radius: 6px;
-  margin-right: 5px;
+  margin-left: 10px;
 }
 .cart {
-  height: 6vh;
+  height: 7vh;
 }
 .header_main a {
   text-decoration: none;
-  color: var(--gray);
+  /* color: var(--gray); */
 }
 .Header_profile {
   width: 20%;
@@ -79,6 +80,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.Header_icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile_photo {
@@ -159,6 +166,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #6d6875;
 }
 .manage_dropdown {
   font-size: 12px;
@@ -186,10 +194,55 @@
   padding: 5px 10px;
   background-color: #eb6a6a;
   border-radius: 10px;
+  color: white;
 }
 .cart_link:hover ~ .Cart_box {
   display: block;
 }
 .Cart_box:hover {
   display: block;
+}
+#offer_main_courses {
+  position: relative;
+  color: #6d6875;
+  margin-left: 2px;
+}
+.offer_main_tab {
+  display: flex;
+}
+.offer_tab {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: 30vw;
+  display: none;
+  height: 60vh;
+  border: 1px solid #c4c4c4;
+}
+.offer_tab_box {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+.offer_left {
+  width: 50%;
+  border-right: 1px solid #c4c4c4;
+}
+.offer_right {
+  width: 50%;
+}
+/* .offer_left_options {
+  border: 2px solid green;
+} */
+.offer_left_link {
+  display: block;
+  padding: 6px 8px;
+}
+.offer_left_link:hover {
+  background-color: rgba(235, 106, 106, 0.14);
+  color: #eb6a6a;
 }
