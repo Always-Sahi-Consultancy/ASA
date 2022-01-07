@@ -13,6 +13,7 @@ const Header2 = () => {
         ham_bar[1].classList.toggle('header__bar2');
         ham_bar[2].classList.toggle('header__bar3');
     }
+    
     return (
     <header>
         <div className="header__section">

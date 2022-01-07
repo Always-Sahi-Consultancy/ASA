@@ -1,0 +1,195 @@
+.Header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.header_hamburger {
+  height: 8vh;
+  width: 8vh;
+  display: none;
+  overflow: hidden;
+  padding: 4px;
+  align-items: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.header_icon_bar {
+  width: 90%;
+  height: 8px;
+  background-color: black;
+  margin: 2px 0px;
+  transition: all 0.5s ease-in-out;
+}
+.ham #header_icon_1 {
+  transform: translate(3px, 6px) rotate(-45deg);
+}
+.ham #header_icon_2 {
+  display: none;
+}
+.ham #header_icon_3 {
+  transform: translate(3px, -5px) rotate(45deg);
+}
+.header_com_name {
+  width: auto;
+  height: 100%;
+}
+.header_com_img {
+  height: 10vh;
+  padding: 0.5rem;
+}
+.header-right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+}
+.header_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  position: relative;
+}
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -2vw;
+}
+.offer label {
+  color: white;
+  background: orange;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+.cart {
+  height: 6vh;
+}
+.header_main a {
+  text-decoration: none;
+  color: var(--gray);
+}
+.Header_profile {
+  width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile_photo {
+  height: 5vh;
+  width: 5vh;
+  border: 1px solid var(--gray);
+  object-fit: contain;
+  padding: 2px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#profile_dropdown {
+  text-decoration: none;
+  color: var(--gray);
+}
+.Profile_dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  width: 15vw;
+  background-color: white;
+  border: 2px solid #c4c4c4;
+  z-index: 100;
+}
+.profile_links {
+  font-family: Roboto;
+  margin: 1vh 0;
+}
+.profile_links a {
+  font-family: Roboto;
+  text-decoration: none;
+  color: rgba(109, 104, 117, 1);
+  display: block;
+}
+.profile-inner-dropdown {
+  display: none;
+}
+.profile-inner-dropdown li {
+  list-style-type: none;
+}
+.manage_dropdown {
+  color: rgba(109, 104, 117, 1);
+  text-decoration: none;
+}
+.Profile_upper {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 1vh;
+}
+.Profile_middle {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 1vh;
+}
+.Profile_lower {
+  padding: 1vh;
+}
+.username {
+  font-size: 18px;
+  color: #6d6875;
+}
+.user_email {
+  font-size: 12px;
+}
+.My_Progress,
+.Edit_Profile,
+.View_Dashboard,
+.Help_center,
+.My_Progress,
+.Manage_account {
+  font-size: 14px;
+}
+.Manage_account a,
+#offer_courses {
+  display: inline-block;
+}
+.header_main_tabs {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manage_dropdown {
+  font-size: 12px;
+}
+.Cart_box {
+  border: 1px solid #c4c4c4;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  background: white;
+  align-items: center;
+  display: none;
+}
+
+.cart_link {
+  position: relative;
+}
+.cart_msg {
+  margin-bottom: 2vh;
+}
+.cart_button {
+  padding: 5px 10px;
+  background-color: #eb6a6a;
+  border-radius: 10px;
+}
+.cart_link:hover ~ .Cart_box {
+  display: block;
+}
+.Cart_box:hover {
+  display: block;
+}

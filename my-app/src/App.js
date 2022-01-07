@@ -16,10 +16,12 @@ import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 import Signup from './components/Signup/Signup';
+import Header_Dash from './components/Dashboard/Header/Header_Dash';
+import RegisterMain from './components/Register/RegisterMain';
 
 function App() {
 
-  const [active, setActive] = useState("Landing");
+  // const [active, setActive] = useState("Landing");
 
   return (
     // <div>
@@ -37,9 +39,11 @@ function App() {
     //   <Footer onChange={setActive} />
     // </div>
     <div>
-      <Signup />
-      <Header2 onChange={setActive} />
-      {active === "Landing" && <Landing />}
+      <Header_Dash />
+      {/* <Signup /> */}
+      <RegisterMain />
+      {/* <Header2 onChange={setActive} />
+      {active === "Landing" && <Landing />} */}
     </div>
   );
 }
