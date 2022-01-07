@@ -1,15 +1,39 @@
-.story__image{
-        height: auto;
-        background: url("../../image/OurStroy.jpg");
-        margin-bottom: 5vh;
-        width: 100%;
+.story__image {
+  height: auto;
+  background: url("../../image/OurStroy.jpg");
+  margin-bottom: 5vh;
+  width: 100%;
 }
-.story__container{
-        padding:2vh 30vh;
-        font-size: 1.5rem;
-        font-family: CooperHewitt-Book;
-        line-height: 150%;
+.story__container {
+  padding: 2vh 30vh;
+  font-size: 1.5rem;
+  font-family: CooperHewitt-Book;
+  line-height: 150%;
 }
-p{
-        margin-top: 3vh;
+p {
+  margin-top: 3vh;
+}
+.story_9points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.story_point {
+  height: 300px;
+  width: 300px;
+  margin: 2vh 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Roboto;
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  color: #eb6a6a;
+  background-color: rgba(235, 106, 106, 0.08);
+  transform: scale(1);
 }

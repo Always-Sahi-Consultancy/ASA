@@ -41,11 +41,23 @@ const Header_Dash = () => {
             arrow1.style.transform = "rotate(0deg)";
         }
     }
-    // const displayCart = () => {
-    //     const Cart_box = document.querySelector('.Cart_box');
-    //     Cart_box.style.display = "block";
-    //     console.log("hi");
-    // }
+    let condition2 = false;
+    const dropdown2 = () => {
+        const inner_dropdown2 = document.querySelector('.offer_tab');
+        const arrow2 = document.getElementById("offer_main_courses");
+
+        if (condition2 == false) {
+            inner_dropdown2.style.display = "block";
+            condition2 = true;
+            arrow2.style.transform = "rotate(180deg)";
+        }
+        else if (condition2 == true) {
+            inner_dropdown2.style.display = "none";
+            condition2 = false;
+            arrow2.style.transform = "rotate(0deg)";
+        }
+    }
+
     return (
         <header className="Header">
             <button className={`header_hamburger ${hamActive === true ? "ham" : ""}`} onClick={showMenu}>
@@ -58,10 +70,29 @@ const Header_Dash = () => {
             </div>
             <div className="header-right">
                 <div className="header_main">
-                    <a className="header_main_tabs" href="#">Online Courses</a>
                     <div className="header_main_tabs offer">
-                        <label for="offer_courses">OFFER</label>
-                        <a href="#" id="offer_main_courses">&#9660;</a>
+                        <div className="offer_main_tab" onClick={dropdown2}>
+                            <a className="header_main_tabs" href="#">Online Courses</a>
+                            <label for="offer_courses">OFFER</label>
+                            <a href="#" id="offer_main_courses">&#9660;</a>
+                        </div>
+                        <div className="offer_tab">
+                            <div className="offer_tab_box">
+                                <div className="offer_left">
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Programming</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Design</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Data Science</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Business and Freelance</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Accounts and Finance</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Career Development</a></div>
+                                </div>
+                                <div className="offer_right">
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Programming with Python</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">ReactJs</a></div>
+                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Programming with C & C++</a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <a className="header_main_tabs cart_link" href="#"><img className="cart" src={Cart}></img></a>
                     <div className="Cart_box">
@@ -70,8 +101,10 @@ const Header_Dash = () => {
                     </div>
                 </div>
                 <div className="Header_profile">
-                    <img className="profile_photo" src={ProfilePhoto} alt="PP"></img>
-                    <a href="#" onClick={dropdown1} id="profile_dropdown">&#9660;</a>
+                    <div onClick={dropdown1} className="Header_icon">
+                        <img className="profile_photo" src={ProfilePhoto} alt="PP"></img>
+                        <a href="#" id="profile_dropdown">&#9660;</a>
+                    </div>
                     <div className="Profile_dropdown">
                         <div className="Profile_upper">
                             <div className="profile_links username">USERNAME</div>
@@ -99,7 +132,7 @@ const Header_Dash = () => {
                     </div >
                 </div>
             </div>
-        </header>
+        </header >
     );
 };
 

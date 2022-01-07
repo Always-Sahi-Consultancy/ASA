@@ -20,16 +20,34 @@ const OurStroy = () => {
         "And there came an Idea of a Training Platform to create Young Leaders, in form of “Always Sahi Academy”, an Academic setup of “Always Sahi Solutions Pvt Ltd”, an ISO 9001: 2015 certified & MCA Registered Company, helping people to become successful Entrepreneurs.",
         "@ Always Sahi Academy, you get more than you need, with all the Certifications, good Exposure & Career guidance from Atharv Having Corporate Experience of more than 5 Years."
     ];
+    const points = [
+        "Free courses, Initially to clear your Niche & set your boundaries to start a Side Hustle.",
+        "A set of Courses specially designed by the experts, most of them Personally designed by Atharv.",
+        "Several Monthly Courses, to grow your skills on a Constant basis, with reputed Certifications.",
+        "Free Internship Programs, & Placement Opportunities for the Job Searching Individuals.",
+        "Free Startup Consultancies for Individuals to start their Side Hustles.",
+        "Certifications from an ISo 9001:2015 certified, & MCA Registered Organization.",
+        "Weekly Live Group Calls & Meetings to clear all your queries, and solve your problems.",
+        "Constant Calls & support from experts and trainers on a Recurring Basis+.",
+        "Freebies in the form of PDFs, Resource papers, & Several Free Toolkits, helpful for you to grow in Corporate as well as Build your Side Hustle."
+    ]
     return (
         <div className="story">
             <img src={our_story} className="story__image" alt="Our Story Cover"></img>
 
             <div className="story__container">
                 {data.map((detail) =>
-                    <OurStoryContent info={detail}/>
-                )}         
+                    <OurStoryContent info={detail} />
+                )}
 
                 <p>Always Sahi Academy has helped more than 400+ Individuals to grow from where they started,<a className="story__link"> do you want to be the next?</a></p>
+            </div>
+            <div className="story_9points">
+                {points.map((point) => {
+                    return (
+                        <div className="story_point">{point}</div>
+                    )
+                })}
             </div>
         </div>
 
