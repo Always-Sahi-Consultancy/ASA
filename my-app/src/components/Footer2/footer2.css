@@ -1,0 +1,132 @@
+.container{
+    height: auto;
+    background: black;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background: black;
+    padding: 5% ;
+    height: 100%;
+}
+
+.form__heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    width: auto;
+    margin: 2vh 1vh;
+    color: white;
+}
+.footer__name{
+    width: 48%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 5px;
+    padding: 1vh ;
+    font-family: "Roboto";
+}
+.form__phone{
+    width:46%;
+    margin-left: 2%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 5px;
+    padding: 1vh;
+    font-family: "Roboto";
+}
+.form__email{
+    width: 97%;
+    margin-left: 2%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 5px;
+    padding: 1vh;
+    font-family: "Roboto";
+}
+.form__message{
+    width: 97%;
+    margin-left: 2%;
+    margin: 3% 2%;
+    border: solid var(--gray-light) 1px;
+    border-radius: 5px;
+    padding: 1vh;
+    font-family: "Roboto";
+}
+.form__button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    padding: 1vh;
+    width: 30%;
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: #FF8A00;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.icon__heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: left;
+    margin: 5%;
+    width: 50%;
+    color: #FFFFFF;
+}
+.icon{
+    width: auto;
+    height: 5vh;
+}
+.iconD{
+    width: auto;
+    height: 5vh;
+}
+.icon__style{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 0.3% 3%;
+    width: 50%;
+}
+.icons__style{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0%;
+}
+.icon__link{
+    margin:3% 10% 2% 0%;
+}
+.icon__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 26px;
+    margin: 1% 6%;
+    color: #FFFFFF;
+}
