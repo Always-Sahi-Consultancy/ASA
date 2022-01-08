@@ -1,0 +1,93 @@
+.Testimonials {
+  /* border: 2px solid red; */
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 86vh; */
+}
+.Testimonial_container {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  /* border: 2px solid red; */
+}
+.Testimonial_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Testimonial_msg {
+  position: absolute;
+  top: 12vh;
+  left: 10vh;
+  color: #ffffff;
+  font-family: Bebas Neue;
+  text-shadow: 0px 4px 4px #000000;
+  font-size: 100px;
+}
+.Testimonial_Message {
+  padding: 10px 20px;
+  width: 90%;
+  /* height: 25vh; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.Testimonial_box {
+  border: 2px solid #a49daf;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform: scale(0.9);
+  padding: 30px;
+  text-align: center;
+}
+/* the slides */
+/* .slick-slide {
+  margin: 0 27px;
+} */
+/* the parent */
+/* .slick-list {
+  margin: 0 -27px;
+} */
+.Test_Msg {
+  text-align: justify;
+  height: 220px;
+}
+.Test_icon {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Test_icon span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  background: #eb6a6a;
+}
+.Test_name {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+@media only screen and (max-width: 769px) {
+  .Testimonial_Message {
+    width: 60%;
+    transform: scale(0.9);
+  }
+}

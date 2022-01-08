@@ -37,3 +37,9 @@ p {
   background-color: rgba(235, 106, 106, 0.08);
   transform: scale(1);
 }
+
+.faq__show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

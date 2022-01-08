@@ -1,14 +1,5 @@
 import { useState } from 'react';
-import './css/root.css'
 import './css/root2.css';
-// import Header from './comp1onents/header/header';
-import Index from './components/home/Index';
-import OurStory from './components/ourStory/OurStory';
-import Freebies from './components/Landing/Freebies/Freebies';
-import Testimonials from './components/Testimonials/Testimonials';
-import ContactUs from './components/ContactUs/ContactUs';
-import Enrollnow from './components/EnrollNow/Enrollnow';
-import Footer from './components/footer/Footer';
 import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
 import PrivacyPolicy from './components/Terms/PrivacyPolicy';
@@ -19,35 +10,30 @@ import Signup from './components/Signup/Signup';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
+import ContactUs from './components/ContactUs/ContactUs';
+import OurStroy from './components/ourStory/OurStory';
+import Testimonials from './components/Testimonials2/Testimonials';
 
 function App() {
 
   const [active, setActive] = useState("Landing");
 
   return (
-    // <div>
-    //   <Header onChange={setActive} />
-    //   {active === "Testimonials" && <Testimonials />}
-    //   {active === "Freebies" && <Freebies />}
-    //   {active === "Enrollnow" && <Enrollnow />}
-    //   {active === "Landing" && <Landing />}
-    //   {active === "OurStory" && <OurStory />}
-    //   {active === "ContactUs" && <ContactUs />}
-    //   {active === "Terms" && <TermsOfUse />}
-    //   {active === "PrivacyPolicy" && <PrivacyPolicy />}
-    //   {active === "EarningDiscalimer" && <EarningDiscalimer />}
-    //   {active === "RefundPolicy" && <RefundPolicy />}
-    //   <Footer onChange={setActive} />
-    // </div>
     <div>
-      {/* <Header_Dash /> */}
-      {/* <Signup /> */}
-      {/* <RegisterMain /> */}
+      <Signup />
       <Header2 onChange={setActive} />
-      {/* {active === "Landing" && <Landing />} */}
-      {/* <Footer2/> */}
-      {/* <ContactUs/> */}
-      <Freebies/>
+      {active === "Landing" && <Landing />}
+      {active === "ContactUs" && <ContactUs />}
+      {active === "Header_Dash" && <Header_Dash />}
+      {active === "Signup" && <Signup />}
+      {active === "RegisterMain" && <RegisterMain />}
+      {active === "TermsOfUse" && <TermsOfUse />}
+      {active === "EarningDiscalimer" && <EarningDiscalimer />}
+      {active === "PrivacyPolicy" && <PrivacyPolicy />}
+      {active === "RefundPolicy" && <RefundPolicy />}
+      {active === "OurStory" && <OurStroy />}
+      {active === "Testimonials" && <Testimonials />}
+      <Footer2/>
     </div>
   );
 }
