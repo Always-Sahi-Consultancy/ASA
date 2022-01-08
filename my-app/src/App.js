@@ -11,6 +11,7 @@ import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
 import ContactUs from './components/ContactUs/ContactUs';
+import OurStroy from './components/ourStory/OurStory';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       {active === "EarningDiscalimer" && <EarningDiscalimer />}
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
+      {active === "OurStory" && <OurStroy />}
       <Footer2/>
     </div>
   );
