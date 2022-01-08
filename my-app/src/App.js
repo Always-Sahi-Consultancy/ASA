@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      
+      <Signup />
       <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />}
       {active === "ContactUs" && <ContactUs />}
