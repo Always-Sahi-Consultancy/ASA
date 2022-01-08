@@ -4,7 +4,7 @@ import './css/root2.css';
 // import Header from './comp1onents/header/header';
 import Index from './components/home/Index';
 import OurStory from './components/ourStory/OurStory';
-import Freebies from './components/Freebies/Freebies';
+import Freebies from './components/Landing/Freebies/Freebies';
 import Testimonials from './components/Testimonials/Testimonials';
 import ContactUs from './components/ContactUs/ContactUs';
 import Enrollnow from './components/EnrollNow/Enrollnow';
@@ -46,7 +46,8 @@ function App() {
       <Header2 onChange={setActive} />
       {/* {active === "Landing" && <Landing />} */}
       {/* <Footer2/> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
+      <Freebies/>
     </div>
   );
 }

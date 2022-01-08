@@ -1,5 +1,40 @@
 .Freebies{
     height: 100vh;
-    background: url("../../../image/gift-g9d21de189_1920.jpg");
-    background-position: cover;
+    background-image: url(../../../image/gift-g9d21de189_1920.jpg);    
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-left: 5rem;
+}
+.Freebies__title{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20vh;
+    line-height: 25vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #5668CE 0%, #374384 82.29%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.Freebies__details >p{
+    width: 100vh;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.Freebies__get{
+    background-color: #5668CE;
+    height: 4rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-left: 30rem;
+    border-radius: 2rem;
+    padding: 0rem 1.5rem;
 }
