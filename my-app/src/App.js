@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './css/root.css';
 import './css/root2.css';
 import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
@@ -11,6 +10,7 @@ import Signup from './components/Signup/Signup';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
       
       <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />}
+      {active === "ContactUs" && <ContactUs />}
       {active === "Header_Dash" && <Header_Dash />}
       {active === "Signup" && <Signup />}
       {active === "RegisterMain" && <RegisterMain />}
