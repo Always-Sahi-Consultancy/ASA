@@ -22,7 +22,7 @@ import Footer2 from './components/Footer2/footer2';
 
 function App() {
 
-  // const [active, setActive] = useState("Landing");
+  const [active, setActive] = useState("Landing");
 
   return (
     // <div>
@@ -43,8 +43,8 @@ function App() {
       {/* <Header_Dash /> */}
       {/* <Signup /> */}
       {/* <RegisterMain /> */}
-      {/* <Header2 onChange={setActive} />
-      {active === "Landing" && <Landing />} */}
+      <Header2 onChange={setActive} />
+      {/* {active === "Landing" && <Landing />} */}
       <Footer2/>
     </div>
   );
