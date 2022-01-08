@@ -42,11 +42,11 @@ const Header2 = (props) => {
         <div className="header__slider" id="header__slider">
             <div className="header__joinUs">Join Always Sahi</div>
             <div className="header__sliderOption">
-                <div className="header__option">Home</div>
+                <div className="header__option" onClick={() => props.onChange("Landing")}>Home</div>
                 <div className="header__option">Freebies</div>
-                <div className="header__option">Testimonials</div>
-                <div className="header__option">Contact Us</div>
-                <div className="header__option">About Us</div>
+                <div className="header__option" onClick={() => props.onChange("Testimonials")}>Testimonials</div>
+                <div className="header__option"onClick={() => props.onChange("ContactUs")}>Contact Us</div>
+                <div className="header__option" onClick={() => props.onChange("OurStory")} className="header__link">About Us</div>
             </div>
         </div>
     </header>
