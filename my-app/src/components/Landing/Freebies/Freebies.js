@@ -6,7 +6,7 @@ const Freebies = () => {
             <div className="Freebies__details">
                 <p>Hit a <b>“Free Training”</b> Button if this sounds like you : </p>
 
-                <p>You see people making good financial <b>Source of Income.</b></p><p>  
+                <p>You see people making good financial <b> Source of Income.</b></p><p>  
                 You see People having the Freedom to </p><p><b>Travel around, 
                 manage Finances & Explore their Life. </b> 
                 </p><p>

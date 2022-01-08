@@ -1,16 +1,16 @@
 .Freebies{
-    height: 100vh;
+    height: auto;
     background-image: url(../../../image/gift-g9d21de189_1920.jpg);    
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     padding-left: 5rem;
 }
 .Freebies__title{
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
-    font-size: 20vh;
-    line-height: 25vh;
+    font-size: 18vh;
+    line-height: 20vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -19,22 +19,70 @@
     -webkit-text-fill-color: transparent;  
 }
 .Freebies__details >p{
-    width: 100vh;
+    width: 100%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-    display: flex;
+    display: inline-block;
     align-items: center;
     color: #000000;
 }
 .Freebies__get{
     background-color: #5668CE;
+    color: white;
     height: 4rem;
     margin-top: 3rem;
     font-size: 2rem;
-    margin-left: 30rem;
+    margin-left: 30%;
     border-radius: 2rem;
     padding: 0rem 1.5rem;
+    margin-bottom: 3rem;
+}
+@media screen and (max-device-width:768px){
+    .Freebies{
+        padding-left: 2rem;
+        background-size: cover;
+    }
+    .Freebies__title{
+        font-size: 9vh;
+        line-height: 11vh;
+    }
+    .Freebies__details >p{
+        font-size: 2.5vh;
+        line-height: 2vh;
+    }
+    .Freebies__get{
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+        margin-left: 30%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-device-width: 426px){
+    .Freebies{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-size: cover;
+    }
+    .Freebies__title{
+        font-size: 7vh;
+        line-height: 10vh;
+    }
+    .Freebies__details >p{
+        font-size: 2vh;
+        line-height: 2vh;
+        margin: 0.8vh;
+    }
+    .Freebies__get{
+        height: 2rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        margin-left: 30%;
+        margin-bottom: 1rem;
+    }   
 }
