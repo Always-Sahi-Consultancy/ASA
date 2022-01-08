@@ -1,11 +1,11 @@
-import ContactForm from "./ContactForm";
-import ContactInfo from "./ContactInfo";
+import ContactUsForm from "./contactUs2_Form";
+import ContactUsIcon from "./contactUs2_Icon";
 
 const ContactStructure = () => {
     return(
         <div class="contact">
-            <ContactForm />
-            <ContactInfo />
+            <ContactUsForm />
+            <ContactUsIcon />
         </div>
     );
 };

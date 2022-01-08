@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import './css/root.css'
+import './css/root.css'
 import './css/root2.css';
 // import Header from './comp1onents/header/header';
 import Index from './components/home/Index';
@@ -45,7 +45,8 @@ function App() {
       {/* <RegisterMain /> */}
       <Header2 onChange={setActive} />
       {/* {active === "Landing" && <Landing />} */}
-      <Footer2/>
+      {/* <Footer2/> */}
+      <ContactUs/>
     </div>
   );
 }

@@ -1,79 +1,93 @@
-.footerMain{
-    overflow-x: hidden;
+.contact{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .container{
     height: auto;
-    margin: -3vh;
-    background: black;
 }
-.form-container{
+.contactUsform-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
-    background: black;
-    padding: 4% 2% 4% 2% ;
-    height: 100%;
+    width: 55%;
+    margin-right: 1.5%;
+    background: #6D6875;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    padding:0% 3% 1% 4% ;
+    border-radius: 30px;
+    height: 20%;
 }
 
-.form__heading{
+.contactUsform__heading{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 28px;
+    font-size: 1.4rem;
     display: flex;
     align-items: flex-end;
     text-align: center;
     width: auto;
-    margin: 2vh 1vh;
+    margin: 8vh 1vh 2vh 1vh;
     color: white;
 }
-.footer__name{
+.contactUsform__name{
     width: 48%;
     margin-left: 2%;
     margin-bottom: 5%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
-    padding: 1vh ;
+    padding: 0.5vh ;
+    font-size: 1rem;
     font-family: "Roboto";
 }
-.form__phone{
+.contactUsform__phone{
     width:46%;
     margin-left: 2%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
-    padding: 1vh;
+    padding: 0.5vh ;
+    font-size: 1rem;
     font-family: "Roboto";
 }
-.form__email{
+.contactUsform__email{
     width: 97%;
     margin-left: 2%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
-    padding: 1vh;
+    padding: 0.5vh ;
+    font-size: 1rem;
     font-family: "Roboto";
 }
-.form__message{
+.contactUsform__message{
     width: 97%;
     margin-left: 2%;
-    margin: 5% 2%;
+    margin: 4% 2%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
-    padding: 1vh;
+    padding: 0.5vh ;
+    font-size: 1rem;
     font-family: "Roboto";
 }
-.form__button{
+.contactUsform__button{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    padding: 1vh;
-    width: 30%;
-    font-size: 1.5rem;
-    line-height: 28px;
+    padding: 0.5vh;
+    width: 25%;
+    margin: 0;
+    border: none;
+    font-size: 1.4rem;
     color: #FFFFFF;
     background: #FF8A00;
     border-radius: 10px;
+}
+.rowButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .row{
     display: flex;
@@ -81,17 +95,17 @@
     justify-content: center;
     align-items: center;
 }
-.icon-container{
-    width: 40%;
+.contactUsicon-container{
+    width: 33%;
     display: flex;
-    margin-bottom: 8%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
-    background-color: black;
+    border-radius: 30px;
+    background: #6D6875;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
-.icon__heading{
+.contactUsicon__heading{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -102,126 +116,94 @@
     width: 50%;
     color: #FFFFFF;
 }
-.icon{
+.contactUsicon{
+    width: auto;
+    height: 3vh;
+}
+.contactUsiconD{
     width: auto;
     height: 4vh;
 }
-.iconD{
-    width: auto;
-    height: 4vh;
-}
-.icon__style{
+.contactUsicon__style{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin: 0.3% 3%;
+    margin: 1% 0%;
     width: 50%;
 }
-.icons__style{
+.contactUsicons__style{
     display: flex;
     width: 100%;
-    margin: 3% 0%;
+    margin: 6% 0%;
     flex-direction: row;
     justify-content: center;
 }
-.icon__link{
+.contactUsicon__link{
     margin:3% 10% 2% 0%;
 }
-.icon__text{
+.contactUsicon__text{
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
     font-size: 1.3rem;
     line-height: 26px;
     margin: 1% 6%;
     color: #FFFFFF;
 }
-.terms-container{
-    display: flex;
-    margin-top: 0;
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-.section{
-    font-family: Roboto;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    margin-right: 2%;
-    color: #FFFFFF;
-}
-.terms__part1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    width: 100%;
-}
-.terms__part2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 2% 7% 4% 7%;
-}
 @media screen and (max-width:426px) {
+        .contact{
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .container{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .form__heading{
+        .contactUsform__message{
+            margin-bottom: 3%;
+        }
+        .contactUsform__heading{
             font-size: 1.2rem;
+            margin-top: 5%;
             height: auto;
         }
-        .form__button{
+        .contactUsform__button{
+            height: auto;
             width: 50%;
+            margin-bottom: 5%;
         }
-        .form-container{
-            width: 70%;
+        .contactUsform-container{
+            width: 100%;
+            margin-bottom: 2%;
         }
-        .icon-container{
-            width: 110%;
+        .contactUsicon-container{
+            width: 100%;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
-        .icon__heading{
+        .contactUsicon__heading{
             text-align: center;
         }
-        .terms-container{
-            width: 90%;
-            height: auto;
+        .contactUsicon{
+            width: auto;
+            height: 2vh;
         }
-        .section{
-            font-size: 0.7rem;
-            margin-right: 4%;
-        }
-        .terms__part2{
-            font-size: 0.7rem;
-            margin-bottom: 10%;
-        }
-        .icon{
+        .contactUsiconD{
             width: auto;
             height: 3vh;
         }
-        .iconD{
-            width: auto;
-            height: 3vh;
-        }
-        .icon__text{
-            font-size: 1rem;
+        .contactUsicon__text{
+            font-size: 0.9rem;
             line-height: 20px;
-            margin: 0.8% 6%;
         }
-        .icons__style{
+        .contactUsicon__style{
+            width: 60%;
+        }
+        .contactUsicons__style{
             margin: 1%  0%;
         }
 }

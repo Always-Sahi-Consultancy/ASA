@@ -1,3 +1,4 @@
+import './contactUs2.css';
 import './contactUs.css';
 import './contactUs_tab.css';
 import './contactUs_mobile.css';
