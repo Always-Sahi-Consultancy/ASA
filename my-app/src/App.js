@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './css/root.css'
+import './css/root.css';
 import './css/root2.css';
 import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
@@ -20,9 +20,15 @@ function App() {
     <div>
       
       <Header2 onChange={setActive} />
-      {/* {active === "Landing" && <Landing />} */}
-      {/* <Footer2/> */}
-      <ContactUs/>
+      {active === "Landing" && <Landing />}
+      {active === "Header_Dash" && <Header_Dash />}
+      {active === "Signup" && <Signup />}
+      {active === "RegisterMain" && <RegisterMain />}
+      {active === "TermsOfUse" && <TermsOfUse />}
+      {active === "EarningDiscalimer" && <EarningDiscalimer />}
+      {active === "PrivacyPolicy" && <PrivacyPolicy />}
+      {active === "RefundPolicy" && <RefundPolicy />}
+      <Footer2/>
     </div>
   );
 }

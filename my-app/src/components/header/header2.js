@@ -27,8 +27,8 @@ const Header2 = (props) => {
         </div>
         <div className="header__navigate">
             <a onClick={() => props.onChange("Landing")} className="header__link"><div className="header__options">Home</div></a>
-            <a onClick={() => props.onChange("Freebies")} className="header__link"><div className="header__options">Freebies</div></a>
-            <a onClick={() => props.onChange("Testimonials")} className="header__link"><div className="header__options">Testimonials</div></a>
+            <a onClick={() => props.onChange("Freebies")} className="header__link"><div className="header__options">Testimonials</div></a>
+            <a onClick={() => props.onChange("Testimonials")} className="header__link"><div className="header__options">Contact Us</div></a>
             <a onClick={() => props.onChange("AboutUs")} className="header__link"><div className="header__options">About Us</div></a>
         </div>
         <div className="header__Login">
