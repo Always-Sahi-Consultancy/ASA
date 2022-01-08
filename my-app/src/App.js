@@ -12,6 +12,7 @@ import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
 import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
+import Testimonials from './components/Testimonials2/Testimonials';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
       {active === "OurStory" && <OurStroy />}
+      {active === "Testimonials" && <Testimonials />}
       <Footer2/>
     </div>
   );
