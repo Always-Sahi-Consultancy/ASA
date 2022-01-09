@@ -109,7 +109,7 @@
 }
 .iconD {
   width: auto;
-  height: 4vh;
+  height: 5vh;
 }
 .icon__style {
   display: flex;
@@ -205,18 +205,21 @@
   }
   .icon {
     width: auto;
-    height: 3vh;
+    height: 2vh;
   }
   .iconD {
     width: auto;
     height: 3vh;
+  }
+  .icon__text{
+      font-size: 1.2rem;
   }
   .icon__style {
     display: flex;
     flex-direction: row;
     justify-content: start;
     margin: 0.3% 3%;
-    width: 70%;
+    width: 60%;
   }
   .form__button {
     font-size: 1.3rem;
@@ -273,12 +276,15 @@
   }
   .iconD {
     width: auto;
-    height: 3vh;
+    height: 4vh;
   }
   .icon__text {
     font-size: 1rem;
     line-height: 20px;
     margin: 0.8% 6%;
+  }
+  .icon__style {
+    width: 50%;
   }
   .icons__style {
     margin: 1% 0%;
