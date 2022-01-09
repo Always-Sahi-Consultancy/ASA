@@ -1,9 +1,11 @@
+import React from 'react';
 import './signup.css';
 import SignupComponent from './Signup__Component';
 import SignUpForm from './SignupForm';
 import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
 import Apple from  '../../image/Apple.png';
+import SignIn from '../SignIn/SignIn';
 
 const Signup = () => {
     const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},
@@ -46,9 +48,10 @@ const Signup = () => {
             <SignUpForm />
             <div className='signup__message'>By Joining I agree to receive emails from Always Sahi .</div>
             <hr className='signup__hr'></hr>
-            <div className='signup__option'>Already a member? <a href="#" className='signup__span'>Sign in</a></div>
+            <div className='signup__option'>Already a member? <a href="#" className='signup__span' onClick={SignIn}>Sign in</a></div>
         </div>
         </div>
+        
         
     );
 }
