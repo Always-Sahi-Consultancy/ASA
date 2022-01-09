@@ -1,0 +1,50 @@
+.Stats{
+    background-color: rgba(235, 106, 106, 23%);
+}
+.Stats__Container{
+    display: inline-block;
+    width: 33%;
+    padding: 3rem 2rem;
+}
+.Stats__Container h1{
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+.Stats__Container p{
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 768px){
+    .Stats__Container h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .Stats__Container p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+@media screen and (max-device-width: 630px){
+    .Stats__Container{
+        width: 100%;
+        border:2px solid rgba(235, 106, 106, 23%);
+        padding: 2.5rem 1.5rem;
+
+    }
+    .Stats__Container h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .Stats__Container p{
+        font-size: 1.2rem;
+        line-height: 1rem;
+
+    }
+}

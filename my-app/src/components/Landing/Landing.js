@@ -6,6 +6,7 @@ import ExploreNew from './Explore New/ExploreNew';
 import Notice from './Notice/Notice';
 import Founder from './Founder/Founder';
 import Freebies from './Freebies/Freebies';
+import Stats from './Stats/Stats';
 
 const Landing = () => {
     return (
@@ -15,6 +16,7 @@ const Landing = () => {
             <Explore />
             <ExploreNew />
             <Freebies />
+            <Stats/>
             <Notice />
             <Founder />
         </div>
