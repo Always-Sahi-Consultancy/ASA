@@ -1,10 +1,10 @@
 import './VideoTest.css';
-import Button from './Button';
+import './Testimonial.css';
 import ReactPlayer from 'react-player';
-
-function VideoTest(props) {
+const Testimonial_video = (props) => {
     return (
-        <div>
+        <div className="Testimonial_video">
+            <h1 className="video_header">Hear from our students</h1>
             <div className="video-test">
                 <ReactPlayer url="https://youtu.be/dmTAFHi06-8" className='video-test__video' />
                 <div className="video-test__text"><h3>{props.item[0].name}</h3><br></br>
@@ -13,10 +13,9 @@ function VideoTest(props) {
                     <div className='rating'>{props.item[0].rating}</div>
                 </div>
             </div>
-            <Button />
-        </div>
 
-    );
+        </div>
+    )
 }
 
-export default VideoTest;
+export default Testimonial_video;
