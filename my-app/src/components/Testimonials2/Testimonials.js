@@ -16,7 +16,7 @@ const Testimonials = () => {
         <div className="Testimonials">
             <Testimonial_Image />
             <Testimonial_Message />
-            <Testimonial_Video item={VideoInfo}/>
+            {/* <Testimonial_Video item={VideoInfo}/> */}
         </div>
     );
 };
