@@ -52,7 +52,7 @@
   padding-left: 2vw;
 }
 .subheader_nav {
-  height: 10vh;
+  height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@
   width: auto;
 }
 .Poster_Search {
-  height: 65vh;
+  height: 65%;
   width: 50%;
   position: absolute;
   top: 10vh;
@@ -168,11 +168,9 @@
     width: 20%;
     height: 80%;
   }
-  .Search {
-  }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 769px) {
   .Poster {
     height: 40vh;
     position: relative;
@@ -412,13 +410,51 @@
     padding-left: 1vh;
   }
 }
+@media screen and (max-width: 1024px) {
+  .Poster {
+    height: 85%;
+  }
+  .Poster_img {
+    object-fit: cover;
+  }
+  .Subheader {
+    height: 50vh;
+  }
+  .nav_tabs a {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .Search_heading {
+    width: 100%;
+    font-size: 4em;
+  }
+  .Poster_Search {
+    width: 60vw;
+  }
+  .College_heading {
+    font-size: 1.2rem;
+  }
+  .College {
+    height: 15%;
+  }
+  .College_Name {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0px;
+    width: 20%;
+    height: 80%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
   }
+  .Poster_img {
+    object-fit: cover;
+  }
   .Poster {
-    height: 50vh;
+    height: 40vh;
   }
   .nav_tabs a {
     font-size: 0.8rem;
@@ -477,5 +513,103 @@
     font-family: Roboto;
     width: 12%;
     padding-left: 1vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Poster {
+    height: 65%;
+  }
+  .Poster_img {
+    display: none;
+  }
+  .subheader_nav {
+    display: none;
+    overflow: hidden;
+  }
+  .Poster_Search {
+    height: 100%;
+    margin-top: 0vh;
+    display: flex;
+    padding-left: 0;
+    padding: 2vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #6d6875 0%, rgba(83, 40, 40, 0) 100%);
+  }
+  .Search_heading {
+    font-size: 2.5rem;
+    line-height: 50px;
+    height: auto;
+    padding: 0;
+    overflow-y: hidden;
+    margin-bottom: 10vh;
+  }
+  .College {
+    /* display: none; */
+    height: 20%;
+    flex-direction: column;
+  }
+  .College_heading {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    text-align: center;
+  }
+  .Search_section {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .Search_left {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2vh;
+  }
+  .Search_bar {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0;
+  }
+  .search_symbol {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+  }
+  .Search {
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+  }
+  .Subheader {
+    height: 100vh;
+  }
+  .College {
+    height: fit-content;
+  }
+  .College_Training {
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .College_Name {
+    font-size: 14px;
+    width: 33%;
+    border: none;
+    /* border: 2px solid red; */
+    /* padding-right: 0vw;
+    padding-right: 1vh;
+    padding-left: 1vh; */
   }
 }

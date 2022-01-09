@@ -13,6 +13,7 @@
   width: 100%;
   margin-bottom: 8vh;
   height: auto;
+  overflow: hidden;
 }
 /* .Popular_main_box {
   display: flex;
@@ -73,11 +74,7 @@
   font-family: Roboto;
   font-size: 14px;
 }
-@media only screen and (max-width: 1024px) {
-  .details {
-    left: 4vh;
-  }
-}
+
 /* Popular Training Ends */
 @media screen and (max-device-width: 768px) {
   .Popular_heading {
@@ -90,7 +87,7 @@
     position: relative;
     padding: 0;
     transform: scale(0.8);
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .Popular_Box img {
     transform: scale(0.9);
@@ -129,7 +126,46 @@
     position: relative;
     padding: 0;
     transform: scale(0.8);
+    /* overflow: hidden; */
+  }
+  .Popular_Box img {
+    transform: scale(1);
+    object-fit: cover;
+    border-radius: 10px;
+    height: 444px;
+    width: 100%;
+    /* object-position: 50% 30%; */
+  }
+
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
+  .Popular {
+    padding: 5vh;
+    height: fit-content;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3vh;
     overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Popular_heading {
+    font-size: 44px;
+    margin-bottom: 0;
+    font-family: Bebas-Neue;
+  }
+
+  .Popular_Box {
+    position: relative;
+    padding: 0;
+    transform: scale(0.8);
+    overflow: hidden;
   }
   .Popular_Box img {
     transform: scale(0.9);
@@ -152,8 +188,54 @@
     padding: 5vh;
     height: fit-content;
     width: 100%;
+    margin-bottom: 3vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .Popular_heading {
+    font-size: 44px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Bebas-Neue;
+  }
+
+  .Popular_Box {
+    position: relative;
+    padding: 0;
+    transform: scale(0.8);
+    /* overflow: hidden; */
+  }
+  .Popular_Box img {
+    transform: scale(1);
+    object-fit: cover;
+    border-radius: 10px;
+    height: 444px;
+    width: 100%;
+    /* object-position: 50% 30%; */
+  }
+
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
+  .Popular {
+    padding: 5vh;
+    height: fit-content;
+    width: 100%;
     height: auto;
     margin-bottom: 3vh;
     overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .details {
+    left: 2vh;
+    top: 4vh;
   }
 }
