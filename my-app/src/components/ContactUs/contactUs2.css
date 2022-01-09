@@ -281,6 +281,10 @@
     .faq{
         margin: 5% 10%;
     }
+    .faq__show{
+        font-size: 2rem;
+        padding-bottom: 1.5vh;
+    }
     .faq__question{
         grid-template-columns: auto 4%;
     }
@@ -361,7 +365,7 @@
           .faq__show{
             height: 30px;
             width: 30px;
-            padding: 0.1vh;
+            padding-bottom: 1.5vh;
             margin-left: 0;
             font-size: 1.5rem;
           }
