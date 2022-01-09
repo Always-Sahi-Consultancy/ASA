@@ -55,7 +55,7 @@
 } */
 .Test_Msg {
   text-align: justify;
-  height: 220px;
+  height: 260px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -108,17 +108,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
   .Testimonial_msg {
     position: absolute;
-    top: 60vh;
+    top: 40vh;
     left: 5vh;
     color: #ffffff;
     font-family: Bebas Neue;
     text-shadow: 0px 4px 4px #000000;
-    font-size: 90px;
+    font-size: 120px;
+  }
+  .Testimonial_image {
+    object-position: 50%;
   }
   .Testimonial_Message {
     width: 90vw;
@@ -126,7 +130,7 @@
   }
   .Testimonial_box {
     width: 100%;
-    height: 90vh;
+    height: 60vh;
   }
   .Test_Msg {
     text-align: justify;
@@ -134,7 +138,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 32px;
     /* line-height: px; */
     /* padding: 0px 10px; */
   }
@@ -181,12 +185,15 @@
 @media only screen and (max-width: 769px) {
   .Testimonial_msg {
     position: absolute;
-    top: 60vh;
+    top: 40vh;
     left: 5vh;
     color: #ffffff;
     font-family: Bebas-Neue;
     text-shadow: 0px 4px 4px #000000;
-    font-size: 70px;
+    font-size: 120px;
+  }
+  .Testimonial_image {
+    object-position: 75%;
   }
   .Testimonial_Message {
     width: 70vw;
@@ -202,7 +209,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 35px;
     /* line-height: px; */
     /* padding: 0px 10px; */
   }
@@ -317,12 +324,15 @@
 @media only screen and (max-width: 468px) {
   .Testimonial_msg {
     position: absolute;
-    top: 80%;
-    left: 15%;
+    top: 45%;
+    left: 10%;
     color: #ffffff;
     font-family: Bebas Neue;
     text-shadow: 0px 4px 4px #000000;
     font-size: 45px;
+  }
+  .Testimonial_image {
+    object-position: 75%;
   }
   .Testimonial_Message {
     width: 100vw;
@@ -385,12 +395,15 @@
 @media only screen and (max-width: 380px) {
   .Testimonial_msg {
     position: absolute;
-    top: 80%;
+    top: 45%;
     left: 4%;
     color: #ffffff;
     font-family: Bebas Neue;
     text-shadow: 0px 4px 4px #000000;
     font-size: 45px;
+  }
+  .Testimonial_image {
+    object-position: 75%;
   }
   .Testimonial_Message {
     width: 100vw;
@@ -453,12 +466,15 @@
 @media only screen and (max-width: 330px) {
   .Testimonial_msg {
     position: absolute;
-    top: 80%;
+    top: 45%;
     left: 4%;
     color: #ffffff;
     font-family: Bebas Neue;
     text-shadow: 0px 4px 4px #000000;
-    font-size: 45px;
+    font-size: 40px;
+  }
+  .Testimonial_image {
+    object-position: 75%;
   }
   .Testimonial_Message {
     width: 100vw;
