@@ -32,10 +32,10 @@
 .element_img {
   z-index: 1;
   width: auto;
-  height: 12vh;
+  height: 10vh;
   justify-content: center;
   align-content: center;
-  margin-top: 3vh;
+  margin-top: 4vh;
 }
 .element_name {
   font-size: 2rem;
@@ -128,8 +128,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25vh;
-    height: 28vh;
+    width: 20vh;
+    height: 25vh;
   }
   .element {
     width: 10vh;

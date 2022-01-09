@@ -77,7 +77,7 @@
 }
 @media screen and (max-device-width:426px) {
   .NewContainer {
-    margin: 3vh 3vh;
+    margin: 3vh 2vh;
     justify-content: center;
     align-items: center;
     text-align: center;
