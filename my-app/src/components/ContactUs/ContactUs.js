@@ -1,7 +1,4 @@
 import './contactUs2.css';
-import './contactUs.css';
-import './contactUs_tab.css';
-import './contactUs_mobile.css';
 import ContactStructure from './ContactStructure';
 import FaqStructure from './FaqStructure';
 import { useEffect } from 'react';

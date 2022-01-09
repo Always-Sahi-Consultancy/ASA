@@ -20,10 +20,4 @@
     .contact__icons{
         width: 4vw;
     }
-    .faq{
-        margin: 2% 10%;
-    }
-    .faq__question{
-        grid-template-columns: auto 4%;
-    }
 }
