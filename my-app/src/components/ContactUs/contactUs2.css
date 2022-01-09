@@ -230,6 +230,7 @@
     .contact{
         margin: 3% 10%;
         display: flex;
+        overflow: hidden;
         flex-direction: row;
         justify-content: center;
     }

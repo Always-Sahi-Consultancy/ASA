@@ -28,7 +28,7 @@
   font-size: 100px;
 }
 .Testimonial_Message {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   width: 90%;
   /* height: 25vh; */
   /* display: flex;
@@ -56,6 +56,11 @@
 .Test_Msg {
   text-align: justify;
   height: 220px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0px 10px;
 }
 .Test_icon {
   height: 50px;
@@ -85,9 +90,431 @@
   font-style: normal;
   font-weight: bold;
 }
-@media only screen and (max-width: 769px) {
+.arrow {
+  position: absolute;
+  height: 40px;
+  width: 50px;
+}
+.prev {
+  left: -1vw;
+}
+.next {
+  right: -3vw;
+}
+.Testimonial_video {
+  margin-top: 5vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 60vh;
+    left: 5vh;
+    color: #ffffff;
+    font-family: Bebas Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 90px;
+  }
   .Testimonial_Message {
-    width: 60%;
-    transform: scale(0.9);
+    width: 90vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 90vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -5vw;
+  }
+  .next {
+    right: -5vw;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 60vh;
+    left: 5vh;
+    color: #ffffff;
+    font-family: Bebas-Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 70px;
+  }
+  .Testimonial_Message {
+    width: 70vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 80vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -3vw;
+  }
+  .next {
+    right: -6vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 60vh;
+    left: 5vh;
+    color: #ffffff;
+    font-family: Bebas Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 45px;
+  }
+  .Testimonial_Message {
+    width: 70vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 80vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -3vw;
+  }
+  .next {
+    right: -6vw;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    color: #ffffff;
+    font-family: Bebas Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 45px;
+  }
+  .Testimonial_Message {
+    width: 100vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 70vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -4vw;
+  }
+  .next {
+    right: -12vw;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    color: #ffffff;
+    font-family: Bebas Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 45px;
+  }
+  .Testimonial_Message {
+    width: 100vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 65vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -4vw;
+  }
+  .next {
+    right: -12vw;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .Testimonial_msg {
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    color: #ffffff;
+    font-family: Bebas Neue;
+    text-shadow: 0px 4px 4px #000000;
+    font-size: 45px;
+  }
+  .Testimonial_Message {
+    width: 100vw;
+    transform: scale(0.8);
+  }
+  .Testimonial_box {
+    width: 100%;
+    height: 85vh;
+  }
+  .Test_Msg {
+    text-align: justify;
+    height: 80%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* line-height: px; */
+    /* padding: 0px 10px; */
+  }
+  .Test_icon {
+    height: 10%;
+    /* margin: 10px; */
+  }
+  .Test_icon span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+    background: #eb6a6a;
+  }
+  .Test_name {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .arrow {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prev {
+    left: -4vw;
+  }
+  .next {
+    right: -12vw;
   }
 }
