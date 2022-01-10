@@ -1,0 +1,22 @@
+.CoursePage {
+  height: auto;
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Course_Filter {
+  width: 25%;
+  border: 2px solid red;
+  height: 85%;
+}
+.filter_left-top {
+  height: 25%;
+}
+.Preference_form {
+  height: 70%;
+}
+.Course_Section {
+  width: 75%;
+}
