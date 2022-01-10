@@ -1,6 +1,8 @@
 import Testimonial_Image from './Testimonial_Image';
 import Testimonial_Message from './Testimonial_Message';
 import Testimonial_Video from './Testimonial_video';
+import Rate_us from './Rate_us';
+import Testimonial_UserInput from './Testimonial_UserInput';
 import './Testimonial.css';
 
 const Testimonials = () => {
@@ -17,6 +19,8 @@ const Testimonials = () => {
             <Testimonial_Image />
             <Testimonial_Message />
             <Testimonial_Video item={VideoInfo} />
+            <Rate_us />
+            <Testimonial_UserInput />
         </div>
     );
 };

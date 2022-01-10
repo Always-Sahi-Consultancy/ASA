@@ -111,7 +111,7 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
   .Testimonial_msg {
     position: absolute;
     top: 40vh;
@@ -193,7 +193,7 @@
     font-size: 120px;
   }
   .Testimonial_image {
-    object-position: 75%;
+    object-position: 60%;
   }
   .Testimonial_Message {
     width: 70vw;
@@ -262,6 +262,9 @@
     font-family: Bebas Neue;
     text-shadow: 0px 4px 4px #000000;
     font-size: 45px;
+  }
+  .Testimonial_image {
+    object-position: 60%;
   }
   .Testimonial_Message {
     width: 70vw;
@@ -332,7 +335,7 @@
     font-size: 45px;
   }
   .Testimonial_image {
-    object-position: 75%;
+    object-position: 60%;
   }
   .Testimonial_Message {
     width: 100vw;
@@ -403,7 +406,7 @@
     font-size: 45px;
   }
   .Testimonial_image {
-    object-position: 75%;
+    object-position: 60%;
   }
   .Testimonial_Message {
     width: 100vw;
@@ -474,7 +477,7 @@
     font-size: 40px;
   }
   .Testimonial_image {
-    object-position: 75%;
+    object-position: 60%;
   }
   .Testimonial_Message {
     width: 100vw;

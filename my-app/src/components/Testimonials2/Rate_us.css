@@ -1,0 +1,53 @@
+/* @import '../../image/star.png'; */
+.Rate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rate_main {
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.rate_main label {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  margin: 1vh 1vw;
+}
+.rate_main label:before {
+  content: url(../../image/star.png);
+  position: relative;
+  height: 50px;
+  cursor: pointer;
+}
+.rate_main label:after {
+  content: url(../../image/star1.png);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  opacity: 0;
+}
+.rate_main label:hover:after,
+.rate_main label:hover ~ label:after,
+.rate_main input:checked ~ label:after {
+  opacity: 1;
+}
+.radio_star {
+  cursor: pointer;
+  display: none;
+}
+.Rate_us_header {
+  font-family: Bebas-Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  /* font-weight: 700; */
+}
