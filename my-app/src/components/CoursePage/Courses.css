@@ -1,0 +1,12 @@
+.Course_Section {
+  width: 75%;
+  border: 2px solid red;
+}
+.Course_heading {
+  height: 20%;
+  border: 2px solid red;
+}
+.Course_Section_box {
+  height: 80%;
+  border: 2px solid red;
+}

@@ -1,5 +1,5 @@
 import './Subheader.css';
-import Search from '../../../image/MG.png'
+import Search from '../../../image/MG.png';
 import Image from '../../../image/Subheader_Poster1.jpg';
 
 const Poster = () => {
