@@ -33,8 +33,10 @@ const OurStroy = () => {
     ]
     return (
         <div className="story">
-            <img src={our_story} className="story__image" alt="Our Story Cover"></img>
-
+            <div className='story_photo'>
+                <img src={our_story} className="story__image" alt="Our Story Cover"></img>
+                <h1 className="Our_story_title">OUR STORY</h1>
+            </div>
             <div className="story__container">
                 {data.map((detail) =>
                     <OurStoryContent info={detail} />

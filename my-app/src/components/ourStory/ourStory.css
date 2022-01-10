@@ -4,6 +4,20 @@
   margin-bottom: 5vh;
   width: 100%;
 }
+.story_photo {
+  width: 100%;
+  position: relative;
+}
+.Our_story_title {
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  color: white;
+  font-family: Bebas-Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+}
 .story__container {
   padding: 2vh 30vh;
   font-size: 1.5rem;
@@ -38,7 +52,7 @@ p {
   transform: scale(1);
 }
 
-.faq__show{
+.faq__show {
   display: flex;
   justify-content: center;
   align-items: center;
