@@ -32,18 +32,19 @@
     }
 }
 @media screen and (max-device-width: 630px){
+    .Stats{
+        padding: 0rem 1rem;
+    }
     .Stats__Container{
-        width: 100%;
-        border:2px solid rgba(235, 106, 106, 23%);
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 0rem;
 
     }
     .Stats__Container h1{
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
     .Stats__Container p{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         line-height: 1rem;
 
     }
