@@ -1,12 +1,142 @@
 .Course_Section {
   width: 75%;
-  border: 2px solid red;
+  min-height: 85vh;
 }
-.Course_heading {
+.course_heading {
   height: 20%;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.course_name_section {
+  display: flex;
+  width: 60%;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+.course_name {
+  font-family: Bebas-Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 115px;
+  font-weight: 700;
+  padding: 0 20px;
+}
+.filter_img {
+  display: none;
 }
 .Course_Section_box {
-  height: 80%;
-  border: 2px solid red;
+  min-height: 70vh;
+}
+.course_Search {
+  height: 40px;
+  width: 25%;
+  text-decoration: none;
+  background: #eb6a6a;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+.course_Search_bar {
+  height: 40px;
+  width: 80%;
+  border: none;
+  padding: 2px 5px;
+  font-size: 16px;
+  font-family: Roboto;
+  background: transparent;
+}
+.course_search_symbol {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.course_Search_left {
+  display: flex;
+  width: 75%;
+  background: rgba(196, 196, 196, 0.24);
+}
+.course_Search_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+}
+.courses_name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.Course_section_main {
+  height: 90%;
+  margin: 2vh 3vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.course_box {
+  width: 48%;
+  margin: 1vh 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vh;
+  height: fit-content;
+  background-color: rgba(235, 106, 106, 0.07);
+}
+.course_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background: #6d6875;
+}
+.course_title {
+  text-transform: uppercase;
+}
+.course_details {
+  padding: 1vh;
+}
+.course_title {
+  font-family: Bebas-Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+.Prof_name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+.cost_section {
+  display: flex;
+  align-items: center;
+}
+.original_cost {
+  margin-left: 30px;
+}
+.Course_button {
+  display: flex;
+}
+.Buy_button {
+  padding: 5px 15px;
+  text-decoration: none;
+  background: #eb6a6a;
+  margin-right: 10px;
+  border-radius: 6px;
+  color: white;
 }
