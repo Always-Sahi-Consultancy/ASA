@@ -1,6 +1,15 @@
-const Course_rate = () => {
+
+import './Courses.css';
+
+const Course_rate = (props) => {
     return (
-        <div></div>
+        <div className="course_star">
+            {props.star.map((s) => {
+                return (
+                    <img className="course_star_element" src={s.star}></img>
+                )
+            })}
+        </div>
     );
 };
 

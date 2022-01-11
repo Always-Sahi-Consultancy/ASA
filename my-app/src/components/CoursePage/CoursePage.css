@@ -2,13 +2,13 @@
   height: auto;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .Course_Filter {
-  /* position: fixed;
+  position: relative;
   left: 0;
-  top: 15vh; */
+  /* top: -25vh; */
   padding: 2vh 1vw;
   width: 25%;
   height: 85vh;
@@ -113,4 +113,11 @@
   right: 10px;
   top: -2px;
 }
-
+@media only screen and (max-width: 1025px) {
+  .Course_Filter {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) {
+  
+}

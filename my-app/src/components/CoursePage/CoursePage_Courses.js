@@ -1,43 +1,244 @@
 import './Courses.css';
-import Course_rate from './Course_rate';
 import Search from '../../image/MG.png';
 import Filter from '../../image/oil-funnel.png';
+import star from '../../image/star.png';
+import star1 from '../../image/star1.png';
+import Course_box from './Course_box';
 
 const CoursePage_Courses = () => {
+    const course_details = [
+        {
+            title: "How to Find Your Passion",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 0",
+            Original_cost: "Rs. 100"
+        },
+        {
+            title: "Create your LindedIn Profile",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 0",
+            Original_cost: "Rs. 100"
+        },
+        {
+            title: "Navratnas of Time Management",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 0",
+            Original_cost: "Rs. 100"
+        },
+        {
+            title: "A Free toolkit for 18+",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 0",
+            Original_cost: "Rs. 100"
+        },
+        {
+            title: "Certified Course in Accounts & Compliance",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 999",
+            Original_cost: "Rs. 2000"
+        },
+        {
+            title: "Certified Course in Taxation",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 1999",
+            Original_cost: "Rs. 4000"
+        },
+        {
+            title: "Certified Course in Financial Accounting",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 2999",
+            Original_cost: "Rs. 5000"
+        },
+        {
+            title: "Fundamental of Financial Accounting",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 599",
+            Original_cost: "Rs. 1000"
+        },
+        {
+            title: "Fundamentals of Financial Intelligence",
+            stars: [
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star1
+                },
+                {
+                    star: star
+                }
+            ],
+            Prof_name: "Atharv",
+            course_cost: "Rs. 999",
+            Original_cost: "Rs. 2000"
+        },
+    ];
+
     return (
         <div className="Course_Section">
             <div className="course_heading">
-                <div className="course_name_sction">
+                <div className="course_name_section">
                     <div className="course_name">COURSE FOR YOU</div>
                     <img src={Filter} className="filter_img"></img>
                 </div>
-                <form className="Search_section">
-                    <div className="Search_left">
-                        <img className="search_symbol" src={Search}></img>
-                        <input className="Search_bar" type="text" placeholder='Try "graphic designing"' />
+                <div className="course_Search_section">
+                    <div className="course_Search_left">
+                        <img className="course_search_symbol" src={Search}></img>
+                        <input className="course_Search_bar" type="text" placeholder='Try "graphic designing"' />
                     </div>
-                    <a className="Search" href="#">search</a>
-                </form>
+                    <a className="course_Search" href="#">search</a>
+                </div>
             </div>
             <div className="Course_Section_box">
-                <div className="courses_name">Accounts and Finance</div>
+                {/* <div className="courses_name">Accounts and Finance</div> */}
                 <div className="Course_section_main">
-                    <div className="course_box">
-                        <div className="course_img"></div>
-                        <div className="course_details">
-                            <h2>Basics of Stock Market</h2>
-                            <Course_rate />
-                            <div className="Prof_name">Atharv Sawant</div>
-                            <div className="cost_section">
-                                <div className="course_cost">Rs. 499/-</div>
-                                <div className="original_cost">Rs. 1000/-</div>
-                            </div>
-                            <div className="Course_button">
-                                <a href="#" className="Buy_now">Buy Now</a>
-                                <a href="#" className="About Course">About Course</a>
-                            </div>
-                        </div>
-                    </div>
+                    {course_details.map((course) => {
+                        return (
+                            <Course_box title={course.title} star={course.stars} Prof_name={course.Prof_name} ori_cost={course.Original_cost} course_cost={course.course_cost} />
+                        )
+                    })}
                 </div>
             </div>
         </div>

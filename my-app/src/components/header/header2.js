@@ -13,6 +13,11 @@ const Header2 = (props) => {
         ham_bar[1].classList.toggle('header__bar2');
         ham_bar[2].classList.toggle('header__bar3');
     }
+
+    const display = () => {
+        const signup = document.getElementsByClassName("signup__blur");
+        signup[0].classList.toggle("signup__hide");
+    }
     
     return (
     <header>
@@ -33,20 +38,20 @@ const Header2 = (props) => {
         </div>
         <div className="header__Login">
             <a href="#" className="signup__link">
-                <div className="header__LoginButton">
+                <div className="header__LoginButton" onClick={display}>
                     Login
                 </div>
             </a>
         </div>
         </div>
         <div className="header__slider" id="header__slider">
-            <div className="header__joinUs">Join Always Sahi</div>
-            <div className="header__sliderOption">
+            <span onClick={displayMenu}><div className="header__joinUs" onClick={() => props.onChange("RegisterMain")}>Join Always Sahi</div></span>
+            <div className="header__sliderOption" onClick={displayMenu}>
                 <div className="header__option" onClick={() => props.onChange("Landing")}>Home</div>
                 <div className="header__option">Freebies</div>
                 <div className="header__option" onClick={() => props.onChange("Testimonials")}>Testimonials</div>
                 <div className="header__option"onClick={() => props.onChange("ContactUs")}>Contact Us</div>
-                <div className="header__option" onClick={() => props.onChange("OurStory")} className="header__link">About Us</div>
+                <div className="header__option" onClick={() => props.onChange("OurStory")}>About Us</div>
             </div>
         </div>
     </header>

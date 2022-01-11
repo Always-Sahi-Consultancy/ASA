@@ -91,7 +91,7 @@
     flex-direction: column;
 }
 
-.signup__email{
+.signup__email, .signup__password{
     width: 80%;
     margin: auto 10%;
     border: solid var(--gray-light) 1px;
@@ -152,7 +152,63 @@
     display: none;
 }
 
-@media screen and (max-width:426px){
+@media screen and (max-width: 426px) and (min-width: 300px){
+    .signup{
+        width: 70vw;
+    }
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 426px){
+    .signup{
+        width: 58vw;
+    }
+}
+
+@media screen and  (max-width: 768px) and (min-width: 650px){
+    .signup{
+        width: 50vw;
+    }
+}
+
+@media screen and  (max-width: 900px) and (min-width: 768px){
+    .signup{
+        width: 42vw;
+    }
+}
+
+@media screen and  (max-width: 1200px) and (min-width: 900px){
+    .signup{
+        width: 32vw;
+    }
+}
+
+@media screen and  (max-width: 1400px) and (min-width: 1200px){
+    .signup{
+        width: 25vw;
+    }
+}
+
+@media screen and  (max-width: 2000px) and (min-width: 1400px){
+    .signup{
+        width: 22vw;
+    }
+}
+
+@media screen and  (max-width: 4000px) and (min-width: 2000px){
+    .signup{
+        width: 22vw;
+    }
+}
+
+@media screen and (max-device-width:768px){
+    .signup{
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-device-width:426px){
     .signup{
         width: 90vw;
     }
