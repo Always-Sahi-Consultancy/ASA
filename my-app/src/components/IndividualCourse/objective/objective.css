@@ -5,13 +5,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 3%;
+    margin: 5% 3%;
 }
 .objective__heading{
     font-family: Bebas-Neue;
     font-style: normal;
     font-weight: normal;
-    font-size: 3rem;
-    line-height: 55px;
+    font-size: 3.5rem;
+    line-height: 65px;
     display: flex;
     align-items: center;
     margin: 1.6%;
@@ -23,13 +24,14 @@
     justify-content: start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 65%;
+    width: auto;
+    margin: 0% 2%;
 }
 .point__main{
     font-family: Roboto;
     font-style: normal;
-    font-size: 1.7rem;
-    line-height: 33px;
+    font-size: 2rem;
+    line-height: 40px;
     display: flex;
     font-weight: 400;
     align-items: center;

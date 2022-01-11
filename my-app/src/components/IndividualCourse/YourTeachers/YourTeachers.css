@@ -1,0 +1,53 @@
+.teacher-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+.teacher__heading{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 115px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    color: #000000;
+}
+.teacher__imgContainer{
+    padding: auto;
+    margin: 1%;
+}
+.teacher__img{
+    border: 2px solid var(--gray);
+    border-radius: 50%;
+    margin: 1%;
+}
+.teacher__name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    color: #000000;
+}
+.teacher__qualification{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    color: #000000;
+}
