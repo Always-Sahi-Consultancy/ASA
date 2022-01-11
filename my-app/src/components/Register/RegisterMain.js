@@ -1,8 +1,14 @@
+import {useEffect} from 'react';
 import './register.css';
 import Register from './Register';
 import regImage from '../../image/to-register-gb8968b104_1920.jpg';
 
 const RegisterMain = (props) => {
+
+    useEffect(() => {
+        document.title = "Always Sahi Academy | Register";
+    })
+
     return (
         <div className='containerR'>
             <div className='register__image-container'>

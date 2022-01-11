@@ -27,13 +27,13 @@ function App() {
       {active === "Header_Dash" && <Header_Dash />}
       {active === "Signup" && <Signup />}
       {active === "RegisterMain" && <RegisterMain />}
+      {active === "OurStory" && <OurStroy />}
+      {active === "Testimonials" && <Testimonials />}
       {active === "TermsOfUse" && <TermsOfUse />}
       {active === "EarningDiscalimer" && <EarningDiscalimer />}
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
-      {active === "OurStory" && <OurStroy />}
-      {active === "Testimonials" && <Testimonials />}
-      <Footer2/>
+      <Footer2 onChange={setActive} />
     </div>
   );
 }
