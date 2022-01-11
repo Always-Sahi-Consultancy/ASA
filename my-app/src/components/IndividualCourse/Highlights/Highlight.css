@@ -1,0 +1,79 @@
+
+.Highlights__container{
+    background-size: auto;
+    background: rgba(229, 229, 229, 0.24);
+    box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25);
+    padding: 2rem 4rem;    
+    position: absolute;
+}
+.Highlights__title{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Roboto;
+    padding: 1rem 2rem;
+}
+
+.Highlights__content{
+    padding: 1rem 2rem;
+    width: 50%;
+    display: block;
+    float: left;
+}
+.Highlights__content img{
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.Highlights__content h4{
+    float: left;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+@media screen and (max-device-width: 880px){
+    .Highlights__container{
+        box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25);
+        padding: 2rem 3rem;    
+    }
+    .Highlights__title{
+        font-size: 2.5rem;
+
+    }
+    .Highlights__content{
+        padding: 1rem 1rem;
+    }
+    .Highlights__content img{
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    .Highlights__content h4{
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-device-width: 700px){
+    .Highlights__container{
+        padding: 2rem 1rem;    
+    }
+    .Highlights__title{
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Roboto;
+        padding: 1rem 2rem;
+    }
+    
+    .Highlights__content{
+        padding: 1rem 2rem;
+        width: 100%;
+        display: block;
+        float: left;
+    }
+    .Highlights__content img{
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    .Highlights__content h4{
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}
