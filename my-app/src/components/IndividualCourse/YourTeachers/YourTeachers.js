@@ -1,4 +1,4 @@
-import './YourTeacher.css';
+import './YourTeachers.css';
 
 const YourTeacher=() =>{
     return (

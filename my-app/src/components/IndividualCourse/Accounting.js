@@ -2,7 +2,7 @@ import Banner from './banner/Banner';
 import Objective from './objective/Objective';
 import Highlights from './highlights/Highlights';
 import AccountingContent from './Accounting/accountingcontent';
-// import YourTeacher from './YourTeachers/YourTeachers';
+import YourTeacher from './YourTeachers/YourTeachers';
 
 const Accounting =() =>{
     return(
@@ -13,7 +13,7 @@ const Accounting =() =>{
             <div>
                 <AccountingContent/>
             </div>
-            {/* <YourTeacher/> */}
+            <YourTeacher/>
         </div>
     );
 }
