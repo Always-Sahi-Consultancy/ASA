@@ -6,8 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   height: 100%;
-  width: 100%;
 }
 .register__main-image {
   height: 100%;
@@ -18,8 +18,8 @@
 .register {
   width: 21%;
   position: absolute;
-  left: 74%;
-  top: 8vh;
+  left: 70%;
+  top: 20%;
   background: var(--white);
   border-radius: 10px;
   margin: 0vh -3vh;
@@ -211,7 +211,7 @@
   width: 60%;
   position: absolute;
   left: 10vh;
-  top: 5vh;
+  top: 20%;
   font-family: Bebas-Neue;
   font-style: normal;
   font-weight: normal;
@@ -226,29 +226,32 @@
 @media screen and (max-width:1024px) {
   .containerR {
     overflow: hidden;
-    overflow-x: hidden;
+    width: 95%;
     margin: 0;
+    padding: 0;
   }
   .register__image-container {
     overflow: hidden;
     height: 150vw;
     width: 100%;
+    margin: 0;
   }
   .register__main-component_heading {
-    width: 90%;
+    width: 50%;
     position: absolute;
     left: 5vh;
-    top: 5vh;
+    top: 16%;
     font-size: 4.5rem;
     line-height: 80px;
   }
   .register {
-    width: 55%;
+    width: 35%;
     height: auto;
     position: absolute;
     top: 0;
     left:0;
-    margin: 25% 20%;
+    margin-top: 16%;
+    margin-left: 55%;
     background: var(--white);
     border-radius: 10px;
     padding: 1.5%;
@@ -284,6 +287,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow-x: hidden;
   }
 
   .register__component {
@@ -329,7 +333,7 @@
     width: 90%;
     position: absolute;
     left: 5vh;
-    top: 5vh;
+    top: 15%;
     font-size: 4.5rem;
     line-height: 80px;
   }
@@ -422,20 +426,16 @@
         object-fit: fill;
       }
       .register__main-component_heading {
-        width: 90%;
+        width: 80%;
         position: absolute;
-        left: 2vh;
-        top: 5vh;
-        font-size: 2.5rem;
-        line-height: 40px;
+        margin: 1% 0%;
+        font-size: 3rem;
+        line-height: 50px;
       }
       .register {
         width: 74%;
-        height: auto;
         position: absolute;
-        top: 0;
-        left:0;
-        margin: 60% 5vh;
+        margin: 85% 4vh;
         background: var(--white);
         border-radius: 10px;
         padding: 1.5%;
@@ -498,4 +498,41 @@
       .register__title{
         font-size: 1.3rem;
       }
+}
+@media screen and (max-width:320px) {
+  .containerR {
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .register__image-container {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  .register__image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .register__main-component_heading {
+    width: 90%;
+    position: absolute;
+    margin: 1% 0%;
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .register {
+    width: 74%;
+    position: absolute;
+    margin: 90% 4vh;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__image {
+    width: 5vw;
+  }
+  
 }
