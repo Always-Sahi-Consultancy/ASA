@@ -3,7 +3,7 @@
   min-height: 85vh;
 }
 .course_heading {
-  height: 20%;
+  height: 10%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,9 +21,10 @@
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
-  line-height: 115px;
+  /* line-height: 115px; */
   font-weight: 700;
   padding: 0 20px;
+  margin-left: 3vw;
 }
 .filter_img {
   display: none;
@@ -48,7 +49,7 @@
 }
 .course_Search_bar {
   height: 40px;
-  width: 80%;
+  width: 95%;
   border: none;
   padding: 2px 5px;
   font-size: 16px;
@@ -73,6 +74,7 @@
   align-items: center;
   width: 35%;
   height: 100%;
+  margin-right: 3vw;
 }
 .courses_name {
   font-family: Roboto;
@@ -89,7 +91,7 @@
   flex-wrap: wrap;
 }
 .course_box {
-  width: 48%;
+  width: 47%;
   margin: 1vh 1vw;
   display: flex;
   justify-content: space-around;
@@ -104,9 +106,6 @@
   border-radius: 10px;
   background: #6d6875;
 }
-.course_title {
-  text-transform: uppercase;
-}
 .course_details {
   padding: 1vh;
 }
@@ -114,7 +113,8 @@
   font-family: Bebas-Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .Prof_name {
   font-family: Roboto;
@@ -126,8 +126,13 @@
   display: flex;
   align-items: center;
 }
+.course_cost {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+}
 .original_cost {
-  margin-left: 30px;
+  margin-left: 80px;
 }
 .Course_button {
   display: flex;
@@ -136,7 +141,62 @@
   padding: 5px 15px;
   text-decoration: none;
   background: #eb6a6a;
+  margin: 5px 0;
   margin-right: 10px;
   border-radius: 6px;
   color: white;
+}
+.course_star_element {
+  height: 20px;
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1025px) {
+  .Course_Section {
+    width: 100%;
+  }
+  .course_heading {
+    flex-direction: column;
+    height: 15vh;
+  }
+  .course_name_section {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .course_name {
+    margin-right: 10vw;
+    font-size: 64px;
+    /* line-height: 60px; */
+  }
+  .filter_img {
+    display: block;
+    margin-right: 10vw;
+  }
+  .course_Search_section {
+    width: 100%;
+  }
+  .course_Search_left {
+    width: 70%;
+  }
+  .course_Search {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .course_img {
+    width: 50%;
+  }
+  .course_box {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .course_box {
+    width: 100%;
+  }
+  .course_name {
+    /* margin-right: 10vw; */
+    font-size: 32px;
+    /* line-height: 60px; */
+  }
 }
