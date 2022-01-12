@@ -21,7 +21,7 @@
     margin: 1%;
 }
 .teacher__img{
-    border: 2px solid var(--gray);
+    border: 2px solid var(--red);
     width: 100px;
     height: 100px;
     border-radius: 50%;

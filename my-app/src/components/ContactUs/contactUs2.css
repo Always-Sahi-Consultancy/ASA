@@ -151,12 +151,13 @@
 }
 
 .faq {
-    margin: 2% 20%;
+    margin: 5% 20%;
   }
   
   .faq__title {
-    font-family: CooperHewitt-Book;
-    font-size: 2rem;
+    font-family: Roboto;
+    font-size: 2.3rem;
+    margin: 2% 0%;
   }
   
   .faq__questions {
@@ -210,6 +211,7 @@
   .faq__breif,
   .faq__details {
     font-size: 1.2rem;
+    font-family: Roboto;
   }
 @media screen and (max-width:1024px) {
     .contactUsform__button{
@@ -283,7 +285,7 @@
     }
     .faq__show{
         font-size: 2rem;
-        padding-bottom: 1.5vh;
+        padding-bottom: 1vh;
     }
     .faq__question{
         grid-template-columns: auto 4%;
@@ -365,8 +367,8 @@
           .faq__show{
             height: 30px;
             width: 30px;
-            padding-bottom: 1.5vh;
+            padding-bottom: 1vh;
             margin-left: 0;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
           }
 }
