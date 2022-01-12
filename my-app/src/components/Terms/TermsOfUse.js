@@ -8,7 +8,7 @@ const TermsOfUse = () => {
     })
 
     return (
-        <div className="details">
+        <div className="detail" id="details">
             <div className="details__title">TERMS OF USE</div>
             <div className="details__info">
                 We advise and urge earnestly that you please carefully go through the terms of the present agreement. Your express move of subscribing constitutes an acknowledgement that you have, read and completely understood the facets, aspects, implications and effects of the present agreement and you expressly consent to oblige by the terms of the present agreement without any sort of restrictions or qualifications and further you accept to comply with the local laws and rules and regulations that prevail at the time of signing of this contract.<br/><br />

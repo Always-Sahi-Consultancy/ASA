@@ -8,7 +8,7 @@ const RefundPolicy = () => {
     })
 
     return (
-        <div class="details">
+        <div class="detail" id="details">
             <div class="details__title">REFUND POLICY</div>
             <div class="details__info">
                 After access is granted, due to the sensitive, proprietary nature of the copyrighted content, Always Sahi Academy will not refund the fees for any reason.</div>

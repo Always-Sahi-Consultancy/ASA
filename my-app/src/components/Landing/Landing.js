@@ -9,16 +9,20 @@ import Founder from './Founder/Founder';
 import Freebies from './Freebies/Freebies';
 import Stats from './Stats/Stats';
 
-const Landing = () => {
+const Landing = (props) => {
     useEffect(() => {
         document.title = "Always Sahi Academy";
     })
+
+    const explorehandler=(value)=>{
+        props.onChange(value);
+    }
 
     return (
         <div>
             <Subheader />
             <Popular_main />
-            <Explore />
+            <Explore onChange={explorehandler}/>
             <ExploreNew />
             <Freebies />
             <Stats/>

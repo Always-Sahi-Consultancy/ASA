@@ -13,6 +13,7 @@ import Footer2 from './components/Footer2/footer2';
 import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
+import CoursePage from './components/CoursePage/CoursePage';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       {active === "EarningDiscalimer" && <EarningDiscalimer />}
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
+      {active === "CoursePage" && <CoursePage />}
       <Footer2 onChange={setActive} />
     </div>
   );

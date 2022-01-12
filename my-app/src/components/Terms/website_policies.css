@@ -1,6 +1,7 @@
-.details{
+.detail{
     width:80vw;
     margin: 0 auto;
+    position: relative;
 }
 
 .details__title{
