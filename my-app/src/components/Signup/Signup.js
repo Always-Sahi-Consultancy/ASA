@@ -8,8 +8,8 @@ import Apple from  '../../image/Apple.png';
 
 const Signup = (props) => {
     const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},
-    {'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"},
-    {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}];
+    {'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
+    // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}
 
     const esc = (e) => {
         if(e.target.classList[0]=="signup__blur"){

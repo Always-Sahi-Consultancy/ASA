@@ -1,4 +1,4 @@
-import ImgEmail from '../../image/internet.png';
+import ImgEmail from '../../image/email.png';
 import ImgPhone from '../../image/phone.png';
 import ImgLocation from '../../image/map.png';
 import twitter from '../../image/twitter.png';
