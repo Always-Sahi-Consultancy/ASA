@@ -5,14 +5,14 @@ import Apple from '../../../image/Apple.png';
 import Graph from '../../../image/g.png';
 import Pencil from '../../../image/pencil.png';
 import Video from '../../../image/videoclap.png';
-import Tax from '../../../image/tax.png';
+import Career from '../../../image/career.png';
 import Money from '../../../image/money.png';
 
 function ExploreNew() {
     const new_Courses = [
         {
             id: '1',
-            Text: 'Programming and Tech',
+            Text: 'Programming and Tech.',
             Image: Code
         },
         {
@@ -22,8 +22,8 @@ function ExploreNew() {
         },
         {
             id: '3',
-            Text: "taxation",
-            Image: Tax
+            Text: "career development",
+            Image: Career
         },
         {
             id: '4',
@@ -37,7 +37,7 @@ function ExploreNew() {
         },
         {
             id: '6',
-            Text: "Finance",
+            Text: "Finance and accounting",
             Image: Money
         }
     ]

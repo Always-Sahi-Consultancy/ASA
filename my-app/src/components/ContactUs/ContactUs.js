@@ -14,8 +14,8 @@ const ContactUs = () => {
     FaqButton.src = './FaqJs.js';
     return (
         <div>
-            <ContactStructure />
-            <FaqStructure />
+            <ContactStructure/>
+            <FaqStructure/>
         </div>
     );
 }

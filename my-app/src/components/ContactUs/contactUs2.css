@@ -29,7 +29,7 @@
     align-items: flex-end;
     text-align: center;
     width: auto;
-    margin: 8vh 1vh 2vh 1vh;
+    margin: 5vh 1vh 2vh 1vh;
     color: white;
 }
 .contactUsform__name{
@@ -109,10 +109,10 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 1.4rem;
     line-height: 30px;
     text-align: left;
-    margin: 5%;
+    margin: 4%;
     width: 50%;
     color: #FFFFFF;
 }
