@@ -1,7 +1,7 @@
 import ImgEmail from '../../image/email.png';
 import ImgPhone from '../../image/phone.png';
 import ImgLocation from '../../image/map.png';
-import whatsapp from '../../image/whatsapp.png';
+import telegram from '../../image/telegram.png';
 import instagram from '../../image/instagramicon.png';
 import facebook from '../../image/fb icon.png';
 
@@ -22,7 +22,7 @@ const FooterIcon = ()=>{
                 <div className="icon__text">Pune, Maharashtra</div>
             </div>
             <div className='icons__style'>
-                <div className='icon__link'><a href="#" target={"_blank"}><img src={whatsapp} className='iconD'></img></a></div>
+                <div className='icon__link'><a href="#" target={"_blank"}><img src={telegram} className='iconD'></img></a></div>
                 <div className='icon__link'><a href="https://www.instagram.com/alwayssahiacademy/ " target={"_blank"}><img src={instagram} className='iconD'></img></a></div>
                 <div className='icon__link'><a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}><img src={facebook} className='iconD'></img></a></div>
             </div>

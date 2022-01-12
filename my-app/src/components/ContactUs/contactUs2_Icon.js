@@ -1,7 +1,7 @@
 import ImgEmail from '../../image/email.png';
 import ImgPhone from '../../image/phone.png';
 import ImgLocation from '../../image/map.png';
-import twitter from '../../image/twitter.png';
+import telegram from '../../image/telegram.png';
 import instagram from '../../image/instagramicon.png';
 import facebook from '../../image/fb icon.png';
 
@@ -22,7 +22,7 @@ const ContactUsIcon = ()=>{
                 <div className="contactUsicon__text">Pune, Maharashtra</div>
             </div>
             <div className='contactUsicons__style'>
-                <div className='contactUsicon__link'><img src={twitter} className='contactUsiconD'></img></div>
+                <div className='contactUsicon__link'><img src={telegram} className='contactUsiconD'></img></div>
                 <div className='contactUsicon__link'><img src={instagram} className='contactUsiconD'></img></div>
                 <div className='contactUsicon__link'><img src={facebook} className='contactUsiconD'></img></div>
             </div>
