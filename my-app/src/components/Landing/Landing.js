@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Popular_main from './Popular Trainings/Popular_main';
 import './Landing.css';
 import Explore from './Explore/explore';
@@ -9,6 +10,10 @@ import Freebies from './Freebies/Freebies';
 import Stats from './Stats/Stats';
 
 const Landing = () => {
+    useEffect(() => {
+        document.title = "Always Sahi Academy";
+    })
+
     return (
         <div>
             <Subheader />
