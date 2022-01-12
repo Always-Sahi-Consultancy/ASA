@@ -1,5 +1,5 @@
 .Course_Section {
-  width: 75%;
+  width: 80%;
   min-height: 85vh;
 }
 .course_heading {
@@ -101,13 +101,14 @@
   background-color: rgba(235, 106, 106, 0.07);
 }
 .course_img {
-  width: 120px;
-  height: 120px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 10px;
   background: #6d6875;
 }
 .course_details {
   padding: 1vh;
+  width: 70%;
 }
 .course_title {
   font-family: Bebas-Neue;
@@ -126,6 +127,7 @@
   display: flex;
   align-items: center;
   height: 18px;
+  width: 100%;
 }
 .course_cost {
   font-family: Roboto;
@@ -133,10 +135,11 @@
   font-weight: 900;
 }
 .original_cost {
-  margin-left: 80px;
+  margin-left: 30px;
 }
 .Course_button {
   display: flex;
+  width: 100%;
 }
 .Buy_button {
   padding: 5px 15px;
@@ -147,9 +150,17 @@
   border-radius: 6px;
   color: white;
 }
+.buy {
+  width: 100px;
+  text-align: center;
+}
 .course_star_element {
   height: 20px;
   margin-right: 5px;
+}
+.course_details_main {
+}
+.course_details_upper {
 }
 @media only screen and (max-width: 1025px) {
   .Course_Section {
@@ -184,11 +195,54 @@
 }
 @media only screen and (max-width: 769px) {
   .course_img {
-    width: 50%;
+    width: 6rem;
+    height: 6rem;
   }
   .course_box {
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: flex-start;
+  }
+  .Course_section_main {
+    margin: 1vh;
+  }
+  .Buy_button {
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+  }
+  .course_details_main {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .course_details_upper {
+    width: 40%;
+  }
+  .course_title {
+    font-size: 14px;
+  }
+  .cost_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .course_cost {
+    /* font-size: 14px; */
+    width: 100%;
+  }
+  .original_cost {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Buy_button {
+    padding: 1vh;
+  }
+  .Course_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 426px) {
