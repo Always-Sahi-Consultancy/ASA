@@ -39,12 +39,12 @@ const Popular_main = () => {
         },
         {
             Image: image3,
-            Name: "FINANCIAL ACCOUNTING",
+            Name: "ACCOUNTS AND FINANCE",
             SubName: "Manage your Expenses"
         },
         {
             Image: image4,
-            Name: "MASTER COURSE IN TAXATION",
+            Name: "PROFILE BUILDING & DEVELOPMENT",
             SubName: "Prepare for Financial Years"
         },
         {
@@ -54,7 +54,7 @@ const Popular_main = () => {
         },
         {
             Image: image6,
-            Name: "BUSINESS AND FREELANCE",
+            Name: "BUSINESS AND FREELANCING",
             SubName: "Gain Problem solving skills"
         }
     ];

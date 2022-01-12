@@ -65,6 +65,9 @@
     margin: 2vh 2vh;
     width: 100%;
   }
+  .video_header {
+    font-size: 25px;
+  }
   .video-test__video {
     width: 10%;
     height: 20vh;

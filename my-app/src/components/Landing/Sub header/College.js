@@ -10,7 +10,7 @@ const College = () => {
             Name: "Aissms Coe"
         },
         {
-            Name: "Mit"
+            Name: "Mit Alandi"
         },
         {
             Name: "Usdc"
