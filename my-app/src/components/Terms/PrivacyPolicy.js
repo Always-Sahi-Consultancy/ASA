@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
         document.title = "Always Sahi Academy | Pricacy Policy";
     })
     return (
-        <div class="details">
+        <div class="detail" href="details">
             <div class="details__title">Privacy Policy</div>
             <div class="details__info">Who we are
                 Our website address is https://alwayssahi.com.

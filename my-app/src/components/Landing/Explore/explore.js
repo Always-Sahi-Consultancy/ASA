@@ -4,7 +4,7 @@ import Model from '../../../image/model-g2c5c98e33_19202.jpg';
 
 
 function Explore(props){
-    return<div>
+    return(<div>
         <div className='main-container'>
             <img src={Model}></img>
             <div className='main-container__content'>
@@ -12,7 +12,7 @@ function Explore(props){
                 <div className='explore__button' onClick={() => props.onChange("CoursePage")}>Explore</div>
             </div>
         </div>
-    </div>
+    </div>);
 }
 
 export default Explore;

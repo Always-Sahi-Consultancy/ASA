@@ -7,7 +7,7 @@ const Poster = () => {
         <div className="Poster">
             <img className="Poster_img" src={Image} />
             <div className="subheader_nav">
-                <div className="nav_tabs"><a href="#">Commerce & Accounts</a></div>
+                <div className="nav_tabs"><a href="#">Account & Finance</a></div>
                 <div className="nav_tabs"><a href="#">Coding & Web Development</a></div>
                 <div className="nav_tabs"><a href="#">Buisness & Freelance</a></div>
                 <div className="nav_tabs"><a href="#">Video & Animation</a></div>

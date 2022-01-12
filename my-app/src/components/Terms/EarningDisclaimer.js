@@ -6,7 +6,7 @@ const EarningDiscalimer = () => {
         document.title = "Always Sahi Academy | Earning Disclaimer";
     })
     return (
-        <div class="details">
+        <div class="detail" id="details">
             <div class="details__title">Earning Disclaimer</div>
             <div class="details__info">
                 No Earnings Guarantee, Estimation or Representation
