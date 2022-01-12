@@ -14,8 +14,8 @@ const Course_box = (props) => {
                     <div className="original_cost"><s>{props.ori_cost}</s></div>
                 </div>
                 <div className="Course_button">
-                    <a href="#" className="Buy_button">BUY NOW</a>
-                    <a href="#" className="Buy_button">ABOUT COURSE</a>
+                    <a href="#" className="Buy_button">{props.buy_now}</a>
+                    <a href="#" className="Buy_button">{props.about_course}</a>
                 </div>
             </div>
         </div>

@@ -125,6 +125,7 @@
 .cost_section {
   display: flex;
   align-items: center;
+  height: 18px;
 }
 .course_cost {
   font-family: Roboto;
