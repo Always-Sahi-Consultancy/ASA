@@ -289,7 +289,7 @@ const CoursePage_Courses = () => {
                 <div className="Course_section_main">
                     {course_details.map((course) => {
                         return (
-                            <Course_box title={course.title} star={course.stars} Prof_name={course.Prof_name} ori_cost={course.Original_cost} course_cost={course.course_cost} buy_now={course.buy_now} about_course={course.about_course} />
+                            <Course_box title={course.title} star={course.stars} Prof_name={course.Prof_name} ori_cost={course.Original_cost} course_cost={course.course_cost} buy_now={course.buy_now} about_course={course.about_course} index={course.index}/>
                         )
                     })}
                 </div>

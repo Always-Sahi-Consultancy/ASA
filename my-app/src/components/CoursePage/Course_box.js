@@ -2,6 +2,7 @@ import './Courses.css';
 import Course_rate from './Course_rate';
 
 const Course_box = (props) => {
+    // "Buy_button buy"
     return (
         <div className="course_box">
             <div className="course_img"></div>
@@ -17,7 +18,7 @@ const Course_box = (props) => {
                         </div>
                     </div>
                     <div className="Course_button">
-                        <a href="#" className="Buy_button buy">{props.buy_now}</a>
+                        <a href="#" className={`Buy_button buy ${props.index === "1" ? "free_button" : ""}`}>{props.buy_now}</a>
                         <a href="#" className="Buy_button">{props.about_course}</a>
                     </div>
                 </div>
