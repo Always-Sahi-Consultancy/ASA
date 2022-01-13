@@ -6,6 +6,7 @@
   height: auto;
   margin: -3vh;
   background: black;
+  overflow: hidden;
 }
 .form-container {
   display: flex;
@@ -180,7 +181,299 @@
   text-decoration: none;
   color: var(--white);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) and (min-width: 300px){
+  .footerMain {
+    overflow: hidden;
+  }
+  .row{
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .form__heading {
+    font-size: 1.2rem;
+    height: auto;
+  }
+  .form__button {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .form-container {
+    width: 70%;
+  }
+  .icon-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .icon__heading {
+    text-align: center;
+  }
+  .terms-container {
+    width: 90%;
+    height: auto;
+  }
+  .section {
+    font-size: 0.7rem;
+    margin-right: 2%;
+  }
+  .terms__part2 {
+    font-size: 0.7rem;
+    margin-bottom: 10%;
+  }
+  .icon {
+    width: auto;
+    height: 2vh;
+  }
+  .iconD {
+    width: auto;
+    height: 3vh;
+  }
+  .icon__text {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 0.8% 6%;
+  }
+  .icon__style {
+    width: 50%;
+  }
+  .icons__style {
+    margin: 1% 0%;
+  }
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 426px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .form__button {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .terms-container {
+    width: 90%;
+    height: auto;
+  }
+  .section {
+    font-size: 0.9rem;
+    margin-right: 2%;
+  }
+  .terms__part2 {
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+  .icon {
+    width: auto;
+    height: 2vh;
+  }
+  .iconD {
+    width: auto;
+    height: 3vh;
+  }
+  .icon__text {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 0.8% 6%;
+  }
+  .icon__style {
+    margin: 10% auto;
+    width: 50%;
+  }
+  .icons__style {
+    margin: 2% 0%;
+  }
+}
+
+@media screen and  (max-width: 768px) and (min-width: 650px){
+  .signup{
+      width: 50vw;
+  }
+}
+
+@media screen and  (max-width: 900px) and (min-width: 768px){
+  .footerMain {
+    overflow: hidden;
+  }
+  .row{
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .form__heading {
+    font-size: 1.2rem;
+    height: auto;
+  }
+  .form__button {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .form-container {
+    width: 60%;
+    margin: auto 5%;
+  }
+  .icon-container {
+    width: 60%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .icon__heading {
+    text-align: center;
+  }
+  .terms-container {
+    width: 95%;
+    height: auto;
+  }
+  .section {
+    font-size: 1rem;
+    margin-right: 2%;
+  }
+  .terms__part2 {
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+  .icon {
+    width: auto;
+    height: 2vh;
+  }
+  .iconD {
+    width: auto;
+    height: 3vh;
+  }
+  .icon__text {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 0.8% 6%;
+  }
+  .icon__style {
+    margin: 1% auto;
+    width: 50%;
+  }
+  .icons__style {
+    margin: 2% 0%;
+  }
+}
+
+@media screen and  (max-width: 1200px) and (min-width: 900px){
+  .terms-container {
+    width: 95%;
+    height: auto;
+  }
+  .footer__name, .form__email, .form__message, .form__phone{
+    font-size: 1.2rem;
+  }
+  .section {
+    font-size: 1rem;
+    margin-right: 2%;
+  }
+  .terms__part2 {
+    font-size: 1rem;
+    margin-bottom: 6%;
+  }
+  .icon {
+    width: auto;
+    height: 2vh;
+  }
+  .iconD {
+    width: auto;
+    height: 3vh;
+  }
+}
+@media screen and  (max-width: 1400px) and (min-width: 1200px){
+  .terms-container {
+    width: 100%;
+    height: auto;
+  }
+  .footer__name, .form__email, .form__message, .form__phone{
+    font-size: 1.2rem;
+  }
+  .section {
+    font-size: 1.3rem;
+    margin-right: 2%;
+  }
+  .icon__text{
+    font-size: 1.5rem;
+  }
+  .terms__part2 {
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+  }
+  .icon {
+    width: auto;
+    height: 3vh;
+  }
+  .iconD {
+    width: auto;
+    height: 4vh;
+  }
+}
+
+@media screen and  (max-width: 2000px) and (min-width: 1400px){
+  .terms-container {
+    margin: 0;
+  }
+  .footer__name, .form__email, .form__message, .form__phone{
+    font-size: 1.2rem;
+  }
+  .section {
+    font-size: 1.3rem;
+    margin-right: 2%;
+  }
+  .icon__text{
+    font-size: 1.5rem;
+  }
+  .terms__part2 {
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+  }
+  .icon {
+    width: auto;
+    height: 3vh;
+  }
+  .iconD {
+    width: auto;
+    height: 4vh;
+  }
+}
+
+@media screen and  (max-width: 4000px) and (min-width: 2000px){
+  .terms-container {
+    width: 100%;
+    height: auto;
+  }
+  .footer__name, .form__email, .form__message, .form__phone{
+    font-size: 1.2rem;
+  }
+  .section {
+    font-size: 1.3rem;
+    margin-right: 2%;
+  }
+  .icon__text{
+    font-size: 1.5rem;
+  }
+  .terms__part2 {
+    font-size: 1.4rem;
+    margin-bottom: 6%;
+  }
+}
+@media screen and (max-device-width: 768px) {
   .footerMain {
     overflow: hidden;
   }
@@ -236,8 +529,11 @@
     line-height: 20px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-device-width: 426px) {
   .footerMain {
+    overflow: hidden;
+  }
+  .row{
     overflow: hidden;
   }
   .container {
@@ -245,6 +541,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .form__heading {
     font-size: 1.2rem;
@@ -271,7 +568,7 @@
     height: auto;
   }
   .section {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     margin-right: 2%;
   }
   .terms__part2 {
@@ -287,7 +584,7 @@
     height: 4vh;
   }
   .icon__text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 20px;
     margin: 0.8% 6%;
   }
