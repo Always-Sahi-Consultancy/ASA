@@ -99,9 +99,10 @@
   align-items: center;
 }
 .Search_heading {
-  font-size: 4.625rem;
+  /* font-size: 4.625rem; */
+  font-size: 5vw;
   text-transform: uppercase;
-  line-height: 86px;
+  line-height: 5vw;
   width: 100%;
   color: #ffffff;
   font-family: Bebas-Neue;
@@ -632,5 +633,70 @@
     /* padding-right: 0vw;
     padding-right: 1vh;
     padding-left: 1vh; */
+  }
+}
+@media only screen and (max-width: 426px) and (min-width: 300px) {
+  html {
+    zoom: 1;
+  }
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 426px) {
+  html {
+    zoom: 0.6;
+  }
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 650px) {
+  html {
+    zoom: 0.7;
+  }
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  html {
+    zoom: 0.8;
+  }
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  html {
+    zoom: 0.9;
+  }
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1400px) {
+  html {
+    zoom: 1;
+  }
+}
+
+@media only screen and (max-width: 4000px) and (min-width: 2000px) {
+  html {
+    zoom: 1.1;
+  }
+  .Poster {
+    height: 100vh;
   }
 }
