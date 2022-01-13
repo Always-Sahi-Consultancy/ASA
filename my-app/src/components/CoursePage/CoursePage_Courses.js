@@ -23,13 +23,13 @@ const CoursePage_Courses = () => {
                     star: star1
                 },
                 {
-                    star: star
+                    star: star1
                 }
             ],
             index: "0",
             Prof_name: "Atharv",
             course_cost: "Rs. 2999",
-            Original_cost: "Rs. 100",
+            Original_cost: "Rs. 5000",
             buy_now: "Buy Now",
             about_course: "About Course"
         },
@@ -49,13 +49,13 @@ const CoursePage_Courses = () => {
                     star: star1
                 },
                 {
-                    star: star
+                    star: star1
                 }
             ],
             index: "0",
             Prof_name: "Atharv",
             course_cost: "Rs. 2999",
-            Original_cost: "Rs. 5000",
+            Original_cost: "Rs. 8000",
             buy_now: "Buy Now",
             about_course: "About Course"
         },
@@ -83,7 +83,7 @@ const CoursePage_Courses = () => {
             course_cost: "",
             Original_cost: "",
             buy_now: "Free",
-            about_course: "About Course"
+            about_course: "Get it"
         },
         {
             title: "Fundamentals of Financial Intelligence",
