@@ -1,6 +1,5 @@
 .footerMain {
   overflow: hidden;
-  margin: 10vh 0 0;
 }
 .container {
   height: auto;
@@ -183,7 +182,6 @@
 @media screen and (max-width: 768px) {
   .footerMain {
     overflow: hidden;
-    margin: 8vh 0 0;
   }
 
   .form-container {
@@ -240,7 +238,6 @@
 @media screen and (max-width: 426px) {
   .footerMain {
     overflow: hidden;
-    margin: 8vh 0 -1vh 0;
   }
   .container {
     display: flex;

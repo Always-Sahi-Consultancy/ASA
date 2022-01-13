@@ -7,7 +7,7 @@ const RegisterForm = () => {
             <input type="password"placeholder="  Must be atleast 6 characters" className="register__password" />
             <div className="register__row">
                 <div className="register__flex">
-                    <label type="text" className="register__label">First Name</label>
+                    <label type="text" className="register__label" id="labelName">First Name</label>
                     <input placeholder="  First Name" className="register__name" />
                 </div>
                 <div className="register__flex">

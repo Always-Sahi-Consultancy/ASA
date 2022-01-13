@@ -3,7 +3,6 @@ import RegisterComponent from './RegisterComponent';
 import RegisterForm from './RegisterForm';
 import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
-import Apple from  '../../image/Apple.png';
 
 const Register = () => {
     const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},

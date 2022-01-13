@@ -1,12 +1,12 @@
 .containerNC {
-  margin: 5vh;
+  margin: auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 50vh;
+  width: 50vw;
 }
 .content {
   margin: 0;
@@ -49,6 +49,16 @@
   z-index: 4;
 }
 @media screen and (max-width:1024px) {
+  .containerNC {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50vw;
+  }
   .content {
     margin: 0;
     padding: 0;
@@ -85,6 +95,16 @@
   }
 }
 @media screen and (max-device-width:768px) {
+  .containerNC {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50vw;
+  }
   .content {
     margin: 1vh;
     padding: 0;
@@ -124,6 +144,16 @@
 }
 
 @media (max-device-width: 426px) {
+  .containerNC {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40vw;
+  }
   .content {
     padding: 0;
     margin: 0;

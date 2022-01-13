@@ -9,8 +9,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
 }
 .register__main-image {
@@ -18,13 +17,12 @@
   position: absolute;
   object-fit: cover;
   overflow: hidden;
-  opacity: 0.8;
   height: 100%;
 }
 .register {
   width: 23%;
   position: absolute;
-  left: 75%;
+  left: 71%;
   top: 10%;
   background: var(--white);
   border-radius: 10px;
@@ -83,7 +81,7 @@
 .register__platform {
   width: 100%;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -134,6 +132,7 @@
 }
 .register__name {
   width: 80%;
+  font-size: 0.9rem;
   margin-left: 10%;
   border: solid var(--gray-light) 1px;
   border-radius: 2px;
@@ -157,9 +156,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
 }
 .register__label {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: Roboto;
   font-weight: 500;
   margin: 1vh 2vh;
@@ -170,7 +170,7 @@
   border: solid var(--red) 2px;
   border-radius: 6px;
   padding: 1vh 0;
-  margin: 1vh 10%;
+  margin: 1.5vh 10%;
   color: var(--white);
   font-family: "Roboto";
   font-weight: 700;
@@ -182,18 +182,18 @@
   color: var(--gray);
   text-align: center;
   font-weight: 700;
-  font-size: 0.9rem;
-  margin: 1vh auto;
+  font-size: 1rem;
+  margin: 1.5vh auto;
   padding: 1vh 0;
-  width: 80%;
+  width: 85%;
 }
 
 .register__option {
   color: var(--gray);
   text-align: center;
   font-weight: 400;
-  font-size: 0.8rem;
-  margin: 0;
+  font-size: 1.2rem;
+  margin: 1vh auto;
   font-family: "Roboto";
 }
 
@@ -205,7 +205,7 @@
 .register__main-component {
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -230,7 +230,411 @@
   color: #eb6a6a;
   font-family: Bebas-Neue;
 }
-@media screen and (max-width:1024px) {
+
+@media screen and (max-width: 426px) and (min-width: 300px) {
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    height: 85vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.4;
+    overflow: hidden;
+    height: 100%;
+  }
+  .register__main-component_heading {
+    width: 90%;
+    position: absolute;
+    margin: 5% 8%;
+    font-size: 2.4rem;
+    line-height: 40px;
+    height: auto;
+  }
+  .register {
+    width: 88%;
+    position: absolute;
+    margin: 40% 6%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 1;
+  }
+  .register__image {
+    width: 6vw;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 80%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__nameL{
+    margin-top: 1.5%;
+    margin-left: 1%;
+    font-size: 0.92rem;
+    width: 95%;
+  }
+  #labelName{
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+  .register__label {
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 0.8rem;
+    font-family: Roboto;
+    font-weight: 500;
+    width: 50%;
+  }
+
+  .register__component {
+      font-size: 1.5rem;
+    padding: 0.3vh 1vw;
+  }
+
+  .register__image {
+    width: 6vw;
+  }
+
+  /* .register__logo{
+        /* padding:1vh 0; 
+    } */
+
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .register__message {
+    font-size: 1rem;
+    margin: 1vh auto;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 426px){
+  .containerR {
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+  }
+  .register__main-component_heading {
+    width: 85%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10% 10%;
+    font-size: 3.3rem;
+    line-height: 50px;
+  }
+  .register {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 45% 15%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .register__label {
+    margin-top: 4%;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .register__component {
+      font-size: 1.5rem;
+    padding: 0.3vh 1vw;
+    margin: 4% auto;
+  }
+
+  .register__image {
+    width: 4vw;
+  }
+
+  /* .register__logo{
+        /* padding:1vh 0; 
+    } */
+
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .register__message {
+    font-size: 1rem;
+    margin: 1.2vh auto;
+  }
+  .register__title{
+    font-size: 1.5rem;
+  }
+}
+@media screen and  (max-width: 768px) and (min-width: 650px){
+  
+  .containerR {
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+  }
+  .register__main-component_heading {
+    width: 90%;
+    position: absolute;
+    left: 5vh;
+    top: 5%;
+    font-size: 4rem;
+    line-height: 60px;
+  }
+  .register {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 30% 20%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .register__label {
+    margin-top: 1%;
+    font-size: 1.3rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0.3vh 2vh;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .register__component {
+      font-size: 1.5rem;
+    padding: 0.3vh 1vw;
+  }
+
+  .register__image {
+    width: 4vw;
+  }
+
+   .register__logo{
+         padding:1vh 0; 
+    } 
+
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .register__message {
+    font-size: 1.2rem;
+    margin: 1.5vh auto;
+  }
+  .register__title{
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and  (max-width: 900px) and (min-width: 768px){
+  .containerR {
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+  }
+  .register__main-component_heading {
+    width: 90%;
+    position: absolute;
+    left: 5vh;
+    top: 5%;
+    margin-left: 10%;
+    font-size: 4.5rem;
+    line-height: 80px;
+  }
+  .register {
+    width: 62%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 30% 20%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .register__label {
+    margin-top: 1%;
+    font-size: 1.3rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0.3vh 2vh;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .register__component {
+      font-size: 1.5rem;
+    padding: 0.3vh 1vw;
+  }
+
+  .register__image {
+    width: 4vw;
+  }
+
+   .register__logo{
+         padding:1vh 0; 
+    } 
+
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .register__message {
+    font-size: 1.2rem;
+    margin: 1.5vh auto;
+  }
+  .register__title{
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and  (max-width: 1200px) and (min-width: 900px){
   .containerR {
     overflow: hidden;
     margin: 0;
@@ -243,21 +647,18 @@
     position: relative;
     overflow-x: hidden;
     overflow: hidden;
-    height: 85vh;
+    height: 80vh;
     width: 100%;
   }
   .register__main-image {
     width: 100%;
     position: absolute;
     object-fit: cover;
-    opacity: 0.8;
     height: 100%;
-  }
-  .register__main-image{
-    height: 100vw;
+    background-size: cover;
   }
   .register__main-component_heading {
-    width: 50%;
+    width: 55%;
     position: absolute;
     left: 5vh;
     top: 10%;
@@ -271,10 +672,10 @@
     top: 0;
     left:0;
     margin-top: 8%;
-    margin-left: 60%;
+    margin-left: 63%;
     background: var(--white);
     border-radius: 10px;
-    padding: 1% 0%;
+    padding: 0.5% 0%;
     border: solid var(--gray-light) 2px;
   }
   .register__email{
@@ -319,9 +720,9 @@
     width: 3vw;
   }
 
-  /* .register__logo{
-        /* padding:1vh 0; 
-    } */
+  .register__logo{
+         padding:1vh 0; 
+    }
 
   .register__platform {
     text-align: center;
@@ -330,8 +731,120 @@
   }
 
   .register__message {
-    font-size: 0.7rem;
-    margin: 1vh 1vh;
+    font-size: 1rem;
+    margin: 1vh auto;
+    width: 90%;
+  }
+  .register__title{
+    font-size: 1.5rem;
+    margin: 0% 1%;
+  }
+ 
+}
+
+@media screen and  (max-width: 1400px) and (min-width: 1200px){
+  .containerR {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
+    height: 85vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    background-size: cover;
+  }
+  .register__main-image{
+    height: 100vw;
+  }
+  .register__main-component_heading {
+    width: 60%;
+    position: absolute;
+    left: 5vh;
+    top: 13%;
+    font-size: 5rem;
+    line-height: 60px;
+  }
+  .register {
+    width: 33%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin-top: 8%;
+    margin-left: 60%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1% 0%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    margin-left: 20%;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .register__label {
+    margin-top: 1%;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0.3vh 2vh;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .register__component {
+      font-size: 1rem;
+    padding: 0.3vh 1vw;
+  }
+
+  .register__image {
+    width: 3vw;
+  }
+
+  .register__logo{
+       padding:1vh 0; 
+    }
+
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .register__message {
+    font-size: 1rem;
+    margin: 1vh auto;
+    width: 90%;
   }
   .register__title{
     font-size: 1.5rem;
@@ -339,8 +852,76 @@
   }
   
 }
-@media screen and (max-width:768px) {
-  .containerR {
+
+@media screen and  (max-width: 2000px) and (min-width: 1400px){
+  .register{
+    width: 27%;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    margin-left: 20%;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+@media screen and  (max-width: 4000px) and (min-width: 2000px){
+  .register__main-component_heading {
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 10rem;
+    line-height: 140px;
+  }
+  .register__label {
+    margin-top: 1%;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0.3vh 2vh;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 1.5rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 1.5rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .register__message {
+    font-size: 1.5rem;
+    margin: 1vh auto;
+    width: 90%;
+  }
+  .register__platform {
+    text-align: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .register__title{
+    font-size: 2.5rem;
+    margin: 0% 1%;
+  }
+}
+@media screen and (max-device-width:768px) {
+  /* .containerR {
     overflow: hidden;
     overflow-x: hidden;
     margin: 0;
@@ -349,6 +930,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     position: relative;
     overflow-x: hidden;
     height: 100vh;
@@ -359,7 +941,6 @@
     position: absolute;
     object-fit: cover;
     overflow: hidden;
-    opacity: 0.8;
     height: 100%;
   }
   .register__main-component_heading {
@@ -371,7 +952,7 @@
     line-height: 80px;
   }
   .register {
-    width: 55%;
+    width: 62%;
     height: auto;
     position: absolute;
     top: 0;
@@ -414,12 +995,12 @@
   }
 
   .register__component {
-      font-size: 1rem;
+      font-size: 1.5rem;
     padding: 0.3vh 1vw;
   }
 
   .register__image {
-    width: 3vw;
+    width: 4vw;
   }
 
   /* .register__logo{
@@ -429,24 +1010,32 @@
   .register__platform {
     text-align: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .register__message {
-    font-size: 0.9rem;
-    margin: 1vh 4vh;
+    font-size: 1.2rem;
+    margin: 1.5vh auto;
   }
   .register__title{
-    font-size: 1.3rem;
-  }
+    font-size: 1.9rem;
+  } 
   
 }
-
-@media screen and (max-width: 426px) {
+@media screen and (max-device-width: 426px) {
     .containerR {
         overflow: hidden;
         overflow-x: hidden;
         margin: 0;
+      }
+      .register__main-component{
+        height: 100%;
+        display: flex;
+        margin: 15%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
       .register__image-container {
         display: flex;
@@ -454,7 +1043,7 @@
         align-items: center;
         position: relative;
         overflow-x: hidden;
-        height: 95vh;
+        height:85vh;
         width: 100%;
       }
       .register__main-image {
@@ -462,7 +1051,7 @@
         position: absolute;
         object-fit: cover;
         overflow: hidden;
-        opacity: 0.8;
+        opacity: 0.4;
         height: 100%;
       }
       .register__image{
@@ -471,45 +1060,55 @@
         object-fit: fill;
       }
       .register__main-component_heading {
-        width: 90%;
+        width: 85%;
         position: absolute;
-        margin: 1% 0%;
-        font-size: 3rem;
+        top: 0;
+        left: 0;
+        margin: 5% 8%;
+        font-size: 2.4rem;
         line-height: 50px;
       }
       .register {
-        width: 74%;
+        width: 85%;
         position: absolute;
-        margin: 65% 5vh;
+        top: 0;
+        left: 0;
+        margin: 35% 7%;
         background: var(--white);
         border-radius: 10px;
-        padding: 1.5%;
+        padding: 1%;
         border: solid var(--gray-light) 2px;
       }
       .register__email{
         margin-top: 1%;
-        font-size: 0.6rem;
+        font-size: 1rem;
       }
       .register__name{
         margin-top: 1%;
-        font-size: 0.6rem;
-        width: 90%;
+        font-size: 0.8rem;
+        width: 85%;
       }
       .register__password{
         margin-top: 1%;
-        font-size: 0.6rem;
+        font-size: 1rem;
       }
       .register__nameL{
-        margin-top: 1%;
-        font-size: 0.6rem;
-        width: 90%;
+        margin-top: 1.5%;
+        margin-left: 1%;
+        font-size: 0.85rem;
+        width: 85%;
+      }
+      #labelName{
+        margin-left: 12%;
+        margin-top: 3%;
       }
       .register__label {
-        margin-top: 1%;
-        font-size: 0.8rem;
+        margin-top: 2%;
+        margin-left: 5%;
+        font-size: 0.9rem;
         font-family: Roboto;
         font-weight: 500;
-        margin: 0.3vh 2vh;
+        width: 50%;
       }
       .register__main-component {
         display: flex;
@@ -518,7 +1117,7 @@
       }
 
       .register__component {
-          font-size: 1rem;
+          font-size: 1.5rem;
         padding: 0.3vh 1vw;
       }
 
@@ -533,58 +1132,14 @@
       .register__platform {
         text-align: center;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       .register__message {
-        font-size: 0.9rem;
-        margin: 2vh 4vh;
+        font-size: 1rem;
+        margin: 2vh auto;
       }
       .register__title{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
-}
-@media screen and (max-width:320px) {
-  .containerR {
-    overflow: hidden;
-    overflow-x: hidden;
-    margin: 0;
-  }
-  .register__image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100%;
-  }
-  .register__main-image {
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    overflow: hidden;
-    opacity: 0.8;
-    height: 100%;
-  }
-  .register__main-component_heading {
-    width: 90%;
-    position: absolute;
-    margin: 1% 0%;
-    font-size: 2.5rem;
-    line-height: 50px;
-  }
-  .register {
-    width: 74%;
-    position: absolute;
-    margin: 70% 4vh;
-    background: var(--white);
-    border-radius: 10px;
-    padding: 1.5%;
-    border: solid var(--gray-light) 2px;
-  }
-  .register__image {
-    width: 5vw;
-  }
-  
 }
