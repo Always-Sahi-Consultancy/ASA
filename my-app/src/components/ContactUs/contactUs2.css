@@ -29,7 +29,7 @@
     align-items: flex-end;
     text-align: center;
     width: auto;
-    margin: 5vh 1vh 2vh 1vh;
+    margin: 3vh 1vh 2vh 1vh;
     color: white;
 }
 .contactUsform__name{
@@ -110,7 +110,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 1.4rem;
-    line-height: 30px;
+    line-height: 40px;
     text-align: left;
     margin: 4%;
     width: 50%;
@@ -213,7 +213,219 @@
     font-size: 1.2rem;
     font-family: Roboto;
   }
-@media screen and (max-width:1024px) {
+  @media screen and (max-width: 426px) and (min-width: 300px){
+    .faq__show {
+        padding: 1vh;
+        font-size: 1.8rem;
+        margin-left: -5vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        /* border: solid transparent 1px; */
+      }
+      .contactUsicon{
+        width: auto;
+        height: 2vh;
+    }
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 426px){
+    .faq__show {
+        height: 40px;
+        width: 40px;
+        padding: 1vh;
+        font-size: 1.7rem;
+        margin-left: -3vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        /* border: solid transparent 1px; */
+      }
+      .contactUsicon{
+        width: auto;
+        height: 2vh;
+    }
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+    .contactUsicon__text{
+        font-size: 1rem;
+        line-height: 26px;
+        margin: 1% 6%;
+    }
+    .contactUsicon-container{
+        width: 40%;
+    }
+    .contactUsform__button{
+        width: 40%;
+        margin: 5% auto;
+    }
+    .faq__details{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and  (max-width: 768px) and (min-width: 650px){
+    .faq__show {
+        height: 40px;
+        width: 40px;
+        padding: 1vh;
+        font-size: 1.7rem;
+        margin-left: -3vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        /* border: solid transparent 1px; */
+      }
+      .faq__question{
+          font-size: 1.4rem;
+      }
+      .contactUsicon{
+        width: auto;
+        height: 2vh;
+    }
+    
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+    .contactUsicon__text{
+        font-size: 1.1rem;
+        line-height: 26px;
+        margin: 1% 6%;
+    }
+    .contactUsicon-container{
+        width: 38%;
+    }
+    .contactUsform__button{
+        width: 40%;
+        margin: 5% auto;
+    }
+    .faq__details{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and  (max-width: 900px) and (min-width: 768px){
+    .faq__show {
+        height: 40px;
+        width: 40px;
+        padding: 1vh;
+        font-size: 1.7rem;
+        margin-left: -3vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        /* border: solid transparent 1px; */
+      }
+      .faq__question{
+          font-size: 1.4rem;
+      }
+      .contactUsicon{
+        width: auto;
+        height: 2vh;
+    }
+    
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+    .contactUsicon__text{
+        font-size: 1.1rem;
+        line-height: 26px;
+        margin: 1% 6%;
+    }
+    .contactUsicon-container{
+        width: 38%;
+    }
+    .contactUsform__button{
+        width: 50%;
+    }
+    .faq__details{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and  (max-width: 1200px) and (min-width: 900px){
+    .faq__show {
+        height: 40px;
+        width: 40px;
+        padding: 1vh;
+        font-size: 1.7rem;
+        margin-left: -3vh;
+        text-align: center;
+        margin-top: 0.5vh;
+        /* border: solid transparent 1px; */
+      }
+      .faq__question{
+          font-size: 1.4rem;
+      }
+      .contactUsicon{
+        width: auto;
+        height: 2vh;
+    }
+    
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+    .contactUsicon__text{
+        font-size: 1.1rem;
+        line-height: 26px;
+        margin: 1% 5%;
+    }
+    .contactUsicon-container{
+        width: 33%;
+    }
+    .contactUsform__button{
+        width: 40%;
+        margin: 5% auto;
+    }
+    .faq__details{
+        font-size: 2rem;
+    }
+}
+@media screen and  (max-width: 1400px) and (min-width: 1200px){
+      .contactUsicon{
+        width: auto;
+        height: 2.3vh;
+    }
+    
+    .contactUsiconD{
+        width: auto;
+        height: 3vh;
+    }
+    .contactUsicon__text{
+        font-size: 1.3rem;
+        line-height: 16px;
+        margin: 1% 5%;
+    }
+    .contactUsicon-container{
+        width: 30%;
+    }
+    .contactUsform__button{
+        width: 40%;
+        margin: 5% auto;
+    }
+    .faq__details{
+        font-size: 2rem;
+    }
+}
+
+@media screen and  (max-width: 2000px) and (min-width: 1400px){
+    .faq__details{
+        font-size: 2rem;
+    }
+}
+
+@media screen and  (max-width: 4000px) and (min-width: 2000px){
+    .faq__details{
+        font-size: 2rem;
+    }
+}
+/* @media screen and (max-width:1024px) {
     .contactUsform__button{
         width: 40%;
     }
@@ -227,14 +439,10 @@
     .contactUsicon__text{
         font-size: 1.2rem;
     }
-}
-@media screen and (max-width:768px) {
+} */
+/* @media screen and (max-device-width:768px) {
     .contact{
         margin: 3% 10%;
-        display: flex;
-        overflow: hidden;
-        flex-direction: row;
-        justify-content: center;
     }
     .contactUsform-container{
         width: 55%;
@@ -252,33 +460,26 @@
         width: 45%;
         height: auto;
         margin-bottom: 3vh;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
     .contactUsicon__heading{
         font-size: 1.3rem;
     }
     .contactUsicon{
         width: auto;
-        height: 2vh;
+        height: 1.7vh;
     }
     .contactUsiconD{
         width: auto;
-        height: 3vh;
+        height: 2.5vh;
     }
     .contactUsicon__style{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
         margin: 1% 1%;
         width: 90%;
     }
     .contactUsicon__text{
-        font-size: 1.1rem;
-        line-height: 25px;
+        font-size: 1rem;
+        line-height: 20px;
         margin: 1% 4%;
-        color: #FFFFFF;
     }
     .faq{
         margin: 5% 10%;
@@ -291,19 +492,14 @@
         grid-template-columns: auto 4%;
     }
     
-}
-@media screen and (max-width:426px) {
+} */
+@media screen and (max-device-width:426px) {
         .contact{
             margin: 3% 10%;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
         }
         .container{
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
         .contactUsform__message{
             margin-bottom: 5%;
@@ -340,8 +536,8 @@
             height: 3vh;
         }
         .contactUsicon__text{
-            font-size: 0.9rem;
-            line-height: 20px;
+            font-size: 1.1rem;
+            line-height: 26px;
         }
         .contactUsicon__style{
             width: 70%;

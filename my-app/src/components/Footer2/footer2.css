@@ -91,7 +91,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  margin-top: 2%;
   background-color: black;
 }
 .icon__heading {
@@ -395,6 +395,16 @@
     width: auto;
     height: 3vh;
   }
+  .icon-container {
+    width: 40%;
+    display: flex;
+    margin-bottom: 8%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    background-color: black;
+  }
 }
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
   .terms-container {
@@ -445,11 +455,11 @@
   }
   .icon {
     width: auto;
-    height: 3vh;
+    height: 4vh;
   }
   .iconD {
     width: auto;
-    height: 4vh;
+    height: 5vh;
   }
 }
 
