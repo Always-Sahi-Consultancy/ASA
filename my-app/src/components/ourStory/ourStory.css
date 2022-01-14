@@ -20,7 +20,7 @@
 }
 .story__container {
   padding: 2vh 30vh;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Roboto;
   line-height: 130%;
   text-align: justify;
@@ -150,7 +150,7 @@ p {
   }
   .story__container {
     padding: 2vh 8vh;
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -164,8 +164,8 @@ p {
     left: 3vw;
   }
   .story__container {
-    padding: 2vh 8vh;
-    font-size: 2rem;
+    padding: 5vh 15vh;
+    font-size: 1.3rem;
   }
 }
 
@@ -181,7 +181,7 @@ p {
   }
   .story__container {
     padding: 2vh 8vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-device-width: 768px) {
