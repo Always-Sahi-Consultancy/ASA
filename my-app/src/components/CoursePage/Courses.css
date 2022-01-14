@@ -20,7 +20,7 @@
   font-family: Bebas-Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 40px;
   /* line-height: 115px; */
   font-weight: 700;
   padding: 0 20px;
@@ -110,6 +110,12 @@
   padding: 1vh;
   width: 70%;
 }
+.course_main_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .course_title {
   font-family: Bebas-Neue;
   font-style: normal;
@@ -163,6 +169,9 @@
 }
 
 @media screen and (max-width: 426px) and (min-width: 300px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_box {
     width: 100%;
   }
@@ -174,6 +183,9 @@
 }
 
 @media screen and (max-width: 650px) and (min-width: 426px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_box {
     width: 100%;
   }
@@ -191,6 +203,9 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 650px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -240,6 +255,9 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -289,6 +307,9 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -382,7 +403,7 @@
 
 @media screen and (max-width: 2000px) and (min-width: 1400px) {
   .course_name {
-    font-size: 100px;
+    font-size: 80px;
   }
   .course_details {
     padding: 1vh;
@@ -421,12 +442,13 @@
 
 @media screen and (max-width: 4000px) and (min-width: 2000px) {
   .course_name {
-    font-size: 120px;
+    font-size: 80px;
   }
   .course_details {
     padding: 1vh;
     width: 70%;
   }
+
   .course_title {
     font-family: Bebas-Neue;
     font-style: normal;
@@ -487,6 +509,16 @@
   .course_Search {
     width: 15%;
   }
+  .cost_section {
+    margin-top: 5px;
+  }
+  .original_cost {
+    font-size: 14px;
+  }
+  .course_star_element {
+    height: 16px;
+    margin: 0px 2px;
+  }
 }
 @media only screen and (max-device-width: 769px) {
   .course_img {
@@ -519,15 +551,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .course_cost {
-    /* font-size: 14px; */
+    font-size: 16px;
     width: 100%;
   }
   .original_cost {
     width: 100%;
     margin-left: 0;
+    font-size: 14px;
   }
   .Buy_button {
     padding: 1vh;
@@ -539,6 +572,10 @@
     align-items: flex-end;
     width: 60%;
   }
+  .course_star_element {
+    height: 14px;
+    margin: 0px 0px;
+  }
 }
 @media only screen and (max-device-width: 426px) {
   .course_box {
@@ -548,5 +585,15 @@
     /* margin-right: 10vw; */
     font-size: 32px;
     /* line-height: 60px; */
+  }
+  .cost_section {
+    margin-top: 0;
+  }
+  .original_cost {
+    font-size: 14px;
+  }
+  .course_star_element {
+    height: 14px;
+    margin: 0px 0px;
   }
 }

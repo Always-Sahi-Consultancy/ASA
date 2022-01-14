@@ -5,12 +5,12 @@ const Course_box = (props) => {
     // "Buy_button buy"
     return (
         <div className="course_box">
-            <div className="course_img"></div>
+            <div className="course_img"><img className="course_main_img" src={props.image}></img></div>
             <div className="course_details">
                 <h2 className="course_title">{props.title}</h2>
-                <Course_rate star={props.star} />
                 <div className="course_details_main">
                     <div className="course_details_upper">
+                        <Course_rate star={props.star} />
                         <div className="Prof_name">{props.Prof_name}</div>
                         <div className="cost_section">
                             <div className="course_cost">{props.course_cost}</div>
