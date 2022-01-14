@@ -12,8 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: 35vh;
+  width: 50vw;  
+  border: 2px solid red;
   height: 40vh;
   text-align: center;
   cursor: pointer;
@@ -125,6 +125,7 @@
   .content {
     width: 23vh;
     height: 23vh;
+    
   }
   .element {
     width: 8vh;
@@ -143,7 +144,9 @@
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
   .content {
     width: 29vh;
-    height: 25vh;
+    height: 25vh;  
+    border: 2px solid red;
+
   }
   .element {
     width: 10vh;
@@ -161,7 +164,7 @@
 
 @media screen and  (max-width: 2000px) and (min-width: 1400px){
   .content {
-    width: 37.8vh;
+    width: 35vh;
     height: 30vh;
   }
   .element {
@@ -196,7 +199,7 @@
     margin-top: -1vh;
   }
 }
-/* @media screen and (max-width:1024px) {
+ @media screen and (max-width:1024px) {
   .containerNC {
     margin: 0;
     padding: 0;
@@ -305,10 +308,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 14vh;
-    height: 15vh;
+    width: 20vh;
+    height: 25vh;
     /* border: 2px solid red; */
- /* }
+  }
   .element {
     width: 8vh;
     height: 8vh;
@@ -334,4 +337,4 @@
     margin-top: -3vh;
     z-index: 4;
   }
-} */
+}
