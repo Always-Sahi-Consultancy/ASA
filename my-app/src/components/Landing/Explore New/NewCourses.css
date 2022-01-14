@@ -12,9 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;  
-  border: 2px solid red;
-  height: 40vh;
+  width: 50vw;
+  height: 50vw;
   text-align: center;
   cursor: pointer;
 }
@@ -24,7 +23,7 @@
   border-radius: 50%;
   background: #eb6a6a;
   z-index: 10;
-  margin: 3vh 0vh;
+  margin: 8vh 0vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -144,8 +143,7 @@
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
   .content {
     width: 29vh;
-    height: 25vh;  
-    border: 2px solid red;
+    height: 25vh;
 
   }
   .element {
@@ -164,8 +162,9 @@
 
 @media screen and  (max-width: 2000px) and (min-width: 1400px){
   .content {
-    width: 35vh;
+    width: 38vh;
     height: 30vh;
+    margin: 10% auto;
   }
   .element {
     width: 12vh;

@@ -11,11 +11,11 @@
   margin: 0% 10%;
 }
 .new_Container_main {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0;
+  margin: 5% auto;
 }
 @media screen and (max-width: 426px) and (min-width: 300px){
   .NewContainer {
