@@ -37,6 +37,8 @@
     color: #FFFFFF;
 }
 .Banner__left h4{
+    font-family: Roboto;
+    font-size: 1.1rem;
     background-color: white;
     border-radius: 2rem;
     width: 15%;
@@ -44,7 +46,12 @@
     padding: 0.5rem 1rem;
     margin: 2rem 0rem;
 }
-
+.Banner__left img{
+    width: 25%;
+    height: 25%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
 .Banner__right{
     width: 40%;
     display: block;
@@ -120,7 +127,11 @@
         width: 30%;
         background-color: white;        
     }
-    
+    .Banner__left img{
+        width: 30%;
+        height: 30%;
+        display: inline-block;
+    }    
     .Banner__right{
         width: 100%;
         display: inline-block;
