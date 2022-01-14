@@ -241,3 +241,191 @@ width: 100%;
 
 }
 
+@media screen and (max-width: 680px) and (min-width: 500px){
+    .header__section{
+        grid-template-columns: 10% 62% 28%;
+        height: 12vh;
+    }
+    .header__hamburger{
+        display: block;
+        position: relative;
+        left: 0vw;
+    }
+
+    .header__hamburgerActive{
+        position: fixed;
+        left: 80vw;
+        width: 10vw;
+    }  
+
+    .header__brand{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__brandLogo{
+        width: 56%;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .header__navigate{
+        display: none;
+    }
+
+    .header__link{
+        text-decoration: none;
+    }
+
+    .header__Login{
+        margin: 0;
+        background-color: var(--white);
+        border: solid var(--gray) 1px;
+    }
+
+    .header__LoginButton{
+        padding: 0 1vh;
+        color: var(--gray);
+    }
+
+    .header__slider{
+        display: block;
+        position: fixed;
+        left: -100%;
+    }
+
+    .header__sliderToggle{
+        left: 0%;
+    }
+
+    .header__joinUs{
+        font-size: 1.2rem;
+    }
+
+    .header__bar1, .header__bar2 {
+        transform-origin: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 426px){
+    .header__section{
+        grid-template-columns: 12% 66% 20%;
+        height: 12vh;
+    }
+    .header__hamburger{
+        display: block;
+        position: relative;
+        left: 0vw;
+    }
+
+    .header__hamburgerActive{
+        position: fixed;
+        left: 80vw;
+        width: 10vw;
+    }  
+
+    .header__brand{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__brandLogo{
+        width: 56%;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .header__navigate{
+        display: none;
+    }
+
+    .header__link{
+        text-decoration: none;
+    }
+
+    .header__Login{
+        margin: 0;
+        background-color: var(--white);
+        border: solid var(--gray) 1px;
+    }
+
+    .header__LoginButton{
+        padding: 0 1vh;
+        color: var(--gray);
+    }
+
+    .header__slider{
+        display: block;
+        position: fixed;
+        left: -100%;
+    }
+
+    .header__sliderToggle{
+        left: 0%;
+    }
+
+    .header__joinUs{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:426px){
+    .header__section{
+        grid-template-columns: 12% 66% 20%;
+        height: 12vh;
+    }
+    .header__hamburger{
+        display: block;
+        position: relative;
+        left: 0vw;
+    }
+
+    .header__hamburgerActive{
+        position: fixed;
+        left: 80vw;
+        width: 10vw;
+    }  
+
+    .header__brand{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__brandLogo{
+        width: 56%;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .header__navigate{
+        display: none;
+    }
+
+    .header__link{
+        text-decoration: none;
+    }
+
+    .header__Login{
+        margin: 0;
+        background-color: var(--white);
+        border: solid var(--gray) 1px;
+    }
+
+    .header__LoginButton{
+        padding: 0 1vh;
+        color: var(--gray);
+    }
+
+    .header__slider{
+        display: block;
+        position: fixed;
+        left: -100%;
+    }
+
+    .header__sliderToggle{
+        left: 0%;
+    }
+
+    .header__joinUs{
+        font-size: 1.2rem;
+    }
+}
