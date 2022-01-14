@@ -70,13 +70,13 @@ const Popular_main = () => {
         SlidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 769,
+                breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 1025,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 3,
                 }
