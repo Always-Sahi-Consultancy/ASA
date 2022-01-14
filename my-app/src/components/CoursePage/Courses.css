@@ -169,6 +169,9 @@
 }
 
 @media screen and (max-width: 426px) and (min-width: 300px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_box {
     width: 100%;
   }
@@ -180,6 +183,9 @@
 }
 
 @media screen and (max-width: 650px) and (min-width: 426px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_box {
     width: 100%;
   }
@@ -197,6 +203,9 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 650px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -246,6 +255,9 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -295,6 +307,9 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
+  .Course_Section {
+    width: 100%;
+  }
   .course_heading {
     height: 15%;
   }
@@ -427,12 +442,13 @@
 
 @media screen and (max-width: 4000px) and (min-width: 2000px) {
   .course_name {
-    font-size: 120px;
+    font-size: 80px;
   }
   .course_details {
     padding: 1vh;
     width: 70%;
   }
+
   .course_title {
     font-family: Bebas-Neue;
     font-style: normal;
