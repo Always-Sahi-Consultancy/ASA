@@ -82,7 +82,7 @@ const Popular_main = () => {
                 }
             },
             {
-                breakpoint: 426,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                 }
