@@ -1,5 +1,5 @@
 .Poster {
-  height: 75vh;
+  height: 85%;
   position: relative;
 }
 .Poster_img {
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 15%;
   background: rgba(229, 229, 229, 0.95);
 }
 .College_Training {
@@ -102,7 +102,7 @@
   /* font-size: 4.625rem; */
   font-size: 5vw;
   text-transform: uppercase;
-  line-height: 5vw;
+  line-height: 10vh;
   width: 100%;
   color: #ffffff;
   font-family: Bebas-Neue;
@@ -339,6 +339,47 @@
     align-items: center;
     border-radius: 0 10px 10px 0;
     font-family: Roboto;
+  }
+}
+@media only screen and (max-width: 426px) and (min-width: 300px) {
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 426px) {
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 650px) {
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  .Poster {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1400px) {
+}
+
+@media only screen and (max-width: 4000px) and (min-width: 2000px) {
+  .Poster {
+    height: 100vh;
   }
 }
 @media screen and (max-device-width: 426px) {
@@ -633,70 +674,5 @@
     /* padding-right: 0vw;
     padding-right: 1vh;
     padding-left: 1vh; */
-  }
-}
-@media only screen and (max-width: 426px) and (min-width: 300px) {
-  html {
-    zoom: 1;
-  }
-  .Poster {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 650px) and (min-width: 426px) {
-  html {
-    zoom: 0.6;
-  }
-  .Poster {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 650px) {
-  html {
-    zoom: 0.7;
-  }
-  .Poster {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 900px) and (min-width: 768px) {
-  html {
-    zoom: 0.8;
-  }
-  .Poster {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 900px) {
-  html {
-    zoom: 0.9;
-  }
-  .Poster {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 1400px) and (min-width: 1200px) {
-  html {
-    zoom: 0.9;
-  }
-}
-
-@media only screen and (max-width: 2000px) and (min-width: 1400px) {
-  html {
-    zoom: 1;
-  }
-}
-
-@media only screen and (max-width: 4000px) and (min-width: 2000px) {
-  html {
-    zoom: 1.1;
-  }
-  .Poster {
-    height: 100vh;
   }
 }

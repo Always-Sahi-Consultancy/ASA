@@ -5,6 +5,7 @@ import star from '../../image/star.png';
 import star1 from '../../image/star1.png';
 import Course_box from './Course_box';
 
+
 const CoursePage_Courses = () => {
     const course_details = [
         {
