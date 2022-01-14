@@ -104,8 +104,8 @@
 
 @media screen and  (max-width: 900px) and (min-width: 768px){
   .content {
-    width: 19vh;
-    height: 23vh;
+    width: 20vw;
+    /* height: 23vh; */
   }
   .element {
     width: 8vh;
@@ -123,8 +123,8 @@
 
 @media screen and  (max-width: 1200px) and (min-width: 900px){
   .content {
-    width: 23vh;
-    height: 23vh;
+    width: 20vw;
+    /* height: 23vh; */
     
   }
   .element {
@@ -143,8 +143,8 @@
 
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
   .content {
-    width: 29vh;
-    height: 25vh;  
+    width: 20vw;
+    /* height: 25vh;   */
     border: 2px solid red;
 
   }
@@ -153,8 +153,8 @@
     height: 10vh;
   }
   .element_img {
-    height: 5vh;
-    margin-top: 2.5vh;
+    height: 6vh;
+    margin-top: 2vh;
   }
   .element_name {
     font-size: 1.5rem;
