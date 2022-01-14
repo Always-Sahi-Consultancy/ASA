@@ -142,14 +142,11 @@
 
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
   .content {
-<<<<<<< HEAD
     width: 20vw;
     /* height: 25vh;   */
     border: 2px solid red;
-=======
     width: 29vh;
     height: 25vh;
->>>>>>> 3621e142b47b913d23b0a7eaa30b4b01b97edd5e
 
   }
   .element {
