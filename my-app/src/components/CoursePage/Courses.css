@@ -167,6 +167,9 @@
 .free_button {
   background: #5668ce;
 }
+.course_img:after {
+  content: url("../../image/Athu.png");
+}
 
 @media screen and (max-width: 426px) and (min-width: 300px) {
   .Course_Section {
