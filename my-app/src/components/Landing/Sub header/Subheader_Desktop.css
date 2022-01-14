@@ -1,0 +1,164 @@
+.Poster {
+    height: 85%;
+    position: relative;
+  }
+  .Poster_img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .Subheader {
+    height: 90vh;
+    width: 100%;
+  }
+  .College {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    background: rgba(229, 229, 229, 0.95);
+  }
+  .College_Training {
+    height: 100%;
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
+    font-family: Roboto;
+    /* border: 2px solid black; */
+  }
+  .College_Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-transform: uppercase;
+    border-right: 2px solid rgba(109, 104, 117, 0.8);
+    padding-right: 4vw;
+    font-size: 30px;
+  }
+  .College_Name:last-child {
+    border: none;
+  }
+  .College_heading {
+    font-size: 1.8rem;
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
+    font-size: 36px;
+    font-family: Roboto;
+    width: 15%;
+    padding-left: 2vw;
+  }
+  .subheader_nav {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(109, 104, 117, 0.2);
+  }
+  .subheader_fixed {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(109, 104, 117, 0.6);
+  }
+  .nav_tabs {
+    width: 20%;
+    height: 100%;
+  }
+  .nav_tabs a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: Roboto;
+    text-align: center;
+  }
+  .Search_section {
+    height: 50px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Search_heading {
+    /* font-size: 4.625rem; */
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 10vh;
+    width: 100%;
+    color: #ffffff;
+    font-family: Bebas-Neue;
+    margin-bottom: 2vh;
+  }
+  .Search_heading span {
+    color: #eb6a6a;
+    /* display: inline;
+    border: 2px solid red; */
+    height: fit-content;
+    font-family: Bebas-Neue;
+    width: auto;
+  }
+  .Poster_Search {
+    height: 65%;
+    width: 50%;
+    position: absolute;
+    top: 10vh;
+    padding-left: 5vw;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .search_symbol {
+    height: 50px;
+    width: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+  }
+  .Search_bar {
+    height: 50px;
+    width: 40vw;
+    border: none;
+    padding: 2px 5px;
+    font-size: 20px;
+    font-family: Roboto;
+  }
+  .Search_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .Search {
+    height: 50px;
+    width: 10vw;
+    text-decoration: none;
+    background: #eb6a6a;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    font-family: Roboto;
+  }

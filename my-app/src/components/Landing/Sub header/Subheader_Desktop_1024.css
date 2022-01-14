@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+    .nav_tabs a {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .Search_heading {
+      width: 100%;
+      font-size: 4em;
+    }
+    .Poster_Search {
+      width: 60vw;
+    }
+    .College_heading {
+      font-size: 1.2rem;
+    }
+    .College_Name {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 0px;
+      width: 20%;
+      height: 80%;
+    }
+    .subheader_fixed {
+      height: 5%;
+    }
+  }
