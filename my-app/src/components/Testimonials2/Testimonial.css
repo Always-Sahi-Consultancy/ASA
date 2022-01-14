@@ -192,6 +192,14 @@
     right: -5vw;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .Testimonial_msg {
+    font-size: 100px;
+  }
+  .Test_Msg {
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (max-width: 769px) {
   .Testimonial_msg {
     position: absolute;
@@ -219,7 +227,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 30px;
     /* line-height: px; */
     /* padding: 0px 10px; */
   }
@@ -290,7 +298,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     /* line-height: px; */
     /* padding: 0px 10px; */
   }
@@ -546,5 +554,10 @@
   }
   .next {
     right: -12vw;
+  }
+}
+@media only screen and (max-device-width: 769px) {
+  .Test_Msg {
+    font-size: 36px;
   }
 }

@@ -11,7 +11,6 @@
 @media only screen and (max-width: 426px) and (min-width: 300px) {
   .Poster {
     height: 65%;
-    border: 2px solid red;
   }
   .Poster_img {
     display: none;
@@ -31,7 +30,6 @@
     justify-content: center;
     top: 0;
     width: 99vw;
-    border: 2px solid red;
     background: linear-gradient(180deg, #6d6875 0%, rgba(83, 40, 40, 0) 100%);
   }
   .Search_heading {
@@ -112,7 +110,6 @@
 @media only screen and (max-width: 650px) and (min-width: 426px) {
   .Poster {
     height: 65%;
-    border: 2px solid red;
   }
   .Poster_img {
     display: none;
@@ -132,7 +129,6 @@
     justify-content: center;
     top: 0;
     width: 99vw;
-    border: 2px solid red;
     background: linear-gradient(180deg, #6d6875 0%, rgba(83, 40, 40, 0) 100%);
   }
   .Search_heading {
@@ -211,7 +207,7 @@
 }
 
 @media only screen and (max-width: 768px) and (min-width: 650px) {
-  .Poster {
+  /* .Poster {
     height: 70vh;
   }
   .nav_tabs a {
@@ -222,27 +218,162 @@
   }
   .College_Name {
     font-size: 0.85rem;
+  } */
+  .Search_heading {
+    line-height: 6vh;
+  }
+  .Subheader {
+    height: auto;
+    padding: 1vh 0vh;
+  }
+  .Poster_img {
+    object-fit: cover;
+  }
+  .Poster {
+    height: 40vh;
+  }
+  .nav_tabs a {
+    font-size: 0.8rem;
+    width: 90%;
+    height: auto;
+    margin: 1vh 0vh;
+  }
+  .Search_section {
+    width: 80%;
+    height: auto;
+  }
+  .Search_heading {
+    margin-bottom: 3vh;
+  }
+  .Search {
+    width: 25%;
+    font-size: 1.2rem;
+  }
+  .College {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: rgba(229, 229, 229, 0.95);
+  }
+  .College_Training {
+    height: 100%;
+    width: 85vw;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
+    font-family: Roboto;
+  }
+  .College_Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-transform: uppercase;
+    border-right: 2px solid rgba(109, 104, 117, 0.8);
+    padding: 0vw 2vw;
+    font-size: 1rem;
+  }
+  .College_Name:last-child {
+    border: none;
+  }
+  .College_heading {
+    font-size: 1rem;
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
+    font-size: 1rem;
+    font-family: Roboto;
+    width: 12%;
+    padding-left: 1vw;
+  }
+  .Search_bar {
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 768px) {
+  .Subheader {
+    height: auto;
+    padding: 1vh 0vh;
+  }
+  .Poster_img {
+    object-fit: cover;
+  }
   .Poster {
-    height: 70vh;
+    height: 40vh;
   }
   .nav_tabs a {
+    font-size: 0.8rem;
+    width: 90%;
+    height: auto;
+    margin: 1vh 0vh;
+  }
+  .Search_section {
+    width: 80%;
+    height: auto;
+  }
+  .Search_heading {
+    margin-bottom: 3vh;
+    line-height: 6vh;
+  }
+  .Search {
+    width: 25%;
     font-size: 1rem;
+  }
+  .College {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: rgba(229, 229, 229, 0.95);
+  }
+  .College_Training {
+    height: 100%;
+    width: 85vw;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
+    font-family: Roboto;
+  }
+  .College_Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-transform: uppercase;
+    border-right: 2px solid rgba(109, 104, 117, 0.8);
+    padding: 0vw 2vw;
+    font-size: 1rem;
+  }
+  .College_Name:last-child {
+    border: none;
   }
   .College_heading {
     font-size: 1rem;
-  }
-  .College_Name {
+    color: rgba(109, 104, 117, 0.8);
+    opacity: 0.5;
     font-size: 1rem;
+    font-family: Roboto;
+    width: 12%;
+    padding-left: 1vw;
+  }
+  .Search_bar {
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
+  .Subheader {
+    height: 60vh;
+  }
   .Poster {
-    height: 70vh;
+    height: 50vh;
   }
   .nav_tabs a {
     font-size: 1rem;
@@ -252,6 +383,9 @@
   }
   .College_Name {
     font-size: 1.1rem;
+  }
+  .Search_heading {
+    line-height: 6vh;
   }
 }
 
@@ -349,7 +483,7 @@
     height: 100vh;
   }
   .College_Training {
-    height: 42%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
