@@ -4,8 +4,12 @@ import Greentick from '../../../image/greenTick.png';
 
 const Highlights = () => {
 
-    const data = [{'content':"29 Video Lectures"},{'content':"7 Hours on Demand Video"},{'content':"Full Lifetime Access"},
-    {'content':"Access on Mobile And Tablet"},{'content':"3 Assignments"},{'content':"Certificate of Completion"}];
+    const data = [{'content':"Quality Online Training"},
+    {'content':"Lifelong Course Access"},
+    {'content':"6 Assignments"},
+    {'content':"Regular Notes & Study Materials"},
+    {'content':"ISO 9001: 2015 Reputed Certification"},
+    {'content':"Letter of Recommendation post Assignments"}];
 
     const HighlightContent = (props) => {
         return(
@@ -18,7 +22,7 @@ const Highlights = () => {
     
     return (
         <div className='Highlights__container'>
-            <div className='Highlights__title'>This Course includes:</div>
+            <div className='Highlights__title'>Course Highlights:</div>
             {data.map((item) => <HighlightContent content={item.content} />)}
         </div>
     )
