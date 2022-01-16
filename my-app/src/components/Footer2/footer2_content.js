@@ -1,3 +1,5 @@
+import star from '../../image/star1.png';
+
 function  FooterTerms(props) {
     const scroll_top = () => {
         window.scrollTo(0,0);

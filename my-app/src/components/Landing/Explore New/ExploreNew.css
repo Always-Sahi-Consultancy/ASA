@@ -11,11 +11,6 @@
   margin: 0% 10%;
 }
 .new_Container_main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto 16%;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
@@ -29,6 +24,14 @@
   .NewContainer__head {
     font-size: 1.5rem;
   }
+  .new_Container_main {
+    margin: auto 16%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+  }
 }
 
 
@@ -38,6 +41,14 @@
   }
   .NewContainer__head {
     font-size: 1.4rem;
+  }
+  .new_Container_main {
+    margin: auto 16%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
   }
 }
 
