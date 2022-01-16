@@ -1,5 +1,6 @@
 import defaultProps from 'react-slick/lib/default-props';
 import './Highlight.css';
+import Greentick from '../../../image/greenTick.png';
 
 const Highlights = () => {
 
@@ -9,7 +10,7 @@ const Highlights = () => {
     const HighlightContent = (props) => {
         return(
             <div className='Highlights__content'>
-                <img src='../../../image/greenTick.png'></img>
+                <img src={Greentick}></img>
                 <h4>{props.content}</h4>
             </div>
         );
@@ -17,7 +18,7 @@ const Highlights = () => {
     
     return (
         <div className='Highlights__container'>
-            <div className='Highlights__title'>COURSE HIGHLIGHTS</div>
+            <div className='Highlights__title'>This Course includes:</div>
             {data.map((item) => <HighlightContent content={item.content} />)}
         </div>
     )

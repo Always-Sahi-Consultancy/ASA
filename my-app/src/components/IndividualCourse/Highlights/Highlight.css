@@ -21,12 +21,13 @@
 }
 .Highlights__content img{
     float: left;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 .Highlights__content h4{
-    float: left;
+    font-family: Roboto;
     font-size: 1.2rem;
+    float: left;
     padding-left: 1rem;
 }
 
