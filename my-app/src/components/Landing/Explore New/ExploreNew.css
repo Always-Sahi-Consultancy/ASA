@@ -4,7 +4,7 @@
   padding: 0;
   margin: 5% auto;
 }
-.NewContainer__head {   
+.NewContainer__head {
   font-family: Bebas-Neue;
   font-size: 3.5rem;
   color: #000000;
@@ -22,56 +22,75 @@
   align-items: center;
   margin: 5% auto;
 }
-@media screen and (max-width: 426px) and (min-width: 300px){
+@media screen and (max-width: 426px) and (min-width: 300px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
   .NewContainer__head {
     font-size: 1.5rem;
   }
+  .new_Container_main {
+    grid-template-columns: auto;
+  }
+  .new_Container_main {
+    margin: auto;
+    grid-template-columns: auto auto;
+  }
 }
 
-
-@media screen and (max-width: 650px) and (min-width: 426px){
+@media screen and (max-width: 650px) and (min-width: 426px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
   .NewContainer__head {
     font-size: 1.4rem;
   }
+  .new_Container_main {
+    margin: auto;
+    grid-template-columns: auto auto;
+  }
 }
 
-@media screen and  (max-width: 768px) and (min-width: 650px){
+@media screen and (max-width: 768px) and (min-width: 650px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
   .NewContainer__head {
     font-size: 1.8rem;
   }
+  .new_Container_main {
+    margin: auto;
+    grid-template-columns: auto auto;
+  }
 }
 
-@media screen and  (max-width: 900px) and (min-width: 768px){
+@media screen and (max-width: 900px) and (min-width: 768px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
   .NewContainer__head {
     font-size: 2rem;
   }
+  .new_Container_main {
+    margin: auto;
+    grid-template-columns: auto auto auto;
+  }
 }
 
-@media screen and  (max-width: 1200px) and (min-width: 900px){
+@media screen and (max-width: 1200px) and (min-width: 900px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
   .NewContainer__head {
     font-size: 2.5rem;
   }
-  .new_Container_main{
+  .new_Container_main {
     margin: auto;
+    grid-template-columns: auto auto auto;
   }
 }
 
-@media screen and  (max-width: 1400px) and (min-width: 1200px){
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
   .NewContainer {
     margin: 3vh 0vh;
   }
@@ -80,7 +99,7 @@
   }
 }
 
-@media screen and  (max-width: 2000px) and (min-width: 1400px){
+@media screen and (max-width: 2000px) and (min-width: 1400px) {
   .NewContainer {
     margin: 5vh 0vh;
   }
@@ -89,7 +108,7 @@
   }
 }
 
-@media screen and  (max-width: 4000px) and (min-width: 2000px){
+@media screen and (max-width: 4000px) and (min-width: 2000px) {
   .NewContainer {
     margin: 10vh 0vh;
   }
