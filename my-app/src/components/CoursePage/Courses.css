@@ -105,6 +105,7 @@
   height: 8rem;
   border-radius: 10px;
   background: #6d6875;
+  position: relative;
 }
 .course_details {
   padding: 1vh;
@@ -166,6 +167,12 @@
 }
 .free_button {
   background: #5668ce;
+}
+.course_img:after {
+  content: url("../../image/Athu1.png");
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 @media screen and (max-width: 426px) and (min-width: 300px) {

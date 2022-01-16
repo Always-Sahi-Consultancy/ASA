@@ -1,5 +1,6 @@
 import './Banner.css';
-import Linkedin from '../../../image/3.png'
+import Linkedin from '../../../image/3.png';
+import Star from '../../../image/star1.png';
 
 const Banner = () => {
     const data = [{'title': "CREATE YOUR LINKEDIN PROFILE",
@@ -12,13 +13,13 @@ const Banner = () => {
                     <h1>{props.title}</h1>
                     <h3>{props.subtitle}</h3>
                     
-                    <h4>{props.rating}</h4>
+                    <h4><img src={Star}></img>{props.rating}</h4>
 
                 </div>
-                <div className='Banner__right'>
+                {/* <div className='Banner__right'>
                     <img src={props.image} alt={props.title}></img>
                     <button className='Banner__enroll'>Enroll Now</button>
-                </div>
+                </div> */}
 
             </div>
         );
