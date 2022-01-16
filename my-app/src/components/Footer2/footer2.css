@@ -537,6 +537,7 @@
     font-size: 1.3rem;
     margin-bottom: 5%;
     line-height: 20px;
+    width: 50%;
   }
 }
 @media screen and (max-device-width: 426px) {
