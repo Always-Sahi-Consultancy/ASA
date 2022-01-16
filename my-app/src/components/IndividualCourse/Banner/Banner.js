@@ -1,10 +1,13 @@
 import './Banner.css';
-import Linkedin from '../../../image/3.png';
+import Financial from '../../../image/Course Layout/financial_acc.jpg';
 import Star from '../../../image/star1.png';
 
 const Banner = () => {
-    const data = [{'title': "CREATE YOUR LINKEDIN PROFILE",
-     'subtitle': "This course includes all the steps to create your Linkedin profile",'rating': "4.9", 'image': Linkedin, 'link': "#"}];
+    const data = [{'title': "CERTIFIED COURSE IN FINANCIAL ACCOUNTING",
+     'subtitle': "This course is made to cover all Aspects of Accounting field, where we cover from basics to full fledged Account and Tax Management",
+     'rating': "4.9",
+     'video': "#",
+     'link': "#"}];
 
     const BannerComponent = (props) =>{
         return(
