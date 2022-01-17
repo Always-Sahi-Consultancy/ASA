@@ -14,8 +14,8 @@ const Highlights = () => {
     const HighlightContent = (props) => {
         return(
             <div className='Highlights__content'>
-                <img src={Greentick}></img>
-                <h4>{props.content}</h4>
+                
+                <h4><img src={Greentick}></img>{props.content}</h4>
             </div>
         );
     }
