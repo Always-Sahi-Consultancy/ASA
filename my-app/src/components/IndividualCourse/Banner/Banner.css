@@ -3,12 +3,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height:auto;
+    opacity: 0.9;    
+}
+.Banner__blur{
+    background-repeat: no-repeat;
+    height:auto;
     /* background: linear-gradient(257.2deg, #5668CE 0%, rgba(86, 104, 206, 0.453125) 57.42%, rgba(86, 104, 206, 0) 100%); */
-    /* opacity: 0.9; */
-    /* filter: blur(1px); */
+    /* opacity: 0.7; */
+    background-image: url('../../../image/Rectangle\ 112.png');
+    backdrop-filter: blur(3px);
     padding: 3rem;
-    margin: 2rem 0rem;
-
 }
 .Banner__left{
     width: 50%;
@@ -19,8 +23,8 @@
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
-    font-size: 95px;
-    line-height: 100px;
+    font-size: 80px;
+    line-height: 90px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
@@ -30,26 +34,28 @@
     padding-top: 1.5rem;
     font-family: Roboto;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
 }
 .Banner__left h4{
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     background-color: white;
+    color: #6d6875;
     border-radius: 2rem;
-    width: 20%;
+    width: fit-content;
     height: auto;
     padding: 0.3rem 1rem;
     margin: 2rem 0rem;
 }
 .Banner__left h4 img{
-    width: 30%;
-    height: 30%;
-    margin-right: 1rem;
+    margin-bottom: -0.1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
     /* margin-left: 0.5rem; */
 }
 
@@ -59,26 +65,52 @@
     float: right;
     text-align: center;
 }
-.Banner__right img{
-    height: 70%;
-    width: 70%;
-    border: #5668ce solid 5px;
-    
+.Banner__right__container{
+    display: inline-block;
+    vertical-align: middle;
+    height: fit-content;
+    background-color: white;
+    text-align: left;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    margin-top: 10%;
+}
+.Banner__right__container p{
+    font-family: Roboto;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.Banner__right__container del{
+    color: #6d6875;
+    margin-left: 2rem;
+}
+.Banner__video{
+    background-color: #6d6875;
+    display: block;
+    height: 10rem;
+    width: 20rem;
 }
 .Banner__enroll{
-    background: #5668CE;
-    border: solid #5668ce 2px;
+    display: block;
+    width: 20rem;
+    margin-top: 0.5rem;
+    background-color: #5668CE;
     font-family: Roboto;
-    font-size: 1.5rem;
-    line-height: 1rem;
-    padding: 1rem 2rem;
-    width: 70%;
+    font-size: 1rem;
     color: white;
+    padding: 0.3rem 0rem;
+    border: 2px solid white;
 }
+
 
 @media screen and (max-device-width: 968px){
     .Banner__background{
         background-size: auto;
+    }
+    .Banner__blur{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .Banner__left{
         width: 100%;
@@ -88,30 +120,40 @@
         font-size: 85px;
         line-height: 95px;
     }
-    
+    .Banner__left h3{
+        font-size: 1.5rem;
+    }
     .Banner__left h4{
         font-size: 1.1rem;
-        background-color: white;        
+        width: fit-content;
     }
     
     .Banner__right{
         width: 100%;
         display: inline-block;
-        padding-top: 10vh;
+        padding-top: 0vh;
+        margin-bottom: 3rem;
+    }   
+    .Banner__right__container{
+        display: inline-block;
+        margin-top: 0%;
     }
-    .Banner__right img{
-        height: 70%;
-        display:inline-block;
-        width: 70%;
-        border: #5668ce solid 5px;
-        
+    .Banner__right__container p{
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin-top: 1rem
+    }
+    .Banner__video{
+        display: block;
+        height: 15rem;
+        width: 30rem;
     }
     .Banner__enroll{
-        font-size: 2rem;
-        line-height: 1.5rem;
-        padding: 1.5rem 2rem;
-        width: 70%;
-    }   
+        display: block;
+        width: 30rem;
+        font-size: 1.3rem;
+        padding: 0.4rem 0rem;
+    }
 }
 
 @media screen and (max-device-width: 600px){ 
@@ -120,30 +162,35 @@
         line-height: 65px;
     }
     .Banner__left h3{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
     }
     .Banner__left h4{
-        font-size: 1.1rem;
-        width: 30%;
+        font-size: 1rem;
         background-color: white;        
     }
-    
-    .Banner__right{
-        width: 100%;
-        display: inline-block;
-        padding-top: 10vh;
+    .Banner__left h4 img{
+        width: 1rem;
+        height: 1rem;
     }
-    .Banner__right img{
-        height: 80%;
-        display:inline-block;
-        width: 80%;
-        border: #5668ce solid 5px;
-        
+    .Banner__right__container{
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .Banner__right{
+        margin-bottom: 1rem;
+    }
+    .Banner__right__container p{
+        font-size: 0.9rem;
+        margin-top: 0.5rem
+    }
+    .Banner__video{
+        height: 7rem;
+        width: 15rem;
     }
     .Banner__enroll{
-        font-size: 2rem;
-        line-height: 1.5rem;
-        padding: 1rem 2rem;
-        width: 80%;
+        width: 15rem;
+        font-size: 1rem;
+        padding: 0.3rem 0rem;
     } 
 }
