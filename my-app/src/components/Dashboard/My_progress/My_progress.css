@@ -1,0 +1,136 @@
+.progress{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border: 2px solid red;
+    width: 30%;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.progress__heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 56px;
+    margin-bottom: 13%;
+    color: #6D6875;
+}
+.progress__coursename{
+    font-family: Bebas-Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 58px;
+    margin: 0% ;
+    color: #000000;
+}
+.progress__text1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    margin: 0% ;
+    margin-bottom: 6%;
+    color: #000000;
+}
+.progress__button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    text-align: center;
+    color: #FFFFFF;
+    background: var(--red);
+    border-radius: 10px;
+    width: 50%;
+    align-self: center;
+    margin: 8%;
+}
+.progress__text2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6%;
+    color: #6D6875;
+}
+.progress__certificate{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 42px;
+    text-align: center;
+    align-items: center;
+    padding: 1%;
+    color: #C4C4C4;
+    background: #E5E5E5;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    align-self: center;
+}
+.range{
+    height: 80px;
+    width: 100%;
+    background: #FFf;
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+}
+.range .sliderValue{
+    position: relative;
+    width: 100%;
+}
+.range .sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: var(--red);
+    color: #FFf;
+    font-weight: 500;
+    top: -40px;
+    transform: translateX(-50%);
+    line-height: 55px;
+}
+.range .sliderValue span:after{
+    
+}
+.range .field{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.range .field .value{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--red);
+}
+.range .field .value.left{
+    left: -43px;
+}
+.range .field .value.right{
+    right: -43px;
+}
+.range .field input{
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+    border-radius:5px;
+    outline: none;
+    border: none;
+}

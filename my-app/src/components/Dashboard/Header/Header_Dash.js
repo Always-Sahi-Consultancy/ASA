@@ -3,6 +3,7 @@ import Company from '../../../image/AS_Logo_Transparent.png';
 import Cart from '../../../image/cart.jpg'
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
 import './Header.css';
+import MyProgress from "../My_progress/My_progress";
 
 const Header_Dash = () => {
     const [hamActive, setHamActive] = useState(false);
@@ -59,7 +60,8 @@ const Header_Dash = () => {
     }
 
     return (
-        <header className="Header">
+        <div>
+            <header className="Header">
             <button className={`header_hamburger ${hamActive === true ? "ham" : ""}`} onClick={showMenu}>
                 <div className="header_icon_bar" id="header_icon_1"></div>
                 <div className="header_icon_bar" id="header_icon_2"></div>
@@ -133,6 +135,8 @@ const Header_Dash = () => {
                 </div>
             </div>
         </header >
+        <MyProgress/>
+        </div>
     );
 };
 
