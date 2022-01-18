@@ -61,8 +61,8 @@
 }
 .details {
   position: absolute;
-  top: 6vh;
-  left: 6vh;
+  top: 3rem;
+  left: 2rem;
 }
 .Popular_course_name {
   color: white;
@@ -97,7 +97,11 @@
     width: 300px;
     /* object-position: 50% 30%; */
   }
-
+  .details {
+    position: absolute;
+    top: 6vh;
+    left: 6vh;
+  }
   .next {
     right: 0%;
     top: 50%;
@@ -136,7 +140,6 @@
     width: 100%;
     /* object-position: 50% 30%; */
   }
-
   .next {
     right: 0%;
     top: 50%;
@@ -154,6 +157,12 @@
     overflow-y: hidden;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .details {
+    left: 4vh;
+    top: 4vh;
+  }
+}
 @media screen and (max-width: 768px) {
   .Popular_heading {
     font-size: 44px;
@@ -164,7 +173,7 @@
   .Popular_Box {
     position: relative;
     padding: 0;
-    transform: scale(0.8);
+    transform: scale(0.9);
     overflow: hidden;
   }
   .Popular_Box img {
@@ -173,9 +182,14 @@
     border-radius: 10px;
     height: 444px;
     width: 300px;
+    margin: auto;
     /* object-position: 50% 30%; */
   }
-
+  .details {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+  }
   .next {
     right: 0%;
     top: 50%;
@@ -231,11 +245,5 @@
     height: auto;
     margin-bottom: 3vh;
     overflow-y: hidden;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .details {
-    left: 2vh;
-    top: 4vh;
   }
 }

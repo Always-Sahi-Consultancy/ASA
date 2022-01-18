@@ -4,13 +4,12 @@
   @import "./Subheader_Desktop_1024.css";
 }
 
-@media screen and (max-device-width: 769px) {
+@media screen and (max-width: 769px) {
   @import "./Subheader_Desktop_769.css";
 }
-
 @media only screen and (max-width: 426px) and (min-width: 300px) {
   .Poster {
-    height: 65%;
+    height: auto;
   }
   .Poster_img {
     display: none;
@@ -42,7 +41,7 @@
   }
   .College {
     /* display: none; */
-    height: 20%;
+    height: auto;
     flex-direction: column;
   }
   .College_heading {
@@ -111,6 +110,9 @@
   .Poster {
     height: 65%;
   }
+  .Subheader {
+    height: fit-content;
+  }
   .Poster_img {
     display: none;
   }
@@ -128,7 +130,7 @@
     align-items: center;
     justify-content: center;
     top: 0;
-    width: 99vw;
+    width: 100%;
     background: linear-gradient(180deg, #6d6875 0%, rgba(83, 40, 40, 0) 100%);
   }
   .Search_heading {
@@ -223,17 +225,19 @@
     font-size: 0.85rem;
   } */
   .Search_heading {
-    line-height: 6vh;
+    /* line-height: 6vh; */
   }
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
+    border: 1px solid red;
   }
   .Poster_img {
     object-fit: cover;
   }
   .Poster {
-    height: 40vh;
+    height: auto;
+    border: 1px solid red;
   }
   .nav_tabs a {
     font-size: 0.8rem;
@@ -292,8 +296,22 @@
     width: 12%;
     padding-left: 1vw;
   }
+  .Poster_Search {
+    top: 2rem;
+  }
+  .search_symbol {
+    height: 35px;
+  }
   .Search_bar {
     font-size: 0.9rem;
+    height: 35px;
+  }
+  .Search_section {
+    width: 100%;
+  }
+  .Search {
+    height: 35px;
+    font-size: 0.8rem;
   }
 }
 
@@ -306,7 +324,7 @@
     object-fit: cover;
   }
   .Poster {
-    height: 40vh;
+    height: auto;
   }
   .nav_tabs a {
     font-size: 1rem;
@@ -323,7 +341,7 @@
   }
   .Search_heading {
     margin-bottom: 3vh;
-    line-height: 6vh;
+    /* line-height: 6vh; */
   }
   .Search {
     width: 25%;
@@ -372,14 +390,17 @@
   .Search_bar {
     font-size: 0.9rem;
   }
+  .Poster_Search {
+    top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
   .Subheader {
-    height: 60vh;
+    height: auto;
   }
   .Poster {
-    height: 50vh;
+    height: auto;
   }
   .nav_tabs a {
     font-size: 1rem;
@@ -390,8 +411,8 @@
   .College_Name {
     font-size: 1.1rem;
   }
-  .Search_heading {
-    line-height: 6vh;
+  .Poster_Search {
+    top: 4rem;
   }
 }
 
@@ -409,7 +430,7 @@
 
 @media only screen and (max-width: 4000px) and (min-width: 2000px) {
   .Poster {
-    height: 100vh;
+    height: auto;
   }
 }
 @media screen and (max-device-width: 426px) {
@@ -503,6 +524,7 @@
     padding-left: 1vh;
   }
 }
+
 /* @media screen and (max-width: 1024px) {
   .Poster {
     height: 85%;

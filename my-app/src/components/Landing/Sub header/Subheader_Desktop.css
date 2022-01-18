@@ -1,5 +1,5 @@
 .Poster {
-  height: 85%;
+  height: auto;
   position: relative;
 }
 .Poster_img {
@@ -8,14 +8,15 @@
   opacity: 0.8;
 }
 .Subheader {
-  height: 90vh;
+  height: auto;
   width: 100%;
 }
 .College {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15%;
+  padding: 2vh 0;
+  height: auto;
   background: rgba(229, 229, 229, 0.95);
 }
 .College_Training {
@@ -93,7 +94,7 @@
 }
 .Search_section {
   height: 50px;
-  width: 40vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +103,6 @@
   /* font-size: 4.625rem; */
   font-size: 5vw;
   text-transform: uppercase;
-  line-height: 10vh;
   width: 100%;
   color: #ffffff;
   font-family: Bebas-Neue;
@@ -117,10 +117,11 @@
   width: auto;
 }
 .Poster_Search {
-  height: 65%;
-  width: 50%;
+  height: auto;
+  width: 55%;
   position: absolute;
-  top: 10vh;
+  top: 6rem;
+  padding: 5vh;
   padding-left: 5vw;
   left: 0;
   display: flex;
