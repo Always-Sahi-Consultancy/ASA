@@ -40,3 +40,75 @@
     text-align: justify;
     color: #000000;
 }
+@media screen and (max-width: 426px) and (min-width: 300px){
+    .point__main{
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+}
+
+
+@media screen and (max-width: 650px) and (min-width: 426px){
+    .point__main{
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 768px) and (min-width: 650px){
+    .point__main{
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin-top: 6%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 900px) and (min-width: 768px){
+    .point__main{
+        font-size: 1.8rem;
+        line-height: 30px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 1200px) and (min-width: 900px){
+    .point__main{
+        font-size: 2rem;
+        line-height: 35px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 1400px) and (min-width: 1200px){
+    .point__main{
+        font-size: 2.3rem;
+        line-height: 38px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 2000px) and (min-width: 1400px){
+    .point__main{
+        font-size: 2.5rem;
+        line-height: 46px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and  (max-width: 4000px) and (min-width: 2000px){
+    .point__main{
+        font-size: 2.5rem;
+        line-height: 46px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}

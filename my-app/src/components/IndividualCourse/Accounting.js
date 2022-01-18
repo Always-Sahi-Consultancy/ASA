@@ -1,6 +1,6 @@
-import Banner from './Banner/Banner';
+import Banner from './banner/Banner';
 import Objective from './objective/objective';
-import Highlights from './Highlights/Highlights';
+import Highlights from './highlights/Highlights';
 import AccountingContent from './Accounting/accountingcontent';
 import YourTeacher from './YourTeachers/YourTeachers';
 
