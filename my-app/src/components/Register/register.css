@@ -542,7 +542,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     overflow-x: hidden;
     height: 100vh;
@@ -555,13 +555,11 @@
     height: 100%;
   }
   .register__main-component_heading {
-    width: 90%;
-    position: absolute;
-    left: 5vh;
-    top: 5%;
-    margin-left: 10%;
-    font-size: 4.5rem;
-    line-height: 80px;
+    width: 80%;
+    margin-top: -5rem;
+    margin-left: 1rem;
+    font-size: 3.5rem;
+    line-height: 50px;
   }
   .register {
     width: 62%;
@@ -569,7 +567,7 @@
     position: absolute;
     top: 0;
     left:0;
-    margin: 30% 20%;
+    margin: 18% 20%;
     background: var(--white);
     border-radius: 10px;
     padding: 1.5%;
@@ -595,7 +593,7 @@
   }
   .register__label {
     margin-top: 1%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: Roboto;
     font-weight: 500;
     margin: 0.3vh 2vh;
@@ -612,7 +610,7 @@
   }
 
   .register__image {
-    width: 4vw;
+    width: 3vw;
   }
 
    .register__logo{
@@ -626,11 +624,11 @@
   }
 
   .register__message {
-    font-size: 1.2rem;
-    margin: 1.5vh auto;
+    font-size: 1rem;
+    margin: 1vh auto;
   }
   .register__title{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -659,11 +657,10 @@
   }
   .register__main-component_heading {
     width: 55%;
-    position: absolute;
-    left: 5vh;
-    top: 10%;
+    margin-top: 1rem;
+    margin-left: -2rem;
     font-size: 4rem;
-    line-height: 80px;
+    line-height: 70px;
   }
   .register {
     width: 33%;
@@ -680,26 +677,26 @@
   }
   .register__email{
     margin-top: 1%;
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .register__name{
     margin-top: 1%;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     width: 85%;
   }
   .register__password{
     margin-top: 1%;
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .register__nameL{
     margin-top: 1%;
     margin-left: 5%;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     width: 80%;
   }
   .register__label {
     margin-top: 1%;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: Roboto;
     font-weight: 500;
     margin: 0.3vh 2vh;
@@ -717,7 +714,7 @@
   }
 
   .register__image {
-    width: 3vw;
+    width: 2vw;
   }
 
   .register__logo{
@@ -731,12 +728,12 @@
   }
 
   .register__message {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 1vh auto;
     width: 90%;
   }
   .register__title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0% 1%;
   }
  
@@ -769,11 +766,10 @@
     height: 100vw;
   }
   .register__main-component_heading {
-    width: 60%;
-    position: absolute;
-    left: 5vh;
-    top: 13%;
-    font-size: 5rem;
+    width: 55%;
+    margin-top: 3rem;
+    margin-left: -3rem;
+    font-size: 4.5rem;
     line-height: 60px;
   }
   .register {
@@ -782,7 +778,7 @@
     position: absolute;
     top: 0;
     left:0;
-    margin-top: 8%;
+    margin-top: 3%;
     margin-left: 60%;
     background: var(--white);
     border-radius: 10px;
@@ -791,26 +787,26 @@
   }
   .register__email{
     margin-top: 1%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .register__name{
     margin-top: 1%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
   }
   .register__password{
     margin-top: 1%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .register__nameL{
     margin-top: 1%;
     margin-left: 20%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
   }
   .register__label {
     margin-top: 1%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Roboto;
     font-weight: 500;
     margin: 0.3vh 2vh;
@@ -828,7 +824,7 @@
   }
 
   .register__image {
-    width: 3vw;
+    width: 2vw;
   }
 
   .register__logo{
@@ -847,7 +843,7 @@
     width: 90%;
   }
   .register__title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0% 1%;
   }
   
@@ -1022,6 +1018,93 @@
   } 
   
 }
+@media screen and (max-width:768px) {
+   .containerR {
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .register__main-component_heading {
+    width: 80%;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+  .register {
+    width: 62%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 20% 20%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5%;
+    border: solid var(--gray-light) 2px;
+  }
+  .register__email{
+    margin-top: 1%;
+    font-size: 0.7rem;
+  }
+  .register__name{
+    margin-top: 1%;
+    font-size: 0.7rem;
+    width: 90%;
+  }
+  .register__password{
+    margin-top: 1%;
+    font-size: 0.7rem;
+  }
+  .register__nameL{
+    margin-top: 1%;
+    font-size: 0.7rem;
+    width: 90%;
+  }
+  .register__label {
+    margin-top: 1%;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0.3vh 2vh;
+  }
+  .register__main-component {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .register__component {
+      font-size: 1.5rem;
+    padding: 0.3vh 1vw;
+  }
+
+  .register__image {
+    width: 4vw;
+  }
+
+   .register__logo{
+        /* padding:1vh 0;*/ 
+    }  
+  
+}
 @media screen and (max-device-width: 426px) {
     .containerR {
         overflow: hidden;
@@ -1142,4 +1225,125 @@
       .register__title{
         font-size: 1.5rem;
       }
+}
+@media screen and (max-width: 426px) {
+  .containerR {
+      overflow: hidden;
+      overflow-x: hidden;
+      margin: 0;
+    }
+    .register__main-component{
+      height: 100%;
+      display: flex;
+      margin: 15%;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .register__image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+      height:100vh;
+      width: 100%;
+    }
+    .register__main-image {
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+      overflow: hidden;
+      opacity: 0.4;
+      height: 100%;
+    }
+    .register__image{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+    .register__main-component_heading {
+      width: 85%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 5% 8%;
+      font-size: 2.4rem;
+      line-height: 50px;
+    }
+    .register {
+      width: 85%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 35% 7%;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1%;
+      border: solid var(--gray-light) 2px;
+    }
+    .register__email{
+      margin-top: 1%;
+      font-size: 1rem;
+    }
+    .register__name{
+      margin-top: 1%;
+      font-size: 0.8rem;
+      width: 85%;
+    }
+    .register__password{
+      margin-top: 1%;
+      font-size: 1rem;
+    }
+    .register__nameL{
+      margin-top: 1.5%;
+      margin-left: 1%;
+      font-size: 0.85rem;
+      width: 85%;
+    }
+    #labelName{
+      margin-left: 12%;
+      margin-top: 3%;
+    }
+    .register__label {
+      margin-top: 2%;
+      margin-left: 5%;
+      font-size: 0.9rem;
+      font-family: Roboto;
+      font-weight: 500;
+      width: 50%;
+    }
+    .register__main-component {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .register__component {
+        font-size: 1.5rem;
+      padding: 0.3vh 1vw;
+    }
+
+    .register__image {
+      width: 5vw;
+    }
+
+    /* .register__logo{
+          /* padding:1vh 0; 
+      } */
+
+    .register__platform {
+      text-align: center;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .register__message {
+      font-size: 1rem;
+      margin: 2vh auto;
+    }
+    .register__title{
+      font-size: 1.5rem;
+    }
 }
