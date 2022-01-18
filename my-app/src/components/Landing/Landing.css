@@ -61,8 +61,8 @@
 }
 .details {
   position: absolute;
-  top: 6vh;
-  left: 6vh;
+  top: 3rem;
+  left: 2rem;
 }
 .Popular_course_name {
   color: white;

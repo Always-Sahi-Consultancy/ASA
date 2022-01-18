@@ -225,18 +225,19 @@
     font-size: 0.85rem;
   } */
   .Search_heading {
-    line-height: 6vh;
+    /* line-height: 6vh; */
   }
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
+    border: 1px solid red;
   }
   .Poster_img {
     object-fit: cover;
   }
-
   .Poster {
     height: auto;
+    border: 1px solid red;
   }
   .nav_tabs a {
     font-size: 0.8rem;
@@ -340,7 +341,7 @@
   }
   .Search_heading {
     margin-bottom: 3vh;
-    line-height: 6vh;
+    /* line-height: 6vh; */
   }
   .Search {
     width: 25%;
