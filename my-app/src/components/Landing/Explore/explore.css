@@ -264,7 +264,6 @@
         .explore__text{
             font-size: 6rem; 
             z-index: 1;
-        
         }
         .explore__button{
             width: 50%;
@@ -280,4 +279,21 @@
             left: 8vh;
             z-index: 10;
         }
+    }
+    @media screen and (max-device-width:426px) {
+        .main-container__content{
+            position: absolute;
+            width: 58%;
+            top:5vh;
+            left: 3vh;
+            z-index: 10;
+        }
+        .explore__button{
+            width: 50%;
+            height: 5vh;
+            z-index: 1;
+            font-size: 1rem;
+            margin: 4vh;
+        }
+        
     }
