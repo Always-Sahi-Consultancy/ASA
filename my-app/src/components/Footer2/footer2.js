@@ -6,17 +6,17 @@ import FooterIcon from './footer2_icon';
 
 const Footer2 = (props) => {
     // const [active,setActive]=useState('');
-    const footerhandler=(value)=>{
+    const footerhandler = (value) => {
         props.onChange(value);
     }
     return (
         <div className='footerMain'>
-            <div className='row container'>
+            <div className='row-container'>
                 <FooterForm />
                 <FooterIcon />
             </div>
-            <div className='container'>
-                <FooterTerms onChange={footerhandler}/>
+            <div className='row-container'>
+                <FooterTerms onChange={footerhandler} />
             </div>
         </div>
     );
