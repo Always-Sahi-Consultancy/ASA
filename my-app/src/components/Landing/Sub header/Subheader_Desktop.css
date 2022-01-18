@@ -94,7 +94,7 @@
 }
 .Search_section {
   height: 50px;
-  width: 40vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,6 @@
   /* font-size: 4.625rem; */
   font-size: 5vw;
   text-transform: uppercase;
-  line-height: 10vh;
   width: 100%;
   color: #ffffff;
   font-family: Bebas-Neue;
@@ -119,9 +118,9 @@
 }
 .Poster_Search {
   height: auto;
-  width: 50%;
+  width: 55%;
   position: absolute;
-  top: 15vh;
+  top: 6rem;
   padding: 5vh;
   padding-left: 5vw;
   left: 0;

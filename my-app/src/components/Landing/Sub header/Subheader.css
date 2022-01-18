@@ -7,7 +7,6 @@
 @media screen and (max-width: 769px) {
   @import "./Subheader_Desktop_769.css";
 }
-
 @media only screen and (max-width: 426px) and (min-width: 300px) {
   .Poster {
     height: auto;
@@ -110,10 +109,8 @@
 @media only screen and (max-width: 650px) and (min-width: 426px) {
   .Poster {
     height: 65%;
-    border: 1px solid red;
   }
   .Subheader {
-    border: 1px solid red;
     height: fit-content;
   }
   .Poster_img {
@@ -133,7 +130,7 @@
     align-items: center;
     justify-content: center;
     top: 0;
-    width: 99vw;
+    width: 100%;
     background: linear-gradient(180deg, #6d6875 0%, rgba(83, 40, 40, 0) 100%);
   }
   .Search_heading {
@@ -233,11 +230,11 @@
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
-    border: 2px solid red;
   }
   .Poster_img {
     object-fit: cover;
   }
+
   .Poster {
     height: auto;
   }
@@ -298,8 +295,22 @@
     width: 12%;
     padding-left: 1vw;
   }
+  .Poster_Search {
+    top: 2rem;
+  }
+  .search_symbol {
+    height: 35px;
+  }
   .Search_bar {
     font-size: 0.9rem;
+    height: 35px;
+  }
+  .Search_section {
+    width: 100%;
+  }
+  .Search {
+    height: 35px;
+    font-size: 0.8rem;
   }
 }
 
@@ -378,6 +389,9 @@
   .Search_bar {
     font-size: 0.9rem;
   }
+  .Poster_Search {
+    top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
@@ -396,8 +410,8 @@
   .College_Name {
     font-size: 1.1rem;
   }
-  .Search_heading {
-    line-height: 6vh;
+  .Poster_Search {
+    top: 4rem;
   }
 }
 
@@ -509,6 +523,7 @@
     padding-left: 1vh;
   }
 }
+
 /* @media screen and (max-width: 1024px) {
   .Poster {
     height: 85%;
