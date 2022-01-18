@@ -92,6 +92,20 @@
     position: relative;
     width: 100%;
 }
+.range .sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: var(--red);
+    color: #FFf;
+    font-weight: 500;
+    top: -40px;
+    transform: translateX(-50%);
+    line-height: 55px;
+}
+.range .sliderValue span:after{
+    
+}
 .range .field{
     position: relative;
     display: flex;
