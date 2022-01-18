@@ -230,14 +230,12 @@
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
-    border: 1px solid red;
   }
   .Poster_img {
     object-fit: cover;
   }
   .Poster {
     height: auto;
-    border: 1px solid red;
   }
   .nav_tabs a {
     font-size: 0.8rem;

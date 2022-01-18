@@ -6,9 +6,9 @@
   /* align-items: center; */
 }
 .Course_Filter {
-  position: relative;
+  position: sticky;
   left: 0;
-  /* top: -25vh; */
+  top: 10vh;
   padding: 2vh 1vw;
   width: 20%;
   height: 85vh;
