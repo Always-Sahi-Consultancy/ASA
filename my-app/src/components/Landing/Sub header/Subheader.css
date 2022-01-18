@@ -4,13 +4,13 @@
   @import "./Subheader_Desktop_1024.css";
 }
 
-@media screen and (max-device-width: 769px) {
+@media screen and (max-width: 769px) {
   @import "./Subheader_Desktop_769.css";
 }
 
 @media only screen and (max-width: 426px) and (min-width: 300px) {
   .Poster {
-    height: 65%;
+    height: auto;
   }
   .Poster_img {
     display: none;
@@ -42,7 +42,7 @@
   }
   .College {
     /* display: none; */
-    height: 20%;
+    height: auto;
     flex-direction: column;
   }
   .College_heading {
@@ -110,6 +110,11 @@
 @media only screen and (max-width: 650px) and (min-width: 426px) {
   .Poster {
     height: 65%;
+    border: 1px solid red;
+  }
+  .Subheader {
+    border: 1px solid red;
+    height: fit-content;
   }
   .Poster_img {
     display: none;
@@ -228,12 +233,13 @@
   .Subheader {
     height: auto;
     padding: 1vh 0vh;
+    border: 2px solid red;
   }
   .Poster_img {
     object-fit: cover;
   }
   .Poster {
-    height: 40vh;
+    height: auto;
   }
   .nav_tabs a {
     font-size: 0.8rem;
@@ -306,7 +312,7 @@
     object-fit: cover;
   }
   .Poster {
-    height: 40vh;
+    height: auto;
   }
   .nav_tabs a {
     font-size: 1rem;
@@ -376,10 +382,10 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
   .Subheader {
-    height: 60vh;
+    height: auto;
   }
   .Poster {
-    height: 50vh;
+    height: auto;
   }
   .nav_tabs a {
     font-size: 1rem;
@@ -409,7 +415,7 @@
 
 @media only screen and (max-width: 4000px) and (min-width: 2000px) {
   .Poster {
-    height: 100vh;
+    height: auto;
   }
 }
 @media screen and (max-device-width: 426px) {
