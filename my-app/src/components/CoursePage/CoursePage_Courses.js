@@ -288,13 +288,27 @@ const CoursePage_Courses = () => {
             about_course: "About Course"
         },
     ];
+    let filter_condition = false;
+    const onFilterClick = () => {
+        const course_filter = document.querySelector('.Course_Filter');
+
+        if (filter_condition == false) {
+            course_filter.style.left = "0";
+            filter_condition = true;
+        }
+        else if (filter_condition == true) {
+            course_filter.style.left = "-100%";
+            filter_condition = false;
+        }
+
+    }
 
     return (
         <div className="Course_Section">
             <div className="course_heading">
                 <div className="course_name_section">
                     <div className="course_name">COURSE FOR YOU</div>
-                    <img src={Filter} className="filter_img"></img>
+                    <img src={Filter} onClick={onFilterClick} className="filter_img"></img>
                 </div>
                 <div className="course_Search_section">
                     <div className="course_Search_left">
