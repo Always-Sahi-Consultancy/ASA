@@ -1,64 +1,65 @@
 import React, { useState } from "react";
 import '../content/content.css';
+import Course_Content_Individual from './Course_Content_Individual';
 
-const AccountingContent=() =>{
-    const contentData=[
+const AccountingContent = () => {
+    const contentData = [
         {
-            'id':'1',
-            'name':'Basics of Accounts',
-            'details':[
-                {'info':"3 Golden Rules"},  
-                {'info':"Journal Entries"},  
-                {'info':"Financial Statements Study"},
+            'id': '1',
+            'name': 'Basics of Accounts',
+            'details': [
+                { 'info': "3 Golden Rules" },
+                { 'info': "Journal Entries" },
+                { 'info': "Financial Statements Study" },
             ]
         },
         {
-            'id':'2',
-            'name':'Intdoduction to Tally Erp 9 ',
-            'details':[
-                {'info':"Everything About Tally  "},  
-                {'info':"Ledger Creation "},  
-                {'info':"Invoicing"},
+            'id': '2',
+            'name': 'Intdoduction to Tally Erp 9 ',
+            'details': [
+                { 'info': "Everything About Tally  " },
+                { 'info': "Ledger Creation " },
+                { 'info': "Invoicing" },
             ]
         },
         {
-            'id':'3',
-            'name':'Advance Tally Erp 9 ',
-            'details':[
-                {'info':"Payroll  "},  
-                {'info':"Godown  "},  
-                {'info':"Order Processing  "},
-                {'info':"Financial Reports"},
-                {'info':"Export & Import"},  
-                {'info':"Advance Topics  "},
+            'id': '3',
+            'name': 'Advance Tally Erp 9 ',
+            'details': [
+                { 'info': "Payroll  " },
+                { 'info': "Godown  " },
+                { 'info': "Order Processing  " },
+                { 'info': "Financial Reports" },
+                { 'info': "Export & Import" },
+                { 'info': "Advance Topics  " },
             ]
         },
         {
-            'id':'4',
-            'name':'Taxation in Tally Erp 9  ',
-            'details':[
-                {'info':"TDS Entries in Tally "},  
-                {'info':"GST Entries in Tally "},  
-                {'info':"Tax Management in Tally "},
+            'id': '4',
+            'name': 'Taxation in Tally Erp 9  ',
+            'details': [
+                { 'info': "TDS Entries in Tally " },
+                { 'info': "GST Entries in Tally " },
+                { 'info': "Tax Management in Tally " },
             ]
         },
         {
-            'id':'5',
-            'name':'Compliances ',
-            'details':[
-                {'info':"PAN Registration "},  
-                {'info':"TAN Registration "},  
-                {'info':"Shop Act Registration"},
+            'id': '5',
+            'name': 'Compliances ',
+            'details': [
+                { 'info': "PAN Registration " },
+                { 'info': "TAN Registration " },
+                { 'info': "Shop Act Registration" },
             ]
-        },{
-            'id':'6',
-            'name':'ADDITIONAL Power Pack with the Course ',
-            'details':[
-                {'info':"Digital Freelancing Tools"},  
-                {'info':"All About Instagram Marketing"},  
-                {'info':"How to Make your Linkedin Profile"},
-                {'info':"How to Use Google Drive & Google Forms"},  
-                {'info':"How to Manage Database"},  
+        }, {
+            'id': '6',
+            'name': 'ADDITIONAL Power Pack with the Course ',
+            'details': [
+                { 'info': "Digital Freelancing Tools" },
+                { 'info': "All About Instagram Marketing" },
+                { 'info': "How to Make your Linkedin Profile" },
+                { 'info': "How to Use Google Drive & Google Forms" },
+                { 'info': "How to Manage Database" },
             ]
         },
     ];
@@ -80,31 +81,14 @@ const AccountingContent=() =>{
     //     }
     // }
 
-    const [contentC,setContentC] = useState(false);
+    
 
-    const dropdownC = () =>{
-        setContentC(!contentC);
-    }
-
-    return(
+    return (
         <div className='content-container'>
             <div className='content__heading'>Course content</div>
             {
-                contentData.map((item)=>
-                <div className='content__info' id={item.id}>
-                    <div className={`name__row ${contentC === true ? 'name__new' : ""}`} onClick={dropdownC} >
-                        <div className='arrow'>&#x25B6;</div>
-                        <div className='content__name'> {item.name}</div>
-                    </div>
-                    <div className='content__list' style={contentC ? { display: "block" } : { display: "none" }}>
-                        {item.details.map((sub)=>
-                            <div className='content__list-element'>
-                                <div className='content__list-icon'>&#x25B6;</div>
-                                <div className='content__list-content'>{sub.info}</div>
-                            </div>
-                        )}
-                    </div> 
-                </div>
+                contentData.map((item) =>
+                    <Course_Content_Individual name={item.name} id={item.id} details={item.details} />
                 )
             }
         </div>
