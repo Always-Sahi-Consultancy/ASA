@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-width: 768px){
     .Stats__Container h1{
         font-size: 3rem;
         line-height: 3rem;
@@ -31,7 +31,7 @@
         line-height: 1rem;
     }
 }
-@media screen and (max-device-width: 630px){
+@media screen and (max-width: 630px){
     .Stats{
         padding: 0rem 1rem;
     }
