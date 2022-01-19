@@ -5,6 +5,9 @@ import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
 import './Header.css';
 import MyProgress from "../My_progress/My_progress";
 import VideoModule from "../VideoModule/VideoModule";
+import DashLeft from "../dashboard/DashLeft";
+import ChangePassword from "../dashboard/ChangePassword";
+import Dash from "../dashboard/Dash";
 
 const Header_Dash = () => {
     const [hamActive, setHamActive] = useState(false);
@@ -136,7 +139,7 @@ const Header_Dash = () => {
                 </div>
             </div>
         </header >
-        <VideoModule/>
+        <Dash/>
         </div>
     );
 };
