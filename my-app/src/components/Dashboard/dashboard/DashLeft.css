@@ -1,0 +1,64 @@
+.dashleft-container{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    text-align: center;
+    background: rgba(229, 229, 229, 0.29);
+}
+.dash__icon{
+    background: rgba(235, 106, 106, 0.97);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    color: #FFFFFF;
+}
+.dash__name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15%;
+    color: #6D6875;
+}
+.dash__tab{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6D6875;
+}
+.dash__tab:hover{
+    color: white;
+    background: #6D6875;
+}
+.dash__tabs{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
