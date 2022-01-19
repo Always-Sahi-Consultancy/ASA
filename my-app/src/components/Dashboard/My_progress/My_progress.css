@@ -51,7 +51,8 @@
     border-radius: 10px;
     width: 50%;
     align-self: center;
-    margin: 8%;
+    margin-top: 18%;
+    margin-bottom: 8%;
 }
 .progress__text2{
     font-family: Roboto;
@@ -89,37 +90,38 @@
     padding: 0 65px 0 45px;
 }
 .range .sliderValue{
+    text-align: center;
     position: relative;
     width: 100%;
 }
 .range .sliderValue span{
-    position: absolute;
+    position: relative;
     height: 45px;
     width: 45px;
     background: var(--red);
     color: #FFf;
     font-weight: 500;
-    top: -40px;
+    top: 30px;
     transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
     line-height: 55px;
     z-index: 2;
 }
-.range .sliderValue span.show{
+/* .range .sliderValue span.show{
     transform: translateX(-50%) scale(1);
-
-}
+} */
 .range .sliderValue span:after{
+    content: "";
     position: absolute;
     height: 45px;
     width: 45px;
     background: var(--red);
-    left: 50%;
     transform: translateX(-50%) rotate(45deg);
     border: 3px solid #fff;
+    left: 50%;
     z-index: -1;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-radius: 50%;
 }
 .range .field{
     position: relative;
@@ -153,8 +155,14 @@
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
+    margin-top: -7px;
     background: var(--red);
     border-radius: 50%;
     border: 1px solid #fff;
     cursor: pointer;
+}
+.range .field input::-webkit-slider-runnable-track{
+    height: 0.3rem;
+    border-radius: 10px;
+    background: var(--red);
 }

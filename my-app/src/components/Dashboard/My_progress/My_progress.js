@@ -1,16 +1,17 @@
 import './My_progress.css';
-// const sliderValue= document.querySelector('span');
-//     const inputSlider = document.querySelector('input');
-//     inputSlider.ondrag = (()=>{
-//         let value = inputSlider.value;
-//         sliderValue.textContent = value;
-//         sliderValue.style.left = (value/2) + "%";
-//         sliderValue.classList.add("show");
-//     });
-//     inputSlider.onblur = (()=>{
-//         sliderValue.classList.remove("show");
-//     })
+
 const MyProgress=() =>{
+    const sliderValue= document.querySelector('span');
+    const inputSlider = document.querySelector('input');
+    const sliderHandler = (()=>{
+        let value = inputSlider.value;
+        sliderValue.textContent = value;
+        sliderValue.style.left = (value/2) + "%";
+        sliderValue.classList.add("show");
+    });
+    const blursliderHandler = (()=>{
+        sliderValue.classList.remove("show");
+    })
     return(
         <div>
             <div className='main-container'>
@@ -25,7 +26,7 @@ const MyProgress=() =>{
                             </div>
                             <div className='field'>
                                 <div className='value left'>0</div>
-                                <input className='input' type='range' min='0' max='100'  steps='1' draggable="true"></input>
+                                <input className='input' oninput={sliderHandler} onblur={blursliderHandler} type='range' min='0' max='100'  steps='1' draggable="true"></input>
                                 <div className='value right'>100</div>
                             </div>
                         </div>

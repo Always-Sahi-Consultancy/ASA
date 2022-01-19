@@ -4,6 +4,7 @@ import Cart from '../../../image/cart.jpg'
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
 import './Header.css';
 import MyProgress from "../My_progress/My_progress";
+import VideoModule from "../VideoModule/VideoModule";
 
 const Header_Dash = () => {
     const [hamActive, setHamActive] = useState(false);
@@ -135,7 +136,7 @@ const Header_Dash = () => {
                 </div>
             </div>
         </header >
-        <MyProgress/>
+        <VideoModule/>
         </div>
     );
 };
