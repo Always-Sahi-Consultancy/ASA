@@ -1,0 +1,16 @@
+.Gridview__progress{
+    padding: 8% 5%;
+}
+.Gridview__bar{
+    height: 4px;
+    background: rgba(235, 106, 106, 0.97);
+    border-radius: 6px;
+    width: 80%;
+    float: left;
+}
+.Gridview__bar img{
+    height: 14px;
+    float: left;
+    margin-left: 45%;
+    margin-top: -5px;
+}
