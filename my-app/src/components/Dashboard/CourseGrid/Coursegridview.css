@@ -62,7 +62,7 @@
 }
 .Gridview__element h4{
     font-family: Roboto;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-style: normal;
 }
 /*Progress bar*/
@@ -84,8 +84,133 @@
 }
 .Gridview__progress h4{
     width: 20%;
-    float: left;
+    float: right;
     font-family: Roboto;
     font-size: 0.6rem;
     margin-top: -5px;
+}
+
+/*tablets*/
+@media screen and (max-width: 968px){
+    .Gridview__container{
+        border: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .Gridview__head{
+        border: none;
+    }
+    /*Icon Hover*/
+    .Gridview__icon .black{
+        margin: 0.5rem 1rem;
+    }
+    .Gridview__icon:hover .red{
+        margin: 0.5rem 1rem;
+    }
+    .Gridview__body{
+        border: 2px solid #C4C4C4;
+        padding: 1.5rem;
+    }
+    
+    /*element*/
+    .Gridview__element{
+        width: 30%;
+        margin:1.5%;
+    }
+    .Gridview__element h4{
+        font-size: 0.7rem;
+    }
+    /*Progress bar*/
+    .Gridview__progress{
+        padding:6% 2%;
+    }
+    .Gridview__bar{
+        width: 90%;
+    }
+    .Gridview__bar img{
+        height: 12px;
+    }
+    .Gridview__progress h4{
+        width: 10%;
+        font-size: 0.5rem;
+    }   
+}
+
+/*mobile*/
+@media screen and (max-width: 768px){
+    .Gridview__body{
+        padding: 2%;
+    }
+    /*Icon Hover*/
+    .Gridview__icon .black{
+        width: 0.9rem;
+        margin: 0.3rem 0.7rem;
+    }
+    .Gridview__icon:hover .red{
+        width: 0.9rem;
+        margin: 0.3rem 0.7rem;
+    }
+    
+    /*element*/
+    .Gridview__element{
+        width: 46%;
+        margin:2%;
+    }
+    .Gridview__element h4{
+        font-size: 0.8rem;
+    }
+    
+    /*Progress bar*/
+    .Gridview__progress{
+        padding:5% 2%;
+    }
+    .Gridview__bar{
+        width: 85%;
+    }
+    .Gridview__progress h4{
+        width: 15%;
+        font-size: 0.6rem;
+    }   
+}
+@media screen and (max-width: 468px){
+    .Gridview__element h4{
+        font-size: 0.6rem;
+    }
+}
+/*extra large*/
+@media screen and (min-width: 1500px){
+    .Gridview__body{
+        padding: 3%;
+    }
+    /*Icon Hover*/
+    .Gridview__icon .black{
+        width: 2.5rem;
+        margin: 1.5rem 2rem;
+    }
+    .Gridview__icon:hover .red{
+        width: 2.5rem;
+        margin: 1.5rem 2rem;
+    }
+    
+    /*element*/
+    .Gridview__element{
+        width: 28%;
+        margin:2.5%;
+    }
+    .Gridview__element h4{
+        font-size: 1.1rem;
+    }
+    
+    /*Progress bar*/
+    .Gridview__progress{
+        padding:6% 2%;
+    }
+    .Gridview__bar{
+        width: 85%;
+    }
+    .Gridview__progress h4{
+        width: 15%;
+        font-size: 1rem;
+    }   
 }
