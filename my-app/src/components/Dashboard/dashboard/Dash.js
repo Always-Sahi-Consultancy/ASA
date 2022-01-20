@@ -1,4 +1,5 @@
 import ChangePassword from './ChangePassword';
+import DashProgress from './MyProgress';
 import './Dash.css';
 import DashLeft from './DashLeft';
 import HelpCenter from './HelpCenter';
