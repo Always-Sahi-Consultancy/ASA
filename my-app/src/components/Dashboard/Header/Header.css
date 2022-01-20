@@ -257,10 +257,10 @@
 }
 .offer_left {
   width: 50%;
-  border-right: 1px solid #c4c4c4;
 }
 .offer_right {
   width: 50%;
+  border-left: 1px solid #c4c4c4;
   display: none;
 }
 /* .offer_left_options {
@@ -274,7 +274,7 @@
   background-color: rgba(235, 106, 106, 0.14);
   color: #eb6a6a;
 }
-.offer_right~.offer_left_link:hover{
+#program:hover ~.offer_right{
   display: block;
 }
 @media screen and  (max-width: 900px) and (min-width: 768px){

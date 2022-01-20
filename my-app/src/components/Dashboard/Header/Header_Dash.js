@@ -71,6 +71,19 @@ const Header_Dash = () => {
             arrow2.style.transform = "rotate(0deg)";
         }
     }
+    let condition3=false;
+
+    const show = ()=>{
+        const offerRight = document.querySelector('.offer_right');
+        if(condition3===true){
+            offerRight.style.display="none";
+            condition3=true;
+        }
+        else if(condition3==false){
+            offerRight.style.display="block";
+            condition3=false;
+        }
+    }
 
     return (
         <div>
@@ -94,7 +107,7 @@ const Header_Dash = () => {
                         <div className="offer_tab">
                             <div className="offer_tab_box">
                                 <div className="offer_left">
-                                    <div className="offer_left_options"><a href="#" className="offer_left_link">Programming</a></div>
+                                    <div className="offer_left_options" id="program" onClick={show}><a href="#" className="offer_left_link">Programming</a></div>
                                     <div className="offer_left_options"><a href="#" className="offer_left_link">Design</a></div>
                                     <div className="offer_left_options"><a href="#" className="offer_left_link">Data Science</a></div>
                                     <div className="offer_left_options"><a href="#" className="offer_left_link">Business and Freelance</a></div>
@@ -156,7 +169,7 @@ const Header_Dash = () => {
             </div>
         </div>
         </header >
-        <Dash/>
+        <DashBoardMain/>
         </div>
     );
 };
