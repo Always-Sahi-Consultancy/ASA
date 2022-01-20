@@ -261,6 +261,7 @@
 }
 .offer_right {
   width: 50%;
+  display: none;
 }
 /* .offer_left_options {
   border: 2px solid green;
@@ -272,6 +273,9 @@
 .offer_left_link:hover {
   background-color: rgba(235, 106, 106, 0.14);
   color: #eb6a6a;
+}
+.offer_right~.offer_left_link:hover{
+  display: block;
 }
 @media screen and  (max-width: 900px) and (min-width: 768px){
   .Header {
@@ -402,8 +406,12 @@
     width: 50%;
     border-right: 1px solid #c4c4c4;
   }
+  /* .offer_right~.offer_left_link:hover{
+    display: block;
+  } */
   .offer_right {
     width: 50%;
+    display: none;
   }
   /* .offer_left_options {
     border: 2px solid green;
@@ -666,6 +674,7 @@
   }
   .offer_right {
     width: 50%;
+    display: none;
   }
   /* .offer_left_options {
     border: 2px solid green;

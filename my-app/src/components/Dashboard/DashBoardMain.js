@@ -4,7 +4,7 @@ import MyProgress from './My_progress/My_progress';
 import CourseGrid from './CourseGrid/CourseGrid';
 const DashBoardMain = () =>{
     return(
-        <div className='dash-container'>
+        <div className='dashs-container'>
             <MyProgress/>
             <CourseGrid/>
         </div>
