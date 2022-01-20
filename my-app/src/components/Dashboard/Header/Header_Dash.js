@@ -12,8 +12,16 @@ import Dash from "../dashboard/Dash";
 const Header_Dash = () => {
     const [hamActive, setHamActive] = useState(false);
     const showMenu = () => {
-        setHamActive(!hamActive);
+        const dashslider = document.getElementById('header_dash_slider');
+        const hamburger = document.getElementById('header_hamburger');
+        dashslider.classList.toggle('header_dash_sliderToggle');
+        hamburger.classList.toggle('header_dash_hamburgerActive');
+        const ham_bar = document.getElementsByClassName('header_icon_bar');
+        ham_bar[0].classList.toggle('header_icon_1');
+        ham_bar[1].classList.toggle('header_icon_2');
+        ham_bar[2].classList.toggle('header_icon_3');
     }
+    
     let condition = false;
     const dropdown = () => {
         const inner_dropdown = document.querySelector('.profile-inner-dropdown');
@@ -138,6 +146,14 @@ const Header_Dash = () => {
                     </div >
                 </div>
             </div>
+            <div className="header_dash_slider" id="header_dash_slider" onClick={showMenu}>
+            <div className="header_dash_sliderOption">
+                <div className="header_dash_option">Home</div>
+                <div className="header_dash_option">Courses</div>
+                <div className="header_dash_option">My Cart</div>
+                <div className="header_dash_option">User Profile</div>
+            </div>
+        </div>
         </header >
         <Dash/>
         </div>
