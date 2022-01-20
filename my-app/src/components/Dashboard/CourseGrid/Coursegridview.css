@@ -1,237 +1,245 @@
-.ListGrid__container{
-    display: block;
-    width: 70%;
-    float: right;
-    margin: 2rem;
+.ListGrid__container {
+  display: block;
+  width: 70%;
+  float: right;
+  margin: 2rem;
 }
 
-.Gridview__container{
-    border: 1px solid #C4C4C4;
-    display: block;
-    width: 100%;
-    float: right;
-    margin: 2rem;
+.Gridview__container {
+  border: 1px solid #c4c4c4;
+  display: block;
+  width: 100%;
+  float: right;
+  margin: 2rem;
 }
-.Gridview__head{
-    border: 1px solid #C4C4C4;
-    height: fit-content;
-    overflow: hidden;
-    background-color: white;
+.Gridview__head {
+  border: 1px solid #c4c4c4;
+  height: fit-content;
+  overflow: hidden;
+  background-color: white;
 }
 /*Icon Hover*/
-.Gridview__icon .black{
-    width: 1.3rem;
-    height: auto;
-    float: right;
-    margin: 1rem 1.5rem;
+.Gridview__icon .black {
+  width: 1.3rem;
+  height: auto;
+  float: right;
+  margin: 1rem 1.5rem;
 }
-.Gridview__icon .red{
-    display: none;
+.Gridview__icon .red {
+  display: none;
 }
-.Gridview__icon:hover  .black{
-    display: none;
+.Gridview__icon:hover .black {
+  display: none;
 }
-.Gridview__icon:hover .red{
-    display: block;
-    width: 1.3rem;
-    height: auto;
-    float: right;
-    margin: 1rem 1.5rem;
+.Gridview__icon:hover .red {
+  display: block;
+  width: 1.3rem;
+  height: auto;
+  float: right;
+  margin: 1rem 1.5rem;
 }
-.Gridview__body{
-    border: 1px solid #C4C4C4;
-    background: linear-gradient(180deg, rgba(229, 229, 229, 0.5) 0%, #FFFFFF 100%);
-    padding: 2rem;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+.Gridview__body {
+  border: 1px solid #c4c4c4;
+  background: linear-gradient(
+    180deg,
+    rgba(229, 229, 229, 0.5) 0%,
+    #ffffff 100%
+  );
+  padding: 2rem;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*element*/
-.Gridview__element{
-    width: 28%;
-    float: left;
-    background: linear-gradient(180deg, #C4C4C4 79.04%, rgba(196, 196, 196, 0) 100%);
-    border: 2px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 6px;
-    height: auto;
-    overflow: hidden;
-    margin:2.5%;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
+.Gridview__element {
+  width: 28%;
+  float: left;
+  background: linear-gradient(
+    180deg,
+    #c4c4c4 79.04%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  border: 2px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: auto;
+  overflow: hidden;
+  margin: 2.5%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
 }
-.Gridview__picture{
-    margin-top: 0.5%;
-    width:99%;
-    height: auto;
-    border-radius: 6px;
+.Gridview__picture {
+  margin-top: 0.5%;
+  width: 99%;
+  height: auto;
+  border-radius: 6px;
 }
-.Gridview__element h4{
-    font-family: Roboto;
-    font-size: 0.7rem;
-    font-style: normal;
+.Gridview__element h4 {
+  font-family: Roboto;
+  font-size: 0.7rem;
+  font-style: normal;
 }
 /*Progress bar*/
-.Gridview__progress{
-    width: 100%;
-    padding: 8% 5%;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-end;
+.Gridview__progress {
+  width: 100%;
+  padding: 8% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
 }
-.Gridview__bar{
-    height: 4px;
-    background: rgba(235, 106, 106, 0.97);
-    border-radius: 6px;
-    width: 80%;
-    float: left;
+.Gridview__bar {
+  height: 4px;
+  background: rgba(235, 106, 106, 0.97);
+  border-radius: 6px;
+  width: 80%;
+  float: left;
 }
-.Gridview__bar img{
-    height: 14px;
-    float: left;
-    margin-left: 45%;
-    margin-top: -5px;
+.Gridview__bar img {
+  height: 14px;
+  float: left;
+  margin-left: 45%;
+  margin-top: -5px;
 }
-.Gridview__progress h4{
-    width: 20%;
-    float: right;
-    font-family: Roboto;
-    font-size: 0.6rem;
-    margin-top: -5px;
+.Gridview__progress h4 {
+  width: 20%;
+  float: right;
+  font-family: Roboto;
+  font-size: 0.6rem;
+  margin-top: -5px;
 }
 
 /*tablets*/
-@media screen and (max-width: 968px){
-    .ListGrid__container{
-        display: block;
-        width: 100%;
-        float: right;
-        margin: 2rem;
-    }
-    .Gridview__container{
-        border: none;
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
-    .Gridview__head{
-        border: none;
-    }
-    /*Icon Hover*/
-    .Gridview__icon .black{
-        margin: 0.5rem 1rem;
-    }
-    .Gridview__icon:hover .red{
-        margin: 0.5rem 1rem;
-    }
-    .Gridview__body{
-        border: 2px solid #C4C4C4;
-        padding: 1.5rem;
-    }
-    
-    /*element*/
-    .Gridview__element{
-        width: 30%;
-        margin:1.5%;
-    }
-    .Gridview__element h4{
-        font-size: 0.7rem;
-    }
-    /*Progress bar*/
-    .Gridview__progress{
-        padding:6% 2%;
-    }
-    .Gridview__bar{
-        width: 90%;
-    }
-    .Gridview__bar img{
-        height: 12px;
-    }
-    .Gridview__progress h4{
-        width: 10%;
-        font-size: 0.5rem;
-    }   
+@media screen and (max-width: 968px) {
+  .ListGrid__container {
+    display: block;
+    width: 100%;
+    float: right;
+    margin: 2rem;
+  }
+  .Gridview__container {
+    border: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .Gridview__head {
+    border: none;
+  }
+  /*Icon Hover*/
+  .Gridview__icon .black {
+    margin: 0.5rem 1rem;
+  }
+  .Gridview__icon:hover .red {
+    margin: 0.5rem 1rem;
+  }
+  .Gridview__body {
+    border: 2px solid #c4c4c4;
+    padding: 1.5rem;
+  }
+
+  /*element*/
+  .Gridview__element {
+    width: 30%;
+    margin: 1.5%;
+  }
+  .Gridview__element h4 {
+    font-size: 0.7rem;
+  }
+  /*Progress bar*/
+  .Gridview__progress {
+    padding: 6% 2%;
+  }
+  .Gridview__bar {
+    width: 90%;
+  }
+  .Gridview__bar img {
+    height: 12px;
+  }
+  .Gridview__progress h4 {
+    width: 10%;
+    font-size: 0.5rem;
+  }
 }
 
 /*mobile*/
-@media screen and (max-width: 768px){
-    .Gridview__body{
-        padding: 2%;
-    }
-    /*Icon Hover*/
-    .Gridview__icon .black{
-        width: 0.9rem;
-        margin: 0.3rem 0.7rem;
-    }
-    .Gridview__icon:hover .red{
-        width: 0.9rem;
-        margin: 0.3rem 0.7rem;
-    }
-    
-    /*element*/
-    .Gridview__element{
-        width: 46%;
-        margin:2%;
-    }
-    .Gridview__element h4{
-        font-size: 0.8rem;
-    }
-    
-    /*Progress bar*/
-    .Gridview__progress{
-        padding:5% 2%;
-    }
-    .Gridview__bar{
-        width: 85%;
-    }
-    .Gridview__progress h4{
-        width: 15%;
-        font-size: 0.6rem;
-    }   
+@media screen and (max-width: 768px) {
+  .Gridview__body {
+    padding: 2%;
+  }
+  /*Icon Hover*/
+  .Gridview__icon .black {
+    width: 0.9rem;
+    margin: 0.3rem 0.7rem;
+  }
+  .Gridview__icon:hover .red {
+    width: 0.9rem;
+    margin: 0.3rem 0.7rem;
+  }
+
+  /*element*/
+  .Gridview__element {
+    width: 46%;
+    margin: 2%;
+  }
+  .Gridview__element h4 {
+    font-size: 0.8rem;
+  }
+
+  /*Progress bar*/
+  .Gridview__progress {
+    padding: 5% 2%;
+  }
+  .Gridview__bar {
+    width: 85%;
+  }
+  .Gridview__progress h4 {
+    width: 15%;
+    font-size: 0.6rem;
+  }
 }
-@media screen and (max-width: 468px){
-    .Gridview__element h4{
-        font-size: 0.6rem;
-    }
+@media screen and (max-width: 468px) {
+  .Gridview__element h4 {
+    font-size: 0.6rem;
+  }
 }
 /*extra large*/
-@media screen and (min-width: 1500px){
-    .Gridview__body{
-        padding: 3%;
-    }
-    /*Icon Hover*/
-    .Gridview__icon .black{
-        width: 2.5rem;
-        margin: 1.5rem 2rem;
-    }
-    .Gridview__icon:hover .red{
-        width: 2.5rem;
-        margin: 1.5rem 2rem;
-    }
-    
-    /*element*/
-    .Gridview__element{
-        width: 28%;
-        margin:2.5%;
-    }
-    .Gridview__element h4{
-        font-size: 1.1rem;
-    }
-    
-    /*Progress bar*/
-    .Gridview__progress{
-        padding:6% 2%;
-    }
-    .Gridview__bar{
-        width: 85%;
-    }
-    .Gridview__progress h4{
-        width: 15%;
-        font-size: 1rem;
-    }   
+@media screen and (min-width: 1500px) {
+  .Gridview__body {
+    padding: 3%;
+  }
+  /*Icon Hover*/
+  .Gridview__icon .black {
+    width: 2.5rem;
+    margin: 1.5rem 2rem;
+  }
+  .Gridview__icon:hover .red {
+    width: 2.5rem;
+    margin: 1.5rem 2rem;
+  }
+
+  /*element*/
+  .Gridview__element {
+    width: 28%;
+    margin: 2.5%;
+  }
+  .Gridview__element h4 {
+    font-size: 1.1rem;
+  }
+
+  /*Progress bar*/
+  .Gridview__progress {
+    padding: 6% 2%;
+  }
+  .Gridview__bar {
+    width: 85%;
+  }
+  .Gridview__progress h4 {
+    width: 15%;
+    font-size: 1rem;
+  }
 }
