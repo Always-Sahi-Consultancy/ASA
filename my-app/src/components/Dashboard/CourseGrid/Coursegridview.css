@@ -53,6 +53,10 @@
     overflow: hidden;
     margin:2.5%;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 .Gridview__picture{
     margin-top: 0.5%;
@@ -67,7 +71,11 @@
 }
 /*Progress bar*/
 .Gridview__progress{
+    width: 100%;
     padding: 8% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
 }
 .Gridview__bar{
     height: 4px;
