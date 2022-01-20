@@ -1,8 +1,8 @@
 import './Courses.css';
 import Search from '../../image/MG.png';
 import Filter from '../../image/oil-funnel.png';
-import star from '../../image/star.png';
-import star1 from '../../image/star1.png';
+import star from '../../image/Star 15.svg';
+import star1 from '../../image/Star 14.svg';
 import Course_box from './Course_box';
 import atharv from '../../image/3 Athu.png';
 import tootkit from '../../image/18+ Toolkit.jpg';
