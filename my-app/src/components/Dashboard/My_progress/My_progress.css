@@ -165,3 +165,8 @@
     border-radius: 10px;
     background: var(--red);
 }
+@media screen and (max-width: 968px){
+    .progress{
+        display: none;
+    }
+}
