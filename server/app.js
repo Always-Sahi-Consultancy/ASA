@@ -1,18 +1,18 @@
+const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
-// Connection to MongoDB server
-const DB = 'mongodb+srv://as_academy:Azcz65LTU_Wt3m@cluster0.0kuxo.mongodb.net/as_academy?retryWrites=true&w=majority';
+dotenv.config({path: './config.env'});
+const PORT = process.env.PORT;
 
-mongoose.connect(DB, { 
-    useNewUrlParser: true,
-    //useCreateIndex: true,
-    useUnifiedTopology: true,
-    //useFindAndModify: false
-}).then(() => {
-    console.log(`Connected to DB`);
-}).catch((err) => console.log(`No Connection`));
+require('./database/connect');
+
+app.use(express.json());
+
+const User = require('./models/user');
+
+app.use(require('./routes/auth'));
 
 // Middleware
 const middleware = (req, res, next) => {
@@ -37,6 +37,6 @@ app.get('/signup', (req, res) => {
     res.send('inside signup');
 });
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 })
