@@ -29,19 +29,19 @@ const CourseGrid = () => {
     
 
     return(
-        <div className='Gridview__container'>
-        <div>
-            <div className='Gridview__head'>
-                <div className='Gridview__icon'>
-                <img className='black' src={listBlack}></img>
-                <img className='red' src={listRed}></img>
+        <div className='ListGrid__container'>
+            <div className="Gridview__container">
+                <div className='Gridview__head'>
+                    <div className='Gridview__icon'>
+                    <img className='black' src={listBlack}></img>
+                    <img className='red' src={listRed}></img>
+                    </div>
                 </div>
-            </div>
-                <div className='Gridview__body'>
-                    {data.map((item) => <CourseGridview image={item.image} title={item.title} percentage={item.percentage} />)}
-                </div>
-        </div>            
-        <div className='Listview__container'>
+                    <div className='Gridview__body'>
+                        {data.map((item) => <CourseGridview image={item.image} title={item.title} percentage={item.percentage} />)}
+                    </div>
+            </div>  
+            <div className='Listview__container'>
             <div className='Listview__head'>
                 <div className='Listview__icon'>
                 <img className='black' src={gridBlack}></img>
@@ -51,7 +51,8 @@ const CourseGrid = () => {
                 <div className='Listview__body'>
                     {data.map((item) => <CourseListview image={item.image} title={item.title} percentage={item.percentage} />)}
                 </div>
-        </div>        </div>
+        </div>          
+        </div>
         
         )
 };
