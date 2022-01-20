@@ -1,0 +1,73 @@
+.Dashprogress__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+.Dashprogress__heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 5rem;
+    display: block;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: center;
+    color: #6D6875;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+/*element*/
+.Dashprogress__element{
+    width: 28%;
+    float: left;
+    background: linear-gradient(180deg, #C4C4C4 79.04%, rgba(196, 196, 196, 0) 100%);
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: auto;
+    overflow: hidden;
+    margin:2.5%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.Dashprogress__picture{
+    margin-top: 0.5%;
+    width:99%;
+    height: auto;
+    border-radius: 6px;
+}
+.Dashprogress__element h4{
+    font-family: Roboto;
+    font-size: 0.7rem;
+    font-style: normal;
+}
+/*Progress bar*/
+.Dashprogress__progress{
+    width: 100%;
+    padding: 8% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+.Dashprogress__bar{
+    height: 4px;
+    background: rgba(235, 106, 106, 0.97);
+    border-radius: 6px;
+    width: 80%;
+    float: left;
+}
+.Dashprogress__progress h4{
+    width: 20%;
+    float: right;
+    font-family: Roboto;
+    font-size: 0.6rem;
+    margin-top: -5px;
+}
