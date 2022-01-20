@@ -9,7 +9,7 @@ const Dash= () =>{
     return(
         <div className='dash-container'>
             <DashLeft/>
-            <EditProfile/>
+            <DashProgress/>
         </div>
     );
 }

@@ -1,3 +1,4 @@
+
 .Dashprogress__container{
     display: flex;
     justify-content: center;
@@ -20,10 +21,24 @@
     color: #6D6875;
     border-bottom: 1px solid #C4C4C4;
 }
+.Dashprogress__topic{
+    float: left;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
 
+.Dashprogress__body{
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+}
 /*element*/
 .Dashprogress__element{
-    width: 28%;
+    width: 18%;
     float: left;
     background: linear-gradient(180deg, #C4C4C4 79.04%, rgba(196, 196, 196, 0) 100%);
     border: 2px solid #C4C4C4;
@@ -31,7 +46,7 @@
     border-radius: 6px;
     height: auto;
     overflow: hidden;
-    margin:2.5%;
+    margin:1.5%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
