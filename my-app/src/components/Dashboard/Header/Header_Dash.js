@@ -156,7 +156,7 @@ const Header_Dash = () => {
             </div>
         </div>
         </header >
-        <DashBoardMain/>
+        <Dash/>
         </div>
     );
 };

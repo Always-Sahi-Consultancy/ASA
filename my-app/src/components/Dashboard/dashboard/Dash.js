@@ -3,12 +3,13 @@ import DashProgress from './MyProgress';
 import './Dash.css';
 import DashLeft from './DashLeft';
 import HelpCenter from './HelpCenter';
+import EditProfile from './EditProfile';
 
 const Dash= () =>{
     return(
         <div className='dash-container'>
             <DashLeft/>
-            <HelpCenter/>
+            <EditProfile/>
         </div>
     );
 }
