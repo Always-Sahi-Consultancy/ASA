@@ -22,12 +22,13 @@ const userSchema = new mongoose.Schema({
 
 // Hashing the password
 userSchema.pre('save', async function(next){
+    console.log('Hashing the password');
     if(this.isModified('userPassword')){
-        this.userPassword = bcrypt.hash(this.userPassword, 12);
+        this.userPassword = await bcrypt.hash(this.userPassword, 12);
     }
     next();
 });
 
-const User = mongoose.model('USERS', userSchema);
+const User = mongoose.model('USER', userSchema);
 
 module.exports = User;
