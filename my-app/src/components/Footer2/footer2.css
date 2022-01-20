@@ -374,16 +374,16 @@
   }
   .icon {
     width: auto;
-    height: 2vh;
+    height: 3vh;
   }
   .iconD {
     width: auto;
-    height: 3vh;
+    height: 4vh;
   }
   .icon__text {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 20px;
-    margin: 0.8% 6%;
+    margin: 3% 6%;
   }
   .icon__style {
     margin: 1% auto;
@@ -552,7 +552,7 @@
   }
   .icon {
     width: auto;
-    height: 2vh;
+    height: 3vh;
   }
   .iconD {
     width: auto;
@@ -623,16 +623,16 @@
   }
   .icon {
     width: auto;
-    height: 3vh;
+    height: 2.5vh;
   }
   .iconD {
     width: auto;
-    height: 4vh;
+    height: 3vh;
   }
   .icon__text {
     font-size: 0.8rem;
     line-height: 20px;
-    margin: 0.8% 6%;
+    margin: 1% 6%;
   }
   .icon__style {
     width: 50%;

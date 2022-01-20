@@ -14,7 +14,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
-import Accounting from './components/IndividualCourse/Accounting';
+// import Accounting from './components/IndividualCourse/Accounting';
 
 function App() {
 
@@ -36,6 +36,7 @@ function App() {
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
       {active === "CoursePage" && <CoursePage />}
+      {/* <Header_Dash/> */}
       <Footer2 onChange={setActive} />
     </div>
   );
