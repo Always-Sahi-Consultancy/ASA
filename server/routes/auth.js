@@ -1,6 +1,7 @@
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcryptjs');
 
 require('../database/connect');
 const User = require('../models/user');
@@ -62,8 +63,13 @@ router.post('/signin', async (req, res) => {
     try{
         const userLogin = await User.findOne({ userEmail: userEmail });
         if(userLogin){
-            
             const isMatch = await bcrypt.compare(userPassword, userLogin.userPassword);
+            const token = await userLogin.generateAuthToken();
+            res.cookie('jwtoken', token, { 
+                expires: new Date(Date.now() + 2592000000), //1hr = 3600000, 1day = 86400000, 1week = 604800000, 1month = 2592000000, 1year = 31536000000
+                httpOnly: true
+            });
+
             if(isMatch){
                 return res.status(200).json({ message: "User logged in successfully" });
             }else{
