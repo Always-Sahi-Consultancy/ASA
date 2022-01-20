@@ -116,10 +116,8 @@
 /*tablets*/
 @media screen and (max-width: 968px) {
   .ListGrid__container {
-    display: block;
+    margin: 0rem;
     width: 100%;
-    float: right;
-    margin: 2rem;
   }
   .Gridview__container {
     border: none;
