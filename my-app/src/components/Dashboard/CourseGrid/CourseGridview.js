@@ -1,4 +1,4 @@
-import './CourseGridview.css';
+import './Coursegridview.css';
 import Coding from '../../../image/work-g2261fc175_1920.jpg';
 import Slider from '../../../image/courses/slider.png';
 // import Link from "react-router-dom";

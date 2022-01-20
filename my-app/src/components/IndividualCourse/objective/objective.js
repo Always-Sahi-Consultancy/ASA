@@ -1,5 +1,5 @@
 import './objective.css';
-import ObjectivePoints from './objectivePoints';
+import ObjectivePoints from './ObjectivePoints';
 
 const Objective =() =>{
     const ObjData = [

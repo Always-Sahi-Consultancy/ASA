@@ -8,6 +8,7 @@ import VideoModule from "../VideoModule/VideoModule";
 import DashLeft from "../dashboard/DashLeft";
 import ChangePassword from "../dashboard/ChangePassword";
 import Dash from "../dashboard/Dash";
+import DashBoardMain from "../DashBoardMain";
 
 const Header_Dash = () => {
     const [hamActive, setHamActive] = useState(false);
@@ -155,7 +156,7 @@ const Header_Dash = () => {
             </div>
         </div>
         </header >
-        <Dash/>
+        <DashBoardMain/>
         </div>
     );
 };

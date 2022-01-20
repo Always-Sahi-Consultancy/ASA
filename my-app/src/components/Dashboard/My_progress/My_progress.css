@@ -1,9 +1,8 @@
 .progress{
     display: flex;
     flex-direction: column;
-    padding: 2%;
-    border: 2px solid red;
-    width: 30%;
+    padding: 8%;
+    width: 100%;
     background: #FFFFFF;
     border-radius: 20px;
 }

@@ -29,8 +29,8 @@ const CourseGrid = () => {
     
 
     return(
-        <div>
         <div className='Gridview__container'>
+        <div>
             <div className='Gridview__head'>
                 <div className='Gridview__icon'>
                 <img className='black' src={listBlack}></img>
