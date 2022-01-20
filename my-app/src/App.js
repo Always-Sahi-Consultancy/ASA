@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div>
-      {/* <Signup />
+      <Signup />
       <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />}
       {active === "ContactUs" && <ContactUs />}
@@ -35,8 +35,8 @@ function App() {
       {active === "EarningDiscalimer" && <EarningDiscalimer />}
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
-      {active === "CoursePage" && <CoursePage />} */}
-      <Header_Dash/>
+      {active === "CoursePage" && <CoursePage />}
+      {/* <Header_Dash/> */}
       <Footer2 onChange={setActive} />
     </div>
   );
