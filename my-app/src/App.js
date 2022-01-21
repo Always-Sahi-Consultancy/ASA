@@ -14,14 +14,14 @@ import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
-// import Accounting from './components/IndividualCourse/Accounting';
+import Accounting from './components/IndividualCourse/Accounting';
 import Error404 from './components/404Error/404Error';
 
 import {BrowserRouter, Link, Routes, Route } from 'react-router-dom';
   
 function App() {
 
-  const [active, setActive] = useState("Landing");
+  // const [active, setActive] = useState("Landing");
 
   return (
     <div>
@@ -43,12 +43,19 @@ function App() {
        <Footer2 onChange={setActive} /> */}
  
       <BrowserRouter>
-      <Signup />
       <Header2 />
         <Link to="/RegisterNow"></Link>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/"
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact_us" element={<ContactUs />} />
+          <Route path="/about_us" element={<OurStroy />} />
+          <Route path="/RegisterNow" element={<RegisterMain />} />
+          <Route path="/CourseName" element={<Accounting />} />
+          <Route path="/TermsofUse" element={<TermsOfUse />} />
+          <Route path="/EarningDisclaimer" element={<PrivacyPolicy />} />
+          <Route path="/RefundPolicy" element={<RefundPolicy />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       <Footer2 />

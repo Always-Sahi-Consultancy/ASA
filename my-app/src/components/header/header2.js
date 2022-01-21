@@ -2,7 +2,7 @@ import React from "react";
 import AsLogo from '../../image/AS_Logo_Transparent.png';
 import './header2.css';
 
-const Header2 = (props) => {
+const Header2 = () => {
     const displayMenu = () => {
         const slider = document.getElementById('header__slider');
         const hamburger = document.getElementById('header__hamburger');
@@ -31,10 +31,10 @@ const Header2 = (props) => {
             <img src={AsLogo} alt="AS LOGO" className="header__brandLogo"></img>
         </div>
         <div className="header__navigate">
-            <a onClick={() => props.onChange("Landing")} className="header__link"><div className="header__options">Home</div></a>
-            <a onClick={() => props.onChange("Testimonials")} className="header__link"><div className="header__options">Testimonials</div></a>
-            <a onClick={() => props.onChange("ContactUs")} className="header__link"><div className="header__options">Contact Us</div></a>
-            <a onClick={() => props.onChange("OurStory")} className="header__link"><div className="header__options">About Us</div></a>
+            <a href="/" className="header__link"><div className="header__options">Home</div></a>
+            <a href="/testimonials" className="header__link"><div className="header__options">Testimonials</div></a>
+            <a href="/contact_us" className="header__link"><div className="header__options">Contact Us</div></a>
+            <a href="/about_us" className="header__link"><div className="header__options">About Us</div></a>
         </div>
         <div className="header__Login">
             <a href="#" className="signup__link">
@@ -45,13 +45,13 @@ const Header2 = (props) => {
         </div>
         </div>
         <div className="header__slider" id="header__slider">
-            <span onClick={displayMenu}><div className="header__joinUs" onClick={() => props.onChange("RegisterMain")}>Join Always Sahi</div></span>
+            <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow">Join Always Sahi</a></div></span>
             <div className="header__sliderOption" onClick={displayMenu}>
-                <div className="header__option" onClick={() => props.onChange("Landing")}>Home</div>
-                <div className="header__option">Freebies</div>
-                <div className="header__option" onClick={() => props.onChange("Testimonials")}>Testimonials</div>
-                <div className="header__option"onClick={() => props.onChange("ContactUs")}>Contact Us</div>
-                <div className="header__option" onClick={() => props.onChange("OurStory")}>About Us</div>
+                <div className="header__option"><a href="/">Home</a></div>
+                <div className="header__option"><a href="/freebies">Freebies</a></div>
+                <div className="header__option"><a href="/testimonials">Testimonials</a></div>
+                <div className="header__option"><a href="/contact_us">Contact Us</a></div>
+                <div className="header__option"><a href="/about_us">About Us</a></div>
             </div>
         </div>
     </header>
