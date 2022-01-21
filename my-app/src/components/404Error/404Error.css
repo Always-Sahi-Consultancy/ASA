@@ -1,0 +1,26 @@
+.error_404{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin: 12vh 12vw;
+}
+
+.error_404_message{
+    text-align: center;
+}
+
+.error_404__home{
+    background: var(--red);
+    color: var(--white);
+    width: fit-content;
+    font-size: 2rem;
+    padding: 1%;
+    border-radius: 12px;
+    border: 0px;
+}
+
+.error_404__link{
+    text-decoration: none;
+    color: inherit;
+    margin: 1vh 1vw;
+}

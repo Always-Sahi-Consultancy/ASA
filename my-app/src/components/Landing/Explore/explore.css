@@ -34,6 +34,10 @@
         cursor: pointer;
         filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     }
+    .explore__link{
+        text-decoration: none;
+        color: inherit;
+    }
     .main-container__content{
         position: absolute;
         display: flex;
