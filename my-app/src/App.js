@@ -15,14 +15,17 @@ import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
 // import Accounting from './components/IndividualCourse/Accounting';
+import Error404 from './components/404Error/404Error';
 
+import {BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+  
 function App() {
 
   const [active, setActive] = useState("Landing");
 
   return (
     <div>
-      <Signup />
+      {/* <Signup />
       <Header2 onChange={setActive} />
       {active === "Landing" && <Landing />}
       {active === "ContactUs" && <ContactUs />}
@@ -36,8 +39,20 @@ function App() {
       {active === "PrivacyPolicy" && <PrivacyPolicy />}
       {active === "RefundPolicy" && <RefundPolicy />}
       {active === "CoursePage" && <CoursePage />}
-      {/* <Header_Dash/> */}
-      <Footer2 onChange={setActive} />
+      {/* <Header_Dash/> 
+       <Footer2 onChange={setActive} /> */}
+ 
+      <BrowserRouter>
+      <Signup />
+      <Header2 />
+        <Link to="/RegisterNow"></Link>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/"
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      <Footer2 />
+      </BrowserRouter>
     </div>
   );
 }
