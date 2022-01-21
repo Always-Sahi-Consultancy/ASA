@@ -47,7 +47,7 @@ const Signup = (props) => {
             <SignUpForm />
             <div className='signup__message'>By Joining I agree to receive emails from Always Sahi .</div>
             <hr className='signup__hr'></hr>
-            <div className='signup__option'>Not a Member? <a className='signup__span' onClick={() => props.onChange("RegisterMain")}>Sign in</a></div>
+            <div className='signup__option'>Not a Member? <a className='signup__span' href="/RegisterNow" >Sign in</a></div>
         </div>
         </div>
         
