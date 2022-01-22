@@ -5,69 +5,13 @@
     justify-content: center;
     flex-direction: row;
     width: auto;
-    margin: 5% 15%;
+    margin: 1% 10%;
 }
-@media screen and (max-width: 426px) and (min-width: 300px){
+@media screen and (max-width: 765px){
     .dash-container{
         flex-direction: column;
         width: auto;
-        margin: 5% 5%;
+        margin: 5% 10%;
     }
 }
 
-
-@media screen and (max-width: 650px) and (min-width: 426px){
-    .dash-container{
-        flex-direction: column;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 768px) and (min-width: 650px){
-    .dash-container{
-        flex-direction: column;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 900px) and (min-width: 768px){
-    .dash-container{
-        flex-direction: row;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 1200px) and (min-width: 900px){
-    .dash-container{
-        flex-direction: row;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 1400px) and (min-width: 1200px){
-    .dash-container{
-        flex-direction: row;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 2000px) and (min-width: 1400px){
-    .dash-container{
-        flex-direction: row;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
-
-@media screen and  (max-width: 4000px) and (min-width: 2000px){
-    .dash-container{
-        flex-direction: row;
-        width: auto;
-        margin: 5% 5%;
-    }
-}
