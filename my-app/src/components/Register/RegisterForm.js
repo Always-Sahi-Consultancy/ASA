@@ -29,7 +29,7 @@ const RegisterForm = () => {
         if(data.status === 422 || !data) {
             window.alert("Registration failed");
             console.log("Registration failed");
-        }else{
+        } else {
             window.alert("Registration successful");
             console.log("Registration successful");
             navigate("/");
