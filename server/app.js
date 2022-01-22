@@ -1,7 +1,9 @@
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const app = express();
+app.use(cookieParser())
 
 dotenv.config({path: './config.env'});
 const PORT = process.env.PORT;
@@ -14,18 +16,8 @@ const User = require('./models/user');
 
 app.use(require('./routes/auth'));
 
-// Middleware
-const middleware = (req, res, next) => {
-    console.log('Middleware');
-    next();
-};
-
 app.get('/', (req, res) => {
     res.send('Hello world this is server!');
-});
-app.get('/about', middleware, (req, res) => {
-    console.log('About page');
-    res.send('inside about');
 });
 app.get('/contact', (req, res) => {
     res.send('inside contact');
