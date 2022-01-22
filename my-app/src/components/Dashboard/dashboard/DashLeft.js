@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DashLeft.css';
 
 const DashLeft = () =>{
 
     const navigate = useNavigate();
+
+    const [userData, setuserData] = useState({});
 
     const callDashPage = async () => {
         try {
@@ -18,7 +20,8 @@ const DashLeft = () =>{
             });
 
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
+            setuserData(data);
             if(!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
@@ -35,9 +38,9 @@ const DashLeft = () =>{
 
     return(
         <div className='dashleft-container'>
-            <div className='dash__icon'>A</div>
+            <div className='dash__icon'>M</div>
             <form method="GET">
-            <div className='dash__name'>Akhil Nair</div>
+            <div className='dash__name'>{ userData.userFirstName + " " + userData.userLastName }</div>
             </form>
             <div className='dash__tabs'>
                 <div className='dash__progress dash__tab'>My Progress</div>
