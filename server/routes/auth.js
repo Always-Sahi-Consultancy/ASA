@@ -34,9 +34,9 @@ router.post('/register', (req, res) => {
 
 // using async-await
 router.post('/register', async (req, res) => {
-    const { userEmail, userPassword, userEmailVerified, userHash } = req.body;
+    const { userEmail, userPassword, userFirstName, userLastName } = req.body;
 
-    if(!userEmail || !userPassword || !userEmailVerified || !userHash){
+    if(!userEmail || !userPassword || !userFirstName || !userLastName){
         return res.status(422).json({ error: "Please fill all the fields" });
     }
 
@@ -45,7 +45,7 @@ router.post('/register', async (req, res) => {
         if(userExist){
             return res.status(422).json({ error: "Email already exist" });
         }
-        const user = new User({ userEmail, userPassword, userEmailVerified, userHash });
+        const user = new User({ userEmail, userPassword, userFirstName, userLastName });
         await user.save();
         res.status(201).json({ message: "User created successfully" });
     }catch(err){
