@@ -6,7 +6,7 @@ import PrivacyPolicy from './components/Terms/PrivacyPolicy';
 import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
-import Signup from './components/Signup/Signup';
+import Signin from './components/SignIn/SignIn';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
@@ -43,7 +43,7 @@ function App() {
        <Footer2 onChange={setActive} /> */}
  
       <BrowserRouter>
-      <Signup />
+      <Signin />
       <Header2 />
         <Link to="/RegisterNow"></Link>
         <Routes>
