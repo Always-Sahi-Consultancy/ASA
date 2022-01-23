@@ -34,9 +34,8 @@ const FooterForm = () => {
             <div className="form__heading">ENQUIRE</div>
             <div className="row_flex">
                 <input type="text" required placeholder='Name' value={userData.userFirstName + " " + userData.userLastName} className="footer__name"></input>
-                <input type="tel" required placeholder='Phone Number' min="999999999" max="9999999999" maxLength="10" pattern="[7-9]{1}[0-9]{9}" className="form__phone"></input>
+                <input type="email" placeholder='Email' required value={userData.userEmail} className="form__email"></input>
             </div>
-            <input type="email" placeholder='Email' required value={userData.userEmail} className="form__email"></input>
             <textarea placeholder='Message' className="form__message" rows="5"></textarea>
             <div className="row">
                 <button type='submit' className='form__button'>Message</button>

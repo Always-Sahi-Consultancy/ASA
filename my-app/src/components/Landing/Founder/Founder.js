@@ -9,7 +9,7 @@ const Founder = () => {
             </div>
             <div className='founder__details'>
                 <div className='founder__name'>Atharva Sawant, Founder</div>
-                <div className='founder__message'>“A Platform that believes in creating new Leaders, that make the world a beautiful place to Live.”</div>
+                <div className='founder__message'>“The baseline to a Nations development begins with Solidification of the Educational front, that we at Always Sahi Academy are Aiming to achieve.”</div>
             </div>
         </div>
     )

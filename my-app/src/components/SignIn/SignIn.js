@@ -6,8 +6,7 @@ import Google from '../../image/google logo.png';
 import Apple from  '../../image/Apple.png';
 
 const SignIn = () => {
-    const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},
-    {'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
+    const data = [{'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
     // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}
 
     const esc = (e) => {

@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 768px) {
   .video-test {
-    background-color: var(--peach);
+    background-color: var(--light-red);
     justify-content: center;
     align-content: center;
     display: flex;
@@ -56,7 +56,7 @@
 }
 @media screen and (max-width: 468px) {
   .video-test {
-    background-color: var(--peach);
+    background-color: var(--light-red);
     justify-content: center;
     align-items: center;
     display: flex;

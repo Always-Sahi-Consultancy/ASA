@@ -5,7 +5,7 @@ import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
 
 const Register = () => {
-    const data = [{'name': "facebook", 'logo': Facebook , "Content": "Continue with Facebook", "link": "", "ids": "facebook"},
+    const data = [
     {'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
     // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}];
 
