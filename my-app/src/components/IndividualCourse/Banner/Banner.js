@@ -1,6 +1,10 @@
 import './Banner.css';
 import Financial from '../../../image/Course Layout/financial_acc.jpg';
 import Star from '../../../image/star1.png';
+import Taxation from '../../../image/Course Layout/taxation.jpg';
+import Anc from '../../../image/Course Layout/anc.jpg';
+import Passion from '../../../image/Course Layout/passion.jpg';
+import Linkedin from '../../../image/coursesBanner.png';
 
 const Banner = () => {
     const data = [{'title': "CERTIFIED COURSE IN FINANCIAL ACCOUNTING",
@@ -11,7 +15,8 @@ const Banner = () => {
 
     const BannerComponent = (props) =>{
         return(
-            <div className='Banner__background'>
+            <div className='Banner'>
+                <img className='Banner__background' src={Financial}></img>
                 <div className='Banner__blur'>
                     <div className='Banner__left'>
                         <h1>{props.title}</h1>

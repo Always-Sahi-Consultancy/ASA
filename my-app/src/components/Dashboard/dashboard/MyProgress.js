@@ -48,21 +48,21 @@ const DashProgress= () =>{
                 <img className='Dashprogress__arrow' src={Arrow}></img>
             </div>
             <div className='Dashprogress__lastcourse'>
-                <h4>Last Course Name</h4>
-                <div className='Dashprogress__completed'>
+                <h4 className='Lastcourse__head'>Coding And Web Development</h4>
+                <div className='Dashprogress__completed subdash'>
                     {/* Progress */}
                     <h4>Completed</h4>
                 </div>
-                <div className='Dashprogress__wereon'>
+                <div className='Dashprogress__wereon subdash'>
                     <h3>You were on</h3>
                     <div className='Dashprogress__video'></div>
                 </div>
-                <div className='Dashprogress__module'>
-                    <h3>Module Name</h3>
+                <div className='Dashprogress__module subdash'>
+                    <h3>Coding and Web Development</h3>
                     <h4>Sub-Module Name</h4>
                     <button>Continue</button>
                 </div>
-                <div className='Dashprogress__certificate'>
+                <div className='Dashprogress__certificate subdash'>
                     <button>Certificate</button>
                 </div>
             </div>
