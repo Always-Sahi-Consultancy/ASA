@@ -16,32 +16,18 @@ import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
 import Accounting from './components/IndividualCourse/Accounting';
 import Error404 from './components/404Error/404Error';
+import Dash from './components/Dashboard/dashboard/Dash';
 
 import {BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import DashBoardMain from './components/Dashboard/DashBoardMain';
+import VideoModule from './components/Dashboard/VideoModule/VideoModule';
+// import VideoContent from './components/Dashboard/VideoModule/VideoContent';
+import VideoPlayer from './components/Dashboard/VideoModule/VideoPlayer';
   
 function App() {
-
-  // const [active, setActive] = useState("Landing");
-
+  const courses = ["Web-development-for-everyone","CERTIFIED-COURSE-IN-FINANCIAL-ACCOUNTING", "A-FREE-TOOLKIT-FOR-18+","FUNDAMENTALS-OF-FINANCIAL-INTELLIGENCE", "NAVRATNAS-OF-TIME-MANAGEMENT","HOW-TO-FIND-YOUR-PASSION"];
   return (
     <div>
-      {/* <Signup />
-      <Header2 onChange={setActive} />
-      {active === "Landing" && <Landing />}
-      {active === "ContactUs" && <ContactUs />}
-      {active === "Header_Dash" && <Header_Dash />}
-      {active === "Signup" && <Signup />}
-      {active === "RegisterMain" && <RegisterMain />}
-      {active === "OurStory" && <OurStroy />}
-      {active === "Testimonials" && <Testimonials />}
-      {active === "TermsOfUse" && <TermsOfUse />}
-      {active === "EarningDiscalimer" && <EarningDiscalimer />}
-      {active === "PrivacyPolicy" && <PrivacyPolicy />}
-      {active === "RefundPolicy" && <RefundPolicy />}
-      {active === "CoursePage" && <CoursePage />}
-      {/* <Header_Dash/> 
-       <Footer2 onChange={setActive} /> */}
- 
       <BrowserRouter>
       <Signin />
       <Header2 />
@@ -57,6 +43,14 @@ function App() {
           <Route path="/EarningDisclaimer" element={<PrivacyPolicy />} />
           <Route path="/RefundPolicy" element={<RefundPolicy />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="CoursePage" element={<CoursePage />} />
+          <Route path={"/dash"} element={<Dash/> } />
+          <Route path={"/DashBoard"} element={<DashBoardMain />} />
+          <Route path={"/Player"} element={<VideoModule/>} />
+          {courses.forEach(element => {
+            var elements = "/"+element;
+            <Route path={elements} element={<Accounting />} />
+          })}
           <Route path="*" element={<Error404 />} />
         </Routes>
       <Footer2 />
