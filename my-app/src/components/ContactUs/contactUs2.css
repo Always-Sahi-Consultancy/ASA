@@ -31,8 +31,6 @@
 }
 .contactUsform__name{
     width: 48%;
-    margin-left: 2%;
-    margin-bottom: 5%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
     padding: 0.5vh ;
@@ -49,7 +47,7 @@
     font-family: "Roboto";
 }
 .contactUsform__email{
-    width: 97%;
+    width: 46%;
     margin-left: 2%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
@@ -60,7 +58,7 @@
 .contactUsform__message{
     width: 97%;
     margin-left: 2%;
-    margin: 4% 2%;
+    margin: 5% 2%;
     border: solid var(--gray-light) 1px;
     border-radius: 5px;
     padding: 0.5vh ;
@@ -86,11 +84,12 @@
     justify-content: center;
     align-items: center;
 }
-.row{
+.row_flex{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 .contactUsicon-container{
     width: 33%;

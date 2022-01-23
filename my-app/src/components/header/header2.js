@@ -1,5 +1,5 @@
 import React from "react";
-import AsLogo from '../../image/AS_Logo_Transparent.png';
+import AsLogo from '../../image/1.svg';
 import './header2.css';
 
 const Header2 = () => {
@@ -38,20 +38,20 @@ const Header2 = () => {
         </div>
         <div className="header__Login">
             <a href="#" className="signup__link">
-                <div className="header__LoginButton" onClick={display}>
+                <div className="header__LoginButton header__link" onClick={display}>
                     Login
                 </div>
             </a>
         </div>
         </div>
         <div className="header__slider" id="header__slider">
-            <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow">Join Always Sahi</a></div></span>
+            <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow" className="header__link" >Join Always Sahi</a></div></span>
             <div className="header__sliderOption" onClick={displayMenu}>
-                <div className="header__option"><a href="/">Home</a></div>
-                <div className="header__option"><a href="/freebies">Freebies</a></div>
-                <div className="header__option"><a href="/testimonials">Testimonials</a></div>
-                <div className="header__option"><a href="/contact_us">Contact Us</a></div>
-                <div className="header__option"><a href="/about_us">About Us</a></div>
+                <div className="header__option"><a href="/" className="header__link">Home</a></div>
+                {/* <div className="header__option"><a href="/freebies">Freebies</a></div> */}
+                <div className="header__option"><a href="/testimonials" className="header__link">Testimonials</a></div>
+                <div className="header__option"><a href="/contact_us" className="header__link">Contact Us</a></div>
+                <div className="header__option"><a href="/about_us" className="header__link">About Us</a></div>
             </div>
         </div>
     </header>

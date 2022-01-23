@@ -23,7 +23,7 @@ const SignInForm = () => {
         } else {
             window.alert("Login successful");
             // console.log("Registration successful");
-            navigate("/contact_us"); // should be redirected to dashboard
+            navigate("/dash"); // should be redirected to dashboard
         }
     }
 

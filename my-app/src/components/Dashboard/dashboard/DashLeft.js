@@ -28,7 +28,7 @@ const DashLeft = () =>{
             }
         } catch (err) {
             console.log(err);
-            navigate("/testimonials");
+            navigate("/");
         }
     }
 

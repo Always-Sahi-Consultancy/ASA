@@ -12,13 +12,10 @@
     background-color: black;
 }
 
-.header__brand{
-    padding: 2vh;
-}
-
 .header__brandLogo{
     cursor: pointer;
-width: 100%; 
+    margin: -30% -10%;
+    width: 100%; 
 }
 
 .header__navigate{
@@ -114,7 +111,9 @@ width: 100%;
     align-items: stretch;
     justify-content: space-around;
 }
-
+.header__options{
+    cursor: pointer;
+}
 .header__option{
     text-decoration: none;
     padding: 2vh 10vw;
@@ -159,7 +158,7 @@ width: 100%;
         top: 2vh;
     }
     .header__brandLogo{
-        width: 60%;
+        width: 80%;
     }
     .header__slider{
         display: block;
