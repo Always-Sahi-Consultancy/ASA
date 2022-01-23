@@ -431,6 +431,11 @@
     height: auto;
   }
 }
+@media screen and (max-device-width: 350px) {
+  .next {
+    left: 80vw;
+  }
+}
 @media screen and (max-device-width: 426px) {
   .subheader_fixed {
     display: none;
@@ -522,6 +527,11 @@
     padding-left: 1vh;
   }
 }
+/* @media screen and (max-device-width: 426px) {
+  .subheader_fixed {
+    display: none;
+  }
+} */
 
 /* @media screen and (max-width: 1024px) {
   .Poster {
