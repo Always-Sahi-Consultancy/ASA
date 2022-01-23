@@ -107,7 +107,7 @@
 }
 .icon {
   width: auto;
-  height: 4vh;
+  height: 5vh;
 }
 .iconD {
   width: auto;
@@ -176,6 +176,7 @@
   color: #ffffff;
   font-family: Roboto;
   margin: 2% 7% 4% 7%;
+  font-size: 1rem;
 }
 .terms__link {
   text-decoration: none;
@@ -451,8 +452,8 @@
     font-size: 1.5rem;
   }
   .terms__part2 {
-    font-size: 1.2rem;
-    margin-bottom: 6%;
+    font-size: 1rem;
+    margin-bottom: 4%;
   }
   .icon {
     width: auto;
@@ -482,8 +483,8 @@
     font-size: 1.5rem;
   }
   .terms__part2 {
-    font-size: 1.2rem;
-    margin-bottom: 6%;
+    font-size: 1rem;
+    margin-bottom: 4%;
   }
   .icon {
     width: auto;
@@ -527,7 +528,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 45%;
+    width: 75%;
     padding: 6% 1% 4% 4%;
     height: 100%;
   }
@@ -536,7 +537,7 @@
     font-size: 1.3rem;
   }
   .icon-container {
-    width: 70%;
+    width: 50%;
     display: flex;
     margin: 2% 3% 8% 0%;
   }

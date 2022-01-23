@@ -43,7 +43,7 @@ function App() {
        <Footer2 onChange={setActive} /> */}
  
       <BrowserRouter>
-      <Signin />
+      {/* <Signin /> */}
       <Header2 />
         <Link to="/RegisterNow"></Link>
         <Routes>

@@ -15,14 +15,14 @@ const FooterIcon = ()=>{
             </div>
             <div className="icon__style">
                 <div ><img src={ImgPhone}className="icon" alt='phone'></img></div>
-                <div className="icon__text"><a href="tel:+91 72760 16790" className='icon__link'>+91&nbsp;72760&nbsp;16790</a></div>
+                <div className="icon__text"><a href="tel:+91 72760 16790" className='icon__link'>+91&nbsp;88570&nbsp;86790</a></div>
             </div>
             <div className="icon__style">
                 <div ><img src={ImgLocation}className="icon" alt='address'></img></div>
                 <div className="icon__text">Pune, Maharashtra</div>
             </div>
             <div className='icons__style'>
-                <div className='icon__link'><a href="#" target={"_blank"}><img src={telegram} className='iconD'></img></a></div>
+                <div className='icon__link'><a href="https://t.me/+Aeus-e9JD940M2Zl" target={"_blank"}><img src={telegram} className='iconD'></img></a></div>
                 <div className='icon__link'><a href="https://www.instagram.com/alwayssahiacademy/ " target={"_blank"}><img src={instagram} className='iconD'></img></a></div>
                 <div className='icon__link'><a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}><img src={facebook} className='iconD'></img></a></div>
             </div>

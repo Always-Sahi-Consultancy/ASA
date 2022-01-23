@@ -42,6 +42,8 @@ const RegisterForm = () => {
             <input placeholder="  Enter your Email" name="userEmail" value={user.email} onChange={handleRegistrationInputs} className="register__email" />
             <label type="text" className="register__label">Password</label>
             <input type="password" placeholder="  Must be atleast 6 characters" name="userPassword" value={user.userPassword} onChange={handleRegistrationInputs} className="register__password" />
+            <label type="text" className="register__label">Confirm Password</label>
+            <input type="password" placeholder="  Must be atleast 6 characters" name="userPassword" value={user.userPassword} onChange={handleRegistrationInputs} className="register__password" />
             <div className="register__row">
                 <div className="register__flex">
                     <label type="text" className="register__label" id="labelName">First Name</label>

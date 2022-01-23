@@ -33,10 +33,10 @@ const ContactUsForm = () =>{
     <div className="contactUsform-container">
         <div className="contactUsform__heading">Enquire</div>
         <div className="row_flex">
-            <input type="text" placeholder='Name' value={userData.userFirstName + " " + userData.userLastName} className="contactUsform__name"></input>
-            <input type="number" placeholder='Phone Number' type="number" className="contactUsform__phone"></input>
+            <input type="text" required placeholder='Name' value={userData.userFirstName + " " + userData.userLastName} className="contactUsform__name"></input>
+            <input type="tel" required placeholder='Phone Number' type="number" maxLength="10" pattern="[0-9]{9}" className="contactUsform__phone"></input>
         </div>
-        <input type ="email" placeholder='Email' value={userData.userEmail} className="contactUsform__email"></input>
+        <input type ="email" required placeholder='Email' value={userData.userEmail} className="contactUsform__email"></input>
         <textarea placeholder='Message' className="contactUsform__message" rows="5"></textarea>
         <div className="rowButton">
         <button type='submit' className='contactUsform__button'>Message</button>

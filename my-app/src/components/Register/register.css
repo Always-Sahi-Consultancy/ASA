@@ -121,6 +121,7 @@
   border-radius: 2px;
   padding: 1vh 0;
   font-family: "Roboto";
+  font-size: 1rem;
 }
 .register__password {
   width: 90%;
@@ -129,6 +130,7 @@
   border-radius: 2px;
   padding: 1vh 0;
   font-family: "Roboto";
+  font-size: 1rem;
 }
 .register__name {
   width: 80%;
@@ -138,14 +140,15 @@
   border-radius: 2px;
   padding: 1vh 0;
   font-family: "Roboto";
+  font-size: 1rem;
 }
 .register__nameL {
-  width: 80%;
-  margin-left: 1%;
+  width: 90%;
   border: solid var(--gray-light) 1px;
   border-radius: 2px;
   padding: 1vh 0;
   font-family: "Roboto";
+  font-size: 1rem;
 }
 .register__flex {
   display: flex;
@@ -156,6 +159,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
   margin: 0;
 }
 .register__label {
@@ -214,7 +220,7 @@
   width: 40%;
 }
 .register__main-component_heading {
-  width: 65%;
+  width: 60%;
   position: absolute;
   left: 10vh;
   top: 10%;
@@ -238,7 +244,7 @@
     align-items: center;
     position: relative;
     overflow-x: hidden;
-    height: 85vh;
+    height: 89vh;
     width: 100%;
   }
   .register__main-image {
@@ -341,6 +347,7 @@
     position: relative;
     overflow-x: hidden;
     height: 100vh;
+    border: 2px solid red;
     width: 100%;
   }
   .register__main-image {
@@ -355,7 +362,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    margin: 10% 10%;
+    margin: 15% 10%;
     font-size: 3.3rem;
     line-height: 50px;
   }
@@ -456,8 +463,9 @@
   .register__main-component_heading {
     width: 90%;
     position: absolute;
-    left: 5vh;
-    top: 5%;
+    left: 0;
+    top: 0;
+    margin: 10% 10%;
     font-size: 4rem;
     line-height: 60px;
   }
@@ -562,12 +570,12 @@
     line-height: 50px;
   }
   .register {
-    width: 62%;
+    width: 60%;
     height: auto;
     position: absolute;
     top: 0;
     left:0;
-    margin: 18% 20%;
+    margin: 25% 20% 0% 20%;
     background: var(--white);
     border-radius: 10px;
     padding: 1.5%;
@@ -575,6 +583,7 @@
   }
   .register__email{
     margin-top: 1%;
+    width: 83%;
     font-size: 1rem;
   }
   .register__name{
@@ -584,10 +593,12 @@
   }
   .register__password{
     margin-top: 1%;
+    width: 83%;
     font-size: 1rem;
   }
   .register__nameL{
     margin-top: 1%;
+    margin-left: 15%;
     font-size: 1rem;
     width: 100%;
   }
@@ -645,7 +656,7 @@
     position: relative;
     overflow-x: hidden;
     overflow: hidden;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
   }
   .register__main-image {
@@ -656,7 +667,7 @@
     background-size: cover;
   }
   .register__main-component_heading {
-    width: 55%;
+    width: 50%;
     margin-top: 1rem;
     margin-left: -2rem;
     font-size: 4rem;
@@ -773,7 +784,7 @@
     line-height: 60px;
   }
   .register {
-    width: 33%;
+    width: 30%;
     height: auto;
     position: absolute;
     top: 0;
@@ -787,22 +798,28 @@
   }
   .register__email{
     margin-top: 1%;
-    font-size: 0.8rem;
+    width: 83%;
+    margin-left: 7%;
+    font-size: 0.9rem;
   }
   .register__name{
     margin-top: 1%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin-left: 15%;
     width: 100%;
   }
   .register__password{
     margin-top: 1%;
-    font-size: 0.8rem;
+    width: 83%;
+    font-size: 0.9rem;
+    margin-left: 7%;
   }
   .register__nameL{
     margin-top: 1%;
     margin-left: 20%;
-    font-size: 0.8rem;
-    width: 100%;
+    font-size: 0.9rem;
+    margin-left: 20%;
+    width: 90%;
   }
   .register__label {
     margin-top: 1%;
@@ -850,6 +867,31 @@
 }
 
 @media screen and  (max-width: 2000px) and (min-width: 1400px){
+  .containerR {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .register__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
+    height: 60vw;
+    width: 100%;
+  }
+  .register__main-image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    background-size: cover;
+  }
+  .register__main-image{
+    height: 100vw;
+  }
   .register{
     width: 25%;
     padding: 1%;
@@ -857,13 +899,13 @@
   .register__name{
     margin-top: 1%;
     font-size: 0.9rem;
-    width: 90%;
+    width: 80%;
   }
   .register__nameL{
     margin-top: 1%;
-    margin-left: 12%;
+    margin-left: 5%;
     font-size: 0.9rem;
-    width: 80%;
+    width:90%;
   }
 }
 
@@ -900,7 +942,7 @@
     margin-top: 1%;
     margin-left: 10%;
     font-size: 1.5rem;
-    width: 80%;
+    width: 90%;
   }
   .register__message {
     font-size: 1.5rem;
@@ -1045,8 +1087,9 @@
   }
   .register__main-component_heading {
     width: 80%;
-    margin-top: 0.5rem;
-    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3rem;
     line-height: 40px;
   }
   .register {
@@ -1055,7 +1098,7 @@
     position: absolute;
     top: 0;
     left:0;
-    margin: 20% 20%;
+    margin: 25% 20% 0% 20%;
     background: var(--white);
     border-radius: 10px;
     padding: 1.5%;
@@ -1063,20 +1106,22 @@
   }
   .register__email{
     margin-top: 1%;
-    font-size: 0.7rem;
+    width: 83%;
+    font-size: 0.9rem;
   }
   .register__name{
     margin-top: 1%;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 90%;
   }
   .register__password{
     margin-top: 1%;
-    font-size: 0.7rem;
+    width: 83%;
+    font-size: 0.9rem;
   }
   .register__nameL{
     margin-top: 1%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 90%;
   }
   .register__label {
@@ -1271,14 +1316,14 @@
       left: 0;
       margin: 5% 8%;
       font-size: 2.4rem;
-      line-height: 50px;
+      line-height: 40px;
     }
     .register {
       width: 85%;
       position: absolute;
       top: 0;
       left: 0;
-      margin: 35% 7%;
+      margin: 49% 7%;
       background: var(--white);
       border-radius: 10px;
       padding: 1%;
@@ -1291,7 +1336,7 @@
     .register__name{
       margin-top: 1%;
       font-size: 0.8rem;
-      width: 85%;
+      width: 80%;
     }
     .register__password{
       margin-top: 1%;
@@ -1300,8 +1345,8 @@
     .register__nameL{
       margin-top: 1.5%;
       margin-left: 1%;
-      font-size: 0.85rem;
-      width: 85%;
+      font-size: 0.8rem;
+      width: 80%;
     }
     #labelName{
       margin-left: 12%;
