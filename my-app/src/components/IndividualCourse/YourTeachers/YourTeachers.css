@@ -51,3 +51,28 @@
     color: #000000;
     width: 50%;
 }
+@media screen and (max-width:768px) {
+    .teacher__name{
+        font-size: 1.5rem;
+        margin: 1%;
+    }
+    .teacher__qualification{
+        margin: 2% 5%;
+        font-size: 1.3rem;
+        line-height: 30px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:425px) {
+    .teacher__name{
+        font-size: 1.3rem;
+        margin: 1%;
+    }
+    .teacher__qualification{
+        margin: 2% 5%;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 90%;
+    }
+    
+}

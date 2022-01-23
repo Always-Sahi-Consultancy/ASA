@@ -12,7 +12,7 @@
   padding: 2vh 1vw;
   width: 20%;
   height: 85vh;
-  background-color: #e5e5e5;
+  background:var(--light-red);
 }
 .filter_left-top {
   height: 5%;
@@ -25,17 +25,16 @@
   opacity: 0.5;
 }
 .filter_name {
-  color: rgba(109, 104, 117, 1);
   margin-left: 15px;
 }
 .Preference_content {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 21px;
   text-align: center;
-  margin: 1vh 0vw;
+  margin: 3vh 0vw;
 }
 .Preference_form {
   height: 90%;
@@ -47,13 +46,13 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 .form-input {
-  height: 50px;
-  padding: 3px 5px;
-  font-size: 18px;
+  height: auto;
+  padding: 8px 5px;
+  font-size: 16px;
   border-radius: 5px;
   margin: 1vh 0;
 }
