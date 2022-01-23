@@ -90,4 +90,10 @@ router.get('/dash', authenticate, (req, res) => {
     res.send(req.rootUser);
 });
 
+// Contact Form
+router.get('/contact', authenticate, (req, res) => {
+    console.log('Contact page');
+    res.send(req.rootUser);
+});
+
 module.exports = router;

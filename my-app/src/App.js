@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <Signin />
+      {/* <Signin /> */}
       <Header2 />
         <Link to="/RegisterNow"></Link>
         <Routes>

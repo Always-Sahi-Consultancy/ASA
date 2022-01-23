@@ -28,7 +28,7 @@ const Header2 = () => {
             <div className="header__bar" id="header__bar3"></div>
         </button>
         <div className="header__brand">
-            <img src={AsLogo} alt="AS LOGO" className="header__brandLogo"></img>
+            <a href="/"><img src={AsLogo} alt="AS LOGO" className="header__brandLogo"></img></a>
         </div>
         <div className="header__navigate">
             <a href="/" className="header__link"><div className="header__options">Home</div></a>

@@ -19,9 +19,9 @@ app.use(require('./routes/auth'));
 app.get('/', (req, res) => {
     res.send('Hello world this is server!');
 });
-app.get('/contact', (req, res) => {
-    res.send('inside contact');
-});
+// app.get('/contact', (req, res) => {
+//     res.send('inside contact');
+// });
 app.get('/signin', (req, res) => {
     res.send('inside signin');
 });
