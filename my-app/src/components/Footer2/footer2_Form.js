@@ -33,7 +33,7 @@ const FooterForm = () => {
         <div className="form-container">
             <div className="form__heading">ENQUIRE</div>
             <div className="row_flex">
-                <input type="text" required placeholder='Name' value={userData.userFirstName + " " + userData.userLastName} className="footer__name"></input>
+                <input type="text" required placeholder='Name' value={typeof(userData.userFirstName) == "undefined"  ? "" : userData.userFirstName + " " + userData.userLastName} className="footer__name"></input>
                 <input type="email" placeholder='Email' required value={userData.userEmail} className="form__email"></input>
             </div>
             <textarea placeholder='Message' className="form__message" rows="5"></textarea>
