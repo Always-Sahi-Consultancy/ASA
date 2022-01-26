@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Company from '../../../image/AS_Logo_Transparent.png';
 import Cart from '../../../image/cart.jpg'
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
@@ -11,6 +11,7 @@ import Dash from "../dashboard/Dash";
 import DashBoardMain from "../DashBoardMain";
 
 const Header_Dash = () => {
+
     const [hamActive, setHamActive] = useState(false);
     const showMenu = () => {
         setHamActive(!hamActive);
@@ -146,7 +147,7 @@ const Header_Dash = () => {
                                 <div className="profile_links Help_center"><a href="#">Help Center</a></div>
                             </div>
                             <div className="Profile_lower">
-                                <div className="profile_links My_Progress"><a href="#">Log Out</a></div>
+                                <div className="profile_links My_Progress"><a href="/logout">Log Out</a></div>
                                 <div className="profile_links Manage_account" onClick={dropdown}>
                                     <a href="#">Manage Account</a>
                                     <a href="#" id="offer_courses">&#9660;</a></div>
