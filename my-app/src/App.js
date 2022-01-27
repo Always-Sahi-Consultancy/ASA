@@ -68,41 +68,10 @@ function App() {
 
   return (
     <div>
-<<<<<<< HEAD
       <UserContext.Provider value={{state, dispatch}}>
           <Header2 />
           <Routing/>
       </UserContext.Provider>
-=======
-      <BrowserRouter>
-      <Signin />
-      <Header2 />
-        <Link to="/RegisterNow"></Link>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact_us" element={<ContactUs />} />
-          <Route path="/about_us" element={<OurStroy />} />
-          <Route path="/RegisterNow" element={<RegisterMain />} />
-          <Route path="/CourseName" element={<Accounting />} />
-          <Route path="/TermsofUse" element={<TermsOfUse />} />
-          <Route path="/EarningDisclaimer" element={<PrivacyPolicy />} />
-          <Route path="/RefundPolicy" element={<RefundPolicy />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="CoursePage" element={<CoursePage />} />
-          <Route path={"/dash"} element={<Dash/> } />
-          <Route path={"/DashBoard"} element={<DashBoardMain />} />
-          <Route path={"/Player"} element={<VideoModule/>} />
-          {courses.forEach(element => {
-            var elements = "/"+element;
-            <Route path={elements} element={<Accounting />} />
-          })}
-          <Route path="*" element={<Error404 />} />
-          <Route path="/logout" element={<Logout />} />
-        </Routes>
-      <Footer2 />
-      </BrowserRouter>
->>>>>>> 4bfa973716edd987f0b57dbc9871974f0a758af1
     </div>
   );
 }

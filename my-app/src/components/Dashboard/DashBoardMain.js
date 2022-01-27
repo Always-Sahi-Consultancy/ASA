@@ -2,21 +2,22 @@
 import './DashBoardMain.css';
 import MyProgress from './My_progress/My_progress';
 import CourseGrid from './CourseGrid/CourseGrid';
-<<<<<<< HEAD
+import { BrowserRouter, Router, Route, Link} from 'react-router-dom';
+import Accounting from '../IndividualCourse/Accounting';
+// <<<<<<< HEAD
 import { useContext } from 'react';
 import {UserContext} from '../../App';
 
-const DashBoardMain = () =>{
-    const {state, dispatch} = useContext(UserContext);
-    return(
-        <div className='dashs-container'>
-            <MyProgress/>
-            <CourseGrid/>
-=======
-import { BrowserRouter, Router, Route, Link} from 'react-router-dom';
-import Accounting from '../IndividualCourse/Accounting';
+// const DashBoardMain = () =>{
+    // const {state, dispatch} = useContext(UserContext);
+    // return(
+    //     <div className='dashs-container'>
+    //         <MyProgress/>
+    //         <CourseGrid/>
+
 const DashBoardMain = () =>{
     const data = [{'courseName': 'Web Developement for Everyone','path': 'web_developement_for_everyone', 'page':<Accounting />}]
+    const {state, dispatch} = useContext(UserContext);
 
         return(
         <div>
@@ -31,7 +32,6 @@ const DashBoardMain = () =>{
                 <MyProgress/>
                 <CourseGrid/>
             </div>
->>>>>>> 4bfa973716edd987f0b57dbc9871974f0a758af1
         </div>
     );
 }
