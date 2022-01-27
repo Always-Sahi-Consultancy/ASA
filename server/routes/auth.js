@@ -6,6 +6,7 @@ const authenticate = require('../middleware/authenticate');
 
 require('../database/connect');
 const User = require('../models/user');
+const Course = require('../models/course');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -55,17 +56,19 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/signin', async (req, res) => {
-    const { userEmail, userPassword } = req.body;
-
-    if(!userEmail || !userPassword){
-        return res.status(422).json({ error: "Please fill all the fields" });
-    }
-
+    
     try{
+        const { userEmail, userPassword } = req.body;
+
+        if(!userEmail || !userPassword){
+            return res.status(422).json({ error: "Please fill all the fields" });
+        }
+
         const userLogin = await User.findOne({ userEmail: userEmail });
         if(userLogin){
             const isMatch = await bcrypt.compare(userPassword, userLogin.userPassword);
             const token = await userLogin.generateAuthToken();
+            console.log(token);
             res.cookie('jwtoken', token, { 
                 expires: new Date(Date.now() + 2592000000), //1hr = 3600000, 1day = 86400000, 1week = 604800000, 1month = 2592000000, 1year = 31536000000
                 httpOnly: true
@@ -84,16 +87,38 @@ router.post('/signin', async (req, res) => {
     }
 });
 
-// About us Page
-router.get('/dash', authenticate, (req, res) => {
+// Dashboard Page
+router.get('/dash', authenticate, async (req, res) => {
     console.log('Dash page');
-    res.send(req.rootUser);
+    const course = await Course.find();
+    if(!course){
+        console.log('Course not found');
+    }
+    req.course = course;
+    res.send(req.rootUser, req.course);
 });
 
 // Contact Form
 router.get('/contact', authenticate, (req, res) => {
     console.log('Contact page');
     res.send(req.rootUser);
+});
+
+// Logout
+router.get('/logout', (req, res) => {
+    console.log('Logout'); 
+    res.clearCookie('jwtoken', {path: '/'});
+    res.status(200).send('Logged out successfully');
+});
+
+// Course Page
+router.get('/course', async (req, res) => {
+    console.log('Course page');
+    const course = await Course.find();
+    if(!course){
+        console.log('Course not found');
+    }
+    res.send(course);
 });
 
 module.exports = router;

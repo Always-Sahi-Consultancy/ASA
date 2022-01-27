@@ -3,8 +3,11 @@ import './footer2.css';
 import FooterTerms from './footer2_content';
 import FooterForm from './footer2_Form';
 import FooterIcon from './footer2_icon';
+import {useContext} from 'react';
+import {UserContext} from '../../App';
 
 const Footer2 = (props) => {
+    const {state, dispatch} = useContext(UserContext);
     // const [active,setActive]=useState('');
     const footerhandler = (value) => {
         props.onChange(value);

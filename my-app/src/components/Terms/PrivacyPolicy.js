@@ -1,7 +1,9 @@
 import './website_policies.css';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import {UserContext} from '../../App';
 
 const PrivacyPolicy = () => {
+    const {state, dispatch} = useContext(UserContext);
     useEffect(() => {
         document.title = "Always Sahi Academy | Pricacy Policy";
     })

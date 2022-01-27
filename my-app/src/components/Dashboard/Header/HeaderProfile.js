@@ -1,7 +1,35 @@
+import { useEffect, useState } from 'react';
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
 import './Header.css';
 
 const HeaderProfile = () => {
+
+    const [userData, setuserData] = useState({});
+
+    const userHeadProfile = async () => {
+        try {
+            const res = await fetch("/contact", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            const data = await res.json();
+            // console.log(data);
+            setuserData(data);
+            if (!res.status === 200) {
+                const error = new Error(res.error);
+                throw error;
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    useEffect(() => {
+        userHeadProfile();
+    }, []);
 
     let condition = false;
     const dropdown = () => {
@@ -45,8 +73,8 @@ const HeaderProfile = () => {
             </div>
             <div className="Profile_dropdown">
                 <div className="Profile_upper">
-                    <div className="profile_links username">USERNAME</div>
-                    <div className="profile_links user_email">user@abc.com</div>
+                    <div className="profile_links username">{userData.userFirstName + " " + userData.userLastName}</div>
+                    <div className="profile_links user_email">{userData.userEmail}</div>
                 </div>
                 <div className="Profile_middle">
                     <div className="profile_links My_Progress"><a href="#">My Progress</a></div>

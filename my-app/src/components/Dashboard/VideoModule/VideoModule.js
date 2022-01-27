@@ -2,9 +2,11 @@ import './VideoModule.css';
 import VideoContent from './VideoContent';
 import Desktop from '../../../image/play_Desktop.png';
 
-import React, { useState } from "react";
+import React, { useState, useContext } from 'react';
+import { UserContext } from '../../../App';
 
 const VideoModule = () => {
+    const { state, dispatch } = useContext(UserContext);
     const videoData = [
         {
             'id': '1',

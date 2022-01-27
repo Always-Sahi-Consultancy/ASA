@@ -4,8 +4,11 @@ import SignInForm from './SignInForm';
 import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
 import Apple from  '../../image/Apple.png';
+import {useContext} from 'react';
+import {UserContext} from '../../App';
 
 const SignIn = () => {
+    const {state, dispatch} = useContext(UserContext);
     const data = [{'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
     // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}
 
@@ -16,17 +19,17 @@ const SignIn = () => {
         }
     }
 
-    let state = 1;
+    let signState = 1;
     window.addEventListener('keydown', (e)=>{
         const escape = document.getElementsByClassName("signIn__blur");
         if(e.keyCode == '27'){
             escape[0].classList.forEach(element => {
                 if(element == 'signIn__hide'){
-                    state = 0;
+                    signState = 0;
                     return;
                 }     
             });
-            if(state==1){
+            if(signState==1){
                 escape[0].classList.add("signIn__hide");
             };
         }

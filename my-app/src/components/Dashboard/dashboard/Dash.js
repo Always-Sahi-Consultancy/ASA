@@ -4,8 +4,11 @@ import './Dash.css';
 import DashLeft from './DashLeft';
 import HelpCenter from './HelpCenter';
 import EditProfile from './EditProfile';
+import {useContext} from 'react';
+import {UserContext} from '../../../App';
 
 const Dash= () =>{
+    const {state, dispatch} = useContext(UserContext);
     return(
         <div className='dash-container'>
             <DashLeft/>

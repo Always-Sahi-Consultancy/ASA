@@ -13,6 +13,7 @@ require('./database/connect');
 app.use(express.json());
 
 const User = require('./models/user');
+const Course = require('./models/course');
 
 app.use(require('./routes/auth'));
 

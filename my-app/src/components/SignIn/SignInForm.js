@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const SignInForm = () => {
+
+    const {state, dispatch} = useContext(UserContext);
 
     const navigate = useNavigate();
     const [userEmail, setuserEmail] = useState('');
@@ -21,6 +24,7 @@ const SignInForm = () => {
             window.alert("Login failed! Invalid Credentials");
             // console.log("Registration failed");
         } else {
+            dispatch({type: "USER", payload: true});
             window.alert("Login successful");
             // console.log("Registration successful");
             navigate("/dash"); // should be redirected to dashboard
@@ -28,9 +32,9 @@ const SignInForm = () => {
     }
 
     return (
-        <form method="POST" action="post" className="signIn__form">
-            <input placeholder="  Email / Username" value={userEmail} onChange={(e) => setuserEmail(e.target.value)} className="signIn__email" />
-            <input placeholder="  Password" value={userPassword} onChange={(e) => setuserPassword(e.target.value)} className="signIn__password" />
+        <form method="POST" className="signIn__form">
+            <input placeholder="  Email / Username" name="userEmail" value={userEmail} onChange={(e) => setuserEmail(e.target.value)} className="signIn__email" />
+            <input placeholder="  Password" name="userPassword" value={userPassword} onChange={(e) => setuserPassword(e.target.value)} className="signIn__password" />
             <button type="submit" className="signIn__submit" onClick={PostLoginUser}>Continue</button>
         </form>
     );

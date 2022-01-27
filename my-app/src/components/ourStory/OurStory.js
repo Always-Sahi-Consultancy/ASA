@@ -3,10 +3,11 @@ import './ourStory_tab.css';
 import './ourStory_mobile.css';
 import our_story from "../../image/OurStroy.jpg";
 import OurStoryContent from './OurStoryContent';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import {UserContext} from '../../App';
 
 const OurStroy = () => {
-
+    const {state, dispatch} = useContext(UserContext);
     useEffect(() => {
         document.title = "Always Sahi Academy | Our Story";
     })

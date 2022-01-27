@@ -1,11 +1,14 @@
+import {useContext} from 'react';
 import Testimonial_Image from './Testimonial_Image';
 import Testimonial_Message from './Testimonial_Message';
 import Testimonial_Video from './Testimonial_video';
 import Rate_us from './Rate_us';
 import Testimonial_UserInput from './Testimonial_UserInput';
 import './Testimonial.css';
+import {UserContext} from '../../App';
 
 const Testimonials = () => {
+    const {state, dispatch} = useContext(UserContext);
     const VideoInfo = [
         {
             id: 'v1',

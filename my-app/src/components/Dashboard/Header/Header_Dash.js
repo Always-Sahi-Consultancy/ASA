@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Company from '../../../image/AS_Logo_Transparent.png';
 import Cart from '../../../image/cart.jpg'
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';

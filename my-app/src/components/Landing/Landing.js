@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useContext } from 'react';
 import Popular_main from './Popular Trainings/Popular_main';
 import './Landing.css';
 import Explore from './Explore/explore';
@@ -8,8 +8,11 @@ import Notice from './Notice/Notice';
 import Founder from './Founder/Founder';
 import Freebies from './Freebies/Freebies';
 import Stats from './Stats/Stats';
+import {UserContext} from '../../App';
 
 const Landing = (props) => {
+    const {state, dispatch} = useContext(UserContext);
+    
     useEffect(() => {
         document.title = "Always Sahi Academy";
     })

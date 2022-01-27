@@ -1,7 +1,10 @@
-import React, {useEffect} from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, { useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const Logout = () => {
+
+    const {state, dispatch} = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -12,8 +15,9 @@ const Logout = () => {
                 "Content-Type": "application/json"
             },
         }).then((res) => {
-            navigate('/', {replace: true});
-            if(res.status != 200) {
+            dispatch({type: "USER", payload: false});
+            navigate("/", {replace: true});
+            if(res.status !== 200) {
                 const error = new Error(res.error);
                 throw error;
             }
@@ -23,7 +27,8 @@ const Logout = () => {
     });
 
     return (
-        <div/>
+        <div>
+        </div>
     );
 };
 
