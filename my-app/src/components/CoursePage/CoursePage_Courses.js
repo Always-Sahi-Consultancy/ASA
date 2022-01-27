@@ -1,4 +1,5 @@
 import './Courses.css';
+import {useEffect, useState} from 'react';
 import Search from '../../image/MG.png';
 import Filter from '../../image/oil-funnel.png';
 import star from '../../image/Star 15.svg';
@@ -16,6 +17,34 @@ import Navratnas from '../../image/Navratnas of Time Management.jpg';
 import webDevelopment from '../../image/web development.jpg';
 
 const CoursePage_Courses = () => {
+
+    const [userData, setuserData] = useState({});
+
+    const courses = async () => {
+        try {
+            const res = await fetch("/course", { 
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            const data = await res.json();
+             console.log(data);
+            setuserData(data);
+            if(!res.status === 200) {
+                const error = new Error(res.error);
+                throw error;
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    useEffect(() => {
+        courses();
+    }, []);
+
     const course_details = [
         {
             image: webDevelopment,

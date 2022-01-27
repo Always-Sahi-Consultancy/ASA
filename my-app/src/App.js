@@ -7,6 +7,7 @@ import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 import Signin from './components/SignIn/SignIn';
+import Logout from './components/Dashboard/Header/Logout';
 import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
@@ -52,6 +53,7 @@ function App() {
             <Route path={elements} element={<Accounting />} />
           })}
           <Route path="*" element={<Error404 />} />
+          <Route path="/logout" element={<Logout />} />
         </Routes>
       <Footer2 />
       </BrowserRouter>

@@ -22,17 +22,17 @@
   margin: 1vh 1vw;
 }
 .rate_main label:before {
-  content: url(../../image/star.png);
+  content: url(../../image/Star15.png);
   position: relative;
-  height: 50px;
+  height: 70px;
   cursor: pointer;
 }
 .rate_main label:after {
-  content: url(../../image/star1.png);
+  content: url(../../image/Star14.png);
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 50px;
+  height: 70px;
   opacity: 0;
 }
 .rate_main label:hover:after,

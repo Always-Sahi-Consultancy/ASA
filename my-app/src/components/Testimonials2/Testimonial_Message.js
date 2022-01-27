@@ -1,7 +1,8 @@
 import './Testimonial.css';
 import Slider from 'react-slick';
-import star from '../../image/star.png';
-import star1 from '../../image/star1.png';
+import star from '../../image/Star 15.svg';
+import star1 from '../../image/Star 14.svg';
+import star15 from '../../image/Star 17.png';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const Testimonial_Message = () => {
@@ -39,7 +40,7 @@ const Testimonial_Message = () => {
                 { star: star1 },
                 { star: star1 },
                 { star: star1 },
-                { star: star },
+                { star: star15 },
             ],
             icon: "S",
             name: "Sejal P."
@@ -51,7 +52,7 @@ const Testimonial_Message = () => {
                 { star: star1 },
                 { star: star1 },
                 { star: star1 },
-                { star: star },
+                { star: star15 },
             ],
             icon: "P",
             name: "Prashant"
