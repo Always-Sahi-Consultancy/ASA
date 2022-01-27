@@ -10,6 +10,7 @@ import ChangePassword from "../dashboard/ChangePassword";
 import Dash from "../dashboard/Dash";
 import DashBoardMain from "../DashBoardMain";
 import HeaderProfile from "./HeaderProfile";
+import VideoMain from "../VideoModule/VideoMain";
 
 const Header_Dash = () => {
 
@@ -142,7 +143,7 @@ const Header_Dash = () => {
                     </div>
                 </div>
             </header >
-            <DashBoardMain />
+            <VideoMain />
         </div>
     );
 };
