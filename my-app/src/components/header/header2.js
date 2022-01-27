@@ -1,6 +1,7 @@
 import React from "react";
 import AsLogo from '../../image/1.svg';
 import './header2.css';
+import HeaderProfile from '../Dashboard/Header/HeaderProfile';
 
 const Header2 = () => {
     const displayMenu = () => {
@@ -43,6 +44,7 @@ const Header2 = () => {
                 </div>
             </a>
         </div>
+        <HeaderProfile/>
         </div>
         <div className="header__slider" id="header__slider">
             <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow" className="header__link" >Join Always Sahi</a></div></span>

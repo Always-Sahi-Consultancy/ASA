@@ -15,16 +15,16 @@ const ContactUsIcon = ()=>{
             </div>
             <div className="contactUsicon__style">
                 <div ><img src={ImgPhone}className="contactUsicon" alt='email'></img></div>
-                <div className="contactUsicon__text">+91 72760 16790</div>
+                <div className="contactUsicon__text">+91&nbsp;88570&nbsp;86790</div>
             </div>
             <div className="contactUsicon__style">
                 <div ><img src={ImgLocation}className="contactUsicon" alt='email'></img></div>
                 <div className="contactUsicon__text">Pune, Maharashtra</div>
             </div>
             <div className='contactUsicons__style'>
-                <div className='contactUsicon__link'><img src={telegram} className='contactUsiconD'></img></div>
-                <div className='contactUsicon__link'><img src={instagram} className='contactUsiconD'></img></div>
-                <div className='contactUsicon__link'><img src={facebook} className='contactUsiconD'></img></div>
+                <div className='contactUsicon__link'><a href="https://t.me/+Aeus-e9JD940M2Zl" target={"_blank"}><img src={telegram} className='iconD'></img></a></div>
+                <div className='contactUsicon__link'><a href="https://www.instagram.com/alwayssahiacademy/ " target={"_blank"}><img src={instagram} className='iconD'></img></a></div>
+                <div className='contactUsicon__link'><a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}><img src={facebook} className='iconD'></img></a></div>
             </div>
         </div>
     );

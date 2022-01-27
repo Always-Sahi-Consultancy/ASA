@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Company from '../../../image/AS_Logo_Transparent.png';
 import Cart from '../../../image/cart.jpg'
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
@@ -9,8 +9,10 @@ import DashLeft from "../dashboard/DashLeft";
 import ChangePassword from "../dashboard/ChangePassword";
 import Dash from "../dashboard/Dash";
 import DashBoardMain from "../DashBoardMain";
+import HeaderProfile from "./HeaderProfile";
 
 const Header_Dash = () => {
+
     const [hamActive, setHamActive] = useState(false);
     const showMenu = () => {
         setHamActive(!hamActive);
@@ -129,37 +131,7 @@ const Header_Dash = () => {
                             <a href="#" className="cart_button">Keep shopping</a>
                         </div>
                     </div>
-                    <div className="Header_profile">
-                        <div onClick={dropdown1} className="Header_icon">
-                            <img className="profile_photo" src={ProfilePhoto} alt="PP"></img>
-                            <a href="#" id="profile_dropdown">&#9660;</a>
-                        </div>
-                        <div className="Profile_dropdown">
-                            <div className="Profile_upper">
-                                <div className="profile_links username">USERNAME</div>
-                                <div className="profile_links user_email">user@abc.com</div>
-                            </div>
-                            <div className="Profile_middle">
-                                <div className="profile_links My_Progress"><a href="#">My Progress</a></div>
-                                <div className="profile_links Edit_Profile"><a href="#">Edit Profile</a></div>
-                                <div className="profile_links View_Dashboard"><a href="#">View Dashboard</a></div>
-                                <div className="profile_links Help_center"><a href="#">Help Center</a></div>
-                            </div>
-                            <div className="Profile_lower">
-                                <div className="profile_links My_Progress"><a href="#">Log Out</a></div>
-                                <div className="profile_links Manage_account" onClick={dropdown}>
-                                    <a href="#">Manage Account</a>
-                                    <a href="#" id="offer_courses">&#9660;</a></div>
-                                <ul className="profile-inner-dropdown">
-                                    <li><a className="manage_dropdown" href="#">Change Password</a></li>
-                                    <li><a className="manage_dropdown" href="#">Change Email Address</a></li>
-                                    <li><a className="manage_dropdown" href="#">Switch Account</a></li>
-                                    <li><a className="manage_dropdown" href="#">Delete Account</a></li>
-                                </ul>
-                            </div>
-
-                        </div >
-                    </div>
+                    <HeaderProfile/>
                 </div>
                 <div className={`header_dash_slider ${hamActive ? "header_dash_sliderToggle" : ""}`} id="header_dash_slider" onClick={showMenu}>
                     <div className="header_dash_sliderOption">
