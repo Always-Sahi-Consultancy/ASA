@@ -141,6 +141,14 @@
 .subdash{
     width: 23%;
     margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Circle{
+    width: 50%;
+    height: auto;
+    padding-bottom: 5%;
 }
 .Dashprogress__module, .Dashprogress__wereon{
     text-align: left;

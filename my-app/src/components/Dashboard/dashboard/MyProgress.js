@@ -1,9 +1,13 @@
-
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import { buildStyles } from 'react-circular-progressbar';
 import './MyProgress.css';
 import Coding from '../../../image/work-g2261fc175_1920.jpg';
 import Arrow from '../../../image/courses/arrow.png';
 
 const DashProgress= () =>{
+
+    const percentage = 69;
 
     const data = [
         {'image': Coding ,
@@ -51,6 +55,18 @@ const DashProgress= () =>{
                 <h4 className='Lastcourse__head'>Coding And Web Development</h4>
                 <div className='Dashprogress__completed subdash'>
                     {/* Progress */}
+                    <div className='Circle'>
+                    <CircularProgressbar 
+                    value={percentage} 
+                    text={`${percentage}%`} 
+                    styles={buildStyles({
+                        pathColor: `rgba(235, 106, 106, 0.97)`,
+                        textColor: `rgba(235, 106, 106, 0.97)`,
+                        trailColor: '#d6d6d6',
+                        backgroundColor: '#3e98c7',
+                      })}
+                    />
+                    </div>
                     <h4>Completed</h4>
                 </div>
                 <div className='Dashprogress__wereon subdash'>
