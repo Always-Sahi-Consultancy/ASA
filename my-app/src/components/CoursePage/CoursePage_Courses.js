@@ -2,8 +2,6 @@ import './Courses.css';
 import {useEffect, useState} from 'react';
 import Search from '../../image/MG.png';
 import Filter from '../../image/oil-funnel.png';
-import star from '../../image/Star 15.svg';
-import star1 from '../../image/Star 14.svg';
 import Course_box from './Course_box';
 import atharv from '../../image/3 Athu.png';
 import tootkit from '../../image/18+ Toolkit.jpg';
@@ -30,7 +28,7 @@ const CoursePage_Courses = () => {
             });
 
             const data = await res.json();
-             console.log(data);
+            // console.log(data);
             setuserData(data);
             if(!res.status === 200) {
                 const error = new Error(res.error);
@@ -45,278 +43,7 @@ const CoursePage_Courses = () => {
         courses();
     }, []);
 
-    const course_details = [
-        {
-            image: webDevelopment,
-            title: "Web Development For Everyone",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 2999",
-            Original_cost: "Rs. 5000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-        {
-            image: Financial_Accounting,
-            title: "Certified Course in Financial Accounting",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 2999",
-            Original_cost: "Rs. 8000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-        {
-            image: tootkit,
-            title: "A Free toolkit for 18+",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "1",
-            Prof_name: "Atharv",
-            course_cost: "",
-            Original_cost: "",
-            buy_now: "Free",
-            about_course: "Get it"
-        },
-        {
-            image: Financial_intelligence,
-            title: "Fundamentals of Financial Intelligence",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 599",
-            Original_cost: "Rs. 2000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-        {
-            image: Navratnas,
-            title: "Navratnas of Time Management",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "1",
-            Prof_name: "Atharv",
-            course_cost: "",
-            Original_cost: "",
-            buy_now: "Free",
-            about_course: "About Course"
-        },
-        {
-            image: Passion,
-            title: "How to Find Your Passion",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "1",
-            Prof_name: "Atharv",
-            course_cost: "",
-            Original_cost: "",
-            buy_now: "Free",
-            about_course: "About Course"
-        },
-        {
-            image: Passion,
-            title: "Create your LindedIn Profile",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "1",
-            Prof_name: "Atharv",
-            course_cost: "",
-            Original_cost: "",
-            buy_now: "Free",
-            about_course: "About Course"
-        },
-        {
-            image: Advance_financial,
-            title: "Advance Course in Financial Intelligence",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 999",
-            Original_cost: "Rs. 1000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-        {
-            image: Account_Compliance,
-            title: "Certified Course in Accounts & Compliance",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 999",
-            Original_cost: "Rs. 2000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-        {
-            image: taxation,
-            title: "Certified Course in Taxation",
-            stars: [
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star1
-                },
-                {
-                    star: star
-                }
-            ],
-            index: "0",
-            Prof_name: "Atharv",
-            course_cost: "Rs. 1999",
-            Original_cost: "Rs. 4000",
-            buy_now: "Buy Now",
-            about_course: "About Course"
-        },
-    ];
+    
     let filter_condition = false;
     const onFilterClick = () => {
         const course_filter = document.querySelector('.Course_Filter');
@@ -348,11 +75,10 @@ const CoursePage_Courses = () => {
                 </div>
             </div>
             <div className="Course_Section_box">
-                {/* <div className="courses_name">Accounts and Finance</div> */}
                 <div className="Course_section_main">
-                    {course_details.map((course) => {
-                        return (
-                            <Course_box title={course.title} star={course.stars} Prof_name={course.Prof_name} ori_cost={course.Original_cost} course_cost={course.course_cost} buy_now={course.buy_now} about_course={course.about_course} index={course.index} image={course.image} />
+                    {userData.map((course) => {
+                        return(
+                            <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} />
                         )
                     })}
                 </div>
