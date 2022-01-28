@@ -14,7 +14,7 @@
 
 .header__brandLogo{
     cursor: pointer;
-    margin: -30% -10%;
+    margin: -38% -10%;
     width: 100%; 
 }
 
@@ -44,6 +44,7 @@
 }
 
 .header__LoginButton{
+    text-decoration: none;
     color: var(--white);
     font-family: Roboto;
     font-size: 1rem;
@@ -405,6 +406,7 @@
 
     .header__link{
         text-decoration: none;
+        color: black;
     }
 
     .header__Login{

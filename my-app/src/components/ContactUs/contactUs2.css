@@ -592,7 +592,7 @@
         }
         .contactUsicon{
             width: auto;
-            height: 2vh;
+            height: 3vh;
         }
         .contactUsiconD{
             width: auto;
@@ -601,7 +601,7 @@
         }
         .contactUsicon__text{
             font-size: 1rem;
-            line-height: 26px;
+            line-height: 16px;
         }
         .contactUsicon__style{
             width: 70%;
