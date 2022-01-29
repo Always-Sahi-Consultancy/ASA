@@ -95,7 +95,7 @@ router.get('/dash', authenticate, async (req, res) => {
         console.log('Course not found');
     }
     req.course = course;
-    res.send(req.rootUser, req.course);
+    // res.send(req.rootUser, req.course);
 });
 
 // Contact Form

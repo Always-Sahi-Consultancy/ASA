@@ -76,7 +76,8 @@ const CoursePage_Courses = () => {
             </div>
             <div className="Course_Section_box">
                 <div className="Course_section_main">
-                    {userData.map((course) => {
+                    {
+                    userData.map((course) => {
                         return(
                             <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} />
                         )
