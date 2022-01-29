@@ -96,8 +96,7 @@
     flex-wrap: wrap;
   }
   .College_Name {
-    font-size: 14px;
-    width: 33%;
+    width: 43%;
     border: none;
     /* border: 2px solid red; */
     /* padding-right: 0vw;
@@ -521,7 +520,7 @@
     /* border: 2px solid red; */
   }
   .College_Name {
-    font-size: 18px;
+    font-size: 1rem;
     padding-right: 0vw;
     padding-right: 1vh;
     padding-left: 1vh;

@@ -68,7 +68,7 @@
   padding: 0.5rem;
 }
 .header-right {
-  width: 23%;
+  width: 13%;
   height: 100%;
   display: flex;
 }
@@ -434,7 +434,7 @@
     padding: 0.5rem;
   }
   .header-right {
-    width: 53%;
+    width: 43%;
     height: 100%;
   }
   .Header {
@@ -498,7 +498,7 @@
     padding: 0.5rem;
   }
   .header-right {
-    width: 43%;
+    width: 33%;
     height: 100%;
   }
   .Header {
@@ -523,7 +523,7 @@
     padding: 0.5rem;
   }
   .header-right {
-    width: 43%;
+    width: 33%;
     height: 100%;
   }
   .Header {
