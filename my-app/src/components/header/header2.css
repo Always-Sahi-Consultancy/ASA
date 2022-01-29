@@ -25,7 +25,11 @@
     align-items: center;
     font-family: Roboto;
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.header__link:hover{
+    color: var(--red);
+    transition: 0.25s ease-in;
 }
 
 .header__link{
@@ -41,8 +45,23 @@
     text-align: center;
     border-radius: 10px;
     margin: 0 20%;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px gray;
+    transition: all 150ms linear;
 }
-
+.header__Login:hover{
+    background: rgb(190, 69, 69);
+    text-decoration: none;
+    box-shadow: 1px 1px 2px gray;
+    transition: all 250ms linear;
+    cursor: pointer;
+}
+.signup__link{
+    text-decoration: none;
+}
+.header__LoginButton:hover{
+    color: white;
+}
 .header__LoginButton{
     text-decoration: none;
     color: var(--white);

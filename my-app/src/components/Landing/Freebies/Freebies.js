@@ -14,7 +14,7 @@ const Freebies = () => {
 
                 You see people at different stages of life.</p>
             </div>
-            <button className="Freebies__get">Get Free Taining</button>
+            <button className="Freebies__get" href="/CoursePage">Get Free Taining</button>
         </div>
     );
 }

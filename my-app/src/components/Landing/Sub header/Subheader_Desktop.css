@@ -71,10 +71,10 @@
   align-items: center;
   position: fixed;
   z-index: 1000;
-  z-index: 10;
+  z-index: 13;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background: rgba(109, 104, 117, 0.6);
 }
 .nav_tabs {
@@ -86,12 +86,17 @@
   width: 100%;
   text-decoration: none;
   color: white;
+  opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: Roboto;
   text-align: center;
+}
+.nav_tabs a:hover{
+  opacity: 1;
+  transition: 0.25s ease-in;
 }
 .Search_section {
   height: 50px;
@@ -163,4 +168,7 @@
   align-items: center;
   border-radius: 0 10px 10px 0;
   font-family: Roboto;
+}
+.Search:hover{
+  box-shadow: 2px 1px 2px 2px gray;
 }
