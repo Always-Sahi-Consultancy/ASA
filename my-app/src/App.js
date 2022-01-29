@@ -37,21 +37,21 @@ const Routing = () => {
     <div>
       <Link to="/RegisterNow"></Link>
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact_us" element={<ContactUs />} />
-        <Route path="/about_us" element={<OurStroy />} />
-        <Route path="/RegisterNow" element={<RegisterMain />} />
-        <Route path="/CourseName" element={<Accounting />} />
-        <Route path="/TermsofUse" element={<TermsOfUse />} />
-        <Route path="/EarningDisclaimer" element={<PrivacyPolicy />} />
-        <Route path="/RefundPolicy" element={<RefundPolicy />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="/CoursePage" element={<CoursePage />} />
+        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/testimonials" element={<Testimonials />} />
+        <Route exact path="/contact_us" element={<ContactUs />} />
+        <Route exact path="/about_us" element={<OurStroy />} />
+        <Route exact path="/RegisterNow" element={<RegisterMain />} />
+        <Route exact path="/CourseName" element={<Accounting />} />
+        <Route exact path="/TermsofUse" element={<TermsOfUse />} />
+        <Route exact path="/EarningDisclaimer" element={<PrivacyPolicy />} />
+        <Route exact path="/RefundPolicy" element={<RefundPolicy />} />
+        <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route exact path="/CoursePage" element={<CoursePage />} />
         <Route exact path="/Login" element={<Signin />} />
-        <Route path={"/dash"} element={<Dash/> } />
-        <Route path={"/DashBoard"} element={<DashBoardMain />} />
-        <Route path={"/Player"} element={<VideoModule/>} />
+        <Route exact path={"/dash"} element={<Dash/> } />
+        <Route exact path={"/DashBoard"} element={<DashBoardMain />} />
+        <Route exact path={"/Player"} element={<VideoModule/>} />
         {courses.forEach(element => {
           var elements = "/"+element;
           <Route path={elements} element={<Accounting />} />

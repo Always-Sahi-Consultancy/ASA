@@ -1,14 +1,14 @@
 import './signIn.css';
 import SignInComponent from './SignIn__Component';
 import SignInForm from './SignInForm';
-import Facebook from '../../image/fb icon.png';
+// import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
-import Apple from  '../../image/Apple.png';
+// import Apple from  '../../image/Apple.png';
 import {useContext} from 'react';
 import {UserContext} from '../../App';
 
 const SignIn = () => {
-    const {state, dispatch} = useContext(UserContext);
+    // const {state, dispatch} = useContext(UserContext);
     const data = [{'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
     // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}
 
@@ -19,7 +19,7 @@ const SignIn = () => {
     //     }
     // }
 
-    let signState = 1;
+    // let signState = 1;
     // window.addEventListener('keydown', (e)=>{
     //     const escape = document.getElementsByClassName("signIn__blur");
     //     if(e.keyCode == '27'){
@@ -47,7 +47,7 @@ const SignIn = () => {
             </div>
             <SignInForm />
             <hr className='signIn__hr'></hr>
-            <div className='signIn__option'>Not a member? <a href="#" className='signIn__span'>Sign Up</a></div>
+            <div className='signIn__option'>Not a member? <a href="/RegisterNow" className='signIn__span'>Sign Up</a></div>
         </div>
         </div>
         
