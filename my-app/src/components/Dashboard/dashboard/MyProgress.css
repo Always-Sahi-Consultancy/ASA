@@ -58,11 +58,11 @@
     background: rgba(229, 229, 229, 0.24);
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
-    height: 100px;
+    height: 20vh;
     overflow: hidden;
     margin:1.5%;
     text-align: center;
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
