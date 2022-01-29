@@ -29,8 +29,8 @@ const Course_box = (props) => {
                         <Course_rate star={props.courseStarRate} />
                         <div className="Prof_name">{props.courseTutor}</div>
                         <div className="cost_section">
-                            <div className="course_cost">{props.courseDiscountPrice}</div>
-                            <div className="original_cost"><s>{props.courseMRP}</s></div>
+                            <div className="course_cost">&#8377; { props.courseDiscountPrice}</div>
+                            <div className="original_cost"><s>&#8377;{props.courseMRP}</s></div>
                         </div>
                     </div>
                     <div className="Course_button">

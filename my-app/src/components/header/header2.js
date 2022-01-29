@@ -60,7 +60,14 @@ const Header2 = () => {
                     <a href="/contact_us" className="header__link"><div className="header__options">Contact Us</div></a>
                     <a href="/about_us" className="header__link"><div className="header__options">About Us</div></a>
                 </div>
-                <RenderHeader/>
+                {/* <RenderHeader/> */}
+                <div className="header__Login">
+                    <a href="/Login" className="signup__link">
+                        <div className="header__LoginButton header__link">
+                            Login
+                        </div>
+                    </a>
+                </div>
             </div>
             <div className="header__slider" id="header__slider">
                 <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow" className="header__link" >Join Always Sahi</a></div></span>

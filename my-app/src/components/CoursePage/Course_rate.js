@@ -30,7 +30,7 @@ const Course_rate = (props) => {
                 )
             })} */}
             {/* {console.log(props.star.$numberDecimal)} */}
-            {stars(props.star.$numberDecimal)}
+            {stars(props.star)}
             {starsData.map((data) => {
                 return(
                     data

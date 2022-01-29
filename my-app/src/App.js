@@ -32,9 +32,9 @@ export const UserContext = createContext();
 const courses = ["Web-development-for-everyone","CERTIFIED-COURSE-IN-FINANCIAL-ACCOUNTING", "A-FREE-TOOLKIT-FOR-18+","FUNDAMENTALS-OF-FINANCIAL-INTELLIGENCE", "NAVRATNAS-OF-TIME-MANAGEMENT","HOW-TO-FIND-YOUR-PASSION"];
 
 const Routing = () => {
+  // const [signupState, setSignup] = useState(0);
   return (
     <div>
-      <Signin />
       <Link to="/RegisterNow"></Link>
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -48,6 +48,7 @@ const Routing = () => {
         <Route path="/RefundPolicy" element={<RefundPolicy />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/CoursePage" element={<CoursePage />} />
+        <Route exact path="/Login" element={<Signin />} />
         <Route path={"/dash"} element={<Dash/> } />
         <Route path={"/DashBoard"} element={<DashBoardMain />} />
         <Route path={"/Player"} element={<VideoModule/>} />
@@ -70,7 +71,7 @@ function App() {
     <div>
       <UserContext.Provider value={{state, dispatch}}>
           <Header2 />
-          <Routing/>
+          <Routing />
       </UserContext.Provider>
     </div>
   );

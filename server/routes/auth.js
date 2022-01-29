@@ -90,7 +90,12 @@ router.post('/signin', async (req, res) => {
 // Dashboard Page
 router.get('/dash', authenticate, async (req, res) => {
     console.log('Dash page');
-    res.send(req.rootUser);
+    const course = await Course.find();
+    if(!course){
+        console.log('Course not found');
+    }
+    req.course = course;
+    // res.send(req.rootUser, req.course);
 });
 
 // Contact Form
