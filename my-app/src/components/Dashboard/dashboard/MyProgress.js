@@ -1,13 +1,23 @@
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { buildStyles } from 'react-circular-progressbar';
 import './MyProgress.css';
 import Coding from '../../../image/work-g2261fc175_1920.jpg';
 import Arrow from '../../../image/courses/arrow.png';
+import Slide from './slide';
 
 const DashProgress= () =>{
 
     const percentage = 69;
+
+    const sliderSettings = {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+      }
 
     const data = [
         {'image': Coding ,
@@ -47,14 +57,16 @@ const DashProgress= () =>{
         <div className='Dashprogress__container'>
            <div className='Dashprogress__heading'>My Progress</div>
            <div className='Dashprogress__topic'>My Courses</div>
-           <div className='Dashprogress__body'>
-                {data.map((item) => <DashProgressGrid image={item.image} title={item.title} percentage={item.percentage} />)}
-                <img className='Dashprogress__arrow' src={Arrow}></img>
-            </div>
+           <div className='Dashprogress__contain'>
+           <Slider {...sliderSettings} className='Dashprogress__body'>
+            {data.map((item) => <DashProgressGrid image={item.image} title={item.title} percentage={item.percentage} />)}
+            </Slider>
+            <img className='Dashprogress__arrow' src={Arrow}></img>
+           </div>
             <div className='Dashprogress__lastcourse'>
                 <h4 className='Lastcourse__head'>Coding And Web Development</h4>
                 <div className='Dashprogress__completed subdash'>
-                    {/* Progress */}
+                   
                     <div className='Circle'>
                     <CircularProgressbar 
                     value={percentage} 

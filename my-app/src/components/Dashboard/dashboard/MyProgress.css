@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
     text-align: center;
     flex-direction: column;
 }
@@ -38,21 +38,31 @@
     height: auto;
     overflow: hidden;
     display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    align-items: stretch;
     flex-wrap: wrap;
-    padding-left: 5%;
+    width: 90%;
+}
+.Dashprogress__contain{
+    width: 100%;
+    padding-left: 1rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*element*/
 .Dashprogress__element{
-    width: 18%;
+    width: 90%;
     float: left;
     background: rgba(229, 229, 229, 0.24);
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
-    height: auto;
+    height: 100px;
     overflow: hidden;
     margin:1.5%;
     text-align: center;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
@@ -99,7 +109,7 @@
 }
 .Dashprogress__arrow{
     margin: auto;
-    width: 2rem;
+    width: 1rem;
     margin-right: 6%;
 }
 .Dashprogress__lastcourse{
