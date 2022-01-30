@@ -73,8 +73,11 @@ const Testimonial_Message = () => {
     let settings = {
         infinite: true,
         lazyload: true,
+        autoplay:true,
         slidesToShow: 3,
-        speed: 300,
+        speed: 2000,
+        autoplaySpeed:2000,
+        pauseOnHover:true,
         centerPadding: 0,
         centerMode: true,
         nextArrow: <NextArrow />,

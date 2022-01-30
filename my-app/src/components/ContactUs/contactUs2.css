@@ -75,8 +75,13 @@
     border: none;
     font-size: 1.4rem;
     color: #FFFFFF;
+    cursor: pointer;
     background: #FF8A00;
     border-radius: 10px;
+}
+.contactUsform__button:hover{
+    opacity: 0.8;
+    box-shadow: 1px 2px 2px rgb(211, 205, 205);
 }
 .rowButton{
     display: flex;
@@ -101,6 +106,15 @@
     background: #6D6875;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
+.contactUsicon__link img:nth-child(2){
+    display: none;
+}
+.contactUsicon__link:hover img:nth-child(1){
+    display: none;
+}
+.contactUsicon__link:hover img:nth-child(2){
+    display: block;
+}
 .contactUsicon__heading{
     font-family: Roboto;
     font-style: normal;
@@ -113,12 +127,17 @@
     color: #FFFFFF;
 }
 .contactUsicon{
+    cursor: pointer;
     width: auto;
     height: 3.5vh;
 }
 .contactUsiconD{
     width: auto;
     height: 4.5vh;
+}
+.contactUsicon:hover{
+    height: 3.8vh;
+    box-shadow: 2px 2px 3px rgb(44, 43, 43);
 }
 .contactUsicon__style{
     display: flex;
@@ -141,7 +160,6 @@
     font-family: Roboto;
     font-style: normal;
     font-size: 1.3rem;
-    line-height: 26px;
     margin: 0% 6%;
     color: #FFFFFF;
 }
@@ -188,7 +206,7 @@
   }
   
   .faq__show:hover {
-    border: solid var(--light-blue) 1px;
+    box-shadow: 3px 3px 5px black;
     cursor: pointer;
   }
   
@@ -203,6 +221,7 @@
     padding: 2vh;
     overflow: hidden;
     border-radius: 6px;
+    transition: 5s ease-in;
   }
   .faq__breif,
   .faq__details {
@@ -233,16 +252,15 @@
       }
       .contactUsicon{
         width: auto;
-        height: 1vh;
+        height: 3vh;
     }
     .contactUsiconD{
         width: auto;
-        height: 2vh;
+        height: 3vh;
     }
     .contactUsicon__text{
         font-size: 1rem;
-        line-height: 26px;
-        margin: 1% 6%;
+        margin: 0% 6%;
     }
     .contactUsicon-container{
         width: 80%;
@@ -288,7 +306,7 @@
       }
       .contactUsicon{
         width: auto;
-        height: 2vh;
+        height: 3vh;
     }
     .contactUsiconD{
         width: auto;
@@ -296,8 +314,7 @@
     }
     .contactUsicon__text{
         font-size: 1rem;
-        line-height: 26px;
-        margin: 1% 6%;
+        margin: 0% 6%;
     }
     .contactUsicon-container{
         width: 80%;
@@ -334,7 +351,7 @@
     }
       .contactUsicon{
         width: auto;
-        height: 2vh;
+        height: 3vh;
     }
     .contactUsicon__style{
         width: 80%;
@@ -345,8 +362,7 @@
     }
     .contactUsicon__text{
         font-size: 1rem;
-        line-height: 26px;
-        margin: 1% 5%;
+        margin: 0% 5%;
     }
     .contactUsicon-container{
         width: 45%;
@@ -383,7 +399,7 @@
       }
       .contactUsicon{
         width: auto;
-        height: 2vh;
+        height: 3vh;
     }
     
     .contactUsiconD{
@@ -392,8 +408,7 @@
     }
     .contactUsicon__text{
         font-size: 1.1rem;
-        line-height: 26px;
-        margin: 1% 6%;
+        margin: 0% 6%;
     }
     .contactUsicon-container{
         width: 40%;
@@ -422,10 +437,10 @@
       }
       .contactUsicon{
         width: auto;
-        height: 2vh;
+        height: 3vh;
     }
     .contactUsicon__style{
-        width: 50%;
+        width: 60%;
     }
     .contactUsiconD{
         width: auto;
@@ -433,8 +448,7 @@
     }
     .contactUsicon__text{
         font-size: 1.1rem;
-        line-height: 26px;
-        margin: 1% 5%;
+        margin: 0% 5%;
     }
     .contactUsicon-container{
         width: 40%;
@@ -450,7 +464,7 @@
 @media screen and  (max-width: 1400px) and (min-width: 1200px){
       .contactUsicon{
         width: auto;
-        height: 2.3vh;
+        height: 3vh;
     }
     
     .contactUsiconD{
@@ -459,8 +473,7 @@
     }
     .contactUsicon__text{
         font-size: 1.3rem;
-        line-height: 16px;
-        margin: 1% 5%;
+        margin: 0% 5%;
     }
     .contactUsicon__style{
         width: 60%;
@@ -596,12 +609,11 @@
         }
         .contactUsiconD{
             width: auto;
-            height: 2vh;
+            height: 3vh;
             margin: 5% ;
         }
         .contactUsicon__text{
             font-size: 1rem;
-            line-height: 16px;
         }
         .contactUsicon__style{
             width: 70%;

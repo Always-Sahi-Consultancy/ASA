@@ -66,6 +66,12 @@
   background: #ff8a00;
   border-radius: 10px;
 }
+.form__button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.25s ease-in;
+  box-shadow: 2px 2px 2px rgb(211, 205, 205);
+}
 .row{
   justify-content: center;
   display: flex;
@@ -103,6 +109,11 @@
   width: auto;
   height: 5vh;
 }
+.icon:hover{
+  height: 5.01vh;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
 .iconD {
   width: auto;
   height: 5vh;
@@ -124,12 +135,20 @@
 .icon__link {
   margin: 3% 10% 2% 0%;
 }
+.icon__link img:nth-child(2){
+  display: none;
+}
+.icon__link:hover img:nth-child(1){
+  display: none;
+}
+.icon__link:hover img:nth-child(2){
+  display: block;
+}
 .icon__text {
   font-family: Roboto;
   font-style: normal;
   font-size: 1.3rem;
-  line-height: 26px;
-  margin: 1% 6%;
+  margin: 0% 6%;
   color: #ffffff;
 }
 .icon__link {
@@ -153,6 +172,9 @@
   text-align: center;
   margin-right: 2%;
   color: #ffffff;
+}
+.terms__link:hover{
+  color: #ff8a00;
 }
 .terms__part1 {
   display: flex;
@@ -226,14 +248,16 @@
     width: auto;
     height: 2vh;
   }
+  .icon:hover{
+    height: 2.01vh;
+  }
   .iconD {
     width: auto;
     height: 3vh;
   }
   .icon__text {
     font-size: 1rem;
-    line-height: 20px;
-    margin: 0.8% 6%;
+    margin: 0% 6%;
   }
   .icon__style {
     width: 50%;
@@ -274,14 +298,18 @@
     width: auto;
     height: 2vh;
   }
+  .icon:hover{
+    height: 3.01vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+  }
   .iconD {
     width: auto;
     height: 3vh;
   }
   .icon__text {
     font-size: 1rem;
-    line-height: 20px;
-    margin: 0.8% 6%;
+    margin: 0% 6%;
   }
   .icon__style {
     /* margin: 10% auto; */
@@ -371,14 +399,18 @@
     width: auto;
     height: 3vh;
   }
+  .icon:hover{
+    height: 4.01vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+  }
   .iconD {
     width: auto;
     height: 4vh;
   }
   .icon__text {
     font-size: 1.4rem;
-    line-height: 20px;
-    margin: 3% 6%;
+    margin: 0% 6%;
   }
   .icon__style {
     margin: 1% auto;
@@ -411,6 +443,11 @@
   .icon {
     width: auto;
     height: 2vh;
+  }
+  .icon:hover{
+    height: 2.21vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
   }
   .iconD {
     width: auto;
@@ -453,6 +490,11 @@
     width: auto;
     height: 3vh;
   }
+  .icon:hover{
+    height: 4.01vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+  }
   .iconD {
     width: auto;
     height: 4vh;
@@ -483,6 +525,11 @@
   .icon {
     width: auto;
     height: 4vh;
+  }
+  .icon:hover{
+    height: 5.01vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
   }
   .iconD {
     width: auto;
@@ -547,6 +594,11 @@
   }
   .icon {
     width: auto;
+  }
+  .icon:hover{
+    height: 4.01vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
   }
   .iconD {
     width: auto;
@@ -620,14 +672,18 @@
     width: auto;
     height: 2.5vh;
   }
+  .icon:hover{
+    height: 3.51vh;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+  }
   .iconD {
     width: auto;
     height: 3vh;
   }
   .icon__text {
     font-size: 0.8rem;
-    line-height: 20px;
-    margin: 1% 6%;
+    margin: 0% 6%;
   }
   .icon__style {
     width: 50%;

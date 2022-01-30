@@ -33,10 +33,10 @@ const FaqStructure = () => {
     return (
         <div class="faq">
             <div class="faq__title">FAQ</div>
-                <div class="faq__breif">Hey, I dont want you to be confused anywhere, So let’s answer some of the Frequently Asked Questions, by the Students of Always Sahi Academy.</div>
+                <div class="faq__breif">Hey, we dont want you to be confused anywhere, So let’s answer some of the Frequently Asked Questions, by the Students of Always Sahi Academy.</div>
                 {Faq.map((faq) =>
                 <FaqQuestion answer={faq.answer} id={faq.id} question={faq.question} /> )}
-        <div class="faq_details">I am Glad, you are now all set to join Always Sahi Academy, I Cant Wait to See you Inside.</div>
+        <div class="faq_details">we are Glad, you are now all set to join Always Sahi Academy, We Cant Wait to See you Inside.</div>
     </div>
     )
 };

@@ -7,6 +7,7 @@ function FaqQuestion(props) {
         setActive(!active);
         // if (active === "false") {
         //     faq__show.innerHTML = "+";
+        //     console.log('sanket');
         // }
         // else {
         //     faq__show.innerHTML = "-";
@@ -17,7 +18,7 @@ function FaqQuestion(props) {
         <div class="faq__questions" id={props.id}>
             <div class="faq__question">
                 <span>{props.question}</span>
-                <div class="faq__show" onClick={faq_work}>+</div>
+                <div class="faq__show" onClick={faq_work}>{active ? "-" : "+"}</div>
             </div>
             <div class="faq__answer" style={active ? { display: "block" } : { display: "none" }}>{props.answer}</div>
         </div >

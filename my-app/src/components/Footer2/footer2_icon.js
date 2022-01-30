@@ -4,6 +4,9 @@ import ImgLocation from '../../image/map.png';
 import telegram from '../../image/telegram.png';
 import instagram from '../../image/instagramicon.png';
 import facebook from '../../image/fb icon.png';
+import telegramC from '../../image/telegramC.png';
+import facebookC from '../../image/facebookC.png';
+import instagramC from '../../image/instagram.png';
 
 const FooterIcon = ()=>{
     return(
@@ -22,9 +25,24 @@ const FooterIcon = ()=>{
                 <div className="icon__text">Pune, Maharashtra</div>
             </div>
             <div className='icons__style'>
-                <div className='icon__link'><a href="https://t.me/+Aeus-e9JD940M2Zl" target={"_blank"}><img src={telegram} className='iconD'></img></a></div>
-                <div className='icon__link'><a href="https://www.instagram.com/alwayssahiacademy/ " target={"_blank"}><img src={instagram} className='iconD'></img></a></div>
-                <div className='icon__link'><a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}><img src={facebook} className='iconD'></img></a></div>
+                <div className='icon__link'>
+                    <a href="https://t.me/+Aeus-e9JD940M2Zl" target={"_blank"}>
+                        <img src={telegram} className='iconD'></img>
+                        <img src={telegramC} className='iconD'></img>
+                    </a>
+                </div>
+                <div className='icon__link'>
+                    <a href="https://www.instagram.com/alwayssahiacademy/ " target={"_blank"}>
+                        <img src={instagram} className='iconD'></img>
+                        <img src={instagramC} className='iconD'></img>
+                    </a>
+                </div>
+                <div className='icon__link'>
+                    <a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}>
+                        <img src={facebook} className='iconD'></img>
+                        <img src={facebookC} className='iconD'></img>
+                    </a>
+                </div>
             </div>
         </div>
     );

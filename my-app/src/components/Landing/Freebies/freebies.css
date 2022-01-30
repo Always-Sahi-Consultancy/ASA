@@ -43,6 +43,9 @@
     padding: 0rem 1.5rem;
     margin-bottom: 3rem;
 }
+.Freebies__get:hover{
+    box-shadow: 5px 5px 5px gray;
+}
 @media screen and (max-width:768px){
     .Freebies{
         padding-left: 2rem;
