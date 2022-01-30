@@ -17,6 +17,11 @@ import webDevelopment from '../../image/web development.jpg';
 const CoursePage_Courses = () => {
 
     const [userData, setuserData] = useState({});
+    const [filter, setfilter] = useState('');
+
+    const searchText = (e) => {
+        setfilter(e.target.value);
+    }
 
     const courses = async () => {
         try {
@@ -43,6 +48,47 @@ const CoursePage_Courses = () => {
         courses();
     }, []);
 
+    // It's just to load the page until Data is ready. 
+    const course_details = [
+        {
+            courseImage: "webDevelopment",
+            courseName: "Web Development For Everyone",
+            courseStarRate: 4,
+            courseType: "Paid",
+            courseTutor: "Atharv",
+            courseDiscountPrice: "2999",
+            courseMRP: "5000",
+            courseGroup: "Web",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "Financial_Accounting",
+            courseName: "Certified Course in Financial Accounting",
+            courseStarRate: 4,
+            courseType: "Paid",
+            courseTutor: "Atharv",
+            courseDiscountPrice: "2999",
+            courseMRP: "8000",
+            courseGroup: "Web",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "toolkit",
+            courseName: "A Free toolkit for 18+",
+            courseStarRate: 5,
+            courseType: "Free",
+            courseTutor: "Atharv",
+            courseDiscountPrice: "0",
+            courseMRP: "0",
+            courseGroup: "Web",
+            about_course: "Get it"
+        }
+    ];
+
+    // Once page is loaded, change, course_details.filter to userData.filter
+    let dataSearch = course_details.filter(course => {
+        return course.courseName.toString().toLowerCase().includes(filter.toString().toLowerCase());
+    });
     
     let filter_condition = false;
     const onFilterClick = () => {
@@ -69,7 +115,7 @@ const CoursePage_Courses = () => {
                 <div className="course_Search_section">
                     <div className="course_Search_left">
                         <img className="course_search_symbol" src={Search}></img>
-                        <input className="course_Search_bar" type="text" placeholder='Try "graphic designing"' />
+                        <input className="course_Search_bar" value={filter} onChange={searchText.bind(this)} type="text" placeholder='Try "graphic designing"' />
                     </div>
                     <a className="course_Search" href="#">search</a>
                 </div>
@@ -77,9 +123,9 @@ const CoursePage_Courses = () => {
             <div className="Course_Section_box">
                 <div className="Course_section_main">
                     {
-                    userData.map((course) => {
+                    dataSearch.map((course) => {
                         return(
-                            <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} />
+                            <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} courseType={course.courseType} />
                         )
                     })}
                 </div>

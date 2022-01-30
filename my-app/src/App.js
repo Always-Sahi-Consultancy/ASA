@@ -26,6 +26,7 @@ import DashBoardMain from './components/Dashboard/DashBoardMain';
 import VideoModule from './components/Dashboard/VideoModule/VideoModule';
 // import VideoContent from './components/Dashboard/VideoModule/VideoContent';
 import VideoPlayer from './components/Dashboard/VideoModule/VideoPlayer';
+import VideoMain from './components/Dashboard/VideoModule/VideoMain';
 
 export const UserContext = createContext();
 
@@ -57,6 +58,9 @@ const Routing = () => {
           <Route path={elements} element={<Accounting />} />
         })}
         <Route path="*" element={<Error404 />} />
+        <Route path="/VideoModule" element={<VideoModule/>}/>
+        <Route path="/VideoPlayer" element={<VideoPlayer/>}/>
+        <Route path="/VideoMain" element={<VideoMain/>}/>
       </Routes>
       <Footer2 />
     </div>
