@@ -19,6 +19,8 @@ const CoursePage_Courses = () => {
     const [userData, setuserData] = useState({});
     const [filter, setfilter] = useState('');
 
+    const [isloaded, setloaded] = useState(false);
+
     const searchText = (e) => {
         setfilter(e.target.value);
     }
@@ -33,12 +35,12 @@ const CoursePage_Courses = () => {
             });
 
             const data = await res.json();
-            // console.log(data);
             setuserData(data);
             if(!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
             }
+            setloaded(true);
         } catch (err) {
             console.log(err);
         }
@@ -49,46 +51,46 @@ const CoursePage_Courses = () => {
     }, []);
 
     // It's just to load the page until Data is ready. 
-    const course_details = [
-        {
-            courseImage: "webDevelopment",
-            courseName: "Web Development For Everyone",
-            courseStarRate: 4,
-            courseType: "Paid",
-            courseTutor: "Atharv",
-            courseDiscountPrice: "2999",
-            courseMRP: "5000",
-            courseGroup: "Web",
-            about_course: "About Course"
-        },
-        {
-            courseImage: "Financial_Accounting",
-            courseName: "Certified Course in Financial Accounting",
-            courseStarRate: 4,
-            courseType: "Paid",
-            courseTutor: "Atharv",
-            courseDiscountPrice: "2999",
-            courseMRP: "8000",
-            courseGroup: "Web",
-            about_course: "About Course"
-        },
-        {
-            courseImage: "toolkit",
-            courseName: "A Free toolkit for 18+",
-            courseStarRate: 5,
-            courseType: "Free",
-            courseTutor: "Atharv",
-            courseDiscountPrice: "0",
-            courseMRP: "0",
-            courseGroup: "Web",
-            about_course: "Get it"
-        }
-    ];
+    // const course_details = [
+    //     {
+    //         courseImage: "webDevelopment",
+    //         courseName: "Web Development For Everyone",
+    //         courseStarRate: 4,
+    //         courseType: "Paid",
+    //         courseTutor: "Atharv",
+    //         courseDiscountPrice: "2999",
+    //         courseMRP: "5000",
+    //         courseGroup: "Web",
+    //         about_course: "About Course"
+    //     },
+    //     {
+    //         courseImage: "Financial_Accounting",
+    //         courseName: "Certified Course in Financial Accounting",
+    //         courseStarRate: 4,
+    //         courseType: "Paid",
+    //         courseTutor: "Atharv",
+    //         courseDiscountPrice: "2999",
+    //         courseMRP: "8000",
+    //         courseGroup: "Web",
+    //         about_course: "About Course"
+    //     },
+    //     {
+    //         courseImage: "toolkit",
+    //         courseName: "A Free toolkit for 18+",
+    //         courseStarRate: 5,
+    //         courseType: "Free",
+    //         courseTutor: "Atharv",
+    //         courseDiscountPrice: "0",
+    //         courseMRP: "0",
+    //         courseGroup: "Web",
+    //         about_course: "Get it"
+    //     }
+    // ];
 
     // Once page is loaded, change, course_details.filter to userData.filter
-    let dataSearch = course_details.filter(course => {
-        return course.courseName.toString().toLowerCase().includes(filter.toString().toLowerCase());
-    });
+    // let dataSearch = course_details.filter(course => {
+    //     return course.courseName.toString().toLowerCase().includes(filter.toString().toLowerCase());
+    // });
     
     let filter_condition = false;
     const onFilterClick = () => {
@@ -122,12 +124,12 @@ const CoursePage_Courses = () => {
             </div>
             <div className="Course_Section_box">
                 <div className="Course_section_main">
-                    {
-                    dataSearch.map((course) => {
+                    {isloaded?
+                    userData.map((course) => {
                         return(
-                            <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} courseType={course.courseType} />
+                            <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} courseType={course.courseType} key={course._id}/>
                         )
-                    })}
+                    }): null }
                 </div>
             </div>
         </div>

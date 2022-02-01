@@ -9,6 +9,7 @@ import webDevelopment from '../../image/web development.jpg';
 import toolkit from '../../image/18+ Toolkit.jpg';
 import Passion from '../../image/How to Choose your Passion.jpg';
 import Navratnas from '../../image/Navratnas of Time Management.jpg';
+import { Link } from 'react-router-dom';
 
 const CourseImage = {
     "Account_Compliance": Account_Compliance,
@@ -25,6 +26,7 @@ const CourseImage = {
 const Course_box = (props) => {
     // "Buy_button buy"
     return (
+        
         <div className="course_box">
             <div className="course_img"><img className="course_main_img" src={CourseImage[props.courseImage]} alt={props.courseImage}></img></div>
             <div className="course_details">
@@ -40,8 +42,10 @@ const Course_box = (props) => {
                         </div>
                     </div>
                     <div className="Course_button">
-                        <a href="#" className={`Buy_button buy ${props.courseType === "Free" ? "free_button" : ""}`}>{`${props.courseType === "Free" ? "Free" : "Buy Now"}`}</a>
-                        <a href="#" className="Buy_button">About Course</a>
+                        <Link to={""} className={`Buy_button buy ${props.courseType === "Free" ? "free_button" : ""}`}>{`${props.courseType === "Free" ? "Free" : "Buy Now"}`}</Link>
+                        <Link to={"/"+props.courseName.split(" ").join("-")} className="Buy_button">About Course</Link>
+                        {/* <a href="#" className={`Buy_button buy ${props.courseType === "Free" ? "free_button" : ""}`}>{`${props.courseType === "Free" ? "Free" : "Buy Now"}`}</a> */}
+                        {/* <a href="#" className="Buy_button">About Course</a> */}
                     </div>
                 </div>
             </div>
