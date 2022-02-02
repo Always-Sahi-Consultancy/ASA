@@ -27,7 +27,7 @@ const Banner = () => {
                     <div className='Banner__right'>
                         <div className='Banner__right__container'>
                             <div className='Banner__video'></div>
-                            <p>Rate : 2999<del> 3999</del></p>
+                            <p>Rate : Rs.2999<del> 3999</del></p>
                             <button className='Banner__enroll'>Enroll Now</button>
                         </div>
                     </div>

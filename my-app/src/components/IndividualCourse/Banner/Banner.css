@@ -27,7 +27,7 @@
 }
 
 .Banner__left h1{
-    font-family: Bebas Neue;
+    font-family: Bebas-Neue;
     font-style: normal;
     font-weight: normal;
     font-size: 80px;
@@ -108,6 +108,11 @@
     color: white;
     padding: 0.3rem 0rem;
     border: 2px solid white;
+}
+.Banner__enroll:hover{
+    box-shadow: 2px 3px 3px gray;
+    border: none;
+    cursor: pointer;
 }
 
 
