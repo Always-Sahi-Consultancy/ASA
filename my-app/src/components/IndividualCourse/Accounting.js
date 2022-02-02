@@ -6,7 +6,7 @@ import YourTeacher from './YourTeachers/YourTeachers';
 import {useContext} from 'react';
 import {UserContext} from '../../App';
 
-const Accounting =() =>{
+const Course =() =>{
     const {state, dispatch} = useContext(UserContext);
     return(
         <div>
@@ -21,4 +21,4 @@ const Accounting =() =>{
     );
 }
 
-export default Accounting;
+export default Course;

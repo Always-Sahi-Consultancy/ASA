@@ -43,7 +43,7 @@ const Course_box = (props) => {
                     </div>
                     <div className="Course_button">
                         <Link to={""} className={`Buy_button buy ${props.courseType === "Free" ? "free_button" : ""}`}>{`${props.courseType === "Free" ? "Free" : "Buy Now"}`}</Link>
-                        <Link to={"/"+props.courseName.split(" ").join("-")} className="Buy_button">About Course</Link>
+                        <Link to={"/Course/"+props.courseName.split(" ").join("-")} className="Buy_button">About Course</Link>
                         {/* <a href="#" className={`Buy_button buy ${props.courseType === "Free" ? "free_button" : ""}`}>{`${props.courseType === "Free" ? "Free" : "Buy Now"}`}</a> */}
                         {/* <a href="#" className="Buy_button">About Course</a> */}
                     </div>

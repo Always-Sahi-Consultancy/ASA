@@ -1,4 +1,4 @@
-import React, { useState, createContext, useReducer } from 'react';
+import React, { useState, createContext, useReducer, useEffect } from 'react';
 import './css/root2.css';
 import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
@@ -15,7 +15,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
-import Accounting from './components/IndividualCourse/Accounting';
+import Course from './components/IndividualCourse/Accounting';
 import Error404 from './components/404Error/404Error';
 import Dash from './components/Dashboard/dashboard/Dash';
 
@@ -34,6 +34,7 @@ const courses = ["Web-development-for-everyone","CERTIFIED-COURSE-IN-FINANCIAL-A
 
 const Routing = () => {
   // const [signupState, setSignup] = useState(0);
+
   return (
     <div>
       <Link to="/RegisterNow"></Link>
@@ -43,24 +44,26 @@ const Routing = () => {
         <Route exact path="/contact_us" element={<ContactUs />} />
         <Route exact path="/about_us" element={<OurStroy />} />
         <Route exact path="/RegisterNow" element={<RegisterMain />} />
-        <Route exact path="/CourseName" element={<Accounting />} />
+        {/* <Route exact path="/CourseName" element={<Accounting />} /> */}
         <Route exact path="/TermsofUse" element={<TermsOfUse />} />
         <Route exact path="/EarningDisclaimer" element={<PrivacyPolicy />} />
         <Route exact path="/RefundPolicy" element={<RefundPolicy />} />
         <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route exact path="/CoursePage" element={<CoursePage />} />
+        <Route path="/Course/:courseId" element={<Course />} />
         <Route exact path="/Login" element={<Signin />} />
         <Route exact path={"/dash"} element={<Dash/> } />
         <Route exact path={"/DashBoard"} element={<DashBoardMain />} />
         <Route exact path={"/Player"} element={<VideoModule/>} />
-        {courses.forEach(element => {
-          var elements = "/"+element;
-          <Route path={elements} element={<Accounting />} />
-        })}
-        <Route path="*" element={<Error404 />} />
         <Route path="/VideoModule" element={<VideoModule/>}/>
         <Route path="/VideoPlayer" element={<VideoPlayer/>}/>
         <Route path="/VideoMain" element={<VideoMain/>}/>
+        {/* {courses.forEach(element => {
+          var elements = "/"+element;
+          <Route path={elements} element={<Accounting />} />
+        })} */}
+        <Route path="*" element={<Error404 />} />
+        
       </Routes>
       <Footer2 />
     </div>
