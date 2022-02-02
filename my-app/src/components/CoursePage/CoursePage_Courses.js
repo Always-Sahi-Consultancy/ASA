@@ -3,16 +3,16 @@ import {useEffect, useState} from 'react';
 import Search from '../../image/MG.png';
 import Filter from '../../image/oil-funnel.png';
 import Course_box from './Course_box';
-import atharv from '../../image/3 Athu.png';
-import tootkit from '../../image/18+ Toolkit.jpg';
-import Advance_financial from '../../image/Advance Course in Financial Intelligence.jpg';
-import Financial_Accounting from '../../image/Certified Course in Financial Accounting.png';
-import Account_Compliance from '../../image/Certified Course in Accounts & Compliance.jpg'
-import taxation from '../../image/Certified Course in Taxation.jpg';
-import Financial_intelligence from '../../image/Fundamentals of Financial Intelligence.png';
-import Passion from '../../image/How to Choose your Passion.jpg';
-import Navratnas from '../../image/Navratnas of Time Management.jpg';
-import webDevelopment from '../../image/web development.jpg';
+// import atharv from '../../image/3 Athu.png';
+// import tootkit from '../../image/18+ Toolkit.jpg';
+// import Advance_financial from '../../image/Advance Course in Financial Intelligence.jpg';
+// import Financial_Accounting from '../../image/Certified Course in Financial Accounting.png';
+// import Account_Compliance from '../../image/Certified Course in Accounts & Compliance.jpg'
+// import taxation from '../../image/Certified Course in Taxation.jpg';
+// import Financial_intelligence from '../../image/Fundamentals of Financial Intelligence.png';
+// import Passion from '../../image/How to Choose your Passion.jpg';
+// import Navratnas from '../../image/Navratnas of Time Management.jpg';
+// import webDevelopment from '../../image/web development.jpg';
 
 const CoursePage_Courses = () => {
 
