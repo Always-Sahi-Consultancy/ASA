@@ -58,10 +58,6 @@ const Routing = () => {
         <Route path="/VideoModule" element={<VideoModule/>}/>
         <Route path="/VideoPlayer" element={<VideoPlayer/>}/>
         <Route path="/VideoMain" element={<VideoMain/>}/>
-        {/* {courses.forEach(element => {
-          var elements = "/"+element;
-          <Route path={elements} element={<Accounting />} />
-        })} */}
         <Route path="*" element={<Error404 />} />
         
       </Routes>

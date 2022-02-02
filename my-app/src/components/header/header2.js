@@ -7,7 +7,7 @@ import { UserContext } from '../../App';
 const Header2 = () => {
 
     const { state, dispatch } = useContext(UserContext);
-    console.log(state);
+    // console.log(state);
     const RenderHeader = () => {
         if(state) {
             return (
