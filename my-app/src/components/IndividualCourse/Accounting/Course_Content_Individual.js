@@ -9,7 +9,7 @@ const Course_Content_Individual = (props) => {
     return (
         <div className='content__info' id={props.id}>
             <div className={`name__row ${contentC === true ? 'name__new' : ""} ${props.id === "6" ? "Addition_power" : ""}`} onClick={dropdownC} >
-                <div className='arrow'>&#x25B6;</div>
+                <div className='arrowC'>&#x25B6;</div>
                 <div className='content__name'> {props.name}</div>
             </div>
             <div className='content__list' style={contentC ? { display: "block" } : { display: "none" }}>

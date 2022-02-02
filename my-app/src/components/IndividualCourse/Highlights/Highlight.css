@@ -12,7 +12,17 @@
     font-family: Roboto;
     padding: 1rem 3rem;
 }
-
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 .Highlights__content{
     padding: 1rem 2rem;
     width: 50%;
