@@ -10,32 +10,41 @@ import * as CourseData from './CourseData.json';
 
 const Course =() =>{
 
+    const [courseData, setCoursedata] = useState("");
     const [isloaded,setloaded] = useState(false);
 
-    let courseInfo;
-    console.log(courseInfo);
+    const data = async () => {
+        try {
+            const res = await fetch('/coursedetails', {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
 
-    let courseName, courseData;
-    const data = async (pathname) => {
-        courseInfo= CourseData.default[pathname];
-        console.log(courseInfo);
-        courseName= courseInfo["courseName"];
-        console.log(courseName);
-        courseData = courseInfo["courseData"];
-        console.log(courseData);
-        if(courseData != undefined){
+            const course_details = await res.json();
+            console.log(course_details);
+            setCoursedata(course_details);
+            if(!res.status === 200) {
+                const error = new Error(res.error);
+                throw error;
+            }
             setloaded(true);
-            // console.log(isloaded);
+        } catch (err) {
+            console.log(err);
         }
     }
 
     useEffect(() => {
-        data(window.location.pathname)
+        data();
+        if(isloaded){
+
+        }
     },[]);
 
     const Course =  <div>
                         <Banner />
-                        {console.log(courseName)}
+                        {/* {console.log(data)} */}
                         <Objective/>
                         <Highlights/>
                         <div>
@@ -48,6 +57,7 @@ const Course =() =>{
     return(
         <div>
             {isloaded? Course:null}
+            {/* {Course} */}
         </div>
         
     );
