@@ -7,6 +7,7 @@ const authenticate = require('../middleware/authenticate');
 require('../database/connect');
 const User = require('../models/user');
 const Course = require('../models/course');
+const CourseDetails = require('../models/courseDetails');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -120,5 +121,14 @@ router.get('/course', async (req, res) => {
     }
     res.send(course);
 });
+
+router.get('/coursedetails', async (req, res) => {
+    console.log('Individual Course page');
+    const courseDetails = await CourseDetails.find();
+    if(!courseDetails){
+        console.log('Course Details not found');
+    }
+    res.send(courseDetails);
+})
 
 module.exports = router;
