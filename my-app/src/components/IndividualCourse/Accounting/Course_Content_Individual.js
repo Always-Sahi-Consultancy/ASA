@@ -4,7 +4,6 @@ const Course_Content_Individual = (props) => {
     const [contentC, setContentC] = useState(false);
     const dropdownC = () => {
         setContentC(!contentC);
-        console.log("hi");
     }
     return (
         <div className='content__info' id={props.id}>

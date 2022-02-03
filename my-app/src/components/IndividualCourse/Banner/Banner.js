@@ -6,13 +6,21 @@ import Anc from '../../../image/Course Layout/anc.jpg';
 import Passion from '../../../image/Course Layout/passion.jpg';
 import Linkedin from '../../../image/coursesBanner.png';
 
+const BannerImage = {
+    "Financial": Financial,
+    "Taxation": Taxation,
+    "Anc": Anc,
+    "Passion": Passion,
+    "Linkedin": Linkedin
+}
+
 const Banner = (props) => {
-    const data = [props.courseData];
+    const data = [props.BannerData];
 
     const BannerComponent = (props) =>{
         return(
             <div className='Banner'>
-                <img className='Banner__background' src={Financial}></img>
+                <img className='Banner__background' alt={props.title+" Background Image"} src={BannerImage[props.image]}></img>
                 <div className='Banner__blur'>
                     <div className='Banner__left'>
                         <h1>{props.title}</h1>

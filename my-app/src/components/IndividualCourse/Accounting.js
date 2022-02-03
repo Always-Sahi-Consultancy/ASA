@@ -13,9 +13,9 @@ const Course =() =>{
     const [courseData, setCoursedata] = useState("");
     const [isloaded,setloaded] = useState(false);
 
-    const data = async () => {
+    const data = async (course_id) => {
         try {
-            const res = await fetch('/coursedetails', {
+            const res = await fetch("/coursedetails/Certified-Course-in-Accounts-&-Compliance", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -23,7 +23,8 @@ const Course =() =>{
             });
 
             const course_details = await res.json();
-            setCoursedata(course_details[0]);
+            // console.log(course_details);
+            setCoursedata(course_details);
             if(!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
@@ -35,16 +36,16 @@ const Course =() =>{
     }
 
     useEffect(() => {
-        data();
+        data(window.location.pathname);
     },[]);
 
     const Course =  <div>
-                        <Banner courseData={courseData["courseBanner"]}/>
+                        <Banner BannerData={courseData["courseBanner"]}/>
                         {console.log(courseData)}
                         <Objective objective={courseData["objective"]}/>
                         <Highlights highlights={courseData["highlights"]}/>
                         <div>
-                            <AccountingContent contentData={courseData["accountingContent"]}/>
+                            <AccountingContent contentData={courseData["content"]}/>
                         </div>
                         <YourTeacher teacher={courseData["courseTutor"]} />
                     </div>

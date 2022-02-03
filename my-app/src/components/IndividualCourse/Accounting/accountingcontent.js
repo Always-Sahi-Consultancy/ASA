@@ -5,8 +5,6 @@ import Course_Content_Individual from './Course_Content_Individual';
 const AccountingContent = (props) => {
     const contentData = props.contentData;
 
-    console.log(contentData);
-
     // let cond = false;
     // const dropdown = () => {
     //     const list_dropdown = document.querySelector('.content__list');

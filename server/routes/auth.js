@@ -122,9 +122,9 @@ router.get('/course', async (req, res) => {
     res.send(course);
 });
 
-router.get('/coursedetails', async (req, res) => {
+router.get('/coursedetails/:course_id', async (req, res) => {
     console.log('Individual Course page');
-    const courseDetails = await CourseDetails.find();
+    const courseDetails = await CourseDetails.findOne({courseURL: req.params.course_id});
     if(!courseDetails){
         console.log('Course Details not found');
     }

@@ -2,37 +2,29 @@ const mongoose = require('mongoose');
 
 const courseDetailsSchema = new mongoose.Schema({
     courseURL: {
-        type: String,
-        required: true
+        type: String
     },
     courseBanner: {
         title: {
-            type: String,
-            required: true
+            type: String
         },
         subtitle: {
-            type: String,
-            required: true
+            type: String
         },
         rating: {
-            type: Number,
-            required: false
+            type: Number
         },
         video: {
-            type: String,
-            required: false
+            type: String
         },
         link: {
-            type: String,
-            required: false
+            type: String
         },
         courseDiscountPrice: {  
-            type: Number,
-            required: true
+            type: Number
         },
         courseMRP: {
-            type: Number,
-            required: true
+            type: Number
         }
     },
     objective: [
@@ -48,8 +40,7 @@ const courseDetailsSchema = new mongoose.Schema({
     accountContent: [
         { 
             name: {
-                type: String,
-                required: true
+                type: String
             },
             details: [
                 {
