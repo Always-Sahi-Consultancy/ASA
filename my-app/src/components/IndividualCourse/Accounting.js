@@ -23,8 +23,7 @@ const Course =() =>{
             });
 
             const course_details = await res.json();
-            console.log(course_details);
-            setCoursedata(course_details);
+            setCoursedata(course_details[0]);
             if(!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
@@ -37,20 +36,20 @@ const Course =() =>{
 
     useEffect(() => {
         data();
-        if(isloaded){
+        // if(isloaded){
 
-        }
+        // }
     },[]);
 
     const Course =  <div>
-                        <Banner />
-                        {/* {console.log(data)} */}
-                        <Objective/>
-                        <Highlights/>
+                        <Banner courseData={courseData["courseBanner"]}/>
+                        {console.log(courseData)}
+                        <Objective objective={courseData["objective"]}/>
+                        <Highlights highlights={courseData["highlights"]}/>
                         <div>
-                            <AccountingContent/>
+                            <AccountingContent contentData={courseData["accountingContent"]}/>
                         </div>
-                        <YourTeacher/>
+                        <YourTeacher teacher={courseData["courseTutor"]} />
                     </div>
 
     const {state, dispatch} = useContext(UserContext);

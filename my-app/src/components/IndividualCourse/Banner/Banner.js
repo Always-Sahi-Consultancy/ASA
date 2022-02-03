@@ -6,12 +6,8 @@ import Anc from '../../../image/Course Layout/anc.jpg';
 import Passion from '../../../image/Course Layout/passion.jpg';
 import Linkedin from '../../../image/coursesBanner.png';
 
-const Banner = () => {
-    const data = [{'title': "CERTIFIED COURSE IN FINANCIAL ACCOUNTING",
-     'subtitle': "This course is made to cover all Aspects of Accounting field, where we cover from basics to full fledged Account and Tax Management",
-     'rating': "4.9",
-     'video': "#",
-     'link': "#"}];
+const Banner = (props) => {
+    const data = [props.courseData];
 
     const BannerComponent = (props) =>{
         return(

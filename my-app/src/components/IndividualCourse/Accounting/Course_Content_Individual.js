@@ -16,7 +16,7 @@ const Course_Content_Individual = (props) => {
                 {props.details.map((sub) =>
                     <div className='content__list-element'>
                         <div className='content__list-icon'>&#x25B6;</div>
-                        <div className='content__list-content'>{sub.info}</div>
+                        <div className='content__list-content'>{sub}</div>
                     </div>
                 )}
             </div>

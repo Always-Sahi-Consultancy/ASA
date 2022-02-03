@@ -2,7 +2,7 @@ import defaultProps from 'react-slick/lib/default-props';
 import './Highlight.css';
 import Greentick from '../../../image/greenTick.png';
 
-const Highlights = () => {
+const Highlights = (props) => {
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
       
@@ -21,12 +21,7 @@ const Highlights = () => {
       
       window.addEventListener("scroll", reveal);
 
-    const data = [{'content':"Quality Online Training"},
-    {'content':"Lifelong Course Access"},
-    {'content':"6 Assignments"},
-    {'content':"Regular Notes & Study Materials"},
-    {'content':"ISO 9001: 2015 Reputed Certification"},
-    {'content':"Letter of Recommendation post Assignments"}];
+    const data = props.highlights;
 
     const HighlightContent = (props) => {
         return(
@@ -40,7 +35,7 @@ const Highlights = () => {
     return (
         <div className='Highlights__container reveal'>
             <div className='Highlights__title'>Course Highlights:</div>
-            {data.map((item) => <HighlightContent content={item.content} />)}
+            {data.map((item) => <HighlightContent content={item} />)}
         </div>
     )
 };
