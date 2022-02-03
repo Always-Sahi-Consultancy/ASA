@@ -25,6 +25,14 @@ const courseDetailsSchema = new mongoose.Schema({
         link: {
             type: String,
             required: false
+        },
+        courseDiscountPrice: {  
+            type: Number,
+            required: true
+        },
+        courseMRP: {
+            type: Number,
+            required: true
         }
     },
     objective: [
@@ -60,14 +68,6 @@ const courseDetailsSchema = new mongoose.Schema({
         image: {
             type: String,
         }
-    },
-    courseDiscountPrice: {  
-        type: Number,
-        required: true
-    },
-    courseMRP: {
-        type: Number,
-        required: true
     }
 });
 
