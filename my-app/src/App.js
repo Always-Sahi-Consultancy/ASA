@@ -53,10 +53,11 @@ const Routing = () => {
         <Route path="/Course/:courseId" element={<Course />} />
         <Route exact path="/Login" element={<Signin />} />
         <Route exact path={"/dash"} element={<Dash/> } />
+        <Route exact path="/dash/:dashSection" element={<Dash/>} />
         <Route exact path={"/DashBoard"} element={<DashBoardMain />} />
-        <Route exact path={"/Player"} element={<VideoModule/>} />
-        <Route path="/VideoModule" element={<VideoModule/>}/>
-        <Route path="/VideoPlayer" element={<VideoPlayer/>}/>
+        {/* <Route exact path={"/Player"} element={<VideoModule/>} /> */}
+        {/* <Route path="/VideoModule" element={<VideoModule/>}/> */}
+        {/* <Route path="/VideoPlayer" element={<VideoPlayer/>}/> */}
         <Route path="/VideoMain" element={<VideoMain/>}/>
         <Route path="*" element={<Error404 />} />
         

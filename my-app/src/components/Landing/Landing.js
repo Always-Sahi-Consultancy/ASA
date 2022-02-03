@@ -28,7 +28,7 @@ const Landing = (props) => {
             <Explore onChange={explorehandler}/>
             <ExploreNew />
             <Freebies />
-            <Stats/>
+            {/* <Stats/> */}
             <Notice />
             <Founder />
         </div>
