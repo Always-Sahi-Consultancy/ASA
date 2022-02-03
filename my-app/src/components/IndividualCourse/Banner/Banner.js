@@ -23,7 +23,7 @@ const Banner = (props) => {
                     <div className='Banner__right'>
                         <div className='Banner__right__container'>
                             <div className='Banner__video'></div>
-                            <p>{props.price}<del> {props.priceMRP}</del></p>
+                            <p>&#8377; {props.price}<del>&#8377; {props.priceMRP}</del></p>
                             <button className='Banner__enroll'>Enroll Now</button>
                         </div>
                     </div>
