@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const courseDetailsSchema = new mongoose.Schema({
-    courseName: {
+    courseURL: {
         type: String,
         required: true
     },
@@ -61,7 +61,14 @@ const courseDetailsSchema = new mongoose.Schema({
             type: String,
         }
     },
-    
+    courseDiscountPrice: {  
+        type: Number,
+        required: true
+    },
+    courseMRP: {
+        type: Number,
+        required: true
+    }
 });
 
 const CourseDetails = mongoose.model('COURSE_DETAILS', courseDetailsSchema);
