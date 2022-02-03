@@ -36,9 +36,6 @@ const Course =() =>{
 
     useEffect(() => {
         data();
-        // if(isloaded){
-
-        // }
     },[]);
 
     const Course =  <div>
