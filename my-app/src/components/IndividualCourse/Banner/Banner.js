@@ -23,7 +23,7 @@ const Banner = (props) => {
                     <div className='Banner__right'>
                         <div className='Banner__right__container'>
                             <div className='Banner__video'></div>
-                            <p>Rate : Rs.2999<del> 3999</del></p>
+                            <p>{props.price}<del> {props.priceMRP}</del></p>
                             <button className='Banner__enroll'>Enroll Now</button>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Banner = (props) => {
 
     return (
         <div>
-        {data.map((item) => <BannerComponent title={item.title} subtitle={item.subtitle} rating={item.rating} image={item.image} link={item.link} />)}    
+        {data.map((item) => <BannerComponent title={item.title} subtitle={item.subtitle} rating={item.rating} image={item.image} link={item.link} price={item.courseDiscountPrice} priceMRP={item.courseMRP} />)}    
         </div>
     )
 };
