@@ -1,10 +1,14 @@
 import { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DashLeft.css';
-import {UserContext} from '../../../App';
+import { UserContext } from '../../../App';
 
-const DashLeft = () =>{
-    const {state, dispatch} = useContext(UserContext);
+const DashLeft = (props) => {
+
+    // const [progress, setProgress] = useState("Myprogress");
+    // props.setPage(progress);
+
+    const { state, dispatch } = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -12,7 +16,7 @@ const DashLeft = () =>{
 
     const callDashPage = async () => {
         try {
-            const res = await fetch("/dash", { 
+            const res = await fetch("/dash", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
@@ -24,7 +28,7 @@ const DashLeft = () =>{
             const data = await res.json();
             // console.log(data);
             setuserData(data);
-            if(!res.status === 200) {
+            if (!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
             }
@@ -37,19 +41,19 @@ const DashLeft = () =>{
     useEffect(() => {
         callDashPage();
     }, []);
-
-    return(
+    //  ${ progress ? 'show_tab' : 'hide_tab' }
+    return (
         <div className='dashleft-container'>
             <div className='dash__icon'>M</div>
             <form method="GET">
-            <div className='dash__name'>{ userData.userFirstName + " " + userData.userLastName }</div>
+                <div className='dash__name'>{userData.userFirstName + " " + userData.userLastName}</div>
             </form>
             <div className='dash__tabs'>
-                <div className='dash__progress dash__tab'>My Progress</div>
-                <div className='dash__profile dash__tab'>Edit Profile</div>
+                <div className='dash__progress dash__tab' onClick={() => { props.setPage("Myprogress") }}>My Progress</div>
+                <div className='dash__profile dash__tab' onClick={() => { props.setPage("EditProfile") }}>Edit Profile</div>
                 <div className='dash__view dash__tab'>View Dash Board</div>
-                <div className='dash__help dash__tab'>Help Centre</div>
-                <div className='dash__password dash__tab'>Change Password</div>
+                <div className='dash__help dash__tab' onClick={() => { props.setPage("helpCenter") }}>Help Centre</div>
+                <div className='dash__password dash__tab' onClick={() => { props.setPage("ChangePassword") }}>Change Password</div>
             </div>
         </div>
     );

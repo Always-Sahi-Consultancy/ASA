@@ -6,8 +6,6 @@ import YourTeacher from './YourTeachers/YourTeachers';
 import {useContext, useEffect, useState} from 'react';
 import {UserContext} from '../../App';
 
-import * as CourseData from './CourseData.json';
-
 const Course =() =>{
 
     const [courseData, setCoursedata] = useState("");
