@@ -44,7 +44,6 @@ const Routing = () => {
         <Route exact path="/contact_us" element={<ContactUs />} />
         <Route exact path="/about_us" element={<OurStroy />} />
         <Route exact path="/RegisterNow" element={<RegisterMain />} />
-        {/* <Route exact path="/CourseName" element={<Accounting />} /> */}
         <Route exact path="/TermsofUse" element={<TermsOfUse />} />
         <Route exact path="/EarningDisclaimer" element={<PrivacyPolicy />} />
         <Route exact path="/RefundPolicy" element={<RefundPolicy />} />
@@ -55,10 +54,7 @@ const Routing = () => {
         <Route exact path={"/dash"} element={<Dash/> } />
         <Route exact path="/dash/:dashSection" element={<Dash/>} />
         <Route exact path={"/DashBoard"} element={<DashBoardMain />} />
-        {/* <Route exact path={"/Player"} element={<VideoModule/>} /> */}
-        {/* <Route path="/VideoModule" element={<VideoModule/>}/> */}
-        {/* <Route path="/VideoPlayer" element={<VideoPlayer/>}/> */}
-        <Route path="/VideoMain" element={<VideoMain/>}/>
+        <Route path="/Course/:courseid/:videoid" element={<VideoMain/>}/>
         <Route path="*" element={<Error404 />} />
         
       </Routes>

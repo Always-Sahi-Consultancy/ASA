@@ -8,6 +8,7 @@ import image5 from '../../../image/video-editing-services.png';
 import image6 from '../../../image/entrepreneur.png';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import '../Landing.css';
+import {Link} from 'react-router-dom';
 
 const Popular_main = () => {
 
@@ -98,13 +99,15 @@ const Popular_main = () => {
             <Slider {...settings}>
                 {Popular_Courses.map((course) => {
                     return (
-                        <div className="Popular_Box">
-                            <img src={course.Image} alt="courses" ></img>
-                            <div className="details">
-                                <div className="Popular_course_name">{course.Name}</div>
-                                <div className="Popular_course_sub">{course.SubName}</div>
+                        <Link to="/CoursePage">
+                            <div className="Popular_Box">
+                                <img src={course.Image} alt="courses" ></img>
+                                <div className="details">
+                                    <div className="Popular_course_name">{course.Name}</div>
+                                    <div className="Popular_course_sub">{course.SubName}</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     )
                 })}
             </Slider>

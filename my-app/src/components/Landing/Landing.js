@@ -25,10 +25,10 @@ const Landing = (props) => {
         <div>
             <Subheader />
             <Popular_main />
-            <Explore onChange={explorehandler}/>
+            <Explore/>
             <ExploreNew />
             <Freebies />
-            {/* <Stats/> */}
+            <Stats/>
             <Notice />
             <Founder />
         </div>
