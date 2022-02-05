@@ -178,6 +178,7 @@
         top: 2vh;
     }
     .header__brandLogo{
+        margin: -33% -10%;
         width: 80%;
     }
     .header__slider{
@@ -225,6 +226,7 @@
     
     .header__brandLogo{
         width: 56%;
+        margin: -20% -10%;
         align-self: center;
         justify-content: space-around;
     }
@@ -288,6 +290,7 @@
     
     .header__brandLogo{
         width: 56%;
+        margin: -20% -10%;
         align-self: center;
         justify-content: space-around;
     }
@@ -354,6 +357,7 @@
     
     .header__brandLogo{
         width: 56%;
+        margin: -20% -10%;
         align-self: center;
         justify-content: space-around;
     }

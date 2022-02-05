@@ -46,11 +46,11 @@ const RegisterForm = () => {
             <input type="password" placeholder="  Must be atleast 6 characters" name="userPassword" value={user.userPassword} onChange={handleRegistrationInputs} className="register__password" />
             <div className="register__row">
                 <div className="register__flex">
-                    <label type="text" className="register__label" id="labelName">First Name</label>
+                    <label type="text" className="register__label n" id="labelName">First Name</label>
                     <input placeholder="  First Name" name="userFirstName" value={user.userFirstName} onChange={handleRegistrationInputs} className="register__name" />
                 </div>
                 <div className="register__flex">
-                    <label type="text" className="register__label">Last Name</label>
+                    <label type="text" className="register__label l">Last Name</label>
                     <input placeholder="  Last Name" name="userLastName" value={user.userLastName} onChange={handleRegistrationInputs} className="register__nameL" />
                 </div>
             </div>
