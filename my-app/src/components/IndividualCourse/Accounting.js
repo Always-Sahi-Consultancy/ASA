@@ -12,8 +12,9 @@ const Course =() =>{
     const [isloaded,setloaded] = useState(false);
 
     const data = async (course_id) => {
+        console.log(course_id);
         try {
-            const res = await fetch("/coursedetails/Certified-Course-in-Accounts-&-Compliance", {
+            const res = await fetch(`/coursedetails/${course_id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -34,12 +35,11 @@ const Course =() =>{
     }
 
     useEffect(() => {
-        data(window.location.pathname);
+        data(window.location.pathname.split('/').pop());
     },[]);
 
     const Course =  <div>
                         <Banner BannerData={courseData["courseBanner"]}/>
-                        {console.log(courseData)}
                         <Objective objective={courseData["objective"]}/>
                         <Highlights highlights={courseData["highlights"]}/>
                         <div>
