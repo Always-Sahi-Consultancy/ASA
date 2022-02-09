@@ -2,36 +2,36 @@ const mongoose = require('mongoose');
 
 const videoSchema = new mongoose.Schema({
     courseName: {
-        type: 'string'
+        type: String
     },
     courseVideos: [
         {
             videoName: {
-                type: 'string'
+                type: String
             },
             videoURL: {
-                type: 'string'
+                type: String
             }, 
             module: {
                 name: {
-                    type: 'string'
+                    type: String
                 }, 
                 content: {
-                    type: 'string'
+                    type: String
                 }
             },
             videoTranscript: {
-                type: 'string'
+                type: String
             }, 
             videoResources: [
                 {
-                    type: 'string'
+                    type: String
                 }
             ]
         }
     ]
 });
 
-const Videos = mongoose.model('VIDEOS', moduleSchema);
+const Videos = mongoose.model('VIDEOS', videoSchema);
 
 module.exports = Videos;
