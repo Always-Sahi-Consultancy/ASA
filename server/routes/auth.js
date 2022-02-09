@@ -9,6 +9,7 @@ const User = require('../models/user');
 const Course = require('../models/course');
 const CourseDetails = require('../models/courseDetails');
 const Modules = require('../models/module');
+const Videos = require('../models/video');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -139,6 +140,15 @@ router.get('/module', async (req, res) => {
         console.log('Module not found');
     }
     res.send(module);
+});
+
+router.get('/videodetails', async (req, res) => {
+    console.log('Video page');
+    const videoDetails = await Videos.find();
+    if(!videoDetails){
+        console.log('Video Details not found');
+    }
+    res.send(videoDetails);
 });
 
 module.exports = router;
