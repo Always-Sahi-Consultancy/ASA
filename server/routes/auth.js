@@ -8,6 +8,7 @@ require('../database/connect');
 const User = require('../models/user');
 const Course = require('../models/course');
 const CourseDetails = require('../models/courseDetails');
+const Modules = require('../models/module');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -129,6 +130,15 @@ router.get('/coursedetails/:course_id', async (req, res) => {
         console.log('Course Details not found');
     }
     res.send(courseDetails);
-})
+});
+
+router.get('/module', async (req, res) => {
+    console.log('Module page');
+    const module = await Modules.find();
+    if(!module){
+        console.log('Module not found');
+    }
+    res.send(module);
+});
 
 module.exports = router;
