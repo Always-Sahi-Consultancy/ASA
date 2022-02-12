@@ -8,6 +8,8 @@ require('../database/connect');
 const User = require('../models/user');
 const Course = require('../models/course');
 const CourseDetails = require('../models/courseDetails');
+const Modules = require('../models/module');
+const Videos = require('../models/video');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -91,12 +93,7 @@ router.post('/signin', async (req, res) => {
 // Dashboard Page
 router.get('/dash', authenticate, async (req, res) => {
     console.log('Dash page');
-    const course = await Course.find();
-    if(!course){
-        console.log('Course not found');
-    }
-    req.course = course;
-    // res.send(req.rootUser, req.course);
+    res.send(req.rootUser);
 });
 
 // Contact Form
@@ -129,6 +126,24 @@ router.get('/coursedetails/:course_id', async (req, res) => {
         console.log('Course Details not found');
     }
     res.send(courseDetails);
-})
+});
+
+router.get('/module', async (req, res) => {
+    console.log('Module page');
+    const module = await Modules.find();
+    if(!module){
+        console.log('Module not found');
+    }
+    res.send(module);
+});
+
+router.get('/videodetails', async (req, res) => {
+    console.log('Video page');
+    const videoDetails = await Videos.find();
+    if(!videoDetails){
+        console.log('Video Details not found');
+    }
+    res.send(videoDetails);
+});
 
 module.exports = router;

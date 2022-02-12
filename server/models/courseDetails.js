@@ -37,7 +37,7 @@ const courseDetailsSchema = new mongoose.Schema({
             type: String 
         }
     ],
-    accountContent: [
+    content: [
         { 
             name: {
                 type: String
