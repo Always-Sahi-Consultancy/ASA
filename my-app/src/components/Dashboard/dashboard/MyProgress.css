@@ -58,7 +58,7 @@
     background: rgba(229, 229, 229, 0.24);
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
-    height: 20vh;
+    height: 22vh;
     overflow: hidden;
     margin:1.5%;
     text-align: center;
@@ -108,6 +108,11 @@
     margin-top: -5px;
 }
 .Dashprogress__arrow{
+    margin: auto;
+    width: 1rem;
+    margin-right: 6%;
+}
+.Dashprogress__arrow img{
     margin: auto;
     width: 1rem;
     margin-right: 6%;
