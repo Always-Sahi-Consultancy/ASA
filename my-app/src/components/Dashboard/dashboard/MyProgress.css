@@ -1,3 +1,5 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 .Dashprogress__container{
     display: flex;
@@ -36,13 +38,13 @@
 
 .Dashprogress__body{
     height: auto;
-    overflow: hidden;
     display: flex;
     align-items: stretch;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
+    padding-right: 10%;
 }
 .Dashprogress__contain{
     width: 100%;
@@ -58,7 +60,7 @@
     background: rgba(229, 229, 229, 0.24);
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
-    height: 22vh;
+    height: 11vw;
     overflow: hidden;
     margin:1.5%;
     text-align: center;
@@ -107,16 +109,21 @@
     font-size: 0.5rem;
     margin-top: -5px;
 }
+.block{
+    display:none;
+}
 .Dashprogress__arrow{
-    margin: auto;
     width: 1rem;
     margin-right: 6%;
+    right:0%;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
 }
 .Dashprogress__arrow img{
-    margin: auto;
     width: 1rem;
-    margin-right: 6%;
 }
+
 .Dashprogress__lastcourse{
     width: 92%;
     margin: 4%;

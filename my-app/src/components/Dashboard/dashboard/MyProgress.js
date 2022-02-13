@@ -16,9 +16,14 @@ const DashProgress= () =>{
     const [sliderRef, setSliderRef] = useState(null);
     const NextArrow = ({ onClick }) => {
         return (
-            <div className='Dashprogress__arrow next' onClick={onClick}>
+            <div className='Dashprogress__arrow' onClick={onClick}>
             <img src={Arrow}></img>
             </div>
+        );
+    };
+    const PrevArrow = () => {
+        return (
+            <div className='block'></div>
         );
     };
 
@@ -32,6 +37,7 @@ const DashProgress= () =>{
         pauseOnHover:true,
         centerPadding: 0,
         centerMode: true,
+        prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         SlidesToScroll: 1,
         responsive: [
