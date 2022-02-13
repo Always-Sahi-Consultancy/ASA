@@ -222,6 +222,12 @@
   .Test_Msg {
     font-size: 1.2rem;
   }
+  .prev {
+    left: -4vw;
+  }
+  .next {
+    right: -7vw;
+  }
 }
 @media only screen and (max-width: 769px) {
   .Testimonial_msg {
@@ -288,10 +294,10 @@
     width: 50px;
   }
   .prev {
-    left: -3vw;
+    left: -6vw;
   }
   .next{
-    right: -8vw;
+    right: -6vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -363,7 +369,7 @@
     left: -5vw;
   }
   .next {
-    right: -10vw;
+    right: -8vw;
   }
 }
 @media only screen and (max-width: 468px) {
@@ -430,8 +436,11 @@
     height: 40px;
     width: 50px;
   }
+  .next{
+    right: -11vw;
+  }
   .prev {
-    left: -6vw;
+    left: -12vw;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -499,10 +508,10 @@
     width: 50px;
   }
   .prev {
-    left: -8vw;
+    left: -10vw;
   }
   .next{
-    right: -15vw;
+    right: -8vw;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -573,6 +582,6 @@
     left: -8vw;
   }
   .next {
-    right: -4vw;
+    right: -5vw;
   }
 }

@@ -12,7 +12,7 @@ const FaqStructure = () => {
         answer: "Transactions & Learning being though digital Mode, there are no Refunds Provided."
     },{
         id: "faq_3",
-        question: "I dont have any Startup Planned?",
+        question: "I don't have any Startup Planned?",
         answer: "There is no need to worry, here at Always Sahi Academy you are handheld by the experts who will be clearing your Niche and Starting from the Basics."
     },
     {
@@ -36,7 +36,7 @@ const FaqStructure = () => {
                 <div class="faq__breif">Hey, we dont want you to be confused anywhere, So let’s answer some of the Frequently Asked Questions, by the Students of Always Sahi Academy.</div>
                 {Faq.map((faq) =>
                 <FaqQuestion answer={faq.answer} id={faq.id} question={faq.question} /> )}
-        <div class="faq_details">we are Glad, you are now all set to join Always Sahi Academy, We Cant Wait to See you Inside.</div>
+        <div class="faq_details">We are Glad, you are now all set to join Always Sahi Academy, We Can't Wait to See you Inside.</div>
     </div>
     )
 };

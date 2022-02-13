@@ -22,7 +22,7 @@ const Testimonial_Message = () => {
     };
     const Testimonial_Content = [
         {
-            content: "I understand what you have taught me. The notes you provide to us are very useful. You do not need to make any changes in the course. You teach perfectly. What I have learned is very useful in the CA firm internship you have given. I want to give you 5 out of 5 starts.",
+            content: "I understand what you have taught me. The notes you provide to us are very useful. You do not need to make any changes in the course. You teach perfectly. What I have learned is very useful in the CA firm internship you have given. I want to give you 5 out of 5 stars.",
             stars: [
                 { star: star1 },
                 { star: star1 },
@@ -34,7 +34,7 @@ const Testimonial_Message = () => {
             name: "Bharat K."
         },
         {
-            content: "I have done the Accounts & Finance and I'm happy to say that it was very useful in my day to day job as I'm working at a CA firm. I really liked the regularity in everyday lectures conducted and also the excess knowledge is given by the tutor outside the course syllabus. So overall I would like to give it 4.5 starts.",
+            content: "I have done the Accounts & Finance Course and I'm happy to say that it was very useful in my day to day job as I'm working at a CA firm. I really liked the regularity in everyday lectures conducted and also the excess knowledge is given by the tutor outside the course syllabus. So overall I would like to give it 4.5 stars.",
             stars: [
                 { star: star1 },
                 { star: star1 },
@@ -46,7 +46,7 @@ const Testimonial_Message = () => {
             name: "Sejal P."
         },
         {
-            content: "The information I got was helpful for me.... a way of teaching is good... N ur notes are also good your course will help me for getting jobs and internships 4.5 stars",
+            content: "The information I got was helpful for me... the way of teaching is good... and your notes are also good your course will help me for getting jobs and internships 4.5 stars.",
             stars: [
                 { star: star1 },
                 { star: star1 },
@@ -58,7 +58,7 @@ const Testimonial_Message = () => {
             name: "Prashant"
         },
         {
-            content: "It was really nice and all the examples you gave were really relatable. Those examples are situations that we youth face in our day to day lives. And the answer to the questions that were asked by the students was also really good and have a more clear understanding about how we should manage time in different sutiations.",
+            content: "It was really nice and all the examples you gave were really relatable. Those examples are situations that we youth face in our day to day lives. And the answer to the questions that were asked by the students was also really good and have a more clear understanding about how we should manage time in different situations.",
             stars: [
                 { star: star1 },
                 { star: star1 },

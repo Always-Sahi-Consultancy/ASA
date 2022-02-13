@@ -6,6 +6,7 @@
   width: 33%;
   padding: 3rem 2rem;
   text-align: center;
+  height: auto;
 }
 .Stats__Container .stat {
   font-family: Roboto;
@@ -34,10 +35,12 @@
 }
 @media screen and (max-width: 630px) {
   .Stats {
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
   }
-  .Stats__Container {
-    padding: 2rem 0rem;
+  .Stats__Container .stat {
+    padding: 0rem 0rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .Stats__Container h1 {
     font-size: 2rem;
@@ -45,6 +48,16 @@
   }
   .Stats__Container p {
     font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Stats__Container h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .Stats__Container p {
+    font-size: 1rem;
     line-height: 1rem;
   }
 }

@@ -242,7 +242,7 @@
   }
 
   .next {
-    right: 0%;
+    right: 3%;
     top: 50%;
   }
   .prev {
@@ -250,7 +250,7 @@
     top: 50%;
   }
   .Popular {
-    padding: 5vh;
+    padding: 6vh;
     height: fit-content;
     width: 100%;
     height: auto;
