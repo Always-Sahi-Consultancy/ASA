@@ -32,11 +32,10 @@
         color: #FFFFFF;
         margin: 5vh;
         cursor: pointer;
-        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     }
     .explore__button:hover{
         transition: 0.25s ease-in;
-        box-shadow: 2px 2px 3px gray;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     }
     .explore__link{
         text-decoration: none;

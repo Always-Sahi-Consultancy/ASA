@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';

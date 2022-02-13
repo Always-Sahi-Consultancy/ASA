@@ -63,6 +63,7 @@
   font-size: 1.5rem;
   line-height: 28px;
   color: #ffffff;
+  border: none;
   background: #ff8a00;
   border-radius: 10px;
 }
@@ -118,6 +119,10 @@
   width: auto;
   height: 5vh;
 }
+.f{
+  width: auto;
+  height: 5.5vh;
+}
 .icon__style {
   display: flex;
   flex-direction: row;
@@ -131,6 +136,7 @@
   margin: 3% 0%;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .icon__link {
   margin: 3% 10% 2% 0%;
@@ -144,6 +150,7 @@
 .icon__link:hover img:nth-child(2){
   display: block;
 }
+
 .icon__text {
   font-family: Roboto;
   font-style: normal;
@@ -221,7 +228,7 @@
     width: 50%;
   }
   .form-container {
-    width: 70%;
+    width: 80%;
   }
   .icon-container {
     width: 100%;
@@ -275,6 +282,9 @@
     align-items: center;
     overflow: hidden;
   }
+  .form-container{
+    width: 60%;
+  }
   .form__button {
     font-size: 1.3rem;
     width: 50%;
@@ -291,7 +301,7 @@
     margin-right: 2%;
   }
   .terms__part2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 10%;
   }
   .icon {
@@ -306,6 +316,10 @@
   .iconD {
     width: auto;
     height: 3vh;
+  }
+  .f{
+    width: auto;
+    height: 3.5vh;
   }
   .icon__text {
     font-size: 1rem;
@@ -345,6 +359,10 @@
     /* margin: 10% auto; */
     width: 50%;
   }
+  .icon {
+    width: auto;
+    height: 3vh;
+  }
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
@@ -374,13 +392,10 @@
     margin: auto 5%;
   }
   .icon-container {
-    width: 60%;
+    width: 100%;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-  .icon__heading {
     text-align: center;
   }
   .terms-container {
@@ -397,7 +412,7 @@
   }
   .icon {
     width: auto;
-    height: 3vh;
+    height: 3.5vh;
   }
   .icon:hover{
     height: 4.01vh;
@@ -409,7 +424,7 @@
     height: 4vh;
   }
   .icon__text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0% 6%;
   }
   .icon__style {
@@ -442,7 +457,7 @@
   }
   .icon {
     width: auto;
-    height: 2vh;
+    height: 3vh;
   }
   .icon:hover{
     height: 2.21vh;
@@ -453,8 +468,12 @@
     width: auto;
     height: 3vh;
   }
+  .f{
+    width: auto;
+    height: 3.5vh;
+  }
   .icon-container {
-    width: 40%;
+    width: 50%;
     display: flex;
     margin-bottom: 8%;
     flex-direction: column;
@@ -462,6 +481,10 @@
     align-items: center;
     margin-top: 1%;
     background-color: black;
+  }
+  .icon__text {
+    font-size: 1.1rem;
+    margin: 0% 6%;
   }
 }
 @media screen and (max-width: 1400px) and (min-width: 1200px) {

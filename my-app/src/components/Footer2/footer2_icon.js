@@ -39,7 +39,7 @@ const FooterIcon = ()=>{
                 </div>
                 <div className='icon__link'>
                     <a href="https://www.facebook.com/alwayssahiacademy-102830828952159" target={"_blank"}>
-                        <img src={facebook} className='iconD'></img>
+                        <img src={facebook} className='f'></img>
                         <img src={facebookC} className='iconD'></img>
                     </a>
                 </div>

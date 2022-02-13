@@ -1,4 +1,5 @@
-import Slider from 'react-slick'
+import Slider from 'react-slick';
+import {useState} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
@@ -12,12 +13,54 @@ import Slide from './slide';
 const DashProgress= () =>{
 
     const percentage = 69;
+    const [sliderRef, setSliderRef] = useState(null);
+    const NextArrow = ({ onClick }) => {
+        return (
+            <div className='Dashprogress__arrow' onClick={onClick}>
+            <img src={Arrow}></img>
+            </div>
+        );
+    };
+    const PrevArrow = () => {
+        return (
+            <div className='block'></div>
+        );
+    };
 
-    const sliderSettings = {
-        slidesToShow: 4,
-        slidesToScroll: 1,
+    let sliderSettings = {
         infinite: true,
-      }
+        lazyload: true,
+        autoplay: true,
+        slidesToShow: 4,
+        speed: 2000,
+        autoplaySpeed:2000,
+        pauseOnHover:true,
+        centerPadding: 0,
+        centerMode: true,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
+        SlidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+      };
 
     const data = [
         {'image': Coding ,
@@ -28,6 +71,10 @@ const DashProgress= () =>{
         'title': "CERTIFIED COURSE IN ACCOUNTS AND COMPLIANCE",
         'percentage': "45%",
         'link': "#"},
+        {'image': Coding ,
+        'title': "CODING AND WEB DEVELOPMENT",
+        'percentage': "45%",
+        'link':"#"},
         {'image': Coding ,
         'title': "CODING AND WEB DEVELOPMENT",
         'percentage': "45%",
@@ -58,10 +105,10 @@ const DashProgress= () =>{
            <div className='Dashprogress__heading'>My Progress</div>
            <div className='Dashprogress__topic'>My Courses</div>
            <div className='Dashprogress__contain'>
-           <Slider {...sliderSettings} className='Dashprogress__body'>
+           <Slider ref={setSliderRef} {...sliderSettings} className='Dashprogress__body'>
             {data.map((item) => <DashProgressGrid image={item.image} title={item.title} percentage={item.percentage} />)}
             </Slider>
-            <img className='Dashprogress__arrow' src={Arrow}></img>
+            {/* <img className='Dashprogress__arrow' onCLick={sliderRef?.slickNext} src={Arrow}></img> */}
            </div>
             <div className='Dashprogress__lastcourse'>
                 <h4 className='Lastcourse__head'>Coding And Web Development</h4>
