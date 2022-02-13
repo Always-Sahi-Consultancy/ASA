@@ -2,8 +2,20 @@ import './VideooPlayer.css';
 import Code from '../../../image/courses/relatedCode.png';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
+import {useEffect, useState} from 'react';
 
 const VideoPlayer = (props) => {
+
+    const [data, setData] = useState();
+
+    const video = () =>{
+        if(props){
+        setData(props.videodata);
+        }
+        console.log(data);
+    }
+
+    useEffect(() => {video()}, [] );
 
     return(
         <div className='Videoplayer__container'>
