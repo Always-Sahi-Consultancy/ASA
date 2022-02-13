@@ -105,9 +105,31 @@
   box-shadow: 2px 2px 4px black;
 }
 .prev {
-  left: -4vw;
+  left: -5vw;
 }
 .next {
+  right: -5vw;
+}
+.arrowT {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px gray;
+}
+.arrowT:hover{
+  background: rgb(172, 167, 167);
+  box-shadow: 2px 2px 4px black;
+}
+.prevT {
+  top: 50%;
+  left: -4vw;
+}
+.nextT {
+  top: 50%;
   right: -4vw;
 }
 .Testimonial_video {
@@ -214,6 +236,17 @@
   .next {
     right: -7vw;
   }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prevT {
+    left: -4vw;
+  }
+  .nextT {
+    right: -7vw;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .Testimonial_msg {
@@ -226,6 +259,12 @@
     left: -4vw;
   }
   .next {
+    right: -4vw;
+  }
+  .prevT {
+    left: -7vw;
+  }
+  .nextT {
     right: -7vw;
   }
 }
@@ -294,9 +333,20 @@
     width: 50px;
   }
   .prev {
-    left: -6vw;
+    left: -5vw;
   }
   .next{
+    right: -5vw;
+  }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prevT {
+    left: -6vw;
+  }
+  .nextT{
     right: -6vw;
   }
 }
@@ -327,7 +377,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     /* line-height: px; */
     /* padding: 0px 10px; */
   }
@@ -359,6 +409,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 1.8rem;
+    padding-bottom: 5%;
   }
   .arrow {
     position: absolute;
@@ -369,6 +420,17 @@
     left: -5vw;
   }
   .next {
+    right: -5vw;
+  }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prevT {
+    left: -10vw;
+  }
+  .nextT {
     right: -8vw;
   }
 }
@@ -442,6 +504,17 @@
   .prev {
     left: -12vw;
   }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .nextT{
+    right: -10vw;
+  }
+  .prevT {
+    left: -11vw;
+  }
 }
 @media only screen and (max-width: 380px) {
   .Testimonial_msg {
@@ -513,6 +586,17 @@
   .next{
     right: -8vw;
   }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prevT {
+    left: -10vw;
+  }
+  .nextT{
+    right: -10vw;
+  }
 }
 @media only screen and (max-width: 330px) {
   .Testimonial_msg {
@@ -582,6 +666,17 @@
     left: -8vw;
   }
   .next {
+    right: -5vw;
+  }
+  .arrowT {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+  }
+  .prevT {
+    left: -8vw;
+  }
+  .nextT {
     right: -5vw;
   }
 }

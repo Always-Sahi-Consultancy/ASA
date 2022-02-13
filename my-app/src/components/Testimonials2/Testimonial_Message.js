@@ -8,14 +8,14 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 const Testimonial_Message = () => {
     const NextArrow = ({ onClick }) => {
         return (
-            <div className="arrow next" onClick={onClick}>
+            <div className="arrowT nextT" onClick={onClick}>
                 <FaArrowRight />
             </div>
         );
     };
     const PrevArrow = ({ onClick }) => {
         return (
-            <div className="arrow prev" onClick={onClick}>
+            <div className="arrowT prevT" onClick={onClick}>
                 <FaArrowLeft />
             </div>
         );

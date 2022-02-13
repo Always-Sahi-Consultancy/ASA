@@ -8,7 +8,7 @@
 
 /* Popular Training starts  */
 .Popular {
-  padding: 5vh 5vw;
+  padding: 5vw 5vw;
   height: fit-content;
   width: 100%;
   margin-bottom: 8vh;
@@ -173,6 +173,13 @@
     left: 4vh;
     top: 4vh;
   }
+  .Popular_Box {
+    position: relative;
+    padding: 0;
+    transform: scale(0.9);
+    overflow: hidden;
+    margin: 5vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .Popular_heading {
@@ -186,6 +193,7 @@
     padding: 0;
     transform: scale(0.9);
     overflow: hidden;
+    margin: 10vh;
   }
   .Popular_Box img {
     transform: scale(0.9);
@@ -250,7 +258,6 @@
     top: 50%;
   }
   .Popular {
-    padding: 6vh;
     height: fit-content;
     width: 100%;
     height: auto;
