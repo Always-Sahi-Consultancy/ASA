@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';
-import React, { useEffect, useState } from "react";
 
 const VideoMain =()=>{
     const [videoData, setVideo] = useState("");
 
     const [currentVideo, setCurrent] = useState("");
-    const [modules, setModules] = useState();
+    const [modules, setModules] = useState([]);
 
     const data = async (course_name) =>{
         course_name = course_name.split("/")[2];
@@ -26,7 +25,8 @@ const VideoMain =()=>{
             const error = new Error(res.error);
             throw error;
         }
-        setModules(data);
+        setModules(data["courseIndex"]);
+        console.log(modules);
     }
     catch (error) {
         console.log(error);
@@ -41,10 +41,10 @@ const VideoMain =()=>{
             headers: {
                 "Content-Type" : "application/json"
             },
-            body: JSON.stringify({"course_name":course_name})
+            body: JSON.stringify({course_name})
         });
-        console.log(res.json());
-        const data = res.json();
+        // console.log(res.json());
+        const data = await res.json();
         setVideo(data);
         if(res.status != 200){
             const error = new Error(res.error);
@@ -57,11 +57,11 @@ const VideoMain =()=>{
     }
 
     // useEffect(data(),[])
-    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname); },[])
+    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname);},[])
 
     return(
         <div className="video-row">
-            <VideoModule />
+            <VideoModule courseIndex={modules} />
             <VideoPlayer />
         </div>
     );

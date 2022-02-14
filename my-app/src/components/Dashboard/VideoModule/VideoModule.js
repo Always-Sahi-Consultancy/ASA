@@ -2,13 +2,16 @@ import './VideoModule.css';
 import VideoContent from './VideoContent';
 import Desktop from '../../../image/play_Desktop.png';
 
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { UserContext } from '../../../App';
 
 const VideoModule = (props) => {
     const { state, dispatch } = useContext(UserContext);
     // const videoData = props.data;
-    const videoData = [];
+    const [videoData, setVideo] = useState([]);
+
+    useEffect( () => { setVideo(props.courseIndex); console.log(videoData)})
+
     return (
         <div className='video-container'>
             {
