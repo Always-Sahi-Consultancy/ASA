@@ -78,7 +78,11 @@ const VideoMain =()=>{
         const moduleName = window.location.pathname.split('/')[3];
         if(moudlestate && videostate){
             const [currentVideo] = videoData["courseVideos"].filter(module_topic);
-            setCurrent(currentVideo);
+            if(currentVideo!=undefined)
+                setCurrent(currentVideo);
+            else{
+                window.location.pathname = "404eroor";
+            }
         }
     }
 
