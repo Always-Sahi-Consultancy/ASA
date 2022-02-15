@@ -17,7 +17,7 @@ const VideoPlayer = (props) => {
     return(
         <div className='Videoplayer__container'>
             <div className='Videoplayer__title'>{props.title}</div>
-            <ReactPlayer  url={props.url} className="Videoplayer__video" />
+            <ReactPlayer  url={props.url} className="Videoplayer__video" config={{ youtube: {playerVars: {diablekb: 1, enablejsapi: 0}}}}  />
             <div className='Videoplayer__buttons'>
                 {/* <Link to={paths(props.prev)}><button className='Videoplayer__previous'>Previous</button></Link> */}
                 {/* <Link to={paths(props.next)}><button className='Videoplayer__next'>Next</button></Link> */}
