@@ -162,7 +162,7 @@ router.post('/videodetails', async (req, res) => {
     console.log("Video data reached");
     try{
         const {course_name} = req.body;
-        const data = await Modules.findOne({courseName: course_name});
+        const data = await Videos.findOne({courseName: course_name});
         res.send(data);
     }
     catch (error){

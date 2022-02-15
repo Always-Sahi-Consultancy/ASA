@@ -8,14 +8,9 @@ const VideoPlayer = (props) => {
 
     const [data, setData] = useState();
 
-    const video = () =>{
-        if(props){
-        setData(props.videodata);
-        }
-        console.log(data);
-    }
+   
 
-    useEffect(() => {video()}, [] );
+    // useEffect(() => {}, [] );
 
     return(
         <div className='Videoplayer__container'>
@@ -31,6 +26,7 @@ const VideoPlayer = (props) => {
                     <h4>Related Code</h4>
                     <div>
                         {props.material}
+                        {props.transcript}
                     </div>
                 </div>
             </div>

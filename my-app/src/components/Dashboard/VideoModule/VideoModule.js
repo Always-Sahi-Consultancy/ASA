@@ -10,7 +10,7 @@ const VideoModule = (props) => {
     // const videoData = props.data;
     const [videoData, setVideo] = useState([]);
 
-    useEffect( () => { setVideo(props.courseIndex); console.log(videoData)})
+    useEffect( () => { setVideo(props.courseIndex)})
 
     return (
         <div className='video-container'>
