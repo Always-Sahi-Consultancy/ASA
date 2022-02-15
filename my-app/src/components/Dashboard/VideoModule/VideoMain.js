@@ -89,33 +89,33 @@ const VideoMain =()=>{
         }
     }
 
-    const prevNext = (video) => {
-        const module = window.location.pathname.split("/")[3];
-        if(moudlestate && videostate){
-            const current = videoData["courseVideos"].indexOf(currentVideo);
-            if(current<1){
-                setPrev(videoData["courseVideos"][current-1]["videoName"].split(" ").join(""));
-        }
-        else{
-                setPrev("/#");
-        }
-            if(current< videoData["courseVideos"].length()-1){
-                setNext(videoData["courseVideos"][current+1]["videoName"].split(" ").join(""));
-        }
-        else{
-            setNext("/#");
-        }
-            console.log(prevVideo);
-        }
-    }
+    // const prevNext = (video) => {
+    //     const module = window.location.pathname.split("/")[3];
+    //     if(moudlestate && videostate){
+    //         const current = videoData["courseVideos"].indexOf(currentVideo);
+    //         if(current<1){
+    //             setPrev(videoData["courseVideos"][current-1]["videoName"].split(" ").join(""));
+    //     }
+    //     else{
+    //             setPrev("/#");
+    //     }
+    //         if(current< videoData["courseVideos"].length()-1){
+    //             setNext(videoData["courseVideos"][current+1]["videoName"].split(" ").join(""));
+    //     }
+    //     else{
+    //         setNext("/#");
+    //     }
+    //         console.log(prevVideo);
+    //     }
+    // }
 
-    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname); prevNext()},[location]);
+    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname);},[location]);
     useEffect(() => {currentMoudle();});
 
     return(
         <div className="video-row">
             <VideoModule courseIndex={modules} courseName={courseName}/>
-            <VideoPlayer key={currentVideo._id} title={currentVideo.videoName} url={currentVideo.videoURL} material={currentVideo.videoResources} transcript={currentVideo.videoTranscript} next={nextVideo} prev={prevVideo}/>
+            <VideoPlayer key={currentVideo._id} title={currentVideo.videoName} url={currentVideo.videoURL} material={currentVideo.videoResources} transcript={currentVideo.videoTranscript} />
         </div>
     );
 }

@@ -6,19 +6,21 @@ import {useEffect, useState} from 'react';
 
 const VideoPlayer = (props) => {
 
-    const [data, setData] = useState();
+    const paths = (video) => {
+        const videourl = window.location.pathname.split("/");
+        videourl[videourl.length()-1]= video;
+        videourl = videourl.join("/");
+        return videourl;
+    }
 
-   
-
-    // useEffect(() => {}, [] );
-
+    
     return(
         <div className='Videoplayer__container'>
             <div className='Videoplayer__title'>{props.title}</div>
             <ReactPlayer  url={props.url} className="Videoplayer__video" />
             <div className='Videoplayer__buttons'>
-                <Link to=""><button className='Videoplayer__previous'>Previous</button></Link>
-                <Link to=""><button className='Videoplayer__next'>Next</button></Link>
+                {/* <Link to={paths(props.prev)}><button className='Videoplayer__previous'>Previous</button></Link> */}
+                {/* <Link to={paths(props.next)}><button className='Videoplayer__next'>Next</button></Link> */}
             </div>
             <div className='Videoplayer__code'>
                 <div className='Videoplayer__code__title'>
