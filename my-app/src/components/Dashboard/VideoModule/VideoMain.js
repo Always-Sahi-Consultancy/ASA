@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';
+import { useHistory } from "react-router-dom";
 
 const VideoMain =()=>{
     const [videoData, setVideo] = useState("");
@@ -12,6 +14,8 @@ const VideoMain =()=>{
 
     const [moudlestate, setModule] = useState(false);
     const [videostate, setVideos] = useState(false);
+
+    const location = useLocation();
 
     const data = async (course_name) =>{
         course_name = course_name.split("/")[2];
@@ -78,8 +82,7 @@ const VideoMain =()=>{
         }
     }
 
-    // useEffect(data(),[])
-    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname)},[]);
+    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname)},[location]);
     useEffect(() => {currentMoudle();});
 
     return(

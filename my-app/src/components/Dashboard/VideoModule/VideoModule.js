@@ -16,7 +16,7 @@ const VideoModule = (props) => {
         <div className='video-container'>
             {
                 videoData.map((item) =>
-                    <VideoContent name={item.name} id={item.id} details={item.details}  />
+                    <VideoContent name={item.name} id={item.id} details={item.details} video={props.courseName} />
                 )
             }
         </div>
