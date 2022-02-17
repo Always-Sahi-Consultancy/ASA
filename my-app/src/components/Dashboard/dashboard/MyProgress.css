@@ -203,3 +203,89 @@
     line-height: 1.5rem;
     width: 100%;
 }
+
+@media screen and (max-width:1250px) {
+
+    /*element*/
+    .Dashprogress__element{
+        height: 14vw;
+    }
+    .Dashprogress__picture{
+        margin-bottom: 1%;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .Dashprogress__element{
+        width: 85%;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .Dashprogress__container{
+        width: 100%;
+    }
+    
+    .Dashprogress__element{
+        height: 28vw;
+    }
+    .Dashprogress__element h4{
+        font-size: 0.6rem;
+    }      
+}
+
+@media screen and (max-width:600px) {
+    .Dashprogress__topic{
+        padding-left: 10%;
+    }
+    .Dashprogress__body{
+        padding-right: 15%;
+        padding-left: 5%;
+    }
+    .Dashprogress__element{
+        width: 90%;
+        height: 45vw;
+    }
+    .Dashprogress__picture{
+        margin-top: 2.5%;
+        width:95%;
+    }
+    .Dashprogress__element h4{
+        font-size: 0.6rem;
+    }
+    
+    .subdash h3{
+        font-size: 0.7rem;   
+    }
+    .subdash h4{
+        font-size: 0.5rem;
+    }
+    .subdash{
+        width: 40%;
+        margin: 5%;
+    }
+    .Dashprogress__video{
+        height: 10vw;
+    }      
+}
+
+
+@media screen and (max-width:470px) {
+    .Dashprogress__element{
+        width: 90%;
+        height: 50vw;
+    }
+    .Dashprogress__lastcourse{
+        width: 80%;
+    }
+    
+    .subdash{
+        width: 70%;
+        margin: 5%;
+    }
+    .Dashprogress__video{
+        height: 15vw;
+    }      
+}
