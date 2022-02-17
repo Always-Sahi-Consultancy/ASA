@@ -104,7 +104,7 @@ const DashProgress= () =>{
 
     const courses = async () => {
         try{
-            const data = await fetch('/courseenrolled', {
+            const data = await fetch('/courseenroll', {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
