@@ -26,11 +26,11 @@ const VideoPlayer = (props) => {
                 <div className='Videoplayer__code__title'>
                     <img src={Code}></img>
                     <h4>Related Code</h4>
-                    <div>
-                        {props.material}
-                        {props.transcript}
-                    </div>
                 </div>
+            </div>
+            <div>
+                {props.material}
+                {props.transcript}
             </div>
         </div>
     )

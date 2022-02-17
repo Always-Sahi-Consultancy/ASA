@@ -1,5 +1,6 @@
 .Videoplayer__container{
-    width: 100%;
+    width: 76%;
+    margin: 1%;
 }
 .Videoplayer__title{
     font-family: Roboto;
@@ -11,15 +12,15 @@
 .Videoplayer__video{
     /* background: #E5E5E5; */
     border-radius: 12px;
-    width: 100%;
+    width: 100% !important;
     overflow: hidden;
     margin-bottom: 0.3rem;
-    height: auto;
+    height: 40vw !important;
     border: solid black 1px;
     display: flex;
     justify-self: center;
 }
-.Videoplayer__buttons{
+/* .Videoplayer__buttons{
     width: 100%;
     display: block;
     height: auto;
@@ -42,11 +43,12 @@
 }
 .Videoplayer__next{
     float: right;
-}
+} */
 .Videoplayer__code{
     width: 100%;
     background: rgba(229, 229, 229, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 1rem 0rem;
 }
 .Videoplayer__code__title{
     width: fit-content;
@@ -79,7 +81,7 @@
     }
     .Videoplayer__video{
         margin-bottom: 0.5rem;
-        height: 60vh;
+        height: 45vw !important;
     }
     .Videoplayer__buttons button{
         font-size: 0.8rem;
@@ -103,7 +105,7 @@
     }
     .Videoplayer__video{
         margin-bottom: 0.5rem;
-        height: 25vh;
+        height: 25vh !important;
     }
     .Videoplayer__buttons button{
         font-size: 0.8rem;
