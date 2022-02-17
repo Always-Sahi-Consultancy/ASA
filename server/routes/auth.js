@@ -10,6 +10,7 @@ const Course = require('../models/course');
 const CourseDetails = require('../models/courseDetails');
 const Modules = require('../models/module');
 const Videos = require('../models/video');
+const courseEnrolled = require('../models/courseEnrolled');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -164,6 +165,17 @@ router.post('/videodetails', async (req, res) => {
         const {course_name} = req.body;
         const data = await Videos.findOne({courseName: course_name});
         res.send(data);
+    }
+    catch (error){
+        console.log(error);
+    }
+})
+
+router.get('/courseenrolled', async (req, res) => {
+    try{
+        console.log("Course Enrolled");
+        const data = courseEnrolled.findOne({userEmail: req.email});
+        res.send(data["courseEnrolled"]);
     }
     catch (error){
         console.log(error);

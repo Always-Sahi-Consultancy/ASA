@@ -1,4 +1,4 @@
-import React, { useState, createContext, useReducer, useEffect } from 'react';
+import React, { useState, createContext, useReducer, useEffect, useContext } from 'react';
 import './css/root2.css';
 import TermsOfUse from './components/Terms/TermsOfUse';
 import EarningDiscalimer from './components/Terms/EarningDisclaimer';
@@ -7,8 +7,6 @@ import RefundPolicy from './components/Terms/RefundPolicy';
 import Landing from './components/Landing/Landing';
 import Header2 from './components/header/header2';
 import Signin from './components/SignIn/SignIn';
-import Logout from './components/Dashboard/Header/Logout';
-import Header_Dash from './components/Dashboard/Header/Header_Dash';
 import RegisterMain from './components/Register/RegisterMain';
 import Footer2 from './components/Footer2/footer2';
 import ContactUs from './components/ContactUs/ContactUs';
@@ -23,9 +21,6 @@ import {initialState, reducer} from './reducer/UseReducer';
 
 import {Link, Routes, Route } from 'react-router-dom';
 import DashBoardMain from './components/Dashboard/DashBoardMain';
-import VideoModule from './components/Dashboard/VideoModule/VideoModule';
-// import VideoContent from './components/Dashboard/VideoModule/VideoContent';
-import VideoPlayer from './components/Dashboard/VideoModule/VideoPlayer';
 import VideoMain from './components/Dashboard/VideoModule/VideoMain';
 
 export const UserContext = createContext();
@@ -33,7 +28,6 @@ export const UserContext = createContext();
 const courses = ["Web-development-for-everyone","CERTIFIED-COURSE-IN-FINANCIAL-ACCOUNTING", "A-FREE-TOOLKIT-FOR-18+","FUNDAMENTALS-OF-FINANCIAL-INTELLIGENCE", "NAVRATNAS-OF-TIME-MANAGEMENT","HOW-TO-FIND-YOUR-PASSION"];
 
 const Routing = () => {
-  // const [signupState, setSignup] = useState(0);
 
   return (
     <div>
@@ -45,7 +39,7 @@ const Routing = () => {
         <Route exact path="/about_us" element={<OurStroy />} />
         <Route exact path="/RegisterNow" element={<RegisterMain />} />
         <Route exact path="/TermsofUse" element={<TermsOfUse />} />
-        <Route exact path="/EarningDisclaimer" element={<PrivacyPolicy />} />
+        <Route exact path="/EarningDiscalimer" element={<PrivacyPolicy />} />
         <Route exact path="/RefundPolicy" element={<RefundPolicy />} />
         <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route exact path="/CoursePage" element={<CoursePage />} />

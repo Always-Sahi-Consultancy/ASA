@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
@@ -85,6 +85,8 @@ const DashProgress= () =>{
         'link':"#"}
     ];
 
+    const [data_new, setData] = useState("");
+
     const DashProgressGrid = (props) => {
         return(
             <div className='Dashprogress__element' >
@@ -99,6 +101,31 @@ const DashProgress= () =>{
             </div>
         )
     };
+
+    const courses = async () => {
+        try{
+            const data = await fetch('/courseenrolled', {
+                method: "GET",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                },
+                credentials: "include"
+            })
+            const courses = await data.json();
+            setData(courses);
+            console.log(courses);
+            if(data.status !=  200){
+                const error = new Error();
+                throw error;
+            }
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {courses()},[])
 
     return(
         <div className='Dashprogress__container'>
