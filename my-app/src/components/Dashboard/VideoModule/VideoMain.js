@@ -1,50 +1,121 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';
-import { useContext } from "react";
-import { UserContext } from "../../../App";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const VideoMain =()=>{
+    const [videoData, setVideo] = useState("");
+    const [courseName, setCourse] = useState("");
 
-    const { state, dispatch } = useContext(UserContext);
+    const [currentVideo, setCurrent] = useState("");
+    const [modules, setModules] = useState([]);
 
-    const navigate = useNavigate();
+    const [moudlestate, setModule] = useState(false);
+    const [videostate, setVideos] = useState(false);
 
-    const [data, setData] = useState({});
+    const location = useLocation();
 
-    const callData = async () => {
-        try {
-            const res = await fetch("/module", {
-                method: "GET",
-                headers: {
-                    Accept: "application/json",
-                    "Content-Type": "application/json"
-                }
-            });
+    const [nextVideo, setNext] = useState("");
+    const [prevVideo, setPrev] = useState("");
 
-            const data = await res.json();
-            console.log(data);
-            setData(data);
-            if (!res.status === 200) {
-                const error = new Error(res.error);
-                throw error;
+    const data = async (course_name) =>{
+        course_name = course_name.split("/")[2];
+        try{
+        const res = await fetch("/moduledata", {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({course_name})
+        });
+        const data = await res.json();
+        // console.log(data);
+        if(res.status != 200){
+            const error = new Error(res.error);
+            throw error;
+        }
+        setModules(data["courseIndex"]);
+        setCourse(data["courseName"]);
+        setModule(true);
+    }
+    catch (error) {
+        console.log(error);
+    }
+    }
+
+    const videodata = async (course_name) =>{
+        course_name = course_name.split("/")[2];
+        try{
+        const res = await fetch("/videodetails", {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({course_name})
+        });
+        const data = await res.json();
+        // console.log(data);
+        setVideo(data);
+        setVideos(true);
+        if(res.status != 200){
+            const error = new Error(res.error);
+            throw error;
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+    }
+
+    const module_topic = (video) => {
+        const viurl = window.location.pathname.split("/")[3];
+        // console.log(video["videoName"].split(" ").join("")==viurl)
+         if(video["videoName"].split(" ").join("") == viurl){
+             return video;
+         }
+    }
+
+    const currentMoudle = () => {
+        const moduleName = window.location.pathname.split('/')[3];
+        if(moudlestate && videostate){
+            const [currentVideo] = videoData["courseVideos"].filter(module_topic);
+            if(currentVideo!=undefined)
+                setCurrent(currentVideo);
+            else{
+                window.location.pathname = "404eroor";
             }
-        } catch (err) {
-            console.log(err);
-            navigate("/");
         }
     }
 
-    useEffect(() => {
-        callData();
-    }, []);
+    // const prevNext = (video) => {
+    //     const module = window.location.pathname.split("/")[3];
+    //     if(moudlestate && videostate){
+    //         const current = videoData["courseVideos"].indexOf(currentVideo);
+    //         if(current<1){
+    //             setPrev(videoData["courseVideos"][current-1]["videoName"].split(" ").join(""));
+    //     }
+    //     else{
+    //             setPrev("/#");
+    //     }
+    //         if(current< videoData["courseVideos"].length()-1){
+    //             setNext(videoData["courseVideos"][current+1]["videoName"].split(" ").join(""));
+    //     }
+    //     else{
+    //         setNext("/#");
+    //     }
+    //         console.log(prevVideo);
+    //     }
+    // }
+
+    useEffect(() => {data(window.location.pathname); videodata(window.location.pathname);},[location]);
+    useEffect(() => {currentMoudle();});
 
     return(
         <div className="video-row">
-            <VideoModule/>
-            <VideoPlayer/>
+            <VideoModule courseIndex={modules} courseName={courseName}/>
+            <VideoPlayer key={currentVideo._id} title={currentVideo.videoName} url={currentVideo.videoURL} material={currentVideo.videoResources} transcript={currentVideo.videoTranscript} />
         </div>
     );
 }
