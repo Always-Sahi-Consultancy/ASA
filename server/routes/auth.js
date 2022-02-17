@@ -10,7 +10,7 @@ const Course = require('../models/course');
 const CourseDetails = require('../models/courseDetails');
 const Modules = require('../models/module');
 const Videos = require('../models/video');
-const courseEnrolled = require('../models/courseEnrolled');
+const CourseEnrolls = require('../models/courseEnrolls');
 
 router.get('/', (req, res) => {
     res.send('Hello world this is server! from router');
@@ -157,7 +157,7 @@ router.post('/moduledata', async (req, res) => {
     catch (error){
         console.log(error);
     }
-})
+});
 
 router.post('/videodetails', async (req, res) => {
     console.log("Video data reached");
@@ -169,17 +169,17 @@ router.post('/videodetails', async (req, res) => {
     catch (error){
         console.log(error);
     }
-})
+});
 
-router.get('/courseenrolled', async (req, res) => {
+router.get('/courseenroll', authenticate, async (req, res) => {
     try{
         console.log("Course Enrolled");
-        const data = courseEnrolled.findOne({userEmail: req.email});
-        res.send(data["courseEnrolled"]);
+        const data = await CourseEnrolls.findOne({userEmail: req.rootUser.userEmail});
+        res.send(data);
     }
     catch (error){
         console.log(error);
     }
-})
+});
 
 module.exports = router;

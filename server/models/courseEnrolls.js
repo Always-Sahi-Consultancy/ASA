@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const courseEnrolledSchema = new mongoose.Schema({
+const courseEnrollsSchema = new mongoose.Schema({
     userEmail:{
         type: String,
         required: true
@@ -24,6 +24,6 @@ const courseEnrolledSchema = new mongoose.Schema({
     ]
 });
 
-const courseEnrolled = mongoose.model('COURSEENROLLED', courseEnrolledSchema);
+const CourseEnrolls = mongoose.model('COURSE_ENROLLS', courseEnrollsSchema);
 
-module.exports = courseEnrolled;
+module.exports = CourseEnrolls;
