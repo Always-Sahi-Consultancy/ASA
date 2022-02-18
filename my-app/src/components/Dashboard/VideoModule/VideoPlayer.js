@@ -1,8 +1,9 @@
-import './VideooPlayer.css';
+
 import Code from '../../../image/courses/relatedCode.png';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 import {useEffect, useState} from 'react';
+import './VideooPlayer.css';
 
 const VideoPlayer = (props) => {
 
