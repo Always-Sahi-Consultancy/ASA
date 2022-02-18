@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import desktop from '../../../image/play_Desktop.png';
 import { Link } from "react-router-dom";
 import './VideoModule.css';
 const VideoContent = (props) => {
@@ -12,12 +13,12 @@ const VideoContent = (props) => {
             <div className={`name__row ${contentV === true ? 'name__new' : ""} `} onClick={dropdownV} >
                 <div className='video__name'> {props.name}</div>
             </div>
-            <div className='video__list' style={contentV ? { display: "block" } : { display: "non" }} onClick={dropdownV}>
+            <div className='video__list' style={contentV ? { display: "block" } : { display: "none" }} onClick={dropdownV}>
                 {props.details.map((sub) =>
                     <div className='video__list-element'>
-                        <Link to={"/Course/"+props.video+"/"+sub.info.split(" ").join("")} >
-                        <div className='video__list-icon'></div>
-                        <div className='video__list-content'><img src={sub.image} className="icon-image" alt="desktop"></img>{sub.info}</div>
+                        <div className='video__list-icon'><img src={desktop} className="icon-image" alt="desktop"></img></div>
+                        <Link className='video__list-link' to={"/Course/"+props.video+"/"+sub.info.split(" ").join("")} >
+                        <div className='video__list-content'>{sub.info}</div>
                         </Link>
                     </div>
                 )}
