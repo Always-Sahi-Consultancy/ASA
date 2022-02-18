@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../App';
 
@@ -9,6 +9,24 @@ const SignInForm = () => {
     const navigate = useNavigate();
     const [userEmail, setuserEmail] = useState('');
     const [userPassword, setuserPassword] = useState('');
+
+    const Login = async() => {
+        try {
+        const res = await fetch('/login', {
+            method:"GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await res.json();
+        if(data){
+            navigate('/dash');
+        }
+        }
+        catch (error){
+            console.log(error);
+        }
+    }
 
     const PostLoginUser = async (e) => {
         e.preventDefault();
@@ -30,6 +48,8 @@ const SignInForm = () => {
             navigate("/dash"); // should be redirected to dashboard
         }
     }
+
+    useEffect(() => {Login()}, []);
 
     return (
         <form method="POST" className="signIn__form">
