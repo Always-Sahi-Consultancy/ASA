@@ -141,25 +141,25 @@ router.get('/coursedetails/:course_id', async (req, res) => {
     res.send(courseDetails);
 });
 
-router.get('/module', async (req, res) => {
-    console.log('Module page');
-    const module = await Modules.find();
-    if(!module){
-        console.log('Module not found');
-    }
-    res.send(module);
-});
+// router.get('/module', async (req, res) => {
+//     console.log('Module page');
+//     const module = await Modules.find();
+//     if(!module){
+//         console.log('Module not found');
+//     }
+//     res.send(module);
+// });
 
-router.get('/videodetails', async (req, res) => {
-    console.log('Video page');
-    const videoDetails = await Videos.findOne({"courseName": res.params.course_name});
-    if(!videoDetails){
-        console.log('Video Details not found');
-    }
-    res.send(videoDetails);
-});
+// router.get('/videodetails', async (req, res) => {
+//     console.log('Video page');
+//     const videoDetails = await Videos.findOne({"courseName": res.params.course_name});
+//     if(!videoDetails){
+//         console.log('Video Details not found');
+//     }
+//     res.send(videoDetails);
+// });
 
-router.post('/moduledata', async (req, res) => {
+router.post('/moduledata', authenticate, async (req, res) => {
     console.log("Moudle data reached");
     try{
         const {course_name} = req.body;
@@ -171,7 +171,7 @@ router.post('/moduledata', async (req, res) => {
     }
 });
 
-router.post('/videodetails', async (req, res) => {
+router.post('/videodetails', authenticate, async (req, res) => {
     console.log("Video data reached");
     try{
         const {course_name} = req.body;

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, useLocation } from "react-router-dom";
+import { BrowserRouter, useLocation, useNavigate } from "react-router-dom";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';
 import VideoContent from './VideoContent';
-import { useHistory } from "react-router-dom";
 import React, { useContext } from 'react';
 import { UserContext } from '../../../App';
 
@@ -19,6 +18,8 @@ const VideoMain = (props) => {
     const [videostate, setVideos] = useState(false);
 
     const location = useLocation();
+
+    const navigate = useNavigate();
 
     const [nextVideo, setNext] = useState("");
     const [prevVideo, setPrev] = useState("");
@@ -45,6 +46,7 @@ const VideoMain = (props) => {
         }
         catch (error) {
             console.log(error);
+            navigate("/");
         }
     }
 
@@ -69,6 +71,7 @@ const VideoMain = (props) => {
         }
         catch (error) {
             console.log(error);
+            navigate("/");
         }
     }
 
