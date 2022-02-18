@@ -25,8 +25,6 @@ import VideoMain from './components/Dashboard/VideoModule/VideoMain';
 
 export const UserContext = createContext();
 
-const courses = ["Web-development-for-everyone","CERTIFIED-COURSE-IN-FINANCIAL-ACCOUNTING", "A-FREE-TOOLKIT-FOR-18+","FUNDAMENTALS-OF-FINANCIAL-INTELLIGENCE", "NAVRATNAS-OF-TIME-MANAGEMENT","HOW-TO-FIND-YOUR-PASSION"];
-
 const Routing = () => {
 
   return (
@@ -58,7 +56,7 @@ const Routing = () => {
 } 
   
 function App() {
-
+  
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (

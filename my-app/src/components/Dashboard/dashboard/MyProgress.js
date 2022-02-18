@@ -6,9 +6,10 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { buildStyles } from 'react-circular-progressbar';
 import './MyProgress.css';
-import Coding from '../../../image/work-g2261fc175_1920.jpg';
+import WebDevelopmentForEveryone from '../../../image/work-g2261fc175_1920.jpg';
 import Arrow from '../../../image/courses/arrow.png';
 import Slide from './slide';
+import { Link } from 'react-router-dom';
 
 const DashProgress= () =>{
 
@@ -62,43 +63,50 @@ const DashProgress= () =>{
         ]
       };
 
-    const data = [
-        {'image': Coding ,
-        'title': "CODING AND WEB DEVELOPMENT",
-        'percentage': "45%",
-        'link':"#"},
-        {'image': Coding ,
-        'title': "CERTIFIED COURSE IN ACCOUNTS AND COMPLIANCE",
-        'percentage': "45%",
-        'link': "#"},
-        {'image': Coding ,
-        'title': "CODING AND WEB DEVELOPMENT",
-        'percentage': "45%",
-        'link':"#"},
-        {'image': Coding ,
-        'title': "CODING AND WEB DEVELOPMENT",
-        'percentage': "45%",
-        'link':"#"},
-        {'image': Coding ,
-        'title': "CODING AND WEB DEVELOPMENT",
-        'percentage': "45%",
-        'link':"#"}
-    ];
+    // const data = [
+    //     {'image': Coding ,
+    //     'title': "CODING AND WEB DEVELOPMENT",
+    //     'percentage': "45%",
+    //     'link':"#"},
+    //     {'image': Coding ,
+    //     'title': "CERTIFIED COURSE IN ACCOUNTS AND COMPLIANCE",
+    //     'percentage': "45%",
+    //     'link': "#"},
+    //     {'image': Coding ,
+    //     'title': "CODING AND WEB DEVELOPMENT",
+    //     'percentage': "45%",
+    //     'link':"#"},
+    //     {'image': Coding ,
+    //     'title': "CODING AND WEB DEVELOPMENT",
+    //     'percentage': "45%",
+    //     'link':"#"},
+    //     {'image': Coding ,
+    //     'title': "CODING AND WEB DEVELOPMENT",
+    //     'percentage': "45%",
+    //     'link':"#"}
+    // ]; 
 
-    const [data_new, setData] = useState("");
+    const [data, setData] = useState("");
+    const [loaded, setLoaded] = useState(false);
 
     const DashProgressGrid = (props) => {
+        const courseImages = {
+            "Web Development For Everyone": WebDevelopmentForEveryone
+        }
+
         return(
+            <Link to={"/Course/"+props.title.split(" ").join("-")+"/"+props.firstVideo} >
             <div className='Dashprogress__element' >
-                <img className='Dashprogress__picture' src={props.image}></img>
+                <img className='Dashprogress__picture' src={courseImages[props.image]}></img>
                 <h4>{props.title}</h4>
-                <div className='Dashprogress__progress'>
+                {/* <div className='Dashprogress__progress'>
                     <div className='Dashprogress__bar'>
                         <div className='Dashprogress__color'></div>
                     </div>
                     <h4>{props.percentage}</h4>
-                </div>
+                </div> */}
             </div>
+            </Link>
         )
     };
 
@@ -113,8 +121,9 @@ const DashProgress= () =>{
                 credentials: "include"
             })
             const courses = await data.json();
-            setData(courses);
-            console.log(courses);
+            setData(courses["courseEnrolled"]);
+            setLoaded(true);
+            // console.log(courses);
             if(data.status !=  200){
                 const error = new Error();
                 throw error;
@@ -132,9 +141,10 @@ const DashProgress= () =>{
            <div className='Dashprogress__heading'>My Progress</div>
            <div className='Dashprogress__topic'>My Courses</div>
            <div className='Dashprogress__contain'>
-           <Slider ref={setSliderRef} {...sliderSettings} className='Dashprogress__body'>
-            {data.map((item) => <DashProgressGrid image={item.image} title={item.title} percentage={item.percentage} />)}
-            </Slider>
+           {/* <Slider ref={setSliderRef} {...sliderSettings} className='Dashprogress__body'> */}
+           {console.log(data)}
+            {loaded?data.map((item) => <DashProgressGrid image={item["courseName"]} title={item["courseName"]} percentage={item["videoStatus"]} firstVideo={item.firstVideo}/>) : null}
+            {/* </Slider> */}
             {/* <img className='Dashprogress__arrow' onCLick={sliderRef?.slickNext} src={Arrow}></img> */}
            </div>
             <div className='Dashprogress__lastcourse'>

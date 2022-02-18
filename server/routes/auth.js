@@ -103,6 +103,18 @@ router.get('/contact', authenticate, (req, res) => {
     res.send(req.rootUser);
 });
 
+// User Validation
+router.get('/login', authenticate, (req,res) => {
+    console.log("Login verify");
+    if(req.rootUser){
+        res.send(true);
+    }
+    else{
+        res.send(false);
+    }
+})
+
+
 // Logout
 router.get('/logout', (req, res) => {
     console.log('Logout'); 

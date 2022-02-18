@@ -66,19 +66,24 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: baseline;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: auto;
 }
 .Dashprogress__picture{
     margin-top: 5%;
     width:90%;
     height: auto;
     border-radius: 6px;
+    max-width: 10vw;
 }
 .Dashprogress__element h4{
     font-family: Roboto;
     font-size: 0.5rem;
     font-style: normal;
+    color: var(--black);
 }
 /*Progress bar*/
 .Dashprogress__progress{

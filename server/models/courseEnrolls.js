@@ -19,7 +19,11 @@ const courseEnrollsSchema = new mongoose.Schema({
                 {
                     type: Number
                 }
-        ]
+        ],
+        firstVideo: {
+            type: String,
+            required: true
+        }
         }
     ]
 });
