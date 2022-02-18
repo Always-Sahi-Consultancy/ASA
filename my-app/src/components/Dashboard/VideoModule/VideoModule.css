@@ -135,6 +135,7 @@
   @media screen and (max-width: 968px){
     .video-container{
       display: none;
+      width:100%;
     }
   }
   @media screen and (max-width: 768px) {
