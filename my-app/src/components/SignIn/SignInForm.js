@@ -4,29 +4,10 @@ import { UserContext } from '../../App';
 
 const SignInForm = () => {
 
-    const {state, dispatch} = useContext(UserContext);
 
     const navigate = useNavigate();
     const [userEmail, setuserEmail] = useState('');
     const [userPassword, setuserPassword] = useState('');
-
-    const Login = async() => {
-        try {
-        const res = await fetch('/login', {
-            method:"GET",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
-        const data = await res.json();
-        if(data){
-            navigate('/dash');
-        }
-        }
-        catch (error){
-            console.log(error);
-        }
-    }
 
     const PostLoginUser = async (e) => {
         e.preventDefault();
@@ -48,8 +29,6 @@ const SignInForm = () => {
             navigate("/dash"); // should be redirected to dashboard
         }
     }
-
-    useEffect(() => {Login()}, []);
 
     return (
         <form method="POST" className="signIn__form">
