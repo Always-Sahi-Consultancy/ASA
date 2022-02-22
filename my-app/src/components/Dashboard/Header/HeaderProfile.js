@@ -83,7 +83,7 @@ const HeaderProfile = () => {
                     <div className="profile_links Help_center"><a href="#">Help Center</a></div>
                 </div>
                 <div className="Profile_lower">
-                    <div className="profile_links My_Progress"><a href="/logout">Log Out</a></div>
+                    <div className="profile_links My_Progress"><a href="/Logout">Log Out</a></div>
                     <div className="profile_links Manage_account" onClick={dropdown}>
                         <a href="#">Manage Account</a>
                         <a href="#" id="offer_courses">&#9660;</a></div>
