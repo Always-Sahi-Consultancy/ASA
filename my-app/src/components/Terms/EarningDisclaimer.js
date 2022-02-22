@@ -1,6 +1,5 @@
 import './website_policies.css';
-import { useEffect, useContext } from 'react';
-import { UserContext } from '../../App';
+import { useEffect } from 'react';
 
 const EarningDiscalimer = () => {
     useEffect(() => {

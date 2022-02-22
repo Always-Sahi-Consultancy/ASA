@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import VideoModule from "./VideoModule";
 import VideoPlayer from "./VideoPlayer";
 import './VideoMain.css';
 import VideoContent from './VideoContent';
-import React, { useContext } from 'react';
-import { UserContext } from '../../../App';
+import React from 'react';
 
 const VideoMain = (props) => {
     const [videoData, setVideo] = useState("");
@@ -117,7 +116,6 @@ const VideoMain = (props) => {
 
     useEffect(() => { data(window.location.pathname); videodata(window.location.pathname); }, [location]);
     useEffect(() => { currentMoudle(); });
-    const { state, dispatch } = useContext(UserContext);
     // const videoData = props.data;
     const [videoData1, setVideo1] = useState([]);
 

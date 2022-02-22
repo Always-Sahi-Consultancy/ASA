@@ -1,11 +1,9 @@
 import './contactUs2.css';
 import ContactStructure from './ContactStructure';
 import FaqStructure from './FaqStructure';
-import { useEffect, useContext } from 'react';
-import { UserContext } from '../../App';
+import { useEffect } from 'react';
 
 const ContactUs = () => {
-    const { state, dispatch } = useContext(UserContext);
     useEffect(() => {
         document.title = "Always Sahi Academy | Contact Us";
     })

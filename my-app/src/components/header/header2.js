@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import AsLogo from '../../image/1.svg';
 import './header2.css';
 import HeaderProfile from '../Dashboard/Header/HeaderProfile';
 
 const Header2 = () => {
 
-    // const { state, dispatch } = useContext(UserContext);
     const logData = localStorage.getItem('logUser');
     // console.log(state);
     const RenderHeader = () => {

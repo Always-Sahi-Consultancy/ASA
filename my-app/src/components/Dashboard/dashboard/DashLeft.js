@@ -1,14 +1,12 @@
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DashLeft.css';
-import { UserContext } from '../../../App';
 
 const DashLeft = (props) => {
 
     // const [progress, setProgress] = useState("Myprogress");
     // props.setPage(progress);
 
-    const { state, dispatch } = useContext(UserContext);
 
     const navigate = useNavigate();
 

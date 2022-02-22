@@ -1,11 +1,9 @@
-import {useEffect, useContext} from 'react';
-import {UserContext} from '../../App';
+import {useEffect} from 'react';
 import './register.css';
 import Register from './Register';
 import regImage from '../../image/to-register-gb8968b104_1920.jpg';
 
 const RegisterMain = (props) => {
-    const {state, dispatch} = useContext(UserContext);
     useEffect(() => {
         document.title = "Always Sahi Academy | Register";
     })
