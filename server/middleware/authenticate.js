@@ -13,7 +13,7 @@ const Authenticate = async (req, res, next) => {
         req.userID = rootUser._id;
         next();
     } catch (error) {
-        res.status(401).send('Unathorized: No token provided');
+        res.status(400).send('Unathorized: No token provided');
         console.log(error);
     }
 }

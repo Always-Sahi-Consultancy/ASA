@@ -43,17 +43,17 @@ router.post('/register', async (req, res) => {
     const { userEmail, userPassword, userFirstName, userLastName } = req.body;
 
     if(!userEmail || !userPassword || !userFirstName || !userLastName){
-        return res.status(422).json({ error: "Please fill all the fields" });
+        return res.status(400).json({ error: "Please fill all the fields" });
     }
 
     try{
         const userExist = await User.findOne({ userEmail: userEmail });
         if(userExist){
-            return res.status(422).json({ error: "Email already exist" });
+            return res.status(400).json({ error: "Email already exist" });
         }
         const user = new User({ userEmail, userPassword, userFirstName, userLastName });
         await user.save();
-        res.status(201).json({ message: "User created successfully" });
+        res.status(200).json({ message: "User created successfully" });
     }catch(err){
         console.log(err);
     }
@@ -65,7 +65,7 @@ router.post('/signin', async (req, res) => {
         const { userEmail, userPassword } = req.body;
 
         if(!userEmail || !userPassword){
-            return res.status(422).json({ error: "Please fill all the fields" });
+            return res.status(400).json({ error: "Please fill all the fields" });
         }
 
         const userLogin = await User.findOne({ userEmail: userEmail });
@@ -74,17 +74,17 @@ router.post('/signin', async (req, res) => {
             const token = await userLogin.generateAuthToken();
             console.log(token);
             res.cookie('jwtoken', token, { 
-                expires: new Date(Date.now() + 2592000000), //1hr = 3600000, 1day = 86400000, 1week = 604800000, 1month = 2592000000, 1year = 31536000000
+                expires: new Date(Date.now() + 7200000), //1hr = 3600000, 1day = 86400000, 1week = 604800000, 1month = 2592000000, 1year = 31536000000
                 httpOnly: true
             });
 
             if(isMatch){
                 return res.status(200).json({ message: "User logged in successfully" });
             }else{
-                return res.status(422).json({ error: "Invalid Credentials" });
+                return res.status(400).json({ error: "Invalid Credentials" });
             }
         }else{
-            return res.status(422).json({ error: "Email does not exist" });
+            return res.status(400).json({ error: "Email does not exist" });
         }
     }catch(err){
         console.log(err);
