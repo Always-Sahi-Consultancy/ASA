@@ -19,21 +19,23 @@ const SignInForm = () => {
             body: JSON.stringify({ userEmail, userPassword })
         });
         const data = await res.json();
-        if(data.status === 422 || !data) {
-            window.alert("Login failed! Invalid Credentials");
+        if(res.status === 400) {
+            window.alert(data.error);
             // console.log("Registration failed");
         } else {
-            dispatch({type: "USER", payload: true});
+            // dispatch({type: "USER", payload: true});
+            localStorage.setItem('logUser', true);
             window.alert("Login successful");
             // console.log("Registration successful");
             navigate("/dash"); // should be redirected to dashboard
+            window.location.reload();
         }
     }
 
     return (
         <form method="POST" className="signIn__form">
-            <input placeholder="  Email / Username" name="userEmail" value={userEmail} onChange={(e) => setuserEmail(e.target.value)} className="signIn__email" />
-            <input placeholder="  Password" name="userPassword" value={userPassword} onChange={(e) => setuserPassword(e.target.value)} className="signIn__password" />
+            <input placeholder="  Email / Username" name="userEmail" onChange={(e) => setuserEmail(e.target.value)} className="signIn__email" />
+            <input placeholder="  Password" name="userPassword" onChange={(e) => setuserPassword(e.target.value)} className="signIn__password" />
             <button type="submit" className="signIn__submit" onClick={PostLoginUser}>Continue</button>
         </form>
     );
