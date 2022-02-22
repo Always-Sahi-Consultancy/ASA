@@ -4,7 +4,7 @@ import { UserContext } from '../../../App';
 
 const Logout = () => {
 
-    const {state, dispatch} = useContext(UserContext);
+    // const {state, dispatch} = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -15,8 +15,10 @@ const Logout = () => {
                 "Content-Type": "application/json"
             },
         }).then((res) => {
-            dispatch({type: "USER", payload: false});
-            navigate("/", {replace: true});
+            // dispatch({type: "USER", payload: false});
+            localStorage.setItem('logUser', false);
+            navigate('/');
+            window.location.reload();
             if(res.status !== 200) {
                 const error = new Error(res.error);
                 throw error;
