@@ -15,7 +15,7 @@ const Dash = () => {
         <div className='dash-container'>
             <DashLeft setPage={setPage} />
             {page === "Myprogress" && <DashProgress />}
-            {page === "helpCenter" && <HelpCenter />}
+            {/* {page === "helpCenter" && <HelpCenter />} */}
             {page === "EditProfile" && <EditProfile />}
             {page === "ChangePassword" && <ChangePassword />}
         </div>

@@ -147,7 +147,7 @@ const DashProgress= () =>{
             {/* </Slider> */}
             {/* <img className='Dashprogress__arrow' onCLick={sliderRef?.slickNext} src={Arrow}></img> */}
            </div>
-            <div className='Dashprogress__lastcourse'>
+            {/* <div className='Dashprogress__lastcourse'>
                 <h4 className='Lastcourse__head'>Coding And Web Development</h4>
                 <div className='Dashprogress__completed subdash'>
                    
@@ -177,7 +177,7 @@ const DashProgress= () =>{
                 <div className='Dashprogress__certificate subdash'>
                     <button>Certificate</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

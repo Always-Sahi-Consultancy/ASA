@@ -7,11 +7,11 @@ const EditProfile = ()=>{
             <div className='profile__subsection'>
                 <div className='profile__section'>
                     <lable className="profile__name">First Name</lable>
-                    <input className='profile__input' type="text" placeholder="Akhil"></input>
+                    <input className='profile__input' type="text" placeholder="Sham"></input>
                 </div>
                 <div className='profile__section'>
                     <lable className="profile__name">Last Name</lable>
-                    <input className='profile__input' type="text" placeholder="Nair"></input>
+                    <input className='profile__input' type="text" placeholder="Kumar"></input>
                 </div>
                 <div className='profile__row'>
                     <div className='profile__icon'>A</div>

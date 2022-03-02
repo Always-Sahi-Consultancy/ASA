@@ -92,7 +92,7 @@ const DashLeft = (props) => {
                     <div className='dash__progress dash__tab' onClick={() => { props.setPage("Myprogress") }}>My Progress</div>
                     <div className='dash__profile dash__tab' onClick={() => { props.setPage("EditProfile") }}>Edit Profile</div>
                     <div className='dash__view dash__tab'>View Dash Board</div>
-                    <div className='dash__help dash__tab' onClick={() => { props.setPage("helpCenter") }}>Help Centre</div>
+                    {/* <div className='dash__help dash__tab' onClick={() => { props.setPage("helpCenter") }}>Help Centre</div> */}
                     <div className='dash__password dash__tab' onClick={() => { props.setPage("ChangePassword") }}>Change Password</div>
                     <div className='dash__logout dash__tab' onClick={logout} >Logout</div>
                 </div>
