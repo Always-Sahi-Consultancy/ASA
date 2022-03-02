@@ -27,14 +27,10 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    tokens: [
-        {
-            token: {
-                type: String,
-                required: true
-            }
-        }
-    ]
+    token: {
+        type: String,
+        required: true
+    }
 });
 
 // Hashing the password
@@ -49,11 +45,11 @@ userSchema.pre('save', async function(next){
 // Token generation
 userSchema.methods.generateAuthToken = async function(){
     try{
-        let token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET_KEY);
-        this.tokens = this.tokens.concat({ token: token });
+        let jwttoken = jwt.sign({ _id: this._id }, process.env.JWT_SECRET_KEY);
+        this.token = jwttoken;
         await this.save();
         console.log("Token generated");
-        return token;
+        return jwttoken;
     }catch(err){
         console.log(err);
     }

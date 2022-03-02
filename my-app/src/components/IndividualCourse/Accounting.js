@@ -3,8 +3,7 @@ import Objective from './objective/objective';
 import Highlights from './Highlights/Highlights';
 import AccountingContent from './Accounting/accountingcontent';
 import YourTeacher from './YourTeachers/YourTeachers';
-import {useContext, useEffect, useState} from 'react';
-import {UserContext} from '../../App';
+import { useEffect, useState} from 'react';
 
 const Course =() =>{
 
@@ -48,7 +47,6 @@ const Course =() =>{
                         <YourTeacher teacher={courseData["courseTutor"]} />
                     </div>
 
-    const {state, dispatch} = useContext(UserContext);
     return(
         <div>
             {isloaded? Course:null}

@@ -1,23 +1,22 @@
-import React, { useContext } from "react";
+import React from "react";
 import AsLogo from '../../image/1.svg';
 import './header2.css';
 import HeaderProfile from '../Dashboard/Header/HeaderProfile';
-import { UserContext } from '../../App';
 
 const Header2 = () => {
 
-    const { state, dispatch } = useContext(UserContext);
+    const logData = localStorage.getItem('logUser');
     // console.log(state);
     const RenderHeader = () => {
-        if(state) {
+        if(logData === 'true') {
             return (
                 <HeaderProfile />
             );
         } 
-        if(!state) {
+        else {
             return (
                 <div className="header__Login">
-                    <a href="#" className="signup__link">
+                    <a href="/Login" className="signup__link">
                         <div className="header__LoginButton header__link" onClick={display}>
                             Login
                         </div>
@@ -60,14 +59,7 @@ const Header2 = () => {
                     <a href="/contact_us" className="header__link"><div className="header__options">Contact Us</div></a>
                     <a href="/about_us" className="header__link"><div className="header__options">About Us</div></a>
                 </div>
-                {/* <RenderHeader/> */}
-                <div className="header__Login">
-                    <a href="/Login" className="signup__link">
-                        <div className="header__LoginButton header__link">
-                            Login
-                        </div>
-                    </a>
-                </div>
+                <RenderHeader/>
             </div>
             <div className="header__slider" id="header__slider">
                 <span onClick={displayMenu}><div className="header__joinUs"><a href="/RegisterNow" className="header__link" >Join Always Sahi</a></div></span>

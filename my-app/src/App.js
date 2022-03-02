@@ -16,6 +16,7 @@ import CoursePage from './components/CoursePage/CoursePage';
 import Course from './components/IndividualCourse/Accounting';
 import Error404 from './components/404Error/404Error';
 import Dash from './components/Dashboard/dashboard/Dash';
+import Logout from './components/Dashboard/Header/Logout';
 
 import {initialState, reducer} from './reducer/UseReducer';
 
@@ -48,7 +49,7 @@ const Routing = () => {
         <Route exact path={"/DashBoard"} element={<DashBoardMain />} />
         <Route path="/Course/:courseid/:videoid" element={<VideoMain/>}/>
         <Route path="*" element={<Error404 />} />
-        
+        <Route path="/Logout" element={<Logout />} />
       </Routes>
       <Footer2 />
     </div>

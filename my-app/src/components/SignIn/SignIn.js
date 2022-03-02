@@ -4,11 +4,8 @@ import SignInForm from './SignInForm';
 // import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
 // import Apple from  '../../image/Apple.png';
-import {useContext} from 'react';
-import {UserContext} from '../../App';
 
 const SignIn = () => {
-    // const {state, dispatch} = useContext(UserContext);
     const data = [{'name': "google", 'logo': Google, "Content": "Continue with Google", "link": "", "ids":"google"}];
     // {'name': "apple", 'logo': Apple, "Content": "Continue with Apple", "link": "", "ids":"apple"}
 

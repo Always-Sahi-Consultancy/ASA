@@ -3,17 +3,15 @@ import './ourStory_tab.css';
 import './ourStory_mobile.css';
 import our_story from "../../image/OurStroy.jpg";
 import OurStoryContent from './OurStoryContent';
-import { useEffect, useContext } from 'react';
-import {UserContext} from '../../App';
+import { useEffect } from 'react';
 
 const OurStroy = () => {
-    const {state, dispatch} = useContext(UserContext);
     useEffect(() => {
         document.title = "Always Sahi Academy | Our Story";
     })
 
     const data = [
-        "In the Middle of this Pandemic, when everything had shut down, Atharv was struck by the idea of building something online.",
+        "In the Middle of this Pandemic, when everything had shut down, Atharv was struck by the idea ofw building something online.",
         "He Started doing a survey with the Corporates, House Makers & Students, to understand who was affected the most due to this Pandemic?",
         "It was a time when many of the corporates who had been working hard to climb the corporate ladders, either lost their jobs or were working under tremendous work pressure to earn their living, which was affecting their Mental Health. This is when Corporates understood the necessity of a Passive Income, which could be a milestone in the coming future, much better than a mainstream Job.",
         "Atharv has been working since 2016 in this Business & Side Hustle line, even when he was a student he used to take up various clients & earn his Pocket Money. He gathered all his old knowledge and updated it with a touch of new & Upcoming digital Skills in the market, that are necessary to build a Successful Side Hustle.",
