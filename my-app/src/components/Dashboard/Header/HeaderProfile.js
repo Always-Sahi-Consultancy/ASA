@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import ProfilePhoto from '../../../image/Always Sahi Letter Head.png';
 import './Header.css';
 
@@ -70,7 +69,7 @@ const HeaderProfile = () => {
         <div className="Header_profile">
             <div onClick={dropdown1} className="Header_icon">
                 <img className="profile_photo" src={ProfilePhoto} alt="PP"></img>
-                <Link href="#" id="profile_dropdown">&#9660;</Link>
+                <a href="#" id="profile_dropdown">&#9660;</a>
             </div>
             <div className="Profile_dropdown">
                 <div className="Profile_upper">
@@ -78,21 +77,21 @@ const HeaderProfile = () => {
                     <div className="profile_links user_email">{userData.userEmail}</div>
                 </div>
                 <div className="Profile_middle">
-                    <div className="profile_links My_Progress"><Link to="#">My Progress</Link></div>
-                    <div className="profile_links Edit_Profile"><Link to="#">Edit Profile</Link></div>
-                    <div className="profile_links View_Dashboard"><Link to="#">View Dashboard</Link></div>
-                    <div className="profile_links Help_center"><Link to="#">Help Center</Link></div>
+                    <div className="profile_links My_Progress"><a href="#">My Progress</a></div>
+                    <div className="profile_links Edit_Profile"><a href="#">Edit Profile</a></div>
+                    <div className="profile_links View_Dashboard"><a href="#">View Dashboard</a></div>
+                    <div className="profile_links Help_center"><a href="#">Help Center</a></div>
                 </div>
                 <div className="Profile_lower">
-                    <div className="profile_links My_Progress"><Link to="/Logout">Log Out</Link></div>
+                    <div className="profile_links My_Progress"><a href="/Logout">Log Out</a></div>
                     <div className="profile_links Manage_account" onClick={dropdown}>
-                        <Link to="#">Manage Account</Link>
-                        <Link to="#" id="offer_courses">&#9660;</Link></div>
+                        <a href="#">Manage Account</a>
+                        <a href="#" id="offer_courses">&#9660;</a></div>
                     <ul className="profile-inner-dropdown">
-                        <li><Link className="manage_dropdown" href="#">Change Password</Link></li>
-                        <li><Link className="manage_dropdown" href="#">Change Email Address</Link></li>
-                        <li><Link className="manage_dropdown" href="#">Switch Account</Link></li>
-                        <li><Link className="manage_dropdown" href="#">Delete Account</Link></li>
+                        <li><a className="manage_dropdown" href="#">Change Password</a></li>
+                        <li><a className="manage_dropdown" href="#">Change Email Address</a></li>
+                        <li><a className="manage_dropdown" href="#">Switch Account</a></li>
+                        <li><a className="manage_dropdown" href="#">Delete Account</a></li>
                     </ul>
                 </div>
             </div>

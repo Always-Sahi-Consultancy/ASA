@@ -3,7 +3,6 @@ import RegisterComponent from './RegisterComponent';
 import RegisterForm from './RegisterForm';
 import Facebook from '../../image/fb icon.png';
 import Google from '../../image/google logo.png';
-import { Link } from 'react-router-dom';
 
 const Register = () => {
     const data = [
@@ -45,7 +44,7 @@ const Register = () => {
             </div>
             <RegisterForm />
             <hr className='register__hr'></hr>
-            <div className='register__option'>Already a member? <Link to="/Login" className='register__span'>Sign in</Link></div>
+            <div className='register__option'>Already a member? <a href="#" className='register__span'>Sign in</a></div>
         </div>
         // </div>
         
