@@ -16,7 +16,7 @@ const RegisterForm = () => {
     }
 
     const PostRegister = async (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const { userFirstName, userLastName, userEmail, userPassword } = user;
         const res = await fetch("/register", {
             method: "POST",
@@ -32,7 +32,7 @@ const RegisterForm = () => {
         } else {
             window.alert("Registration successful");
             console.log("Registration successful");
-            navigate("/");
+            navigate("/dash");
         }
     }
 

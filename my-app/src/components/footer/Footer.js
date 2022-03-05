@@ -1,5 +1,6 @@
 import "./Footer.css";
 // import "./FooterPosition.css";
+import {Link} from 'react-router-dom';
 
 function Footer(props) {
   return (
@@ -14,24 +15,24 @@ function Footer(props) {
         </div>
         <div className="documentation">
           <div className="documentation__option">
-            <a onClick={() => props.onChange("Terms")} className="documentation__link">
+            <Link onClick={() => props.onChange("Terms")} className="documentation__link">
               Terms of use |&nbsp;
-            </a>
+            </Link>
           </div>
           <div className="documentation__option">
-            <a onClick={() => props.onChange("EarningDiscalimer")} className="documentation__link">
+            <Link onClick={() => props.onChange("EarningDiscalimer")} className="documentation__link">
               Earning Disclaimer |&nbsp;
-            </a>
+            </Link>
           </div>
           <div className="documentation__option">
-            <a onClick={() => props.onChange("PrivacyPolicy")} className="documentation__link">
+            <Link onClick={() => props.onChange("PrivacyPolicy")} className="documentation__link">
               Privacy Policy | &nbsp;
-            </a>
+            </Link>
           </div>
           <div className="documentation__option">
-            <a onClick={() => props.onChange("RefundPolicy")} className="documentation__link">
+            <Link onClick={() => props.onChange("RefundPolicy")} className="documentation__link">
               Refund Policy
-            </a>
+            </Link>
           </div>
         </div>
         <div className="copyright">
