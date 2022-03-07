@@ -9,7 +9,7 @@ const CoursePage_Courses = () => {
     const [userData, setuserData] = useState({});
     const [filter, setfilter] = useState('');
 
-    const [isloaded, setloaded] = useState(false);
+    const [isloaded, setloaded] = useState(true);// set true for static useage
 
     const searchText = (e) => {
         setfilter(e.target.value);
@@ -26,6 +26,7 @@ const CoursePage_Courses = () => {
 
             const data = await res.json();
             setuserData(data);
+            console.log(data);
             if(!res.status === 200) {
                 const error = new Error(res.error);
                 throw error;
@@ -36,46 +37,79 @@ const CoursePage_Courses = () => {
         }
     }
 
-    useEffect(() => {
-        courses();
-    }, []);
+    // useEffect(() => {
+    //     courses();
+    // }, []);
 
     // It's just to load the page until Data is ready. 
-    // const course_details = [
-    //     {
-    //         courseImage: "webDevelopment",
-    //         courseName: "Web Development For Everyone",
-    //         courseStarRate: 4,
-    //         courseType: "Paid",
-    //         courseTutor: "Atharv",
-    //         courseDiscountPrice: "2999",
-    //         courseMRP: "5000",
-    //         courseGroup: "Web",
-    //         about_course: "About Course"
-    //     },
-    //     {
-    //         courseImage: "Financial_Accounting",
-    //         courseName: "Certified Course in Financial Accounting",
-    //         courseStarRate: 4,
-    //         courseType: "Paid",
-    //         courseTutor: "Atharv",
-    //         courseDiscountPrice: "2999",
-    //         courseMRP: "8000",
-    //         courseGroup: "Web",
-    //         about_course: "About Course"
-    //     },
-    //     {
-    //         courseImage: "toolkit",
-    //         courseName: "A Free toolkit for 18+",
-    //         courseStarRate: 5,
-    //         courseType: "Free",
-    //         courseTutor: "Atharv",
-    //         courseDiscountPrice: "0",
-    //         courseMRP: "0",
-    //         courseGroup: "Web",
-    //         about_course: "Get it"
-    //     }
-    // ];
+    const course_details = [
+        {
+            courseImage: "Account_Compliance",
+            courseName: "Certified Course in Accounts & Compliance",
+            courseStarRate: 4.0,
+            courseType: "Paid",
+            courseTutor: "Atharv Laxman Sawant",
+            courseDiscountPrice: "999.0",
+            courseMRP: "3000.0",
+            courseGroup: "Accounts & Finance ",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "taxation",
+            courseName: "Certified Course in Taxation",
+            courseStarRate: 4.0,
+            courseType: "Paid",
+            courseTutor: "Atharv Laxman Sawant",
+            courseDiscountPrice: "1999.0",
+            courseMRP: "6000.0",
+            courseGroup: "Accounts & Finance  ",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "Financial_Accounting",
+            courseName: "Certified Course in Financial Accounting",
+            courseStarRate: 4.0,
+            courseType: "Paid",
+            courseTutor: "Atharv Laxman Sawant",
+            courseDiscountPrice: "2999.0",
+            courseMRP: "8000.0",
+            courseGroup: "Accounts & Finance ",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "Financial_intelligence",
+            courseName: "Fundamentals of Financial Intelligence",
+            courseStarRate: 4.0,
+            courseType: "Paid",
+            courseTutor: "Atharv Laxman Sawant",
+            courseDiscountPrice: "599.0",
+            courseMRP: "2000.0",
+            courseGroup: "Accounts & Finance  ",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "Advance_financial",
+            courseName: "Advance Course in Financial Intelligence",
+            courseStarRate: 4.5,
+            courseType: "Paid",
+            courseTutor: "Atharv Laxman Sawant",
+            courseDiscountPrice: "999.0",
+            courseMRP: "2000.0",
+            courseGroup: "Accounts & Finance  ",
+            about_course: "About Course"
+        },
+        {
+            courseImage: "webDevelopment",
+            courseName: "Web Development For Everyone",
+            courseStarRate: 5.0,
+            courseType: "Paid",
+            courseTutor: "Akhil A",
+            courseDiscountPrice: "2999.0",
+            courseMRP: "5000.0",
+            courseGroup: "Programming & Tech",
+            about_course: "About Course"
+        }
+    ];
 
     // Once page is loaded, change, course_details.filter to userData.filter
     // let dataSearch = course_details.filter(course => {
@@ -115,7 +149,7 @@ const CoursePage_Courses = () => {
             <div className="Course_Section_box">
                 <div className="Course_section_main">
                     {isloaded?
-                    userData.map((course) => {
+                    course_details.map((course) => {
                         return(
                             <Course_box courseDiscountPrice={course.courseDiscountPrice} courseGroup={course.courseGroup} courseImage={course.courseImage} courseMRP={course.courseMRP} courseName={course.courseName} courseStarRate={course.courseStarRate} courseTutor={course.courseTutor} courseType={course.courseType} key={course._id}/>
                         )
