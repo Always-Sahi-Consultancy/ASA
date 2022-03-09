@@ -5,6 +5,7 @@ import Taxation from '../../../image/Course Layout/taxation.jpg';
 import Anc from '../../../image/Course Layout/anc.jpg';
 import Passion from '../../../image/Course Layout/passion.jpg';
 import Linkedin from '../../../image/coursesBanner.png';
+import { Link } from 'react-router-dom';
 
 const BannerImage = {
     "Financial": Financial,

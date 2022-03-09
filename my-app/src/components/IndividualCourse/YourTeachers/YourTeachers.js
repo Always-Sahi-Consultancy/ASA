@@ -8,6 +8,7 @@ const CourseImage = {
 const YourTeacher=(props) =>{
 
     const data = props.teacher;
+    console.log(data);
 
     return (
         <div>
