@@ -5,7 +5,7 @@ import AccountingContent from './Accounting/accountingcontent';
 import YourTeacher from './YourTeachers/YourTeachers';
 import { useEffect, useState} from 'react';
 
-const CCFA =() =>{
+const CCAC =() =>{
 
     const [courseData, setCoursedata] = useState("");
     const [isloaded,setloaded] = useState(true);
@@ -39,9 +39,9 @@ const CCFA =() =>{
 
     const accounts = {
       "courseBanner":{
-        "title":"Certified Course in Financial Accounting",
+        "title":"Certified Course in Accounts & Compliance",
         "image":"Financial",
-        "subtitle": "This Course is designed to cover all the Aspects of Accounting field, where we cover from Basics to full fledged Account & Tax Management.",
+        "subtitle": "This Course will guide you through all the Aspects of Accounting & Basics of Compliances like PAN to TAN, along with Tally Erp 9 & Tally Prime.",
         "rating": "4.9",
         "price": "",
         "priceMRP": "",
@@ -112,31 +112,6 @@ const CCFA =() =>{
           ]
         },
         {
-          "name": "Direct Taxes ",
-          "details": [
-            "Introduction to TDS",
-            "Calculation & Payment of TDS",
-            "TDS Challan & Form 16 "
-          ]
-        },
-        {
-          "name": "Income Tax Returns ",
-          "details": [
-            "Forms of Income Tax returns ",
-            "Deductions in ITR",
-            "Individual & professional Tax Filing"
-          ]
-        },
-        {
-          "name": "Corporate Tax Management",
-          "details": [
-            "Goods & Service Tax Registration",
-            "GST Compliance & GST Sales Filing",
-            "GST Report & GST Payment",
-            "GST Challan & GST Replies "
-          ]
-        },
-        {
           "name": "ADDITIONAL Power Pack with the Course",
           "details": [
             "ADDITIONAL Power Pack with the Course",
@@ -168,4 +143,4 @@ const CCFA =() =>{
     );
 }
 
-export default CCFA;
+export default CCAC;

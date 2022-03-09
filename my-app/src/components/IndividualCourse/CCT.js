@@ -5,7 +5,7 @@ import AccountingContent from './Accounting/accountingcontent';
 import YourTeacher from './YourTeachers/YourTeachers';
 import { useEffect, useState} from 'react';
 
-const CCFA =() =>{
+const CCT =() =>{
 
     const [courseData, setCoursedata] = useState("");
     const [isloaded,setloaded] = useState(true);
@@ -39,9 +39,9 @@ const CCFA =() =>{
 
     const accounts = {
       "courseBanner":{
-        "title":"Certified Course in Financial Accounting",
+        "title":"Certified Course in Taxation ",
         "image":"Financial",
-        "subtitle": "This Course is designed to cover all the Aspects of Accounting field, where we cover from Basics to full fledged Account & Tax Management.",
+        "subtitle": "This Course will help you with Indian Tax Policies, and help you Manage your Personal Taxes as well as Corporate Taxes.",
         "rating": "4.9",
         "price": "",
         "priceMRP": "",
@@ -69,50 +69,7 @@ const CCFA =() =>{
       },
       "content": [
         {
-          "name": "Basics of Accounts",
-          "details": [
-            "3 Golden Rules",
-            "Journal Entries",
-            "Financial Statements Study"
-          ]
-        },
-        {
-          "name": "Intdoduction to Tally Erp 9",
-          "details": [
-            "Everything About Tally",
-            "Ledger Creation",
-            "Invoicing"
-          ]
-        },
-        {
-          "name": "Advance Tally Erp 9",
-          "details": [
-            "Payroll",
-            "Godown",
-            "Order Processing",
-            "Financial Reports",
-            "Export & Import",
-            "Advance Topics"
-          ]
-        },
-        {
-          "name": "Taxation in Tally Erp 9",
-          "details": [
-            "TDS Entries in Tally",
-            "GST Entries in Tally",
-            "Tax Management in Tally"
-          ]
-        },
-        {
-          "name": "Compliances",
-          "details": [
-            "PAN Registration",
-            "TAN Registration",
-            "Shop Act Registration"
-          ]
-        },
-        {
-          "name": "Direct Taxes ",
+          "name": "Direct Taxes",
           "details": [
             "Introduction to TDS",
             "Calculation & Payment of TDS",
@@ -124,7 +81,7 @@ const CCFA =() =>{
           "details": [
             "Forms of Income Tax returns ",
             "Deductions in ITR",
-            "Individual & professional Tax Filing"
+            "Individual & professional Tax Filing "
           ]
         },
         {
@@ -132,8 +89,8 @@ const CCFA =() =>{
           "details": [
             "Goods & Service Tax Registration",
             "GST Compliance & GST Sales Filing",
-            "GST Report & GST Payment",
-            "GST Challan & GST Replies "
+            "GST Report & GST Payment ",
+            "GST Challan & GST Replies"
           ]
         },
         {
@@ -168,4 +125,4 @@ const CCFA =() =>{
     );
 }
 
-export default CCFA;
+export default CCT;

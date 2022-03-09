@@ -13,7 +13,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import OurStroy from './components/ourStory/OurStory';
 import Testimonials from './components/Testimonials2/Testimonials';
 import CoursePage from './components/CoursePage/CoursePage';
-import Course from './components/IndividualCourse/Accounting';
+// import Course from './components/IndividualCourse/Accounting';
 import Error404 from './components/404Error/404Error';
 import Dash from './components/Dashboard/dashboard/Dash';
 import Logout from './components/Dashboard/Header/Logout';
@@ -23,6 +23,9 @@ import {initialState, reducer} from './reducer/UseReducer';
 import {Link, Routes, Route } from 'react-router-dom';
 import DashBoardMain from './components/Dashboard/DashBoardMain';
 import VideoMain from './components/Dashboard/VideoModule/VideoMain';
+import CCAC from './components/IndividualCourse/CCAC';
+import CCT from './components/IndividualCourse/CCT';
+import CCFA from './components/IndividualCourse/CCFA';
 
 export const UserContext = createContext();
 
@@ -42,7 +45,10 @@ const Routing = () => {
         <Route exact path="/RefundPolicy" element={<RefundPolicy />} />
         <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route exact path="/CoursePage" element={<CoursePage />} />
-        <Route path="/Course/:courseId" element={<Course />} />
+        {/* <Route path="/Course/:courseId" element={<Course />} /> */}
+        <Route exact path="/Course/Certified-Course-in-Accounts-&-Compliance" element={<CCAC />} />
+        <Route exact path="/Course/Certified-Course-in-Taxation" element={<CCT />} />
+        <Route exact path="/Course/Certified-Course-in-Financial-Accounting" element={<CCFA />} />
         <Route exact path="/Login" element={<Signin />} />
         <Route exact path={"/dash"} element={<Dash/> } />
         <Route exact path="/dash/:dashSection" element={<Dash/>} />
