@@ -43,7 +43,7 @@ const Banner = (props) => {
 
     return (
         <div>
-        {data.map((item) => <BannerComponent title={item.title} subtitle={item.subtitle} rating={item.rating} image={item.image} link={item.link} price={item.courseDiscountPrice} priceMRP={item.courseMRP} />)}    
+        {data.map((item) => <BannerComponent title={item.title} subtitle={item.subtitle} rating={item.rating} image={item.image} link={item.link} price={item.price} priceMRP={item.priceMRP} />)}    
         </div>
     )
 };

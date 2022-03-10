@@ -43,8 +43,8 @@ const CCAC =() =>{
         "image":"Financial",
         "subtitle": "This Course will guide you through all the Aspects of Accounting & Basics of Compliances like PAN to TAN, along with Tally Erp 9 & Tally Prime.",
         "rating": "4.9",
-        "price": "",
-        "priceMRP": "",
+        "price": "999",
+        "priceMRP": "3000",
         "purchaseURL": "",
         "video": "#",
         "link": "#"

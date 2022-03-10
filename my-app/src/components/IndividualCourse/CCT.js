@@ -43,8 +43,8 @@ const CCT =() =>{
         "image":"Financial",
         "subtitle": "This Course will help you with Indian Tax Policies, and help you Manage your Personal Taxes as well as Corporate Taxes.",
         "rating": "4.9",
-        "price": "",
-        "priceMRP": "",
+        "price": "1999",
+        "priceMRP": "6000",
         "purchaseURL": "",
         "video": "#",
         "link": "#"

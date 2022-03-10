@@ -26,6 +26,10 @@ import VideoMain from './components/Dashboard/VideoModule/VideoMain';
 import CCAC from './components/IndividualCourse/CCAC';
 import CCT from './components/IndividualCourse/CCT';
 import CCFA from './components/IndividualCourse/CCFA';
+import ACFI from './components/IndividualCourse/ACFI';
+import FFI from './components/IndividualCourse/FFI';
+import WDE from './components/IndividualCourse/WDE';
+// import CareerPage from './components/CareerPage/CareerPage';
 
 export const UserContext = createContext();
 
@@ -49,6 +53,10 @@ const Routing = () => {
         <Route exact path="/Course/Certified-Course-in-Accounts-&-Compliance" element={<CCAC />} />
         <Route exact path="/Course/Certified-Course-in-Taxation" element={<CCT />} />
         <Route exact path="/Course/Certified-Course-in-Financial-Accounting" element={<CCFA />} />
+        <Route exact path='/Course/Advance-Course-in-Financial-Intelligence' element={<ACFI />} />
+        <Route exact path='/Course/Fundamentals-of-Financial-Intelligence' element={<FFI />} />
+        <Route exact path='/Course/Web-Development-for-Everyone' element={<WDE />} />
+        {/* <Route exact path="/Career" element={<CareerPage />} /> */}
         <Route exact path="/Login" element={<Signin />} />
         <Route exact path={"/dash"} element={<Dash/> } />
         <Route exact path="/dash/:dashSection" element={<Dash/>} />

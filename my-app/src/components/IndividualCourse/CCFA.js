@@ -43,8 +43,8 @@ const CCFA =() =>{
         "image":"Financial",
         "subtitle": "This Course is designed to cover all the Aspects of Accounting field, where we cover from Basics to full fledged Account & Tax Management.",
         "rating": "4.9",
-        "price": "",
-        "priceMRP": "",
+        "price": "2999",
+        "priceMRP": "8000",
         "purchaseURL": "",
         "video": "#",
         "link": "#"
